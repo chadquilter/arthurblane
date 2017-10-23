@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index');
+Route::resource('quotes', 'QuotesController');
+Route::get('/services', 'PagesController@services');
+Route::resource('jobs', 'JobsController');
+Auth::routes();
+Route::get('/dashboard', 'DashboardController@index');
