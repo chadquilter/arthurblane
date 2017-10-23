@@ -7,9 +7,9 @@
       <center>
         <p class="text-muted">
           <br>
-          &copy; 2017, A Cut Above Construction 55 Inc.,
+          &copy; 2017,  {{ config('app.name', 'MDG') }} Inc.,
           <br>
-          &trade; "A Cut Above Contruction" is an Equal Opportunity Employer.
+          &trade; " {{ config('app.name', 'MDG') }}" is an Equal Opportunity Employer.
           All Rights Reserved.
         </p>
       </center>
