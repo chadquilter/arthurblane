@@ -14,22 +14,23 @@ class CreateJobsTable extends Migration
     public function up()
     {
         Schema::create('jobs', function (Blueprint $table) {
-          $table->increments('id');
-          $table->mediumText('title');
-          $table->mediumText('phone');
-          $table->mediumText('notes');
-          $table->mediumText('email');
-          $table->longText('description');
-          $table->longText('identifier');
-          $table->boolean('display_web');
-          $table->boolean('address');
-          $table->boolean('items');
-          $table->boolean('jobs');
-          $table->boolean('active');
-          $table->float('guestimate_amount', 9, 2);
+          $table->increments('job_id');
+          $table->bigInteger('job_type');
+          $table->mediumText('job_title');
+          $table->longText('job_summary');
+          $table->longText('job_notes');
+          $table->boolean('job_media');
+          $table->boolean('job_display');
+          $table->boolean('job_account');
+          $table->boolean('job_address');
+          $table->boolean('job_certs');
+          $table->boolean('job_quote');
+          $table->boolean('job_reciepts');
+          $table->boolean('job_invoiced');
+          $table->bigInteger('job_status');
+          $table->bigInteger('job_created_by');
+          $table->bigInteger('job_modified_by');
           $table->Integer('user_id');
-          $table->bigInteger('created_by');
-          $table->bigInteger('modified_by');
           $table->timestamps();
         });
     }

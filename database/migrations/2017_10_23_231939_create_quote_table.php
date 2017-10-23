@@ -15,6 +15,10 @@ class CreateQuoteTable extends Migration
     {
         Schema::create('quotes', function (Blueprint $table) {
             $table->increments('id');
+            $table->mediumText('title');
+            $table->mediumText('phone');
+            $table->mediumText('notes');
+            $table->mediumText('email');
             $table->longText('description');
             $table->longText('identifier');
             $table->boolean('display_web');
