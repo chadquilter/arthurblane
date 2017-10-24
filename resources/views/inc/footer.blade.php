@@ -1,6 +1,6 @@
 <footer class="footer">
   <div class="foot-container navbar-default">
-    <div class="footer-top">
+    <div class="footer-top-1">
       &nbsp;
     </div>
     <div class="footer-text" styel="width:70%;">
