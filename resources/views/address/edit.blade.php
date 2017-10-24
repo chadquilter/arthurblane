@@ -27,9 +27,9 @@
     </div>
     <br>
     <div class="gmap_canvas">
-      <iframe width="500" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q={{$address->address1}},{{$address->city}},{{$address->state}},{{$address->zipcode}}=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q={{$address->address1}},{{$address->city}},{{$address->state}},{{$address->zipcode}}=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </div>
-      <style>.mapouter{overflow:hidden;height:500px;width:600px;}.gmap_canvas {background:none!important;height:500px;width:600px;}</style>
+      <style>.mapouter{overflow:hidden;height:500px;width:400px;}.gmap_canvas {background:none!important;height:500px;width:400px;}</style>
     </div>
     <div class="form=group">
         {{Form::label('Active', 'Address Active? ')}}
