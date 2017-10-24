@@ -92,7 +92,7 @@
                     <table class="table table-striped table-hover table-sm table-responsive">
                         <thead class="thead-inverse">
                         <tr>
-                            <th nowrap><h3><span class="badge">{{ $addresses->total() }}</span> Address Entries:</h3></th>
+                            <th nowrap><h3><span class="badge">{{ $addresses->total() }}</span> Saved Addresses:</h3></th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -100,7 +100,7 @@
                       <tbody>
                         @foreach($addresses as $address)
                         <tr>
-                            <td width=80%><strong>Addresses: </strong>
+                            <td width=80%><strong>Address: </strong>
                               <div class=row>
                                 <div class="col-md-4">
                                   <br> {{$address->address1}}

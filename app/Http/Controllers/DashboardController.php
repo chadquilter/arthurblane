@@ -37,7 +37,7 @@ class DashboardController extends Controller
                 ->paginate(3, array('jobs.*'), 'jobs');
 
         $quotes = Quote::orderBy('created_at', 'desc', 'title')->paginate(4, ['*'], 'quotes');
-        $addresses = Address::orderBy('created_at', 'desc', 'zipcode')->paginate(4, ['*'], 'address');
+        $addresses = Address::orderBy('created_at', 'desc', 'zipcode')->paginate(1, ['*'], 'address');
 
         return view('dashboard')
           ->with('jobs', $jobs)
