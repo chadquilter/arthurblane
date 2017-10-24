@@ -100,7 +100,7 @@
                       <tbody>
                         @foreach($addresses as $address)
                         <tr>
-                            <td width=80%><strong>Addresses: </strong> {{$address->address1}} <br> {{$address->city}} <br> {{$address->zipode}}  </td>
+                            <td width=80%><strong>Addresses: </strong> <br> {{$address->address1}} <br> {{$address->city}} , {{$address->state}} <br> {{$address->zipcode}}  </td>
                             <td><a href="/quotes/{{$address->id}}/edit" class="btn btn-default">Edit</a></td>
                             <td>
                               {!!Form::open(['action' => ['QuotesController@destroy', $address->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
