@@ -88,7 +88,8 @@ class QuotesController extends Controller
           $quote->notes = $request->input('notes');
           $quote->save();
 
-          Mail::to('mikegrounds55@gmail.com')->cc('bobbarrian@yahoo.com; chadquilter@gmail.com')->send(new QuoteMail($quote));
+          $to = explode(',', env('ADMIN_EMAILS'));
+          Mail::to($to)->cc('chadquilter@gmail.com')->send(new QuoteMail($quote));
 
           return redirect('/quotes')->with('success', 'Quote Sent! A representitive will contact you with further details.');
       }
