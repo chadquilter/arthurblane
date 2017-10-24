@@ -101,15 +101,19 @@
                         @foreach($addresses as $address)
                         <tr>
                             <td width=80%><strong>Addresses: </strong>
-                              <br> {{$address->address1}}
-                              <br> {{$address->city}} , {{$address->state}}
-                              <br> {{$address->zipcode}}
-
-                              <div class="mapouter">
-                                <div class="gmap_canvas">
-                                  <iframe width="200" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=university of san francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                              <div class=row>
+                                <div class="col-md-6">
+                                  <br> {{$address->address1}}
+                                  <br> {{$address->city}} , {{$address->state}}
+                                  <br> {{$address->zipcode}}
                                 </div>
-                                <style>.mapouter{overflow:hidden;height:200px;width:200px;}.gmap_canvas {background:none!important;height:500px;width:600px;}</style>
+                                <div class="col-md-6">
+                                  <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                      <iframe width="200" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=university of san francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    </div>
+                                    <style>.mapouter{overflow:hidden;height:200px;width:200px;}.gmap_canvas {background:none!important;height:500px;width:600px;}</style>
+                                  </div>
                               </div>
                             </td>
                             <td><a href="/address/{{$address->id}}/edit" class="btn btn-default">Edit</a></td>
