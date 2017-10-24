@@ -27,7 +27,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/dashboard';
 
     /**
      * Create a new controller instance.
@@ -66,6 +66,20 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'user_employee' => '1',
+            'user_web_admin' => '1',
+            'user_quote_edit' => '1',
+            'user_quote_view' => '1',
+            'user_job_edit' => '1',
+            'user_job_view' => '1',
+            'user_invoice_edit' => '1',
+            'user_invoice_view' => '1',
+            'user_reciept_add' => '1',
+            'user_reciept_view' => '1',
+            'user_schedule_edit' => '1',
+            'user_schedule_view' => '1',
+            'user_created_by' => '1',
+            'user_modified_by' => '1',
         ]);
     }
 }
