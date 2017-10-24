@@ -76,7 +76,7 @@ class AddressController extends Controller
           $address->active = $active;
           $address->save();
 
-          return redirect('/address')->with('success', 'address Sent! A representitive will contact you with further details.');
+          return redirect('/dashboard')->with('success', 'Address Created!');
       }
 
       /**
@@ -167,6 +167,6 @@ class AddressController extends Controller
           }
 
           $address->delete();
-          return redirect('/dashboard')->with('success', 'address Deleted');
+          return redirect('/dashboard')->with('success', 'Address Deleted');
       }
 }
