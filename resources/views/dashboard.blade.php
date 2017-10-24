@@ -24,7 +24,7 @@
                     <table class="table table-striped table-hover table-sm table-responsive">
                       <thead class="thead-inverse">
                         <tr>
-                            <th><h3>Job Entries:</h3><span class="badge">{{ count($jobs) }}</span></th>
+                            <th nowrap><h3>Job Entries: <span class="badge">{{ count($jobs) }}</span></h3></th>
                             <th></th>
                             <th></th>
                         </tr>
