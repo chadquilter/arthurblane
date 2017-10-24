@@ -4,16 +4,14 @@
 
     <div class="container">
       <br>
-      <div class="row">
-      	<div class="col-md-6">
-          <div class="image_display_r">
-            <img class="img-fluid" alt="A scenic home image" src="/images/dusk-home.jpg" style="max-height:450%; width: 100%; display: block;">
-            <div class="image_display_text_container">
-              <p>Our work is a cut above the rest!</p>
-            </div>
-          </div>
+      <div class="image_display_r">
+        <img class="img-fluid" alt="A scenic home image" src="/images/dusk-home.jpg" style="max-height:450%; width: 100%; display: block;">
+        <div class="image_display_text_container">
+          <p>Our work is a cut above the rest!</p>
         </div>
-        <br>
+      </div>
+      <br>
+      <div class="row">
         <div class="col-md-6">
           <div class="well">
             <h1>{{$title}}</h1>
@@ -28,12 +26,13 @@
             </p>
           </div>
         </div>
-      </div>
-      <br>
-      <div class="image_display_r">
-        <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" style="max-height:450%; width: 100%; display: block;">
-        <div class="image_display_text_container">
-          <p>Custom Design!</p>
+        <div class="col-md-6">
+          <div class="image_display_r">
+            <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" style="max-height:450%; width: 100%; display: block;">
+            <div class="image_display_text_container">
+              <p>Custom Design!</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
