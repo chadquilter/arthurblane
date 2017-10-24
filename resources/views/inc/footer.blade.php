@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="foot-container navbar-inverse">
+  <div class="foot-container navbar-default">
     <div class="footer-top">
       &nbsp;
     </div>
