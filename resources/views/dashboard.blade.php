@@ -104,13 +104,12 @@
                               <br> {{$address->address1}}
                               <br> {{$address->city}} , {{$address->state}}
                               <br> {{$address->zipcode}}
+                              <br>
                               <div class="mapouter">
                                 <div class="gmap_canvas">
                                   <iframe width="200" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=university of san francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                  google maps einbinden
-                                  <a href="http://www.pureblack.de/google-maps/">pureblack.de</a>
                                 </div>
-                                <style>.mapouter{overflow:hidden;height:500px;width:600px;}.gmap_canvas {background:none!important;height:500px;width:600px;}</style>
+                                <style>.mapouter{overflow:hidden;height:200px;width:200px;}.gmap_canvas {background:none!important;height:500px;width:600px;}</style>
                               </div>
                             </td>
                             <td><a href="/address/{{$address->id}}/edit" class="btn btn-default">Edit</a></td>
