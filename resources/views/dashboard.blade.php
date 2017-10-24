@@ -101,9 +101,9 @@
                         @foreach($addresses as $address)
                         <tr>
                             <td width=80%><strong>Addresses: </strong> <br> {{$address->address1}} <br> {{$address->city}} , {{$address->state}} <br> {{$address->zipcode}}  </td>
-                            <td><a href="/quotes/{{$address->id}}/edit" class="btn btn-default">Edit</a></td>
+                            <td><a href="/address/{{$address->id}}/edit" class="btn btn-default">Edit</a></td>
                             <td>
-                              {!!Form::open(['action' => ['QuotesController@destroy', $address->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                              {!!Form::open(['action' => ['AddressController@destroy', $address->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                                   {{Form::hidden('_method', 'DELETE')}}
                                   {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                               {!!Form::close()!!}
