@@ -113,7 +113,7 @@
                       </tbody>
                       <tfoot>
                         <tr>
-                          <td>{{$address->links()}}</td>
+                          <td>{{$addresses->links()}}</td>
                           <td></td>
                           <td></td>
                         </tr>
