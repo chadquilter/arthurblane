@@ -56,14 +56,10 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
-    ],
-
-    'from' => [
         'address' => env('MAIL_FROM_ADDRESS', '-fadmin@arthurblane.com'),
         'name' => env('MAIL_FROM_NAME', 'Recieved Quote from Arthur Blane'),
     ],
+
     /*
     |--------------------------------------------------------------------------
     | E-Mail Encryption Protocol
