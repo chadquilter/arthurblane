@@ -28,7 +28,7 @@
     </div>
     <div class="form=group">
         {{Form::label('Active', 'Address Active? ')}}
-        {{Form::checkbox('active','true', ['class' => 'form-control'])}}
+        {{Form::checkbox('active','1', ['class' => 'form-control'])}}
     </div>
     <br>
     <div class="page-buttons">

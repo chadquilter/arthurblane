@@ -60,7 +60,7 @@ class AddressController extends Controller
           ]);
 
 
-          $active = ($request->input('active') ? $request->input('active') : false);
+          $active = ($request->input('active') ? $request->input('active') : 0);
           $long_lat = 1;
           $country = 'US';
 
@@ -132,7 +132,7 @@ class AddressController extends Controller
           ]);
 
 
-          $active = ($request->input('active') ? $request->input('active') : false);
+          $active = ($request->input('active') ? $request->input('active') : 0);
           $long_lat = 1;
           $country = 'US';
 
