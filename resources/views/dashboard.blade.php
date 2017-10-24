@@ -19,8 +19,8 @@
                     <a href="/quotes" class="btn btn-success">Create Quote</a>
                     <a href="/address/create" class="btn btn-warning">Add Address</a>
                     <a href="/media/create" class="btn btn-danger">Add Media</a>
-                    @if(count($jobs) > 0)
 
+                    @if(count($jobs) > 0)
                     <table class="table table-striped table-hover table-sm table-responsive">
                       <thead class="thead-inverse">
                         <tr>
@@ -71,6 +71,39 @@
                             <td><a href="/quotes/{{$quote->id}}/edit" class="btn btn-default">Edit</a></td>
                             <td>
                               {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                                  {{Form::hidden('_method', 'DELETE')}}
+                                  {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                              {!!Form::close()!!}
+                            </td>
+                        </tr>
+                        @endforeach
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td>{{$quotes->links()}}</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                    @endif
+
+                    @if(count($addresses) > 0)
+                    <table class="table table-striped table-hover table-sm table-responsive">
+                        <thead class="thead-inverse">
+                        <tr>
+                            <th nowrap><h3><span class="badge">{{ $address->total() }}</span> Address Entries:</h3></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @foreach($addresses as $address)
+                        <tr>
+                            <td width=80%><strong>Addresses: </strong> {{$quote->title}}</td>
+                            <td><a href="/quotes/{{$address->id}}/edit" class="btn btn-default">Edit</a></td>
+                            <td>
+                              {!!Form::open(['action' => ['QuotesController@destroy', $address->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                                   {{Form::hidden('_method', 'DELETE')}}
                                   {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                               {!!Form::close()!!}
