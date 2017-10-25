@@ -10,8 +10,8 @@
                      </button>
 
                      <!-- Branding Image -->
-                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png">
+                     <a class="navbar-brand" href="{{ url('/') }}" style="max-height: 100%;">
+                        <img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png" class="img-fluid">
                     </a>
                  </div>
                  <div class="collapse navbar-collapse" id="app-navbar-collapse">
