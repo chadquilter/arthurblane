@@ -25,16 +25,15 @@
         {{Form::label('zipcode', 'Zip Code: ')}}
         {{Form::text('zipcode',  $address->zipcode, ['class' => 'form-control', 'placeholder' => 'Zip Code'])}}
     </div>
-    <br>
+    <div class="form=group">
+        {{Form::label('Active', 'Address Active? ')}}
+        {{Form::checkbox('active','1', ['class' => 'form-control'])}}
+    </div>
     <div class="gmap_canvas">
       <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q={{$address->address1}},{{$address->city}},{{$address->state}},{{$address->zipcode}}=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </div>
     <style>.mapouter{overflow:hidden;height:500px;width:400px;}.gmap_canvas {background:none!important;height:500px;width:400px;}</style>
 
-    <div class="form=group">
-        {{Form::label('Active', 'Address Active? ')}}
-        {{Form::checkbox('active','1', ['class' => 'form-control'])}}
-    </div>
     <br>
     <div>
         {{Form::hidden('_method', 'PUT')}}
