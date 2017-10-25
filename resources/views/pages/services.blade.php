@@ -1,6 +1,7 @@
 @extends('layouts.front')
 
 @section('content')
+<br>
 <div class="container">
 			<div class="image_display_r">
 				<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BATHROOM1.JPG" style="max-height:450%; width: 100%; display: block;">
