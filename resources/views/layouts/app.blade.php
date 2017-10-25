@@ -21,11 +21,9 @@
           <div class="error-container">
             @include('inc.messages')
           </div>
-          <center>
             <div class="container">
               @yield('content')
             </div>
-          </center>
         </div>
         @include('inc.footer')
     </div>

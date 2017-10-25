@@ -2,6 +2,7 @@
 
 @section('content')
   <br>
+  <center>
   <div>
     @if(count($jobs) > 0)
         @foreach($jobs as $job)
@@ -23,4 +24,5 @@
         <p>No jobs found</p>
     @endif
   </div>
+</center>
 @endsection
