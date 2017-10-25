@@ -10,7 +10,7 @@
                      </button>
 
                      <!-- Branding Image -->
-                     <a class="navbar-brand" href="{{ url('/') }}" style="max-height: 100%;">
+                     <a class="navbar-brand" href="{{ url('/') }}" style="max-height: 90%;">
                         <img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png" class="img-fluid">
                     </a>
                  </div>
