@@ -88,7 +88,7 @@ class ItemsController extends Controller
         $item->user_id = $current_user = auth()->user()->id;
         $item->save();
 
-        return redirect('/items/index')->with('success', 'items Created!');
+        return redirect('/items')->with('success', 'items Created!');
       }
 
       /**
@@ -167,7 +167,7 @@ class ItemsController extends Controller
           $item->user_id = $current_user = auth()->user()->id;
           $item->save();
 
-          return redirect('/items/index')->with('success', 'Item has been Updated!');
+          return redirect('/items')->with('success', 'Item has been Updated!');
       }
 
       /**
@@ -186,6 +186,6 @@ class ItemsController extends Controller
           }
 
           $Item->delete();
-          return redirect('/dashboard')->with('success', 'Item Deleted');
+          return redirect('/items')->with('success', 'Item Deleted');
       }
 }
