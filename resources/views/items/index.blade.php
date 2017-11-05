@@ -19,7 +19,7 @@
                       <table class="table table-striped table-hover table-sm table-responsive">
                         <thead class="thead-inverse">
                           <tr>
-                              <th nowrap><h3><span class="badge">{{ $jobs->total() }}</span> Item Entries:</h3></th>
+                              <th nowrap><h3><span class="badge">{{ $items->total() }}</span> Item Entries:</h3></th>
                               <th></th>
                               <th></th>
                           </tr>
@@ -55,5 +55,5 @@
                 </div>
             </div>
         </div>
-    </div>      
+    </div>
 @endsection
