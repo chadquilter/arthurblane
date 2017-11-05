@@ -19,7 +19,7 @@
         {{Form::text('job_notes', '', ['class' => 'form-control', 'placeholder' => 'Additional Job Notes'])}}
     </div>
     <div class="JobItemsDiv">
-      <h2>Job Items:<h2/>
+      <h3>Job Items:</h3>
         <div>
           {{Form::label('job_item_{number}', 'Item:')}}
           @if(count($items) > 0)
@@ -31,6 +31,7 @@
         </div>
         {{Form::button('Add', ['class' => 'btn btn-primary'])}}
     </div>
+    <hr>
     <div class="form=group">
       {{Form::label('job_type', 'Job Type:')}}
       <br>
@@ -59,6 +60,7 @@
       </div>
     @endif
     <br>
+    <hr>
     @if (count($users) > 0)
       <div class="form=group">
         {{Form::label('job_created_by', 'Job Created by:')}}
