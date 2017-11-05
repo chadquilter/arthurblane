@@ -31,7 +31,7 @@
                           @foreach($items as $item)
                           <tr>
                               <td width=80%>
-                                <strong> {{$item->item_name}} </strong>
+                                <h2> {{$item->item_name}} </h2>
                                 <br>
                                 <strong> Cost: </strpmg> <span class="badge"> {{$item->item_amount}} </span>
                                 <strong> QTY: </strong> <span class="badge"> {{$item->item_count}} </span>
