@@ -56,7 +56,7 @@ class JobsController extends Controller
             'job_invoiced' => 'job_invoiced:'
         );
 
-        $items = Item::orderBy('created_at', 'desc', 'item_name');
+        $items = Item::pulck('id', 'item_name');
 
         $bool_types = array(
             1 => 'Yes',
