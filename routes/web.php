@@ -16,5 +16,6 @@ Route::resource('quotes', 'QuotesController');
 Route::get('/services', 'PagesController@services');
 Route::resource('jobs', 'JobsController');
 Route::resource('address', 'AddressController');
+Route::resource('items', 'ItemsController');
 Auth::routes();
 Route::get('/dashboard', 'DashboardController@index');
