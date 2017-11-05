@@ -30,9 +30,11 @@
                         <tbody>
                           @foreach($items as $item)
                           <tr>
-                              <td width=80%><strong>{{$item->item_name}}</strong>
-                                <br><strong>Cost: </strong> {{$item->item_cost}}
-                                <br><strong>QTY: </strong> {{$item->item_count}} </td>
+                              <td width=80%>
+                                <strong> Item: {{$item->item_name}} </strong>
+                                <strong> Cost: </strpmg> <span class="badge"> {{$item->item_cost}} </span>
+                                <strong> QTY: </strong> <span class="badge"> {{$item->item_count}} </span>
+                              </td>
                               <td><a href="/items/{{$item->id}}/edit" class="btn btn-default">Edit</a></td>
                               <td>
                                 {!!Form::open(['action' => ['ItemsController@destroy', $item->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
