@@ -23,7 +23,7 @@
         <div>
           {{Form::label('job_item_{number}', 'Item:')}}
           @if(count($items) > 0)
-            {{ Form::select('job_item_number[]', $items, '', ['class' => 'form-control m-bot15']) }}
+            {{ Form::select('job_item_number', $items, '', ['class' => 'form-control m-bot15']) }}
           @else
             <h1>No Items Listed!</h1>
           @endif

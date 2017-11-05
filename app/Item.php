@@ -10,5 +10,12 @@ class Item extends Model
     public $primaryKey = 'id';
     public $timestamps = true;
 
+    public $fillable = [
+        'item_name',
+        'item_summary',
+        'item_weight',
+        'item_amount',
+        'item_count'
+    ];
 
 }
