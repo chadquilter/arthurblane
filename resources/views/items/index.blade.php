@@ -13,7 +13,7 @@
                     <center>
                         &nbsp</br>
                         <hr>
-                        <small>Item Listing: {{$item->created_at}} By: {{$item->user->name}}</small>
+                        <small>Item Listing: {{$item->created_at}} </small>
                     </center>
                 </div>
             </div>
