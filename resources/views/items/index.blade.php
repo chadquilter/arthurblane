@@ -15,6 +15,9 @@
                           </div>
                       @endif
 
+                      <a href="/dashboard" class="btn btn-success">Back to Dashboard</a>
+                      <a href="/items/create" class="btn btn-success">Add Item</a>
+
                       @if(count($items) > 0)
                       <table class="table table-striped table-hover table-sm table-responsive">
                         <thead class="thead-inverse">
