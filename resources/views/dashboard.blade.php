@@ -19,6 +19,7 @@
                     <a href="/quotes" class="btn btn-success">Create Quote</a>
                     <a href="/address/create" class="btn btn-warning">Add Address</a>
                     <a href="/media/create" class="btn btn-danger">Add Media</a>
+                    <a href="/items/index" class="btn btn-danger">Manage Items</a>
 
                     @if(count($jobs) > 0)
                     <table class="table table-striped table-hover table-sm table-responsive">

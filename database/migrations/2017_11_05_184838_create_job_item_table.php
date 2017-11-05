@@ -15,6 +15,9 @@ class CreateJobItemTable extends Migration
     {
         Schema::create('job_items', function (Blueprint $table) {
             $table->increments('id');
+            $table->Integer('job_id');
+            $table->Integer('items_id');
+            $table->Integer('user_id');
             $table->timestamps();
         });
     }
