@@ -151,7 +151,7 @@ class ItemsController extends Controller
 
 
           // create items
-          $item = new item;
+          $item = Item::find($id);
           $item->item_name = $request->input('item_name');
           $item->item_summary = $request->input('item_summary');
           $item->item_weight = $request->input('item_weight');
