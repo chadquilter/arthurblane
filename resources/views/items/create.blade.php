@@ -7,6 +7,10 @@
     <h1>Add New Address</h1>
     {!! Form::open(['action' => 'ItemsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
     <div class="form=group">
+        {{Form::label('item_name', 'Item Name:')}}
+        {{Form::text('item_name',  '', ['class' => 'form-control', 'placeholder' => 'brick, 2x4 plywood, etc..'])}}
+    </div>
+    <div class="form=group">
       {{Form::label('item_summary', 'Description:')}}
       {{Form::textarea('item_summary', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Item Description'])}}
     </div>
