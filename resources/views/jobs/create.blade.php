@@ -23,11 +23,11 @@
         <div>
           {{Form::label('job_item_{number}', 'Item:')}}
           @if(count($items) > 0)
-            {{ Form::select('job_item_{number}', $items->item_name, 1, ['class' => 'form-control m-bot15']) }}
+            {{ Form::select('job_item_{number}', $items, 1, ['class' => 'form-control m-bot15']) }}
           @else
             <h1>No Items Listed!</h1>
           @endif
-          {{Form::button('Delete', ['class' => 'btn btn-primary'])}}
+          {{Form::button('Delete', ['class' => 'btn btn-danger'])}}
         </div>
         {{Form::button('Add', ['class' => 'btn btn-primary'])}}
     </div>
