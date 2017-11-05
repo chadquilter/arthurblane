@@ -111,11 +111,8 @@ class ItemsController extends Controller
        */
       public function edit($id)
       {
-          //no users yet...
-          $users = User::pluck('name', 'id');
-
           //////
-          $items = items::find($id);
+          $items = item::find($id);
           //check for auth
           if(!auth()->user()->id) {
             return redirect('/login')->with('error', 'Unauthorized Page!');
