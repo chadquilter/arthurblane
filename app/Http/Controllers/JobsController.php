@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Job;
 use App\User;
+use App\Item;
 
 class JobsController extends Controller
 {
@@ -55,6 +56,8 @@ class JobsController extends Controller
             'job_invoiced' => 'job_invoiced:'
         );
 
+        $items = Item::orderBy('created_at', 'desc', 'item_name');
+
         $bool_types = array(
             1 => 'Yes',
             0 => 'No');
@@ -70,8 +73,12 @@ class JobsController extends Controller
         $current_user = auth()->user()->id;
 
         return view('jobs.create')
-            ->with(compact('job_types', 'bool_types',
-                            'job_option_types', 'users', 'current_user'));
+            ->with(compact('job_types',
+              'bool_types',
+              'job_option_types',
+              'users',
+              'current_user',
+              'items'));
     }
 
     /**

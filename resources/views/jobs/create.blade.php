@@ -18,6 +18,19 @@
         {{Form::label('job_notes', 'Notes:')}}
         {{Form::text('job_notes', '', ['class' => 'form-control', 'placeholder' => 'Additional Job Notes'])}}
     </div>
+    <div class="JobItemsDiv">
+      <h2>Job Items:<h2/>
+        <div>
+          {{Form::label('job_item_{number}', 'Item:')}}
+          @if(count($items) > 0)
+            {{ Form::select('job_item_{number}', $items, 1, ['class' => 'form-control m-bot15']) }}
+          @else
+            <h1>No Items Listed!</h1>
+          @endif
+          {{Form::button('Delete', ['class' => 'btn btn-primary'])}}
+        </div>
+        {{Form::button('Add', ['class' => 'btn btn-primary'])}}
+    </div>
     <div class="form=group">
       {{Form::label('job_type', 'Job Type:')}}
       <br>
@@ -41,7 +54,7 @@
           @else
             <h1>No Types Listed!</h1>
           @endif
-          <br>
+
         @endforeach
       </div>
     @endif
