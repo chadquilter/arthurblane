@@ -112,14 +112,14 @@ class ItemsController extends Controller
       public function edit($id)
       {
           //////
-          $items = item::find($id);
+          $item = item::find($id);
           //check for auth
           if(!auth()->user()->id) {
             return redirect('/login')->with('error', 'Unauthorized Page!');
           }
 
           //edit view
-          return view('items.edit')->with(compact('items', 'users'));
+          return view('items.edit')->with(compact('item', 'users'));
       }
 
       /**
