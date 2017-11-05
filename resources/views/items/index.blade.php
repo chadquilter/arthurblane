@@ -31,8 +31,9 @@
                           @foreach($items as $item)
                           <tr>
                               <td width=80%>
-                                <strong> Item: {{$item->item_name}} </strong>
-                                <strong> Cost: </strpmg> <span class="badge"> {{$item->item_cost}} </span>
+                                <strong> {{$item->item_name}} </strong>
+                                <br>
+                                <strong> Cost: </strpmg> <span class="badge"> {{$item->item_amount}} </span>
                                 <strong> QTY: </strong> <span class="badge"> {{$item->item_count}} </span>
                               </td>
                               <td><a href="/items/{{$item->id}}/edit" class="btn btn-default">Edit</a></td>
