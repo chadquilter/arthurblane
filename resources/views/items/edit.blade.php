@@ -6,6 +6,10 @@
     <h1>Edit Item</h1>
     {!! Form::open(['action' => ['ItemsController@update', $item->id], 'method' => 'POST']) !!}
     <div class="form=group">
+        {{Form::label('item_name', 'Item Name:')}}
+        {{Form::text('item_name',  $item->item_name, ['class' => 'form-control', 'placeholder' => 'brick, 2x4 plywood, etc..'])}}
+    </div>
+    <div class="form=group">
       {{Form::label('item_summary', 'Description:')}}
       {{Form::textarea('item_summary', $item->item_summary, ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Item Description'])}}
     </div>
