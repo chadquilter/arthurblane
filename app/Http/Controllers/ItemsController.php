@@ -99,7 +99,7 @@ class ItemsController extends Controller
        */
       public function show($id)
       {
-          $items = items::find($id);
+          $items = item::find($id);
           return view('items.show')->with('items', $items);
       }
 
