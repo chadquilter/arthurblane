@@ -27,7 +27,7 @@ class ItemsController extends Controller
        public function index()
        {
           $items = Item::orderBy('created_at', 'desc', 'item_name')->paginate(50);
-          if ( count($items) > 0) {
+          if ( count($items) >= 1) {
             return view('items.index')->with('items', $items);
           }else{
             return view('items.create');
@@ -73,22 +73,22 @@ class ItemsController extends Controller
 
         // create items
         $item = new item;
-        $item->'item_name' = $request->input('item_name');
-        $item->'item_summary' = $request->input('item_summary');
-        $item->'item_weight' = $request->input('item_weight');
-        $item->'item_amount' = $request->input('item_amount');
-        $item->'item_count' = $request->input('item_count');
-        $item->'item_in_stock' = $item_in_stock;
-        $item->'item_has_address' = $item_has_address;
-        $item->'item_online_price' = $item_online_price;
-        $item->'item_has_subitems' = $has_subitems;
-        $item->'item_is_oversized' = $is_oversized;
-        $item->'item_has_image' = $has_image;
-        $item->'item_active' = $item_active;
-        $item->'user_id' = $current_user = auth()->user()->id;
+        $item->item_name = $request->input('item_name');
+        $item->item_summary = $request->input('item_summary');
+        $item->item_weight = $request->input('item_weight');
+        $item->item_amount = $request->input('item_amount');
+        $item->item_count = $request->input('item_count');
+        $item->item_in_stock = $item_in_stock;
+        $item->item_has_address = $item_has_address;
+        $item->item_online_price = $item_online_price;
+        $item->item_has_subitems = $has_subitems;
+        $item->item_is_oversized = $is_oversized;
+        $item->item_has_image = $has_image;
+        $item->item_active = $item_active;
+        $item->user_id = $current_user = auth()->user()->id;
         $item->save();
 
-        return redirect('/dashboard')->with('success', 'items Created!');
+        return redirect('/items/index')->with('success', 'items Created!');
       }
 
       /**
@@ -155,22 +155,22 @@ class ItemsController extends Controller
 
           // create items
           $item = new item;
-          $item->'item_name' = $request->input('item_name');
-          $item->'item_summary' = $request->input('item_summary');
-          $item->'item_weight' = $request->input('item_weight');
-          $item->'item_amount' = $request->input('item_amount');
-          $item->'item_count' = $request->input('item_count');
-          $item->'item_in_stock' = $item_in_stock;
-          $item->'item_has_address' = $item_has_address;
-          $item->'item_online_price' = $item_online_price;
-          $item->'item_has_subitems' = $has_subitems;
-          $item->'item_is_oversized' = $is_oversized;
-          $item->'item_has_image' = $has_image;
-          $item->'item_active' = $item_active;
-          $item->'user_id' = $current_user = auth()->user()->id;
+          $item->item_name = $request->input('item_name');
+          $item->item_summary = $request->input('item_summary');
+          $item->item_weight = $request->input('item_weight');
+          $item->item_amount = $request->input('item_amount');
+          $item->item_count = $request->input('item_count');
+          $item->item_in_stock = $item_in_stock;
+          $item->item_has_address = $item_has_address;
+          $item->item_online_price = $item_online_price;
+          $item->item_has_subitems = $has_subitems;
+          $item->item_is_oversized = $is_oversized;
+          $item->item_has_image = $has_image;
+          $item->item_active = $item_active;
+          $item->user_id = $current_user = auth()->user()->id;
           $item->save();
 
-          return redirect('/dashboard')->with('success', 'Item has been Updated!');
+          return redirect('/items/index')->with('success', 'Item has been Updated!');
       }
 
       /**
