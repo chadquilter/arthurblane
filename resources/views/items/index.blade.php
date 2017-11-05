@@ -15,7 +15,7 @@
                           </div>
                       @endif
 
-                      <a href="/dashboard" class="btn btn-success">Back to Dashboard</a>
+                      <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
                       <a href="/items/create" class="btn btn-success">Add Item</a>
 
                       @if(count($items) > 0)
