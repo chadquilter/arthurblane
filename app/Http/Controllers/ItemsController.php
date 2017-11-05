@@ -82,8 +82,8 @@ class ItemsController extends Controller
         $item->item_has_address = $item_has_address;
         $item->item_online_price = $item_online_price;
         $item->item_has_subitems = $item_has_subitems;
-        $item->item_is_oversized = $is_oversized;
-        $item->item_has_image = $has_image;
+        $item->item_is_oversized = $item_is_oversized;
+        $item->item_has_image = $item_has_image;
         $item->item_active = $item_active;
         $item->user_id = $current_user = auth()->user()->id;
         $item->save();
@@ -164,8 +164,8 @@ class ItemsController extends Controller
           $item->item_has_address = $item_has_address;
           $item->item_online_price = $item_online_price;
           $item->item_has_subitems = $item_has_subitems;
-          $item->item_is_oversized = $is_oversized;
-          $item->item_has_image = $has_image;
+          $item->item_is_oversized = $item_is_oversized;
+          $item->item_has_image = $item_has_image;
           $item->item_active = $item_active;
           $item->user_id = $current_user = auth()->user()->id;
           $item->save();
