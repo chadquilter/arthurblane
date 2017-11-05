@@ -8,19 +8,19 @@
     {!! Form::open(['action' => 'ItemsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
     <div class="form=group">
       {{Form::label('item_summary', 'Description:')}}
-      {{Form::textarea('item_summary', $item->item_summary, ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Item Description'])}}
+      {{Form::textarea('item_summary', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Item Description'])}}
     </div>
     <div class="form=group">
         {{Form::label('item_weight', 'Item Weight:')}}
-        {{Form::text('item_weight',  $item->item_weight, ['class' => 'form-control', 'placeholder' => '0.00'])}}
+        {{Form::text('item_weight',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
     </div>
     <div class="form=group">
         {{Form::label('item_amount', 'Item Cost:')}}
-        {{Form::text('item_amount',  $item->item_amount, ['class' => 'form-control', 'placeholder' => '0.00'])}}
+        {{Form::text('item_amount',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
     </div>
     <div class="form=group">
         {{Form::label('item_count', 'Number of Items on hand:')}}
-        {{Form::text('item_count',  $item->item_count, ['class' => 'form-control', 'placeholder' => '0.00'])}}
+        {{Form::text('item_count',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
     </div>
     <div class="form=group">
         {{Form::label('item_online_price', 'Show Online Prices? ')}}
