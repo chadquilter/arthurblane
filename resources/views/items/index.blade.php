@@ -18,7 +18,7 @@
                 </div>
             </div>
         @endforeach
-        {{$jobs->links()}}
+        {{$items->links()}}
     @else
         <p>No Items found</p>
     @endif
