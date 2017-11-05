@@ -26,8 +26,6 @@
                   :<wbr>{{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                 {!!Form::close()!!}
                 <br>
-              @endif
-            @endif
         </div>
     @else
         <div class="alert alert-danger">
