@@ -4,7 +4,7 @@
 @section('content')
   <br>
   <div class="well">
-    <h1>Add New Address</h1>
+    <h1>Add New Item</h1>
     {!! Form::open(['action' => 'ItemsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
     <div class="form=group">
         {{Form::label('item_name', 'Item Name:')}}
