@@ -81,7 +81,7 @@ class ItemsController extends Controller
         $item->item_in_stock = $item_in_stock;
         $item->item_has_address = $item_has_address;
         $item->item_online_price = $item_online_price;
-        $item->item_has_subitems = $has_subitems;
+        $item->item_has_subitems = $item_has_subitems;
         $item->item_is_oversized = $is_oversized;
         $item->item_has_image = $has_image;
         $item->item_active = $item_active;
@@ -163,7 +163,7 @@ class ItemsController extends Controller
           $item->item_in_stock = $item_in_stock;
           $item->item_has_address = $item_has_address;
           $item->item_online_price = $item_online_price;
-          $item->item_has_subitems = $has_subitems;
+          $item->item_has_subitems = $item_has_subitems;
           $item->item_is_oversized = $is_oversized;
           $item->item_has_image = $has_image;
           $item->item_active = $item_active;
