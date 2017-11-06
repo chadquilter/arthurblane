@@ -10,5 +10,14 @@ class Address extends Model
     public $primaryKey = 'id';
     public $timestamps = true;
 
+    public $fillable = [
+        'address1',
+        'address2',
+        'zipcode',
+        'city',
+        'state',
+        'country',
+        'code'
+    ];
 
 }
