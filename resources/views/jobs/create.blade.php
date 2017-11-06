@@ -57,23 +57,18 @@
       @foreach ($job_option_types as $job_option_id => $job_option_name)
         @if($loop->first || $loop->iteration === 4 || $loop->iteration === 9)
           <div class="row">
-            <div class="col-md-8"> {{  $loop->iteration }}
         @endif
-        <br>
-        {{Form::label($job_option_id, $job_option_name)}}
-        <br>
+            <div class="col-md-2"> {{  $loop->iteration }}
+              {{Form::label($job_option_id, $job_option_name)}}
         @if(count($bool_types) > 0)
           @foreach($bool_types as $bool_id => $bool_name)
-
                 {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}} {{  $loop->iteration }}
-
-            <br>
           @endforeach
+            </div>
         @else
           <h1>No Types Listed!</h1>
         @endif
         @if($loop->iteration === 3 || $loop->iteration === 8 || $loop->last)
-            </div>
           </div>
         @endif
       @endforeach
