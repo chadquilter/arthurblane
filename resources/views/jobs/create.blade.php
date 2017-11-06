@@ -102,7 +102,7 @@
       $('#add').click(function(){
         i++;
         //var test = "Form::select('job_item_number_0', "+ items +", '', ['class' => 'form-control m-bot15'])";
-        $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td id="item_div_'+i+'"></td><td><strong>Amount: </strong><input id="item_amount_'+i+'" type="text" size="8"> <strong>QTY: </strong><input id="item_qty_'+i+'" type="text" size="8"> </td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">Delete</button></td></tr>');
+        $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td id="item_div_'+i+'"></td><td><strong>Amount: </strong><input id="item_amount_'+i+'" type="text" class="form-control"> <strong>QTY: </strong><input id="item_qty_'+i+'" type="text" class="form-control"> </td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">Delete</button></td></tr>');
 
         var myDiv = document.getElementById("item_div_"+i);
         //Create array of options to be added
