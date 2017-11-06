@@ -53,11 +53,11 @@
     @if (count($job_option_types) > 0)
     <h3>Job Options:</h3>
     <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
-    <div id="job_option_group" class="form=group collapse alert alert-primary" role="alert">
+    <div id="job_option_group" class="form=group collapse">
       <br>
       @foreach ($job_option_types as $job_option_id => $job_option_name)
         @if($loop->first || $loop->iteration === 6)
-          <div class="row">
+          <div class="row alert alert-primary">
         @endif
             <div class="col-md-2">
               {{Form::label($job_option_id, $job_option_name)}}
