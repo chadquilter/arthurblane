@@ -124,10 +124,10 @@ class JobsController extends Controller
            foreach($request->get('itemID') as $key => $itemID) {
              $jobitem = new Jobitem;
              $jobitem->job_id = $job->job_id;
-             $jobitem->items_id = $request->input('item_id'.$itemID);;
+             $jobitem->items_id = $request->input('itemSelect'.$itemID);;
              $jobitem->user_id = $job->user_id;
-             $jobitem->amount = $request->input('item_amount'.$itemID);
-             $jobitem->qty = $request->input('item_amount'.$itemID);
+             $jobitem->amount = $request->input('item_amount_'.$itemID);
+             $jobitem->qty = $request->input('item_qty_'.$itemID);
              $jobitem->save();
            }
         }
