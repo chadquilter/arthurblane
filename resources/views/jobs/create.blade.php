@@ -122,7 +122,7 @@
 
         var myDiv = document.getElementById("item_div_"+i);
         //Create array of options to be added
-        var array = [items];
+        var array = items;
 
         //Create and append select list
         var selectList = document.createElement("select");
@@ -131,12 +131,19 @@
         myDiv.appendChild(selectList);
 
       //Create and append the options
-        for (var i = 0; i < array.length; i++) {
+        for (var k in item) {
           var option = document.createElement("option");
-          option.value = array[i];
-          option.text = array[i];
+          option.value = k;
+          option.text = item[k];
           selectList.appendChild(option);
         }
+        
+        //for (var i = 0; i < array.length; i++) {
+        //  var option = document.createElement("option");
+        //  option.value = array[i];
+        //  option.text = array[i];
+        //  selectList.appendChild(option);
+        //}
 
 
       });
