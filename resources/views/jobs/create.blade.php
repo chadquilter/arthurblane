@@ -55,7 +55,7 @@
     <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
     <div id="job_option_group" class="form=group collapse">
       @foreach ($job_option_types as $job_option_id => $job_option_name)
-        @if($loop->first || $loop->iteration === 4 || $loop->iteration === 9)
+        @if($loop->first || $loop->iteration === 6)
           <div class="row">
         @endif
             <div class="col-md-2"> {{  $loop->iteration }}
@@ -68,7 +68,7 @@
         @else
           <h1>No Types Listed!</h1>
         @endif
-        @if($loop->iteration === 3 || $loop->iteration === 8 || $loop->last)
+        @if($loop->iteration === 5 || $loop->iteration >= 10 || $loop->last)
           </div>
         @endif
       @endforeach
