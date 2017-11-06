@@ -45,15 +45,15 @@ class JobsController extends Controller
     public function create()
     {
         $job_option_types = array(
-            'job_media' => 'Job has Media:',
-            'job_display' => 'Display Job to web:',
-            'job_account' => 'Job has Account:',
-            'job_address'=> 'Job has Address:',
-            'job_certs' => 'Job has official paperwork:',
-            'job_quote' => 'Job has Quote:',
-            'job_reciepts' => 'Job has reciepts:',
-            'job_status' => 'Job Closed:',
-            'job_invoiced' => 'job_invoiced:'
+            'job_media' => 'Has Media?:',
+            'job_display' => 'Display to web?:',
+            'job_account' => 'Has Account?:',
+            'job_address'=> 'Has Address?:',
+            'job_certs' => 'Official paperwork?:',
+            'job_quote' => 'Has Quote?:',
+            'job_reciepts' => 'Has reciepts?:',
+            'job_status' => 'Job Closed?:',
+            'job_invoiced' => 'Invoiced?:'
         );
 
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
