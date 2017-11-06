@@ -26,7 +26,7 @@ class ItemsController extends Controller
        */
        public function index()
        {
-          $items = Item::orderBy('created_at', 'desc', 'item_name')->paginate(50);
+          $items = Item::orderBy('created_at', 'desc', 'item_name')->paginate(7);
           if ( count($items) >= 1) {
             return view('items.index')->with('items', $items);
           }else{
