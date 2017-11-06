@@ -66,7 +66,7 @@
                 <div class="col-md-8">
             @endif
                 {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
-            @if($bool_id == 0 || $bool_id == 5)
+            @if($bool_id === "0" || $bool_id === "5")
                 </div>
               </div>
             @endif
