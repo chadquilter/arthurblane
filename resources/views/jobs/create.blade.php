@@ -60,13 +60,13 @@
         <br>
         @if(count($bool_types) > 0)
           @foreach($bool_types as $bool_id => $bool_name)
-            @if($bool_id === 0 || $bool_id === 5)
+            @if($bool_id = 0 || $bool_id = 5)
 
               <div class="row">
                 <div class="col-md-8">
             @endif
                 {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
-            @if($bool_id === 0 || $bool_id === 5)
+            @if($bool_id = 0 || $bool_id = 5)
                 </div>
               </div>
             @endif
