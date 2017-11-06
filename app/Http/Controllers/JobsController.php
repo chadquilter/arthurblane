@@ -180,6 +180,7 @@ class JobsController extends Controller
             5 => 'Distaster Repair');
         //no users yet...
         $users = User::pluck('name', 'id');
+        $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
 
         //////
         $job = Job::find($id);
@@ -189,7 +190,7 @@ class JobsController extends Controller
         }
 
         //edit view
-        return view('jobs.edit')->with(compact('job', 'job_types', 'bool_types', 'job_option_types', 'users'));
+        return view('jobs.edit')->with(compact('job', 'job_types', 'bool_types', 'job_option_types', 'users', 'items'));
     }
 
     /**
