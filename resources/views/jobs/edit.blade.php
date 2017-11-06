@@ -30,7 +30,7 @@
                       <td id="item_div_{{$loop->iteration}}">
                         <strong>Item:</strong>
                             @if(count($items) > 0)
-                              {{ Form::select('itemSelect{{$loop->iteration}}', $items, '', ['name' => 'itemSelect{{$loop->iteration}}', 'class' => 'form-control m-bot15']) }}
+                              {{ Form::select('itemSelect'.$loop->iteration, $items, '', ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
                             @else
                               <h1>No Users Listed!</h1>
                             @endif
