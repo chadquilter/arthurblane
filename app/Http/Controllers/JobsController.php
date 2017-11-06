@@ -180,7 +180,9 @@ class JobsController extends Controller
             5 => 'Distaster Repair');
         //no users yet...
         $users = User::pluck('name', 'id');
+
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
+        $jobitems = Jobitem::where('job_id', '=', $id);
 
         //////
         $job = Job::find($id);
@@ -190,7 +192,7 @@ class JobsController extends Controller
         }
 
         //edit view
-        return view('jobs.edit')->with(compact('job', 'job_types', 'bool_types', 'job_option_types', 'users', 'items'));
+        return view('jobs.edit')->with(compact('job', 'job_types', 'bool_types', 'job_option_types', 'users', 'items', 'jobitems'));
     }
 
     /**
@@ -244,6 +246,18 @@ class JobsController extends Controller
         $job->job_invoiced = $request->input('job_invoiced');
         $job->job_quote = $request->input('job_quote');
         $job->save();
+
+        if ($request->get('itemID')) {
+           foreach($request->get('itemID') as $key => $itemID) {
+             $jobitem = new Jobitem;
+             $jobitem->job_id = $job->job_id;
+             $jobitem->items_id = $request->input('itemSelect'.$itemID);;
+             $jobitem->user_id = $job->user_id;
+             $jobitem->amount = $request->input('item_amount_'.$itemID);
+             $jobitem->qty = $request->input('item_qty_'.$itemID);
+             $jobitem->save();
+           }
+        }
 
         return redirect('/dashboard')->with('success', 'Job Updated');
     }
