@@ -31,7 +31,7 @@
     </div>
     <hr>
     <div class="form=group">
-      h3{{Form::label('job_type', 'Job Type:')}}
+      <h3>{{Form::label('job_type', 'Job Type:')}}</h3>
       <br>
       <div class="alert alert-warning" role="alert">
       @if(count($job_types) > 0)
