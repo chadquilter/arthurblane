@@ -65,7 +65,7 @@
         @if(count($bool_types) > 0)
           @foreach($bool_types as $bool_id => $bool_name)
 
-                {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
+                {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}} {{  $loop->iteration  $job_option_types->iteration}}
 
             <br>
           @endforeach
