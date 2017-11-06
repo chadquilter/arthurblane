@@ -51,20 +51,21 @@
       @endif
     </div>
     @if (count($job_option_types) > 0)
-      <div class="form=group">
-        @foreach ($job_option_types as $job_option_id => $job_option_name)
-          {{Form::label($job_option_id, $job_option_name)}}
-          <br>
-          @if(count($bool_types) > 0)
-            @foreach($bool_types as $bool_id => $bool_name)
-              {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
-            @endforeach
-          @else
-            <h1>No Types Listed!</h1>
-          @endif
-
-        @endforeach
-      </div>
+    <h2>Job Options</h2>
+    <hr>
+    <div class="form=group">
+      @foreach ($job_option_types as $job_option_id => $job_option_name)
+        {{Form::label($job_option_id, $job_option_name)}}
+        <br>
+        @if(count($bool_types) > 0)
+          @foreach($bool_types as $bool_id => $bool_name)
+            {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
+          @endforeach
+        @else
+          <h1>No Types Listed!</h1>
+        @endif
+      @endforeach
+    </div>
     @endif
     <br>
     <hr>
