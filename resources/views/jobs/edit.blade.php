@@ -29,11 +29,7 @@
                     <tr id="row" class="dynamic-added">
                       <td id="item_div_">
                         <strong>Item:</strong>
-                            @if(count($items) > 0)
-                              {{ Form::select('itemSelect', $items, '', ['name' => 'itemSelect', 'class' => 'form-control m-bot15']) }}
-                            @else
-                              <h1>No Users Listed!</h1>
-                            @endif
+
                       </td>
 
                     </tr>
