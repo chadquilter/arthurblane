@@ -32,7 +32,7 @@ class JobsController extends Controller
         //$jobs = Job::orderBy('created_at', 'job_desc')->get();
         //$jobs = Job::orderBy('created_at', 'asc')->take(1)->get(); for limit
 
-        $jobs = Job::orderBy('created_at', 'desc', 'name')->paginate(1);
+        $jobs = Job::where('job_display', '=', '1')->orderBy('created_at', 'desc', 'name')->paginate(1);
         //$jobs = Job::orderBy('created_at', 'asc')->get();
         return view('jobs.index')->with('jobs', $jobs);
     }
