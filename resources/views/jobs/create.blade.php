@@ -58,11 +58,12 @@
         @if($loop->first || $loop->iteration === 6)
           <div class="row">
         @endif
-            <div class="col-md-2"> {{  $loop->iteration }}
+            <div class="col-md-2">
               {{Form::label($job_option_id, $job_option_name)}}
+              <br>
         @if(count($bool_types) > 0)
           @foreach($bool_types as $bool_id => $bool_name)
-                {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}} {{  $loop->iteration }}
+                {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
           @endforeach
             </div>
         @else
