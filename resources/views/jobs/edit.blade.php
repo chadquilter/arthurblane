@@ -25,15 +25,7 @@
             <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
               <tbody>
                 @if(count($jobitems) > 0)
-                  @foreach($jobitems)
-                    <tr id="row" class="dynamic-added">
-                      <td id="item_div_">
-                        <strong>Item:</strong>
 
-                      </td>
-
-                    </tr>
-                  @endforeach
                 @endif
               </tbody>
             </table>
