@@ -21,13 +21,20 @@
     <div class="JobItemsDiv">
       <h3>Job Items:</h3>
         <div>
-          {{Form::label('job_item_{number}', 'Item:')}}
+          {{Form::label('job_item_0', 'Item:')}}
           @if(count($items) > 0)
-            {{ Form::select('job_item_number', $items, '', ['class' => 'form-control m-bot15']) }}
+            <div class="row" id="item_row_0">
+              <div class="col-md-8">
+                {{ Form::select('job_item_number_0', $items, '', ['class' => 'form-control m-bot15']) }}
+              </div>
+              <div class="col-md-1">
+                {{ Form::button('Delete', ['class' => 'btn btn-danger']) }}
+              </div>
+            </div>
           @else
             <h1>No Items Listed!</h1>
           @endif
-          {{Form::button('Delete', ['class' => 'btn btn-danger'])}}
+          <br>
         </div>
         {{Form::button('Add', ['class' => 'btn btn-primary'])}}
     </div>
