@@ -55,25 +55,26 @@
     <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
     <div id="job_option_group" class="form=group collapse">
       @foreach ($job_option_types as $job_option_id => $job_option_name)
+        @if($loop->iteration = 0 || $loop->iteration = 5)
+          <div class="row">
+            <div class="col-md-8">
+        @endif
         <br>
         {{Form::label($job_option_id, $job_option_name)}}
         <br>
         @if(count($bool_types) > 0)
           @foreach($bool_types as $bool_id => $bool_name)
-            @if($bool_id = 0 || $bool_id = 5)
 
-              <div class="row">
-                <div class="col-md-8">
-            @endif
                 {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
-            @if($bool_id = 0 || $bool_id = 5)
-                </div>
-              </div>
-            @endif
+
             <br>
           @endforeach
         @else
           <h1>No Types Listed!</h1>
+        @endif
+        @if($loop->iteration = 0 || $loop->iteration = 5)
+            </div>
+          </div>
         @endif
       @endforeach
     </div>
