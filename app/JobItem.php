@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class job_items extends Model
+class Jobitem extends Model
 {
     protected $table = 'job_items';
     public $primaryKey = 'id';

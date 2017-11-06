@@ -122,7 +122,7 @@ class JobsController extends Controller
         //$schedule->tasks()->delete();
         if ($request->get('itemID')) {
            foreach($request->get('itemID') as $key => $itemID) {
-             $jobitem = new JobItem;
+             $jobitem = new Jobitem;
              $jobitem->job_id = $job->job_id;
              $jobitem->items_id = $request->input('item_id'.$itemID);;
              $jobitem->user_id = $job->user_id;
