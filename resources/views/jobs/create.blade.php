@@ -42,13 +42,15 @@
     <div class="form=group">
       {{Form::label('job_type', 'Job Type:')}}
       <br>
+      <div class="alert alert-info" role="alert">
       @if(count($job_types) > 0)
         @foreach($job_types as $job_id => $job_name)
           {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}} &nbsp
         @endforeach
       @else
-      <h1>No Types Listed!</h1>
+        <h1>No Types Listed!</h1>
       @endif
+      </div>
     </div>
     @if (count($job_option_types) > 0)
 
@@ -56,8 +58,7 @@
       <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
 
       <div id="job_option_group" class="form=group collapse">
-        <div class="alert alert-success" role="alert">
-        <br>
+        <div class="alert alert-info" role="alert">
         @foreach ($job_option_types as $job_option_id => $job_option_name)
           @if($loop->first || $loop->iteration === 6)
             <div class="row">
