@@ -114,10 +114,28 @@
       var i=1;
 
       $('#add').click(function(){
-           i++;
-           $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added">'+
-            "<td>Form::select('job_item_number_"+i+"', '3: 2x4 wood', '', ['class' => 'form-control m-bot15']) " +
-            '</td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+
+        i++;
+        $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td id="item_div_'+i+'"></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+
+        var myDiv = document.getElementById("item_div_"+i);
+        //Create array of options to be added
+        var array = ["Volvo","Saab","Mercades","Audi"];
+
+        //Create and append select list
+        var selectList = document.createElement("select");
+        selectList.id = "mySelect";
+        myDiv.appendChild(selectList);
+
+      //Create and append the options
+        for (var i = 0; i < array.length; i++) {
+          var option = document.createElement("option");
+          option.value = array[i];
+          option.text = array[i];
+          selectList.appendChild(option);
+        }
+
+
       });
 
       $(document).on('click', '.btn_remove', function(){
