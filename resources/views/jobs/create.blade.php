@@ -116,9 +116,9 @@
       $('#add').click(function(){
 
         i++;
-        var items = "{{ $items }}";
-        var test = "Form::select('job_item_number_0', "+ items +", '', ['class' => 'form-control m-bot15'])";
-        $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td id="item_div_'+i+'">'+test+'</td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+        
+        //var test = "Form::select('job_item_number_0', "+ items +", '', ['class' => 'form-control m-bot15'])";
+        //$('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td id="item_div_'+i+'">'+test+'</td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
 
         var myDiv = document.getElementById("item_div_"+i);
         //Create array of options to be added
@@ -126,7 +126,7 @@
 
         //Create and append select list
         var selectList = document.createElement("select");
-        selectList.id = "mySelect";
+        selectList.id = "itemSelect"+i;
         selectList.class = "form-control m-bot15";
         myDiv.appendChild(selectList);
 
