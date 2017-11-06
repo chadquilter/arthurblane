@@ -116,7 +116,7 @@
       $('#add').click(function(){
 
         i++;
-        var items = "{{!! $items !!}}";
+        var items = "{{ $items }}";
         var test = "Form::select('job_item_number_0', "+ items +", '', ['class' => 'form-control m-bot15'])";
         $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td id="item_div_'+i+'">'+test+'</td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
 
