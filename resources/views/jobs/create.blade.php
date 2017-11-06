@@ -51,28 +51,28 @@
       @endif
     </div>
     @if (count($job_option_types) > 0)
-    <div class="alert alert-primary" role="alert">
+    <div class="alert alert-success" role="alert">
       <h3>Job Options:</h3>
       <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
       <div id="job_option_group" class="form=group collapse">
         <br>
-      @foreach ($job_option_types as $job_option_id => $job_option_name)
-        @if($loop->first || $loop->iteration === 6)
-          <div class="row">
-        @endif
-            <div class="col-md-2">
-              {{Form::label($job_option_id, $job_option_name)}}
-              <br>
+        @foreach ($job_option_types as $job_option_id => $job_option_name)
+          @if($loop->first || $loop->iteration === 6)
+            <div class="row">
+          @endif
+              <div class="col-md-2">
+                {{Form::label($job_option_id, $job_option_name)}}
+                <br>
         @if(count($bool_types) > 0)
           @foreach($bool_types as $bool_id => $bool_name)
                 {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
+              </div>
           @endforeach
-            </div>
         @else
-          <h1>No Types Listed!</h1>
+              <h1>No Types Listed!</h1>
         @endif
         @if($loop->iteration === 5 || $loop->iteration >= 10 || $loop->last)
-          </div>
+            </div>
         @endif
       @endforeach
       </div>
