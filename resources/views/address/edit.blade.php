@@ -3,6 +3,8 @@
 @section('content')
   <br>
   <div class="well">
+    <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
+    <br>
     <h1>Edit Job</h1>
     {!! Form::open(['action' => ['AddressController@update', $address->id], 'method' => 'POST']) !!}
     <div class="form=group">

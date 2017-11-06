@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
-
 @section('content')
   <br>
   <div class="well">
+    <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
+    <br>
     <h1>Add New Address</h1>
     {!! Form::open(['action' => 'AddressController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
     <div class="form=group">

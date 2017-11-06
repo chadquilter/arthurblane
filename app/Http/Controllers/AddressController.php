@@ -26,11 +26,12 @@ class AddressController extends Controller
        */
       public function index()
       {
-          //$jobs = Job::all(); get all
-          //use db to do custom sql instead
-          //$jobs = Job::orderBy('created_at', 'job_desc')->get();
-          //$jobs = Job::orderBy('created_at', 'asc')->take(1)->get(); for limit
-          return view('address.create');
+          $addresses = Address::orderBy('created_at', 'desc', 'city')->paginate(4);
+          if ( count($addresses) >= 1) {
+            return view('address.index')->with('addresses', $addresses);
+          }else{
+            return view('address.create');
+          }
       }
 
       /**

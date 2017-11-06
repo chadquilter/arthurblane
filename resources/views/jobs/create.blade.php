@@ -4,6 +4,8 @@
 @section('content')
   <br>
   <div class="well">
+    <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
+    <br>
     <h1>Create Job</h1>
     {!! Form::open(['action' => 'JobsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
     <div class="form=group">
@@ -20,7 +22,7 @@
     </div>
     <div class="JobItemsDiv">
       <h3>Job Items:</h3>
-      <div class="table-responsive">
+      <div class="form=group">
         <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
           <tbody>
           </tbody>
