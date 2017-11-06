@@ -21,7 +21,7 @@
     <div class="JobItemsDiv">
       <h3>Job Items:</h3>
       <div class="table-responsive">
-        <table class="table table-bordered" id="dynamic_field">
+        <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
         </table>
         <br>
         {{Form::button('Add Item', ['class' => 'btn btn-primary', 'id' => 'add', 'name' => 'add'])}}
