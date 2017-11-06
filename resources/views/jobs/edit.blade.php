@@ -24,6 +24,30 @@
           <div class="form=group">
             <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
               <tbody>
+                @if(count($jobitems) > 0)
+                  @foreach($jobitems)
+                      <tr id="row{{$loop->iteration}}" class="dynamic-added">
+
+                        <td id="item_div_{{$loob->iteration}}">
+                          <strong>Item:</strong>
+                              @if(count($items) > 0)
+                                {{ Form::select('itemSelect{{$loop->iteration}}', $items, $jobitems->item_id, ['name' => 'itemSelect{{$loop->iteration}}', 'class' => 'form-control m-bot15']) }}
+                              @else
+                                <h1>No Users Listed!</h1>
+                              @endif
+                        </td>
+                        <td>
+                          <strong>Amount: </strong>
+                          <input name="item_amount[]" id="item_amount_{{$loop->iteration}}" type="number" class="form-control" value="{{$jobitems->amount}}" step="any" maxlength="10" size="10">
+                          <strong>QTY: </strong>
+                          <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="{{$jobitems->qty}}" class="form-control" step="any" maxlength="10" size="10">
+                          <input type="hidden" name="itemID[]" id="itemID{{$loop->iteration}}" value="{{$loop->iteration}}">
+                        </td>
+                        <td width="5%">
+                          <strong>Action:</strong><br>
+                          <button type="button" name="remove" id="{{$loop->iteration}}" class="btn btn-danger btn_remove">Delete</button>
+                        </td>
+                      </tr>
               </tbody>
             </table>
             <br>
@@ -130,7 +154,7 @@
       }
     });
     </script>
-    
+
   </div>
   <br>
 @endsection
