@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Job;
 use App\User;
 use App\Item;
+use App\JobItem;
 
 class JobsController extends Controller
 {
@@ -116,6 +117,20 @@ class JobsController extends Controller
         $job->job_invoiced = $request->input('job_invoiced');
         $job->job_quote = $request->input('job_quote');
         $job->save();
+
+        $item_count = 0;
+        //$schedule->tasks()->delete();
+        if ($request->get('itemID')) {
+           foreach($request->get('itemID') as $key => $itemID) {
+             $jobitem = new JobItem;
+             $jobitem->job_id = $job->job_id;
+             $jobitem->items_id = $request->input('item_id'.$itemID);;
+             $jobitem->user_id = $job->user_id;
+             $jobitem->amount = $request->input('item_amount'.$itemID);
+             $jobitem->qty = $request->input('item_amount'.$itemID);
+             $jobitem->save();
+           }
+        }
 
         return redirect('/dashboard')->with('success', 'Job Created');
 

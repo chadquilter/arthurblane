@@ -18,6 +18,8 @@ class CreateJobItemTable extends Migration
             $table->Integer('job_id');
             $table->Integer('items_id');
             $table->Integer('user_id');
+            $table->decimal('amount', 8, 2);
+            $table->Itenger('qty');
             $table->timestamps();
         });
     }
