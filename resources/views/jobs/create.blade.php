@@ -42,7 +42,7 @@
     <div class="form=group">
       {{Form::label('job_type', 'Job Type:')}}
       <br>
-      <div class="alert alert-success" role="alert">
+      <div class="alert alert-warning" role="alert">
       @if(count($job_types) > 0)
         @foreach($job_types as $job_id => $job_name)
           {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}} &nbsp
