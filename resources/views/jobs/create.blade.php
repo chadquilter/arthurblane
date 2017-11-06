@@ -53,6 +53,7 @@
     @if (count($job_option_types) > 0)
     <h3>Job Options:</h3><br>
     <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
+    <br>
     <div id="job_option_group" class="form=group collapse">
       @foreach ($job_option_types as $job_option_id => $job_option_name)
         @if($loop->first || $loop->iteration === 6)
