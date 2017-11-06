@@ -23,21 +23,6 @@
       <div class="table-responsive">
         {{Form::label('job_item_0', 'Item:')}}
         <table class="table table-bordered" id="dynamic_field">
-          @if(count($items) > 0)
-            <tr>
-              <td>
-                {{ Form::select('job_item_number_0', $items, '', ['class' => 'form-control m-bot15']) }}
-              </td>
-              <td>
-              </td>
-            </tr>
-          @else
-            <tr>
-              <td>
-                <h1>No Items Listed!</h1>
-              </td>
-            </tr>
-          @endif
         </table>
         <br>
         {{Form::button('Add', ['class' => 'btn btn-primary', 'id' => 'add', 'name' => 'add'])}}
