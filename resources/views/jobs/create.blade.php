@@ -122,7 +122,7 @@
 
         var myDiv = document.getElementById("item_div_"+i);
         //Create array of options to be added
-        var array = <?php echo json_encode($items);?>;
+        var items = <?php echo json_encode($items);?>;
 
         //Create and append select list
         var selectList = document.createElement("select");
