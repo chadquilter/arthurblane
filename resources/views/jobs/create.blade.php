@@ -29,7 +29,6 @@
                 {{ Form::select('job_item_number_0', $items, '', ['class' => 'form-control m-bot15']) }}
               </td>
               <td>
-                {{ Form::button('Delete', ['class' => 'btn btn-danger']) }}
               </td>
             </tr>
           @else
@@ -116,7 +115,9 @@
 
       $('#add').click(function(){
            i++;
-           $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td><input type="text" name="name[]" placeholder="Enter your Name" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+           $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added">'+
+            "<td>Form::select('job_item_number_"+i+"', $items, '', ['class' => 'form-control m-bot15'])"+
+            '</td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
       });
 
       $(document).on('click', '.btn_remove', function(){
