@@ -26,25 +26,25 @@
               <tbody>
                 @if(count($jobitems) > 0)
                   @foreach($jobitems)
-                      <tr id="row{{$loop->iteration}}" class="dynamic-added">
+                      <tr id="row{{ $loop->iteration }}" class="dynamic-added">
                         <td id="item_div_{{$loop->iteration}}">
                           <strong>Item:</strong>
                               @if(count($items) > 0)
-                                {{ Form::select('itemSelect{{$loop->parent->iteration}}', $items, $jobitems->item_id, ['name' => 'itemSelect{{$loop->parent->iteration}}', 'class' => 'form-control m-bot15']) }}
+                                {{ Form::select('itemSelect{{$loop->iteration}}', $items, '', ['name' => 'itemSelect', 'class' => 'form-control m-bot15']) }}
                               @else
                                 <h1>No Users Listed!</h1>
                               @endif
                         </td>
                         <td>
                           <strong>Amount: </strong>
-                          <input name="item_amount[]" id="item_amount_{{$loop->iteration}}" type="number" class="form-control" value="{{$jobitems->amount}}" step="any" maxlength="10" size="10">
+                          <input name="item_amount[]" id="item_amount_" type="number" class="form-control" value="" step="any" maxlength="10" size="10">
                           <strong>QTY: </strong>
-                          <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="{{$jobitems->qty}}" class="form-control" step="any" maxlength="10" size="10">
-                          <input type="hidden" name="itemID[]" id="itemID{{$loop->iteration}}" value="{{$loop->iteration}}">
+                          <input id="item_qty_" name="item_qty[]" type="number" value="" class="form-control" step="any" maxlength="10" size="10">
+                          <input type="hidden" name="itemID[]" id="itemID" value="">
                         </td>
                         <td width="5%">
                           <strong>Action:</strong><br>
-                          <button type="button" name="remove" id="{{$loop->iteration}}" class="btn btn-danger btn_remove">Delete</button>
+                          <button type="button" name="remove" id="" class="btn btn-danger btn_remove">Delete</button>
                         </td>
                       </tr>
               </tbody>
