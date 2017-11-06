@@ -56,7 +56,7 @@ class JobsController extends Controller
             'job_invoiced' => 'job_invoiced:'
         );
 
-        $items = Item::where('item_active', 'like', '1')->pluck('id', 'item_name');
+        $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
 
         $bool_types = array(
             1 => 'Yes',
