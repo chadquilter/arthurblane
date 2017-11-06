@@ -100,11 +100,9 @@
       var i=1;
 
       $('#add').click(function(){
-
         i++;
-
         //var test = "Form::select('job_item_number_0', "+ items +", '', ['class' => 'form-control m-bot15'])";
-        $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td id="item_div_'+i+'"></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">Delete</button></td></tr>');
+        $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td id="item_div_'+i+'"></td><td><strong>Amount: </strong><input id="item_amount_'+i+'" type="text" size="8"> <strong>QTY: </strong><input id="item_qty_'+i+'" type="text" size="8"> </td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">Delete</button></td></tr>');
 
         var myDiv = document.getElementById("item_div_"+i);
         //Create array of options to be added
@@ -123,21 +121,13 @@
           option.text = items[k];
           selectList.appendChild(option);
         }
-
-        //for (var i = 0; i < array.length; i++) {
-        //  var option = document.createElement("option");
-        //  option.value = array[i];
-        //  option.text = array[i];
-        //  selectList.appendChild(option);
-        //}
-
-
       });
 
       $(document).on('click', '.btn_remove', function(){
            var button_id = $(this).attr("id");
            $('#row'+button_id+'').remove();
       });
+
       function printErrorMsg (msg) {
          $(".print-error-msg").find("ul").html('');
          $(".print-error-msg").css('display','block');
