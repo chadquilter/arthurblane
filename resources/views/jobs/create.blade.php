@@ -113,7 +113,7 @@
         //Create and append select list
         var selectList = document.createElement("select");
         selectList.id = "itemSelect"+i;
-        selectList.class = "form-control m-bot15";
+        selectList.className = "form-control m-bot15";
         myDiv.appendChild(selectList);
 
       //Create and append the options
