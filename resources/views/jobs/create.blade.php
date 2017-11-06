@@ -51,15 +51,17 @@
       @endif
     </div>
     @if (count($job_option_types) > 0)
-    <h3>Job Options:</h3>
-    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#job_option_group">Expand Options</button>
+    <h3>Job Options:</h3><br>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
     <div id="job_option_group" class="form=group collapse">
       @foreach ($job_option_types as $job_option_id => $job_option_name)
+        <br>
         {{Form::label($job_option_id, $job_option_name)}}
         <br>
         @if(count($bool_types) > 0)
           @foreach($bool_types as $bool_id => $bool_name)
             @if($bool_id == 0 || $bool_id == 5)
+
               <div class="row">
                 <div class="col-md-8">
             @endif
