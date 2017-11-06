@@ -57,7 +57,7 @@
       @foreach ($job_option_types as $job_option_id => $job_option_name)
         @if($loop->iteration === 1 || $loop->iteration === 3)
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8"> {{  $loop->iteration }}
         @endif
         <br>
         {{Form::label($job_option_id, $job_option_name)}}
