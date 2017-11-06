@@ -51,9 +51,9 @@
       @endif
     </div>
     @if (count($job_option_types) > 0)
-    <h2>Job Options</h2>
-    <hr>
-    <div class="form=group">
+    <h3>Job Options:</h3>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#job_option_group">Job Options</button>
+    <div id="job_option_group" class="form=group collapse">
       @foreach ($job_option_types as $job_option_id => $job_option_name)
         {{Form::label($job_option_id, $job_option_name)}}
         <br>
