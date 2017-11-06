@@ -21,11 +21,10 @@
     <div class="JobItemsDiv">
       <h3>Job Items:</h3>
       <div class="table-responsive">
-        {{Form::label('job_item_0', 'Item:')}}
         <table class="table table-bordered" id="dynamic_field">
         </table>
         <br>
-        {{Form::button('Add', ['class' => 'btn btn-primary', 'id' => 'add', 'name' => 'add'])}}
+        {{Form::button('Add Item', ['class' => 'btn btn-primary', 'id' => 'add', 'name' => 'add'])}}
       </div>
     </div>
     <hr>
@@ -103,7 +102,7 @@
         i++;
 
         //var test = "Form::select('job_item_number_0', "+ items +", '', ['class' => 'form-control m-bot15'])";
-        $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td id="item_div_'+i+'"></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+        $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td id="item_div_'+i+'"></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">Delete</button></td></tr>');
 
         var myDiv = document.getElementById("item_div_"+i);
         //Create array of options to be added
