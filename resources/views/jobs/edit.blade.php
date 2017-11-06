@@ -26,11 +26,11 @@
               <tbody>
                 @if(count($jobitems) > 0)
                   @foreach($jobitems)
-                      <tr id="row{{ $loop->iteration }}" class="dynamic-added">
-                        <td id="item_div_{{$loop->iteration}}">
+                      <tr id="row" class="dynamic-added">
+                        <td id="item_div_">
                           <strong>Item:</strong>
                               @if(count($items) > 0)
-                                {{ Form::select('itemSelect{{$loop->iteration}}', $items, '', ['name' => 'itemSelect', 'class' => 'form-control m-bot15']) }}
+                                {{ Form::select('itemSelect', $items, '', ['name' => 'itemSelect', 'class' => 'form-control m-bot15']) }}
                               @else
                                 <h1>No Users Listed!</h1>
                               @endif
