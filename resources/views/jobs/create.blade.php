@@ -56,7 +56,7 @@
 
       <h3>Job Options:</h3>
       <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
-
+      <br> &nbsp
       <div id="job_option_group" class="form=group collapse">
         <div class="alert alert-info" role="alert">
         @foreach ($job_option_types as $job_option_id => $job_option_name)
