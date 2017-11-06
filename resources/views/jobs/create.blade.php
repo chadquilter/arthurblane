@@ -131,13 +131,13 @@
         myDiv.appendChild(selectList);
 
       //Create and append the options
-        for (var k in item) {
+        for (var k in items) {
           var option = document.createElement("option");
           option.value = k;
-          option.text = item[k];
+          option.text = items[k];
           selectList.appendChild(option);
         }
-        
+
         //for (var i = 0; i < array.length; i++) {
         //  var option = document.createElement("option");
         //  option.value = array[i];
