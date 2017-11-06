@@ -18,7 +18,7 @@
                     <a href="/jobs/create" class="btn btn-primary">Create Job</a>
                     <a href="/quotes" class="btn btn-success">Create Quote</a>
                     <a href="/address" class="btn btn-warning">Manage Addresses</a>
-                    <a href="/items" class="btn btn-success">Manage Items</a>
+                    <a href="/items" class="btn btn-warning">Manage Items</a>
                     <br>
 
                     @if(count($jobs) > 0)
