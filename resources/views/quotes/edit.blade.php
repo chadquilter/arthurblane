@@ -3,6 +3,8 @@
 @section('content')
   <br>
   <div class="well">
+    <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
+    <br>
     <h1>Edit Quote</h1>
     {!! Form::open(['action' => ['QuotesController@update', $quote->id], 'method' => 'POST']) !!}
       <div class="form=group">
