@@ -25,32 +25,32 @@
           <h1>No Types listed! Required field, call for help!:</h1>
         @endif
       </div>
-    @endif
-    <div class="form=group col-xs-3">
+      @endif
+      <div class="form=group col-xs-3">
         {{Form::label('item_weight', 'Item Weight:')}}
         {{Form::text('item_weight',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
-    </div>
-    <div class="form=group col-xs-3">
+      </div>
+      <div class="form=group col-xs-3">
         {{Form::label('item_amount', 'Item Cost:')}}
         {{Form::text('item_amount',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
-    </div>
-  </div>
-  <div class="row">
-    <div class="form=group col-xs-3">
-        {{Form::label('item_count', 'Number of Items on hand:')}}
-        {{Form::text('item_count',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
-    </div>
-    @if (count($uom) > 0)
-      <div class="form=group col-xs-3">
-        {{Form::label('item_uom', 'Item Unit of Measure:')}}
-        @if(count($uom) > 0)
-          {{ Form::select('item_uom', $uom, '', ['class' => 'form-control m-bot15', 'width' => '20']) }}
-        @else
-          <h1>No Types listed! Required field, call for help!:</h1>
-        @endif
       </div>
-    @endif
-  </div>
+    </div>
+    <div class="row">
+      <div class="form=group col-xs-3">
+        {{Form::label('item_count', 'Number of Items:')}}
+        {{Form::text('item_count',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
+      </div>
+      @if (count($uom) > 0)
+        <div class="form=group col-xs-3">
+          {{Form::label('item_uom', 'Item Unit of Measure:')}}
+          @if(count($uom) > 0)
+            {{ Form::select('item_uom', $uom, '', ['class' => 'form-control m-bot15', 'width' => '20']) }}
+          @else
+            <h1>No Types listed! Required field, call for help!:</h1>
+          @endif
+        </div>
+      @endif
+    </div>
     <h3> Item Options </h3>
     <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
     <br> &nbsp
