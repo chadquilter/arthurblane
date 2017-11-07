@@ -27,7 +27,7 @@
           @else
             <h3>Job Items:</h3>
           @endif
-          <div id="job_item_group" class="form=group collapse">
+          <div id="job_item_group" class="form=group collapse alert alert-warning" role="alert">
             <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
               <tbody>
                 @if(count($job_items_records) > 0)
