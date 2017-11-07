@@ -38,7 +38,6 @@
                       </td>
                       <td>
                         <strong>Amount: </strong>
-                        {{!! $jobItem !!}}
                         <input name="item_amount[]" id="item_amount_{{ $loop->iteration }}" type="number" class="form-control" value="{{ $jobItem->amount }}" step="any" maxlength="10" size="10">
                         <strong>QTY: </strong>
                         <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="{{ $jobItem->qty }}" class="form-control" step="any" maxlength="10" size="10">
