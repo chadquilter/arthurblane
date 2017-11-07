@@ -15,7 +15,7 @@
       {{Form::label('item_summary', 'Description:')}}
       {{Form::textarea('item_summary', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Item Description'])}}
     </div>
-    <div class="form-control row">
+    <div class="form-control">
       @if (count($item_types) > 0)
         <div class="col-xs-3">
           {{Form::label('item_type', 'Item Type:')}}
