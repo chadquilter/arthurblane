@@ -26,20 +26,20 @@
             <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
               <tbody>
                 @if(count($jobItems) > 0)
-                  @foreach($jobItems as $jobitem)
+                  @foreach($jobItems as $jobItem)
                     <tr id="row{{ $loop->iteration }}" class="dynamic-added">
                       <td id="item_div_{{$loop->iteration}}">
                         <strong>Item:</strong>
                             @if(count($items) > 0)
-                              {{ Form::select('itemSelect'.$loop->iteration, $items, $jobitem[0] , ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
+                              {{ Form::select('itemSelect'.$loop->iteration, $items, '' , ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
                             @else
                               <h1>No Users Listed!</h1>
                             @endif
                       </td>
                       <td>
                         <strong>Amount: </strong>
-                        {{!! $jobItems !!}}
-                        <input name="item_amount[]" id="item_amount_{{ $loop->iteration }}" type="number" class="form-control" value="{{!! $jobItems !!}}" step="any" maxlength="10" size="10">
+                        {{!! $jobItem !!}}
+                        <input name="item_amount[]" id="item_amount_{{ $loop->iteration }}" type="number" class="form-control" value="{{!! $jobItem !!}}" step="any" maxlength="10" size="10">
                         <strong>QTY: </strong>
                         <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="{{ $jobitem[2] }}" class="form-control" step="any" maxlength="10" size="10">
                         <input type="hidden" name="itemID[]" id="itemID{{$loop->iteration}}" value="{{$loop->iteration}}">
