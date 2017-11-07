@@ -12,6 +12,7 @@
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "^5.4.0",
         "nesbot/carbon": "^1.22",
+        "twbs/bootstrap": "4.0.0-beta.2",
         "unisharp/laravel-ckeditor": "^4.6"
     },
     "require-dev": {
