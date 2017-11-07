@@ -41,7 +41,7 @@
                         {{!! $jobItem !!}}
                         <input name="item_amount[]" id="item_amount_{{ $loop->iteration }}" type="number" class="form-control" value="{{!! $jobItem !!}}" step="any" maxlength="10" size="10">
                         <strong>QTY: </strong>
-                        <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="{{ $jobitem[2] }}" class="form-control" step="any" maxlength="10" size="10">
+                        <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="" class="form-control" step="any" maxlength="10" size="10">
                         <input type="hidden" name="itemID[]" id="itemID{{$loop->iteration}}" value="{{$loop->iteration}}">
                       </td>
                       <td width="5%">
