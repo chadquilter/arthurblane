@@ -28,9 +28,9 @@
                                  </a>
 
                                  <ul class="dropdown-menu" aria-labelledby="Dashboard">
-                                     <li><a href="/dashboard">Dashboard</a></li>
+                                     <li><a class="dropdown-item" href="/dashboard">Dashboard</a></li>
                                     <li>
-                                        <a href="{{ url('/logout') }}"
+                                        <a class="dropdown-item" href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
                                              Logout
