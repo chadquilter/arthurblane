@@ -31,7 +31,7 @@
                       <td id="item_div_{{$loop->iteration}}">
                         <strong>Item:</strong>
                             @if(count($items) > 0)
-                              {{ Form::select('itemSelect'.$loop->iteration, $items, '' , ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
+                              {{ Form::select('itemSelect'.$loop->iteration, $items, $jobItem->items_id , ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
                             @else
                               <h1>No Users Listed!</h1>
                             @endif
@@ -39,9 +39,9 @@
                       <td>
                         <strong>Amount: </strong>
                         {{!! $jobItem !!}}
-                        <input name="item_amount[]" id="item_amount_{{ $loop->iteration }}" type="number" class="form-control" value="{{!! $jobItem !!}}" step="any" maxlength="10" size="10">
+                        <input name="item_amount[]" id="item_amount_{{ $loop->iteration }}" type="number" class="form-control" value="{{ $jobItem->amount }}" step="any" maxlength="10" size="10">
                         <strong>QTY: </strong>
-                        <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="" class="form-control" step="any" maxlength="10" size="10">
+                        <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="{{ $jobItem->qty }}" class="form-control" step="any" maxlength="10" size="10">
                         <input type="hidden" name="itemID[]" id="itemID{{$loop->iteration}}" value="{{$loop->iteration}}">
                       </td>
                       <td width="5%">
