@@ -252,12 +252,9 @@ class JobsController extends Controller
         $job->save();
 
         if ($request->get('itemID')) {
+           $deleteItems = JobItem::where('job_items_job_id', $job->job_id)->delete();
            foreach($request->get('itemID') as $key => $itemID) {
-             if ($request->get('itemRecordID'.$itemID)) {
-               $jobitem = Jobitem::find($request->get('itemRecordID'.$itemID));
-             }else{
-               $jobitem = new Jobitem;
-             }
+             $jobitem = new Jobitem;
              $jobitem->job_items_job_id = $job->job_id;
              $jobitem->items_id = $request->input('itemSelect'.$itemID);
              $jobitem->user_id = $job->user_id;
