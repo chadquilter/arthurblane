@@ -37,7 +37,7 @@
     </div>
     <div class="row">
       <div class="form=group col-xs-3">
-        {{Form::label('item_count', 'Number of Items on hand:')}}
+        {{Form::label('item_count', 'Number of Items:')}}
         {{Form::text('item_count',  $item->item_count, ['class' => 'form-control', 'placeholder' => '0.00'])}}
       </div>
       @if (count($uom) > 0)
