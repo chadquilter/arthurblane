@@ -157,16 +157,16 @@ class JobsController extends Controller
     public function edit($id)
     {
         $job_option_types = array(
-            'job_media' => 'Job has Media:',
-            'job_display' => 'Display Job to web:',
-            'job_account' => 'Job has Account:',
-            'job_address'=> 'Job has Address:',
-            'job_certs' => 'Job has official paperwork:',
-            'job_quote' => 'Job has Quote:',
-            'job_reciepts' => 'Job has reciepts:',
-            'job_status' => 'Job Closed:',
-            'job_invoiced' => 'job_invoiced:'
-        );
+            'job_media' => 'Media?:',
+            'job_display' => 'Display to web?:',
+            'job_account' => 'Account?:',
+            'job_address'=> 'Address?:',
+            'job_certs' => 'Paperwork?:',
+            'job_quote' => 'Quote?:',
+            'job_reciepts' => 'Reciepts?:',
+            'job_status' => 'Job Closed?:',
+            'job_invoiced' => 'Invoiced?:'
+          );
 
         $bool_types = array(
             1 => 'Yes',
@@ -178,7 +178,7 @@ class JobsController extends Controller
             3 => 'Custom Kitchen and Bath',
             4 => 'Custom Walls',
             5 => 'Distaster Repair');
-        //no users yet...
+      //no users yet...
         $users = User::pluck('name', 'id');
         $job = Job::find($id);
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
