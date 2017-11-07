@@ -190,8 +190,7 @@ class JobsController extends Controller
         //$jobs = Job::orderBy('created_at', 'desc', 'name')->paginate(4);
         $j = Job::join('users', 'jobs.user_id', '=', 'id')
                 ->where('user_id', '=', $user_id)
-                ->orderBy('jobs.created_at', 'desc')
-                ->paginate(3, array('jobs.*'), 'jobs');
+                ->orderBy('jobs.created_at', 'desc');
 
         //check for auth
         if(auth()->user()->id !==$job->user_id) {
