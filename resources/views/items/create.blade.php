@@ -57,27 +57,27 @@
     <div id="job_option_group" class="form=group collapse">
       <div class="form=group">
         {{Form::label('item_online_price', 'Show Online Prices? ')}}
-        {{Form::checkbox('item_online_price','1', ['class' => 'form-control'])}}
+        {{Form::checkbox('item_online_price','1', false, ['class' => 'form-control'])}}
       </div>
       <div class="form=group">
         {{Form::label('item_has_subitems', 'Has Subitems? ')}}
-        {{Form::checkbox('item_has_subitems','1', ['class' => 'form-control'])}}
+        {{Form::checkbox('item_has_subitems','1', false, ['class' => 'form-control'])}}
       </div>
       <div class="form=group">
         {{Form::label('item_is_oversized', 'Item is Oversized/Needs Cargo area? ')}}
-        {{Form::checkbox('item_is_oversized','1', ['class' => 'form-control'])}}
+        {{Form::checkbox('item_is_oversized','1', false, ['class' => 'form-control'])}}
       </div>
       <div class="form=group">
         {{Form::label('item_has_image', 'Item Stored Image? ')}}
-        {{Form::checkbox('item_has_image','1', ['class' => 'form-control'])}}
+        {{Form::checkbox('item_has_image','1', false, ['class' => 'form-control'])}}
       </div>
       <div class="form=group">
         {{Form::label('item_has_address', 'Item haas Address? ')}}
-        {{Form::checkbox('item_has_address','1', ['class' => 'form-control'])}}
+        {{Form::checkbox('item_has_address','1', false, ['class' => 'form-control'])}}
       </div>
       <div class="form=group">
         {{Form::label('item_active', 'Item is Active? ')}}
-        {{Form::checkbox('item_active','1', ['class' => 'form-control'])}}
+        {{Form::checkbox('item_active','1', true, ['class' => 'form-control'])}}
       </div>
       <br>
     </div>
