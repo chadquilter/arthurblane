@@ -20,7 +20,7 @@
         <div class="col-xs-3">
           {{Form::label('item_type', 'Item Type:')}}
           @if(count($item_types) > 0)
-            {{ Form::select('item_type', $item_types, '', ['class' => 'form-control m-bot15]) }}
+            {{ Form::select('item_type', $item_types, '', ['class' => 'form-control m-bot15']) }}
           @else
             <h1>No Types listed! Required field, call for help!:</h1>
           @endif
