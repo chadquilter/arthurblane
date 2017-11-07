@@ -253,9 +253,13 @@ class JobsController extends Controller
 
         if ($request->get('itemID')) {
            foreach($request->get('itemID') as $key => $itemID) {
-             $jobitem = new Jobitem;
-             $jobitem->job_id = $job->job_id;
-             $jobitem->items_id = $request->input('itemSelect'.$itemID);;
+             if ($request->get('itemRecordID'.$itemID)) {
+               $jobitem = Jobitem::find($request->get('itemRecordID'.$itemID));
+             }else{
+               $jobitem = new Jobitem;
+             }
+             $jobitem->job_items_job_id = $job->job_id;
+             $jobitem->items_id = $request->input('itemSelect'.$itemID);
              $jobitem->user_id = $job->user_id;
              $jobitem->amount = $request->input('item_amount_'.$itemID);
              $jobitem->qty = $request->input('item_qty_'.$itemID);
