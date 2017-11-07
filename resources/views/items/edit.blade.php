@@ -61,23 +61,23 @@
       </div>
       <div class="form=group">
         {{Form::label('item_has_subitems', 'Has Subitems? ')}}
-        {{Form::checkbox('item_has_subitems','1', ['class' => 'form-control'])}}
+        {{Form::checkbox('item_has_subitems','1', $item->item_has_subitems, ['class' => 'form-control'])}}
       </div>
       <div class="form=group">
         {{Form::label('item_is_oversized', 'Item is Oversized/Needs Cargo area? ')}}
-        {{Form::checkbox('item_is_oversized','1', ['class' => 'form-control'])}}
+        {{Form::checkbox('item_is_oversized','1', $item->item_is_oversized, ['class' => 'form-control'])}}
       </div>
       <div class="form=group">
         {{Form::label('item_has_image', 'Item Stored Image? ')}}
-        {{Form::checkbox('item_has_image','1', ['class' => 'form-control'])}}
+        {{Form::checkbox('item_has_image','1', $item->item_has_image, ['class' => 'form-control'])}}
       </div>
       <div class="form=group">
         {{Form::label('item_has_address', 'Item haas Address? ')}}
-        {{Form::checkbox('item_has_address','1', ['class' => 'form-control'])}}
+        {{Form::checkbox('item_has_address','1', $item->item_has_address, ['class' => 'form-control'])}}
       </div>
       <div class="form=group">
         {{Form::label('item_active', 'Item is Active? ')}}
-        {{Form::checkbox('item_active','1', ['class' => 'form-control'])}}
+        {{Form::checkbox('item_active','1', $item->item_active, ['class' => 'form-control'])}}
       </div>
     </div>
     <br>
