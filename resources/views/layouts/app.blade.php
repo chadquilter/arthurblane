@@ -13,6 +13,7 @@
     <link href="/css/image_styles.css" rel="stylesheet">
 
     <script src="{{ asset('js/app.js') }}"></script>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
 
 </head>
 <body>
