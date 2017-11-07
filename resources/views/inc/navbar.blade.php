@@ -13,12 +13,12 @@
                  </div>
                  <div class="collapse navbar-collapse" id="app-navbar-collapse">
                      <!-- Left Side Of Navbar -->
-                     <ul class="nav navbar-nav">
-                        <li>&nbsp</li>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/quotes">Quote</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/jobs">Jobs</a></li>
+                     <ul class="navbar-nav text-md-center nav-justified w-100">
+                        <li class="nav-item">&nbsp</li>
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/quotes">Quote</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/jobs">Jobs</a></li>
                      </ul>
 
                      <!-- Right Side Of Navbar -->
