@@ -9,11 +9,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'MDG') }}</title>
     <!-- Styles -->
+    <link href="/css/app.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
     <link href="/css/image_styles.css" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}"></script>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
 
 </head>
 <body>
