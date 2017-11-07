@@ -20,10 +20,12 @@
             {{Form::text('job_notes', $job->job_notes, ['class' => 'form-control', 'placeholder' => 'Job Additional Notes'])}}
         </div>
         <div class="JobItemsDiv">
-          <h3>Job Items:</h3>
           @if(count($job_items_records) > 0)
+            <h3><span class="badge">{{ $job_items_records->total() }}</span> Job Items:</h3>
             <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_item_group">Expand/Collapse Options</button>
             <br> &nbsp
+          @else
+            <h3>Job Items:</h3>
           @endif
           <div id="job_item_group" class="form=group collapse">
             <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
