@@ -195,7 +195,7 @@ class JobsController extends Controller
           ->with('jobItems', $jobItems)
           ->with('job_types', $job_types)
           ->with('bool_types', $bool_types)
-          ->with('job_option_types', $job_options_types)
+          ->with('job_option_types', $job_option_types)
           ->with('users', $users)
           ->with('items', $items);
     }
