@@ -113,7 +113,7 @@
     <script type="text/javascript">
     $(document).ready(function(){
       var postURL = "<?php echo url('addmore'); ?>";
-      var i= <?php count($job_items_records) ?>;
+      var i= <?php echo count($job_items_records) ?>;
 
       $('#add').click(function(){
         i++;
