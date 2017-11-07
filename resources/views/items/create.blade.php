@@ -29,17 +29,17 @@
         {{Form::label('item_weight', 'Item Weight:')}}
         {{Form::text('item_weight',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
     </div>
-
     <div class="form=group col-xs-3">
         {{Form::label('item_amount', 'Item Cost:')}}
         {{Form::text('item_amount',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
     </div>
-    <div class="form=group">
+    <br>
+    <div class="form=group col-xs-3">
         {{Form::label('item_count', 'Number of Items on hand:')}}
         {{Form::text('item_count',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
     </div>
     @if (count($uom) > 0)
-      <div class="form=group">
+      <div class="form=group col-xs-3">
         {{Form::label('item_uom', 'Item Unit of Measure:')}}
         @if(count($uom) > 0)
           {{ Form::select('item_uom', $uom, '', ['class' => 'form-control m-bot15', 'width' => '20']) }}
