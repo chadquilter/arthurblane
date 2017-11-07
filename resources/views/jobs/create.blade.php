@@ -23,7 +23,7 @@
     <div class="JobItemsDiv">
       <h3>Job Items:</h3>
       <div class="form=group alert alert-info" role="alert">
-        <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
+        <table class="table table-sm table-responsive" id="dynamic_field">
           <tbody>
           </tbody>
         </table>
