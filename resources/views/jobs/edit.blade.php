@@ -25,7 +25,7 @@
             <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
               <tbody>
                 @if(count($jobitems) > 0)
-                  @foreach($jobitems as $jobitemKey => $jobitemValue)
+                  @foreach($jobitems as $jobitem)
                     <tr id="row{{ $loop->iteration }}" class="dynamic-added">
                       <td id="item_div_{{$loop->iteration}}">
                         <strong>Item:</strong>
@@ -37,9 +37,9 @@
                       </td>
                       <td>
                         <strong>Amount: </strong>
-                        <input name="item_amount[]" id="item_amount_{{$loop->iteration}}" type="number" class="form-control" value="{{$jobitems->amount}}" step="any" maxlength="10" size="10">
+                        <input name="item_amount[]" id="item_amount_{{$loop->iteration}}" type="number" class="form-control" value="{{$jobitem->amount}}" step="any" maxlength="10" size="10">
                         <strong>QTY: </strong>
-                        <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="{{$jobitems->qty}}" class="form-control" step="any" maxlength="10" size="10">
+                        <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="{{$jobitem->qty}}" class="form-control" step="any" maxlength="10" size="10">
                         <input type="hidden" name="itemID[]" id="itemID{{$loop->iteration}}" value="{{$loop->iteration}}">
                       </td>
                       <td width="5%">
