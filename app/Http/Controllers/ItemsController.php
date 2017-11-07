@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Item;
 use App\User;
+use App\Item;
+use App\ItemType;
+use App\Uom;
 
 class ItemsController extends Controller
 {
@@ -58,9 +60,10 @@ class ItemsController extends Controller
             'item_summary' => 'required',
             'item_weight' => 'required',
             'item_amount' => 'required',
-            'item_count' => 'required'
+            'item_count' => 'required',
+            'item_uom' => 'required',
+            'item_type' => 'required'
         ]);
-
 
         $item_in_stock = ($request->input('item_in_stock') ? $request->input('item_in_stock') : 0);
         $item_has_address = ($request->input('item_has_address') ? $request->input('item_has_address') : 0);
@@ -69,7 +72,6 @@ class ItemsController extends Controller
         $item_is_oversized = ($request->input('item_is_oversized') ? $request->input('item_is_oversized') : 0);
         $item_has_image = ($request->input('item_has_image') ? $request->input('item_has_image') : 0);
         $item_active = ($request->input('item_active') ? $request->input('item_active') : 0);
-
 
         // create items
         $item = new item;
@@ -84,6 +86,8 @@ class ItemsController extends Controller
         $item->item_has_subitems = $item_has_subitems;
         $item->item_is_oversized = $item_is_oversized;
         $item->item_has_image = $item_has_image;
+        $item->item_uom = $item_uom;
+        $item->item_type = $item_type;
         $item->item_active = $item_active;
         $item->user_id = $current_user = auth()->user()->id;
         $item->save();
@@ -137,9 +141,10 @@ class ItemsController extends Controller
               'item_summary' => 'required',
               'item_weight' => 'required',
               'item_amount' => 'required',
-              'item_count' => 'required'
+              'item_count' => 'required',
+              'item_uom' => 'required',
+              'item_type' => 'required'
           ]);
-
 
           $item_in_stock = ($request->input('item_in_stock') ? $request->input('item_in_stock') : 0);
           $item_has_address = ($request->input('item_has_address') ? $request->input('item_has_address') : 0);
@@ -148,7 +153,6 @@ class ItemsController extends Controller
           $item_is_oversized = ($request->input('item_is_oversized') ? $request->input('item_is_oversized') : 0);
           $item_has_image = ($request->input('item_has_image') ? $request->input('item_has_image') : 0);
           $item_active = ($request->input('item_active') ? $request->input('item_active') : 0);
-
 
           // create items
           $item = Item::find($id);
@@ -164,6 +168,8 @@ class ItemsController extends Controller
           $item->item_is_oversized = $item_is_oversized;
           $item->item_has_image = $item_has_image;
           $item->item_active = $item_active;
+          $item->item_uom = $item_uom;
+          $item->item_type = $item_type;
           $item->user_id = $current_user = auth()->user()->id;
           $item->save();
 

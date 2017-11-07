@@ -15,7 +15,17 @@ class Item extends Model
         'item_summary',
         'item_weight',
         'item_amount',
+        'item_type',
+        'item_uom',
         'item_count'
     ];
+
+    public function ItemType(){
+        return $this->belongsTo('App\ItemType');
+    }
+
+    public function Uom(){
+        return $this->belongsTo('App\Uom');
+    }
 
 }
