@@ -74,7 +74,7 @@ class ItemsController extends Controller
         $item_active = ($request->input('item_active') ? $request->input('item_active') : 0);
 
         // create items
-        $item = new item;
+        $item = new Item;
         $item->item_name = $request->input('item_name');
         $item->item_summary = $request->input('item_summary');
         $item->item_weight = $request->input('item_weight');
@@ -103,7 +103,7 @@ class ItemsController extends Controller
        */
       public function show($id)
       {
-          $item = item::find($id);
+          $item = Item::find($id);
           return view('items.show')->with('item', $item);
       }
 
@@ -116,14 +116,16 @@ class ItemsController extends Controller
       public function edit($id)
       {
           //////
-          $item = item::find($id);
+          $item = Item::find($id);
+          $item_types = ItemType::pluck('item_type', 'id');
+          $uom = Uom::pluck('uom_name', 'id');
           //check for auth
           if(!auth()->user()->id) {
             return redirect('/login')->with('error', 'Unauthorized Page!');
           }
 
           //edit view
-          return view('items.edit')->with(compact('item', 'users'));
+          return view('items.edit')->with(compact('item', 'users', 'item_types', 'uom'));
       }
 
       /**
