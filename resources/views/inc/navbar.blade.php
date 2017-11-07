@@ -1,9 +1,10 @@
 <header class="masthead">
-        <!-- Branding Image -->
-        <a class="navbar-brand" href="{{ url('/') }}">
-           <img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png">
-       </a>
+
          <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+           <!-- Branding Image -->
+           <a class="navbar-brand" href="{{ url('/') }}">
+              <img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png">
+          </a>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
            </button>
