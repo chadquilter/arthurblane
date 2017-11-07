@@ -10,16 +10,8 @@ class Jobitem extends Model
     public $primaryKey = 'id';
     public $timestamps = true;
 
-    public $fillable = [
-      'job_id',
-      'items_id',
-      'user_id',
-      'amount',
-      'qty'
-    ];
 
-    public function job(){
-        return $this->hasMany('App\Job');
-    }
+
+
 
 }

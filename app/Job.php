@@ -28,13 +28,6 @@ class Job extends Model
         return $this->belongsTo('App\User');
     }
 
-    public function jobitem(){
-        return $this->hasMany('App\JobItem');
-    }
-
-    public function item(){
-        return $this->hasMany('App\Item');
-    }
 
 
 }
