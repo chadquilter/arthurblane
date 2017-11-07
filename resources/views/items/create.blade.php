@@ -42,7 +42,7 @@
       <div class="form=group">
         {{Form::label('item_uom', 'Item Unit of Measure:')}}
         @if(count($uom) > 0)
-          {{ Form::select('item_uom', $uom, '', ['class' => 'form-control m-bot15', 'size' => '20']) }}
+          {{ Form::select('item_uom', $uom, '', ['class' => 'form-control m-bot15', 'width' => '20']) }}
         @else
           <h1>No Types listed! Required field, call for help!:</h1>
         @endif
