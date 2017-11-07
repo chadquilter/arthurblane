@@ -182,7 +182,7 @@ class JobsController extends Controller
         $users = User::pluck('name', 'id');
         $job = Job::find($id);
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
-        $jobItems = Jobitem::pluck('items_id', 'amount', 'qty');
+        $jobItems = Jobitem::where('job_id', '=', $id)->orderBy('id', 'asc');
 
         //check for auth
         if(auth()->user()->id !==$job->user_id) {
@@ -190,7 +190,14 @@ class JobsController extends Controller
         }
 
         //edit view
-        return view('jobs.edit')->with(compact('job', 'jobItems',  'job_types', 'bool_types', 'job_option_types', 'users', 'items' ));
+        return view('jobs.edit')
+          ->with('job', $job)
+          ->with('jobItems', $jobItems)
+          ->with('job_types', $job_types)
+          ->with('bool_types', $bool_types)
+          ->with('job_option_types', $job_options_types)
+          ->with('users', $users)
+          ->with('items', $items);
     }
 
     /**
