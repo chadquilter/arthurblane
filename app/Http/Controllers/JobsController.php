@@ -231,7 +231,7 @@ class JobsController extends Controller
         $job->job_summary = $request->input('job_summary');
         $job->job_notes = $request->input('job_notes');
         $job->job_status = $request->input('job_status');
-        $job->job_modified_by = $request->input('job_created_by');
+        $job->job_modified_by = auth()->user()->id; 
         $job->job_media = $request->input('job_media');
         $job->job_display = $request->input('job_display');
         $job->job_account = $request->input('job_account');
