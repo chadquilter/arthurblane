@@ -31,16 +31,16 @@
                       <td id="item_div_{{$loop->iteration}}">
                         <strong>Item:</strong>
                             @if(count($items) > 0)
-                              {{ Form::select('itemSelect'.$loop->iteration, $items, '', ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
+                              {{ Form::select('itemSelect'.$loop->iteration, $items, $jobitem[0] , ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
                             @else
                               <h1>No Users Listed!</h1>
                             @endif
                       </td>
                       <td>
                         <strong>Amount: </strong>
-                        <input name="item_amount[]" id="item_amount_{{ $loop->iteration }}" type="number" class="form-control" value="{{!! $jobitem !!}}" step="any" maxlength="10" size="10">
+                        <input name="item_amount[]" id="item_amount_{{ $loop->iteration }}" type="number" class="form-control" value="{{ $jobitem[1] }}" step="any" maxlength="10" size="10">
                         <strong>QTY: </strong>
-                        <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="" class="form-control" step="any" maxlength="10" size="10">
+                        <input id="item_qty_{{$loop->iteration}}" name="item_qty[]" type="number" value="{{ $jobitem[2] }}" class="form-control" step="any" maxlength="10" size="10">
                         <input type="hidden" name="itemID[]" id="itemID{{$loop->iteration}}" value="{{$loop->iteration}}">
                       </td>
                       <td width="5%">
