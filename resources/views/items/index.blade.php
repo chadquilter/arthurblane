@@ -7,22 +7,19 @@
           <div class="col-md-8 col-md-offset-2">
               <div class="panel panel-default">
                   <div class="panel-heading">Manage Items</div>
-
                   <div class="panel-body">
                       @if (session('status'))
                           <div class="alert alert-success">
                               {{ session('status') }}
                           </div>
                       @endif
-
                       <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
                       <a href="/items/create" class="btn btn-success">Add Item</a>
-
                       @if(count($items) > 0)
                       <table class="table table-striped table-hover table-sm table-responsive">
                         <thead class="thead-inverse">
                           <tr>
-                              <th nowrap><h3><span class="badge">{{ $items->total() }}</span> Item Entries:</h3></th>
+                              <th nowrap><h3><span class="badge">{{ $items->total() }}</span> Total Items:</h3></th>
                               <th></th>
                               <th></th>
                           </tr>
