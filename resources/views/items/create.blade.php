@@ -28,23 +28,23 @@
       @endif
       <div class="form=group col-xs-3">
         {{Form::label('item_weight', 'Item Weight:')}}
-        {{Form::number('item_weight',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
+        {{Form::number('item_weight',  '', ['class' => 'form-control', 'placeholder' => '0.00', 'step' => 'any'])}}
       </div>
       <div class="form=group col-xs-3">
         {{Form::label('item_amount', 'Item Cost:')}}
-        {{Form::number('item_amount',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
+        {{Form::number('item_amount',  '', ['class' => 'form-control', 'placeholder' => '0.00', 'step' => 'any'])}}
       </div>
     </div>
     <div class="row">
       <div class="form=group col-xs-3">
         {{Form::label('item_count', 'Number of Items:')}}
-        {{Form::number('item_count',  '', ['class' => 'form-control', 'placeholder' => '0.00'])}}
+        {{Form::number('item_count',  '', ['class' => 'form-control', 'placeholder' => '0.00', 'step' => 'any'])}}
       </div>
       @if (count($uom) > 0)
         <div class="form=group col-xs-3">
           {{Form::label('item_uom', 'Item Unit of Measure:')}}
           @if(count($uom) > 0)
-            {{ Form::select('item_uom', $uom, '', ['class' => 'form-control m-bot15', 'width' => '20']) }}
+            {{ Form::select('item_uom', $uom, '', ['class' => 'form-control m-bot15']) }}
           @else
             <h1>No Types listed! Required field, call for help!:</h1>
           @endif
