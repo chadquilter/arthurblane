@@ -13,7 +13,7 @@
     <link href="/css/image_styles.css" rel="stylesheet">
 
     <script src="{{ asset('js/app.js') }}"></script>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
 
 </head>
 <body>
