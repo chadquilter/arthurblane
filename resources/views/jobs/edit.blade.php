@@ -21,7 +21,7 @@
         </div>
         <div class="JobItemsDiv">
           <h3>Job Items:</h3>
-          {{ count($jobsItems) }}
+          {{ count($jobItems) }}
           <div class="form=group">
             <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
               <tbody>
