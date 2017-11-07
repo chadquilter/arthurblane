@@ -3,7 +3,7 @@
 
 @section('content')
   <br>
-  <div class="well">
+  <div class="card">
     <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
     <br>
     <h1>Create Job</h1>
