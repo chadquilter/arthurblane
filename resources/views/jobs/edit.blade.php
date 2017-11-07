@@ -21,7 +21,6 @@
         </div>
         <div class="JobItemsDiv">
           <h3>Job Items:</h3>
-          {{ count($job_items_records) }}
           <div class="form=group">
             <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
               <tbody>
@@ -114,7 +113,7 @@
     <script type="text/javascript">
     $(document).ready(function(){
       var postURL = "<?php echo url('addmore'); ?>";
-      var i=0;
+      var i= <?php count($job_items_records) ?>;
 
       $('#add').click(function(){
         i++;
