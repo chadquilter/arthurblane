@@ -44,8 +44,8 @@ class ItemsController extends Controller
       public function create()
       {
 
-          $item_types = ItemType::orderBy('item_type', 'desc')->pluck('item_type', 'id');
-          $uom = Uom::orderBy('uom_name', 'desc')->pluck('uom_name', 'id');
+          $item_types = ItemType::orderBy('item_type', 'asc')->pluck('item_type', 'id');
+          $uom = Uom::orderBy('uom_name', 'asc')->pluck('uom_name', 'id');
           return view('items.create')->with(compact('item_types', 'uom'));
       }
 
@@ -120,8 +120,8 @@ class ItemsController extends Controller
       {
           //////
           $item = Item::find($id);
-          $item_types = ItemType::orderBy('item_type', 'desc')->pluck('item_type', 'id');
-          $uom = Uom::orderBy('uom_name', 'desc')->pluck('uom_name', 'id');
+          $item_types = ItemType::orderBy('item_type', 'asc')->pluck('item_type', 'id');
+          $uom = Uom::orderBy('uom_name', 'asc')->pluck('uom_name', 'id');
           //check for auth
           if(!auth()->user()->id) {
             return redirect('/login')->with('error', 'Unauthorized Page!');
