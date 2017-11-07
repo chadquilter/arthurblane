@@ -21,12 +21,12 @@
         </div>
         <div class="JobItemsDiv">
           <h3>Job Items:</h3>
-          {{ count($jobItems) }}
+          {{ count($job_items_records) }}
           <div class="form=group">
             <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
               <tbody>
-                @if(count($jobItems) > 0)
-                  @foreach($jobItems as $jobItem)
+                @if(count($job_items_records) > 0)
+                  @foreach($job_items_records as $jobItem)
                     <tr id="row{{ $loop->iteration }}" class="dynamic-added">
                       <td id="item_div_{{$loop->iteration}}">
                         <strong>Item:</strong>
