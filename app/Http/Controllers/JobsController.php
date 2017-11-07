@@ -201,7 +201,7 @@ class JobsController extends Controller
         //edit view
         return view('jobs.edit')
           ->with('job', $job)
-          ->with('job_items_records', $job_typ)
+          ->with('job_items_records', $j)
           ->with('job_types', $job_types)
           ->with('bool_types', $bool_types)
           ->with('job_option_types', $job_option_types)
