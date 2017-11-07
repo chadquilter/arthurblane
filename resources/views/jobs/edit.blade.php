@@ -21,7 +21,11 @@
         </div>
         <div class="JobItemsDiv">
           <h3>Job Items:</h3>
-          <div class="form=group">
+          @if(count($job_items_records) > 0)
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_item_group">Expand/Collapse Options</button>
+            <br> &nbsp
+          @endif
+          <div id="job_item_group" class="form=group collapse">
             <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
               <tbody>
                 @if(count($job_items_records) > 0)
