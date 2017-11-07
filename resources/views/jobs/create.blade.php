@@ -22,8 +22,8 @@
     </div>
     <div class="JobItemsDiv">
       <h3>Job Items:</h3>
-      <div class="form=group alert alert-info" role="alert">
-        <table class="table table-sm table-responsive" id="dynamic_field">
+      <div class="form=group alert alert-secondary" role="alert">
+        <table class="table table-stripe table-sm table-responsive" id="dynamic_field">
           <tbody>
           </tbody>
         </table>
