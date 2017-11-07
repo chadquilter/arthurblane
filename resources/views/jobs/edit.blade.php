@@ -27,7 +27,7 @@
           @else
             <h3>Job Items:</h3>
           @endif
-          <div id="job_item_group" class="form=group collapse alert alert-warning" role="alert">
+          <div id="job_item_group" class="form=group collapse alert alert-info" role="alert">
             <table class="table table-striped table-hover table-sm table-responsive" id="dynamic_field">
               <tbody>
                 @if(count($job_items_records) > 0)
@@ -67,7 +67,7 @@
         <div class="form=group">
           <h3>Job Type:</h3>
           <br>
-          <div class="alert alert-warning" role="alert">
+          <div class="alert alert-info" role="alert">
           @if(count($job_types) > 0)
             @foreach($job_types as $job_id => $job_name)
               {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}} &nbsp
