@@ -18,4 +18,8 @@ class Jobitem extends Model
       'qty'
     ];
 
+    public function job(){
+        return $this->hasMany('App\Job');
+    }
+
 }
