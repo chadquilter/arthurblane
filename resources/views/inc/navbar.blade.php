@@ -27,9 +27,9 @@
                                      {{ Auth::user()->name }} <span class="caret"></span>
                                  </a>
 
-
-                                     <a href="/dashboard">Dashboard</a>
-
+                                 <ul class="dropdown-menu" aria-labelledby="Dashboard">
+                                     <li><a href="/dashboard">Dashboard</a></li>
+                                    <li>
                                         <a href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
@@ -39,7 +39,7 @@
                                          <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                              {{ csrf_field() }}
                                          </form>
-                                  </li>   
+                                     </li>
                                  </ul>
                              </li>
                          @endguest
