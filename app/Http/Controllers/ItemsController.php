@@ -43,7 +43,11 @@ class ItemsController extends Controller
        */
       public function create()
       {
-          return view('items.create');
+
+          $item_types = ItemType::pluck('item_type', 'id');
+          $uom = Uom::pluck('uom_name', 'id');
+
+          return view('items.create')->with(compact('item_types', 'uom'));
       }
 
       /**

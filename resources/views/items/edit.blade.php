@@ -19,7 +19,7 @@
       <div class="form=group">
         {{Form::label('item_type', 'Item Type:')}}
         @if(count($item_types) > 0)
-          {{ Form::select('item_type', $item_types, '', ['class' => 'form-control m-bot15']) }}
+          {{ Form::select('item_type', $item_types, $item->item_type, ['class' => 'form-control m-bot15']) }}
         @else
           <h1>No Types listed! Required field, call for help!:</h1>
         @endif
@@ -41,7 +41,7 @@
       <div class="form=group">
         {{Form::label('item_uom', 'Item Unit of Measure:')}}
         @if(count($uom) > 0)
-          {{ Form::select('item_uom', $uom, '', ['class' => 'form-control m-bot15']) }}
+          {{ Form::select('item_uom', $uom, $item->item_uom, ['class' => 'form-control m-bot15']) }}
         @else
           <h1>No Types listed! Required field, call for help!:</h1>
         @endif
