@@ -94,6 +94,7 @@ class JobsController extends Controller
             'job_title' => 'required',
             'job_summary' => 'required',
             'job_notes' => 'required',
+            'job_created_by' => 'required',
         ]);
 
         // create job
@@ -104,6 +105,7 @@ class JobsController extends Controller
         $job->job_notes = $request->input('job_notes');
         $job->job_status = $request->input('job_status');
         $job->job_modified_by = $request->input('job_created_by');
+        $job->job_created_by = $request->input('job_created_by');
         $job->user_id = $request->input('job_created_by');
         $job->job_media = $request->input('job_media');
         $job->job_display = $request->input('job_display');
@@ -207,8 +209,6 @@ class JobsController extends Controller
             'job_title' => 'required',
             'job_summary' => 'required',
             'job_notes' => 'required',
-            'job_created_by' => 'required',
-            //'cover_image' => 'image|nullable|max:1999'
         ]);
 
 /**
@@ -232,8 +232,6 @@ class JobsController extends Controller
         $job->job_notes = $request->input('job_notes');
         $job->job_status = $request->input('job_status');
         $job->job_modified_by = $request->input('job_created_by');
-        $job->job_created_by = $request->input('job_created_by');
-        $job->user_id = $request->input('job_created_by');
         $job->job_media = $request->input('job_media');
         $job->job_display = $request->input('job_display');
         $job->job_account = $request->input('job_account');
