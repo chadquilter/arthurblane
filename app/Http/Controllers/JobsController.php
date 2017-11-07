@@ -185,7 +185,7 @@ class JobsController extends Controller
 
         $job_items = Jobitem::where('job_items_job_id', '=', $id)
                 ->orderBy('id', 'asc')
-                ->paginate(3, array('job_items.*'), 'job_items');
+                ->paginate(1000, array('job_items.*'), 'job_items');
 
         //check for auth
         if(auth()->user()->id !==$job->user_id) {
