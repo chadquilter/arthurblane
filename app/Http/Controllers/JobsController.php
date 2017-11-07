@@ -183,7 +183,7 @@ class JobsController extends Controller
         $job = Job::find($id);
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
         $jobitems = Jobitem::where('job_id', '=', $id);
-        $jerbsItems = Jobitem::where('job_id', '=', '10')->orderBy('created_at', 'desc', 'amount');
+        $jerbsItems = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
 
         //check for auth
         if(auth()->user()->id !==$job->user_id) {
