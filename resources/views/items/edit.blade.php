@@ -3,6 +3,8 @@
 @section('content')
   <br>
   <div class="well">
+    <a href="/items" class="btn btn-primary">Back to Item Manager</a>
+    <br>
     <h1>Edit Item</h1>
     {!! Form::open(['action' => ['ItemsController@update', $item->id], 'method' => 'POST']) !!}
     <div class="form=group">
@@ -13,6 +15,16 @@
       {{Form::label('item_summary', 'Description:')}}
       {{Form::textarea('item_summary', $item->item_summary, ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Item Description'])}}
     </div>
+    @if (count($item_types) > 0)
+      <div class="form=group">
+        {{Form::label('item_type', 'Item Type:')}}
+        @if(count($item_types) > 0)
+          {{ Form::select('item_type', $item_types, '', ['class' => 'form-control m-bot15']) }}
+        @else
+          <h1>No Types listed! Required field, call for help!:</h1>
+        @endif
+      </div>
+    @endif
     <div class="form=group">
         {{Form::label('item_weight', 'Item Weight:')}}
         {{Form::text('item_weight',  $item->item_weight, ['class' => 'form-control', 'placeholder' => '0.00'])}}
@@ -25,6 +37,16 @@
         {{Form::label('item_count', 'Number of Items on hand:')}}
         {{Form::text('item_count',  $item->item_count, ['class' => 'form-control', 'placeholder' => '0.00'])}}
     </div>
+    @if (count($uom) > 0)
+      <div class="form=group">
+        {{Form::label('item_uom', 'Item Unit of Measure:')}}
+        @if(count($uom) > 0)
+          {{ Form::select('item_uom', $uom, '', ['class' => 'form-control m-bot15']) }}
+        @else
+          <h1>No Types listed! Required field, call for help!:</h1>
+        @endif
+      </div>
+    @endif
     <div class="form=group">
         {{Form::label('item_online_price', 'Show Online Prices? ')}}
         {{Form::checkbox('item_online_price','1', ['class' => 'form-control'])}}

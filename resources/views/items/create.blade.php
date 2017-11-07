@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
-
 @section('content')
   <br>
   <div class="well">
+    <a href="/items" class="btn btn-primary">Back to Item Manager</a>
+    <br>
     <h1>Add New Item</h1>
     {!! Form::open(['action' => 'ItemsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
     <div class="form=group">
