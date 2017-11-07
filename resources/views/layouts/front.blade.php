@@ -17,13 +17,7 @@
 <body>
     <div id="app">
         @include('inc.navbar')
-        <div class="body-container" >
-          <div class="container">
-            @include('inc.messages')
-            @yield('content')
-          </div>
-        </div>
-        @include('inc.footer')
+
     </div>
 
 </body>
