@@ -90,8 +90,8 @@ class ItemsController extends Controller
         $item->item_has_subitems = $item_has_subitems;
         $item->item_is_oversized = $item_is_oversized;
         $item->item_has_image = $item_has_image;
-        $item->item_uom = $item_uom;
-        $item->item_type = $item_type;
+        $item->item_uom = $request->input('item_uom');
+        $item->item_type = $request->input('item_type');
         $item->item_active = $item_active;
         $item->user_id = $current_user = auth()->user()->id;
         $item->save();
@@ -160,7 +160,7 @@ class ItemsController extends Controller
           $item_has_image = ($request->input('item_has_image') ? $request->input('item_has_image') : 0);
           $item_active = ($request->input('item_active') ? $request->input('item_active') : 0);
 
-          // create items
+          // update items
           $item = Item::find($id);
           $item->item_name = $request->input('item_name');
           $item->item_summary = $request->input('item_summary');
@@ -174,8 +174,8 @@ class ItemsController extends Controller
           $item->item_is_oversized = $item_is_oversized;
           $item->item_has_image = $item_has_image;
           $item->item_active = $item_active;
-          $item->item_uom = $item_uom;
-          $item->item_type = $item_type;
+          $item->item_uom = $request->input('item_uom');
+          $item->item_type = $request->input('item_type');
           $item->user_id = $current_user = auth()->user()->id;
           $item->save();
 
