@@ -11,7 +11,7 @@ class Jobitem extends Model
     public $timestamps = true;
 
     public $fillable = [
-      'job_id',
+      'job_items_job_id',
       'items_id',
       'user_id',
       'amount',
