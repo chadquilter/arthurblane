@@ -1,3 +1,9 @@
+<header class="masthead">
+        
+        <!-- Branding Image -->
+        <a class="navbar-brand" href="{{ url('/') }}">
+           <img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png">
+       </a>
 
          <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
                  <div class="navbar-header">
@@ -6,10 +12,7 @@
                       <span class="navbar-toggler-icon"></span>
                     </button>
 
-                     <!-- Branding Image -->
-                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png">
-                    </a>
+
                  </div>
                  <div class="collapse navbar-collapse" id="navbarCollapse">
                      <!-- Left Side Of Navbar -->
