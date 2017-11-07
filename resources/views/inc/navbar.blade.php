@@ -1,13 +1,10 @@
 
-         <nav class="navbar navbar-default" style="min-height:90px;">
+         <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
                  <div class="navbar-header">
                      <!-- Collapsed Hamburger -->
-                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                         <span class="sr-only">Toggle Navigation</span>
-                         <span class="icon-bar"></span>
-                         <span class="icon-bar"></span>
-                         <span class="icon-bar"></span>
-                     </button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#app-navbar-collapse" aria-controls="app-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
 
                      <!-- Branding Image -->
                      <a class="navbar-brand" href="{{ url('/') }}">
