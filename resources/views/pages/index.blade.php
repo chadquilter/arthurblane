@@ -15,6 +15,10 @@
       <div class="jumbotron jumbotron-fluid">
         <center>
           <h1>{{$title}}</h1>
+          <p class="lead">
+            As a Texas custom home builder for over 10 years, we have made thousands of happy customers' dream home a reality by delivering on that promise.
+            We would love to help you! For a free custom design meeting, contact us today. Let's get started on your new, custom dream home or new addition now!
+          </p>
         </center>
       </div>
 
