@@ -23,9 +23,10 @@
   		</div>
   	</div>
   	<br>
-  	<div class="card">
-      <h1 class="card-title">Create a Quote:</h1>
-      <div class="card-block">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">Create a Quote:</h1>
+        <br>
   		{!! Form::open(['action' => 'QuotesController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
   			<div class="form=group">
   					{{Form::label('title', 'Name:')}}
