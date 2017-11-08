@@ -8,6 +8,11 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   padding-top: 20px;
+
+}
+
+body.en {
+    font-size: 1.2em;
 }
 
 .footer {
