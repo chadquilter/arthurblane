@@ -35,14 +35,13 @@
         background-image: url(/images/art-bg.jpg);
         width=100%;">
 
-      <div class="error-container">
-        @include('inc.messages')
+        <div class="error-container">
+          @include('inc.messages')
+        </div>
+        <div class="main-content">
+          @yield('content')
+        </div>
       </div>
-      <div class="container">
-        @yield('content')
-      </div>
-
-      <div>
       @include('inc.footer')
     </div>
   </main>
