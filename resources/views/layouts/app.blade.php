@@ -36,7 +36,9 @@
         @include('inc.navbar')
         <div class="body-container">
           <div class="container">
+            <br>
             @include('inc.messages')
+            <br>
             @yield('content')
           </div>
         </div>
