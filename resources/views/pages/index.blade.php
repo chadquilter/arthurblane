@@ -21,8 +21,9 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="jumbotron jumbotron-fluid image_display_r">
-            <div class="container">
+          <div class="card">
+            <div class="jumbotron jumbotron-fluid image_display_r">
+
               <br>
               <h1 class="display-2">{{$title}}</h1>
               <p class="lead">{{ config('app.name', 'MDG') }} has helped thousands of happy homeowners across Texas build the new custom-designed home of their dreams.
