@@ -17,17 +17,16 @@
 
 </head>
 <body>
-  <main role="main" class="container" width="100%">
-        @include('inc.navbar')
-        <div class="body-container" >
-          <div class="container">
-            @include('inc.messages')
-            @yield('content')
-          </div>
-        </div>
-        @include('inc.footer')
+  <main role="main">
+    @include('inc.navbar')
+    <div class="body-container">
+      <br>
+      @include('inc.messages')
+      <br>
+      @yield('content')
+    </div>
+    @include('inc.footer')
   </main>
-
 </body>
     <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 </html>

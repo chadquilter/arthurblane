@@ -12,7 +12,7 @@
       </div>
       <br>
       <div class="image_display_r">
-        <div class="jumbotron jumbotron-fluid image_display_r">
+        <div class="jumbotron jumbotron-fluid">
           <h1 class="display-2">{{$title}}</h1>
         </div>
       </div>
