@@ -15,8 +15,8 @@
 
 </head>
 <body>
+    @include('inc.navbar')
     <div id="app">
-        @include('inc.navbar')
 
     </div>
 

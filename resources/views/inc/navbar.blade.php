@@ -1,7 +1,3 @@
-<header class="masthead">
-
-
-
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div>
       <a class="navbar-brand" href="#"><img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png"></a>
@@ -49,5 +45,3 @@
           </div>
       </div>
     </nav>
-
-</header>
