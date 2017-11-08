@@ -26,8 +26,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-            <div class="jumbotron jumbotron-fluid image_display_r">
+        <div class="col-md-6 jumbotron jumbotron-fluid image_display_r">
+
               <p class="lead">
                 <h2>{{ config('app.name', 'MDG') }}</h2>
                 has helped thousands of happy homeowners across Texas build the new custom-designed home of their dreams.
@@ -37,7 +37,7 @@
                 As a Texas custom home builder for over 10 years, we have made thousands of happy customers' dream home a reality by delivering on that promise.
                 We would love to help you! For a free custom design meeting, contact us today. Let's get started on your new, custom dream home or new addition now!
               </p>
-            </div>
+            
         </div>
       </div>
     </div>
