@@ -18,7 +18,7 @@
 </head>
 <body>
   <main role="main" class="container">
-    <div id="app" class="starter-template">
+    <div id="app">
         @include('inc.navbar')
         <div class="body-container" style="
         border-color:#f6f6f6;
