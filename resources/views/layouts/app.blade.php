@@ -16,35 +16,31 @@
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
 <body>
-  <main role="main">
-    <div id="app">
-      @include('inc.navbar')
-      <div class="body-container" style="border-color:#f6f6f6;
-        border-bottom-width: 0rem;
-        border-top-width: 0rem;
-        border-bottom-style: solid;
-        border-top-style: solid;
-        padding-bottom:0rem;
-        padding-top:0rem;
-        padding-left:0rem;
-        padding-right:0rem;
-        background-attachment:fixed;
-        background-color:#fff;
-        background-position:center top;
-        background-repeat:repeat-x;
-        background-image: url(/images/art-bg.jpg);
-        width=100%;">
-
-        <div class="error-container">
-          @include('inc.messages')
+  <main role="main" class="container">
+    <div id="app" style="
+    border-color:#f6f6f6;
+    border-bottom-width: 0rem;
+    border-top-width: 0rem;
+    border-bottom-style:
+    solid;border-top-style:
+    solid;padding-bottom:0rem;
+    padding-top:0rem;
+    padding-left:0rem;
+    padding-right:0rem;
+    background-attachment:fixed;
+    background-color:#fff;
+    background-position:center top;
+    background-repeat:repeat-x;
+    background-image: url(/images/art-bg.jpg);
+    width=100%;">
+        @include('inc.navbar')
+        <div class="body-container" >
+          <div class="container">
+            @include('inc.messages')
+            @yield('content')
+          </div>
         </div>
-        <div class="main-content">
-          @yield('content')
-        </div>
-      </div>
-      <div>
         @include('inc.footer')
-      </div>
     </div>
   </main>
     <!-- Scripts -->
