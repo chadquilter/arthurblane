@@ -23,7 +23,7 @@
 		</div>
 	</div>
 	<br>
-	<div class="well">
+	<div class="card">
 		<h1>Create a Quote:</h1>
 		{!! Form::open(['action' => 'QuotesController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
 			<div class="form=group">
