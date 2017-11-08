@@ -29,7 +29,7 @@
       <tbody>
         @foreach($jobs as $job)
           <tr>
-            <td width=80%><strong>Job: </strong>{{$job->job_title}}</td>
+            <td><strong>Job: </strong>{{$job->job_title}}</td>
             <td><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a></td>
             <td>
               {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
@@ -63,7 +63,7 @@
         <tbody>
         @foreach($quotes as $quote)
         <tr>
-          <td width=80%><strong>Quote: </strong> {{$quote->title}}</td>
+          <td><strong>Quote: </strong> {{$quote->title}}</td>
           <td><a href="/quotes/{{$quote->id}}/edit" class="btn btn-default">Edit</a></td>
           <td>
             {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
