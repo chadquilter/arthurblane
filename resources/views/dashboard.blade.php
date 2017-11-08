@@ -2,6 +2,8 @@
 
 @section('content')
 <div class="container">
+<div class="jumbotron">
+
 <div class="card mx-auto">
   <br>
   <h1 class="card-title">Dashboard</h1>
@@ -136,6 +138,8 @@
     </table>
     @endif
   </div>
+</div>
+
 </div>
 </div>
 @endsection
