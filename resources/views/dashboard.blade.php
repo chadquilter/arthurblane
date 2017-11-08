@@ -21,7 +21,7 @@
     <table class="table table-striped table-hover table-responsive">
       <thead class="thead-inverse">
         <tr>
-          <th nowrap><h3><span class="badge">{{ $jobs->total() }}</span> Job Entries:</h3></th>
+          <th nowrap><h3><span class="badge badge-secondary">{{ $jobs->total() }}</span> Job Entries:</h3></th>
           <th></th>
           <th></th>
         </tr>
@@ -52,10 +52,10 @@
       </table>
       @endif
       @if(count($quotes) > 0)
-        <table class="table table-striped table-hover table-xl table-responsive">
+        <table class="table table-striped table-hover table-responsive">
         <thead class="thead-inverse">
           <tr>
-            <th nowrap><h3><span class="badge">{{ $quotes->total() }}</span> Quote Entries:</h3></th>
+            <th nowrap><h3><span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:</h3></th>
             <th></th>
             <th></th>
           </tr>
@@ -85,10 +85,10 @@
     @endif
 
     @if(count($addresses) > 0)
-                    <table class="table table-striped table-hover table-sm table-responsive">
+                    <table class="table table-striped table-hover table-responsive">
                         <thead class="thead-inverse">
                         <tr>
-                            <th nowrap><h3><span class="badge">{{ $addresses->total() }}</span> Saved Addresses:</h3></th>
+                            <th nowrap><h3><span class="badge badge-secondary">{{ $addresses->total() }}</span> Saved Addresses:</h3></th>
                             <th></th>
                             <th></th>
                         </tr>
