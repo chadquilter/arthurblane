@@ -14,6 +14,9 @@
 
         <div class="card">
           <h1 class="card-title">{{$title}}</h1>
+          <div class="card-block">
+            Test
+          </div>
         </div>
 
       <br>
