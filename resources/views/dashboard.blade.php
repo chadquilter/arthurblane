@@ -2,7 +2,7 @@
 
 @section('content')
 <br>
-<div class="container">
+
   <div class="card">
     <div class="card-block">
       <div class="row">
@@ -145,5 +145,4 @@
 
     </div>
   </div>
-</div>
 @endsection
