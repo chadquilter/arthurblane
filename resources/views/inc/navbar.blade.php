@@ -1,6 +1,6 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div>
-      <a class="navbar-brand" href="#"><img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png"></a>
+      <a class="navbar-brand" href="#">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -41,6 +41,6 @@
               </li>
               @endguest
             </ul>
-          
+
       </div>
     </nav>
