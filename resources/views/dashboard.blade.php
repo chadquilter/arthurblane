@@ -52,7 +52,7 @@
       </table>
       @endif
       @if(count($quotes) > 0)
-        <table class="table table-striped table-hover table-sm table-responsive">
+        <table class="table table-striped table-hover table-xl table-responsive">
         <thead class="thead-inverse">
           <tr>
             <th nowrap><h3><span class="badge">{{ $quotes->total() }}</span> Quote Entries:</h3></th>
