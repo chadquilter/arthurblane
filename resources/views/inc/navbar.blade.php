@@ -23,11 +23,13 @@
           <li class="nav-item">
             <a class="nav-link" href="/jobs">Jobs</a>
           </li>
+        </ul>
 
           <div class="navbar-right">
-            @guest
+            <ul class="navbar-nav ml-auto">
+              @guest
               <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
-            @else
+              @else
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                 <div class="dropdown-menu" aria-labelledby="Dashboard">
@@ -42,10 +44,9 @@
                   </form>
                 </div>
               </li>
-            @endguest
+              @endguest
+            </ul>
           </div>
-
-        </ul>
       </div>
     </nav>
 
