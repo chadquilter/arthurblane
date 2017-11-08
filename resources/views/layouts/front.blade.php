@@ -17,7 +17,7 @@
 
 </head>
 <body>
-  <main role="main" class="container">
+  <main role="main" class="container" width="100%">
     <div id="app" style="
     border-color:#f6f6f6;
     border-bottom-width: 0rem;
