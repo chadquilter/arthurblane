@@ -7,8 +7,9 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
+          <h1 class="display-3">Login:</h1>
           <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
+
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
