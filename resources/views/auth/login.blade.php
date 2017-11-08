@@ -8,6 +8,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-3">Login:</h1>
+           <hr class="my-5">
           <div class="panel panel-default">
 
 
