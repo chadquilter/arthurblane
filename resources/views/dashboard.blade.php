@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<br>
 <div class="card">
   <h1 class="card-title">Dashboard</h1>
   <div class="card-block">
