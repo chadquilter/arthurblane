@@ -12,7 +12,7 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
-    <!--<link href="/css/image_styles.css" rel="stylesheet"> -->
+    <link href="/css/image_styles.css" rel="stylesheet"> 
     <script src="{{ asset('js/app.js') }}"></script>
 
 </head>
