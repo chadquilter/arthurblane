@@ -20,8 +20,8 @@
 </head>
 <body>
     <div id="app">
-        @include('inc.navbar')
-        <div class="body-container" style="border-color:#f6f6f6;
+      @include('inc.navbar')
+      <div class="body-container" style="border-color:#f6f6f6;
         border-bottom-width: 0rem;
         border-top-width: 0rem;
         border-bottom-style: solid;
@@ -36,14 +36,14 @@
         background-repeat:repeat-x;
         background-image: url(/images/art-bg.jpg);
         width=100%;">
-          <div class="error-container">
-            @include('inc.messages')
-          </div>
-          <div class="container">
-            @yield('content')
-          </div>
-        </div>
-        @include('inc.footer')
+      <div class="error-container">
+        @include('inc.messages')
+      </div>
+      <div class="container">
+        @yield('content')
+      </div>
+      <div>
+      @include('inc.footer')
     </div>
     <!-- Scripts -->
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
