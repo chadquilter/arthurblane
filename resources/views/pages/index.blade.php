@@ -23,7 +23,8 @@
         <div class="col-md-6">
           <div class="jumbotron jumbotron-fluid">
             <div class="text-container">
-              <h1 class="display-3">{{$title}}</h1>
+              <br>
+              <h1 class="display-2">{{$title}}</h1>
               <p class="lead">{{ config('app.name', 'MDG') }} has helped thousands of happy homeowners across Texas build the new custom-designed home of their dreams.
                 We build "eco-friendly" green custom homes of all sizes for all budgets. Whatever custom home you have in mind, from a quaint cottage in Austin,
                 a rambling farm house in the Hill Country or an elegant luxury estate home in Houston, Dallas or San Antonio, we can build, repair, or add to it at an affordable price.
