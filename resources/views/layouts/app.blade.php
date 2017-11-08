@@ -16,17 +16,15 @@
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
 <body>
-  <main role="main" class="container">
-        @include('inc.navbar')
-        <div class="body-container">
-          <div class="container">
-            <br>
-            @include('inc.messages')
-            <br>
-            @yield('content')
-          </div>
-        </div>
-        @include('inc.footer')
+  <main role="main">
+    @include('inc.navbar')
+    <div class="body-container">
+      <br>
+      @include('inc.messages')
+      <br>
+      @yield('content')
+    </div>
+    @include('inc.footer')
   </main>
     <!-- Scripts -->
   <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
