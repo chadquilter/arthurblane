@@ -16,34 +16,35 @@
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
 <body>
-    <div id="app">
-      @include('inc.navbar')
-      <div class="body-container" style="border-color:#f6f6f6;
-        border-bottom-width: 0rem;
-        border-top-width: 0rem;
-        border-bottom-style: solid;
-        border-top-style: solid;
-        padding-bottom:0rem;
-        padding-top:0rem;
-        padding-left:0rem;
-        padding-right:0rem;
-        background-attachment:fixed;
-        background-color:#fff;
-        background-position:center top;
-        background-repeat:repeat-x;
-        background-image: url(/images/art-bg.jpg);
-        width=100%;">
-    <main role="main" class="container">
-      <div class="error-container">
-        @include('inc.messages')
-      </div>
+
+  <main role="main" style="
+    border-color:#f6f6f6;
+    border-bottom-width: 0rem;
+    border-top-width: 0rem;
+    border-bottom-style:
+    solid;border-top-style:
+    solid;padding-bottom:0rem;
+    padding-top:0rem;
+    padding-left:0rem;
+    padding-right:0rem;
+    background-attachment:fixed;
+    background-color:#fff;
+    background-position:center top;
+    background-repeat:repeat-x;
+    background-image: url(/images/art-bg.jpg);
+    width=100%;">
+    @include('inc.navbar')
+    <div class="body-container" >
       <div class="container">
-        @yield('content')
+          @include('inc.messages')
+          @yield('content')
       </div>
-    </main>
-      <div>
-      @include('inc.footer')
     </div>
+        @include('inc.footer')
+    </div>
+  </main>
+
+
     <!-- Scripts -->
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>

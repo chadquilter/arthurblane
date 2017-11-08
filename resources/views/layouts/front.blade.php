@@ -16,8 +16,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
 <body>
-  <main role="main" class="container">
-    <div id="app" style="
+  <main role="main" style="
     border-color:#f6f6f6;
     border-bottom-width: 0rem;
     border-top-width: 0rem;
@@ -33,13 +32,13 @@
     background-repeat:repeat-x;
     background-image: url(/images/art-bg.jpg);
     width=100%;">
-        @include('inc.navbar')
-        <div class="body-container" >
-          <div class="container">
-            @include('inc.messages')
-            @yield('content')
-          </div>
-        </div>
+    @include('inc.navbar')
+    <div class="body-container" >
+      <div class="container">
+          @include('inc.messages')
+          @yield('content')
+      </div>
+    </div>
         @include('inc.footer')
     </div>
   </main>
