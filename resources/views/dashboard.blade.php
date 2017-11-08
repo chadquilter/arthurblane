@@ -3,6 +3,7 @@
 @section('content')
 <div class="container">
 <div class="card">
+  <br>
   <h1 class="card-title">Dashboard</h1>
   <div class="card-block">
     @if (session('status'))
