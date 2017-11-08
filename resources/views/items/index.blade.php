@@ -12,6 +12,7 @@
       </div>
       @endif
       <div>
+        <a href="/dashboard" class="btn btn-primary">Dashboard</a>
         <a href="/jobs/create" class="btn btn-primary">Create Job</a>
         <a href="/quotes" class="btn btn-success">Create Quote</a>
         <a href="/address" class="btn btn-warning">Manage Addresses</a>
