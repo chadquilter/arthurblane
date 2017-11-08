@@ -20,22 +20,7 @@
   <main role="main" class="container">
     <div id="app">
         @include('inc.navbar')
-        <div class="body-container" style="
-        border-color:#f6f6f6;
-        border-bottom-width: 0rem;
-        border-top-width: 0rem;
-        border-bottom-style:
-        solid;border-top-style:
-        solid;padding-bottom:0rem;
-        padding-top:0rem;
-        padding-left:0rem;
-        padding-right:0rem;
-        background-attachment:fixed;
-        background-color:#fff;
-        background-position:center top;
-        background-repeat:repeat-x;
-        background-image: url(/images/art-bg.jpg);
-        width=100%;">
+<div class="body-container" style="border-color:#f6f6f6;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;background-attachment:fixed;background-color:#fff;background-position:center top;background-repeat:repeat-x;background-image: url(/images/art-bg.jpg); width=100%;">
           <div class="container">
             @include('inc.messages')
             @yield('content')
