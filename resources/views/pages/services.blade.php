@@ -10,15 +10,16 @@
 				</div>
 			</div>
 	<br>
-	<div class="well">
-		<div class="service-text">
-			<h1>{{$title}}</h1>
+	<div class="card">
+			<h1 class="card-title">{{$title}}</h1>
 			@if(count($services) > 0)
-			<ul>
+			<div class="card-block">
+				<ul>
 				@foreach($services as $service)
 					<li>{{$service}}</li>
 				@endforeach
-			</ul>
+				</ul>
+			</div>
 			@endif
 		</div>
 		<br>
