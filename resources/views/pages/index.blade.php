@@ -5,7 +5,7 @@
     <div class="container">
       <br>
       <div class="image_display_r">
-        <img class="img-fluid" alt="A scenic home image" src="/images/dusk-home.jpg" style="max-height:350%; width: 100%; display: block;">
+        <img class="img-fluid" alt="A scenic home image" src="/images/dusk-home.jpg" style="max-height:100%; width: 100%; display: block;">
         <div class="image_display_text_container">
           <p>Our work is a cut above the rest!</p>
         </div>
@@ -14,14 +14,14 @@
       <div class="row">
         <div class="col-md-6">
           <div class="image_display_r">
-            <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" style="max-height:350%; width: 100%; display: block;">
+            <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" style="max-height:100%; width: 100%; display: block;">
             <div class="image_display_text_container">
               <p>Custom Design!</p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="jumbotron jumbotron-fluid">
+          <div class="jumbotron jumbotron-fluid image_display_r">
             <div class="text-container">
               <br>
               <h1 class="display-2">{{$title}}</h1>
