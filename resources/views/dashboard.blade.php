@@ -11,14 +11,16 @@
           {{ session('status') }}
     </div>
     @endif
-    <a href="/jobs/create" class="btn btn-primary">Create Job</a>
-    <a href="/quotes" class="btn btn-success">Create Quote</a>
-    <a href="/address" class="btn btn-warning">Manage Addresses</a>
-    <a href="/items" class="btn btn-warning">Manage Items</a>
-    <br>
+    <div>
+      <a href="/jobs/create" class="btn btn-primary">Create Job</a>
+      <a href="/quotes" class="btn btn-success">Create Quote</a>
+      <a href="/address" class="btn btn-warning">Manage Addresses</a>
+      <a href="/items" class="btn btn-warning">Manage Items</a>
+      <br>
+    </div>
 
     @if(count($jobs) > 0)
-    <table class="table table-striped table-hover table-responsive">
+    <table class="table table-striped table-hover table-responsive mx-auto">
       <thead class="thead-inverse">
         <tr>
           <th nowrap><h3><span class="badge badge-secondary">{{ $jobs->total() }}</span> Job Entries:</h3></th>
