@@ -24,7 +24,8 @@
 	</div>
 	<br>
 	<div class="card">
-		<h1>Create a Quote:</h1>
+		<h1 class="card-title">Create a Quote:</h1>
+		<div class="card-block">
 		{!! Form::open(['action' => 'QuotesController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
 			<div class="form=group">
 					{{Form::label('quote_title', 'Quote Title:')}}
@@ -55,6 +56,7 @@
 		<script>
 				CKEDITOR.replace( 'article-ckeditor' );
 		</script>
+		</div>
 	</div>
 	<br>
 	<div class="image_display_r">
