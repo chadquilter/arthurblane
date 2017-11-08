@@ -3,8 +3,9 @@
 @section('content')
 <br>
 <div class="container">
-  <div clas="card">
-    <div class="row">
+  <div class="card">
+    <div class="card-block">
+      <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
@@ -137,10 +138,11 @@
                       </tfoot>
                     </table>
                     @endif
-
-                </div>
-            </div>
-        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
     </div>
   </div>
 </div>
