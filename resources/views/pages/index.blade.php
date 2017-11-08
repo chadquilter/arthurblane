@@ -32,7 +32,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 jumbotron jumbotron-fluid">
+        <div class="col-md-3 jumbotron jumbotron-fluid">
               <p class="lead">
                 {{ config('app.name', 'MDG') }} has helped thousands of happy homeowners across Texas build the new custom-designed home of their dreams.
                 We build "eco-friendly" green custom homes of all sizes for all budgets. Whatever custom home you have in mind, from a quaint cottage in Austin,
