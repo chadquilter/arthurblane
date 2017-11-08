@@ -22,7 +22,7 @@
         @include('inc.navbar')
         <div class="body-container" style="
         border-color:#f6f6f6;
-        border-bottom-width: 0prem;
+        border-bottom-width: 0rem;
         border-top-width: 0rem;
         border-bottom-style:
         solid;border-top-style:
