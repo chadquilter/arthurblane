@@ -4,11 +4,11 @@
   <br>
   <div class="container">
   <div class="jumbotron">
-    <h1 class="display-3">Dashboard</h1>
+    <h1 class="display-3">Edit Job</h1>
 
     <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
     <br>
-    <h1>Edit Job</h1>
+
     {!! Form::open(['action' => ['JobsController@update', $job->job_id], 'method' => 'POST']) !!}
         <div class="form=group">
             {{Form::label('job_title', 'Title:')}}
