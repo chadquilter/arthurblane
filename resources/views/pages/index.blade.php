@@ -22,7 +22,6 @@
         </div>
         <div class="col-md-6">
           <div class="jumbotron jumbotron-fluid">
-            <div class="container">
               <h1 class="display-3">{{$title}}</h1>
               <p class="lead">{{ config('app.name', 'MDG') }} has helped thousands of happy homeowners across Texas build the new custom-designed home of their dreams.
                 We build "eco-friendly" green custom homes of all sizes for all budgets. Whatever custom home you have in mind, from a quaint cottage in Austin,
@@ -32,7 +31,6 @@
               As a Texas custom home builder for over 10 years, we have made thousands of happy customers' dream home a reality by delivering on that promise.
               We would love to help you! For a free custom design meeting, contact us today. Let's get started on your new, custom dream home or new addition now!
               </p>
-            </div>
           </div>
         </div>
       </div>
