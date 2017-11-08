@@ -21,7 +21,6 @@
           </li>
         </ul>
 
-          <div class="navbar-right">
             <ul class="navbar-nav ml-auto">
               @guest
               <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
@@ -42,6 +41,6 @@
               </li>
               @endguest
             </ul>
-          </div>
+          
       </div>
     </nav>
