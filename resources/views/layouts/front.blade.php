@@ -12,7 +12,7 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
-    <!-- <link href="/css/image_styles.css" rel="stylesheet"> -->
+    <!--<link href="/css/image_styles.css" rel="stylesheet"> -->
     <script src="{{ asset('js/app.js') }}"></script>
 
 </head>
@@ -20,7 +20,22 @@
   <main role="main" class="container">
     <div id="app" class="starter-template">
         @include('inc.navbar')
-        <div class="body-container">
+        <div class="body-container" style="
+        border-color:#f6f6f6;
+        border-bottom-width: 0prem;
+        border-top-width: 0rem;
+        border-bottom-style:
+        solid;border-top-style:
+        solid;padding-bottom:0rem;
+        padding-top:0rem;
+        padding-left:0rem;
+        padding-right:0rem;
+        background-attachment:fixed;
+        background-color:#fff;
+        background-position:center top;
+        background-repeat:repeat-x;
+        background-image: url(/images/art-bg.jpg);
+        width=100%;">
           <div class="container">
             @include('inc.messages')
             @yield('content')
