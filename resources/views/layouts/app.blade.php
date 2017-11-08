@@ -36,12 +36,14 @@
         background-repeat:repeat-x;
         background-image: url(/images/art-bg.jpg);
         width=100%;">
+    <main role="main" class="container">
       <div class="error-container">
         @include('inc.messages')
       </div>
       <div class="container">
         @yield('content')
       </div>
+    </main>
       <div>
       @include('inc.footer')
     </div>
