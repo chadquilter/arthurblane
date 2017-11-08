@@ -2,7 +2,10 @@
 
 @section('content')
   <br>
-  <div class="well">
+  <div class="container">
+  <div class="jumbotron">
+    <h1 class="display-3">Dashboard</h1>
+
     <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
     <br>
     <h1>Edit Job</h1>
@@ -163,6 +166,7 @@
     });
     </script>
 
+    </div>
   </div>
   <br>
 @endsection
