@@ -119,7 +119,7 @@
                                   </div>
                               </div>
                             </td>
-                            <td><a href="/address/{{$address->id}}/edit" class="btn btn-default">Edit</a></td>
+                            <td><a href="/address/{{$address->id}}/edit" class="btn btn-primary">Edit</a></td>
                             <td>
                               {!!Form::open(['action' => ['AddressController@destroy', $address->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                                   {{Form::hidden('_method', 'DELETE')}}
@@ -142,7 +142,7 @@
               </div>
           </div>
       </div>
-      
+
     </div>
   </div>
 </div>
