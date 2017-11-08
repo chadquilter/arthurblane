@@ -1,13 +1,13 @@
 <style>
   div.image_display {
     width: 40rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4rem 8rem 0 rgba(0, 0, 0, 0.2), 0 6rem 20rem 0 rgba(0, 0, 0, 0.19);
     text-align: center;
   }
 
   div.image_display_r {
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4rem 8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20rem 0 rgba(0, 0, 0, 0.19);
     text-align: center;
   }
 
