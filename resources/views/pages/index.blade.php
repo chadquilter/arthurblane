@@ -12,10 +12,10 @@
       </div>
       <br>
 
-        <div class="jumbotron jumbotron-fluid">
-          <h1 class="display-2">{{$title}}</h1>
+        <div class="card">
+          <h1 class="card-title">{{$title}}</h1>
         </div>
-    
+
       <br>
       <div class="row">
         <div class="col-md-6">
