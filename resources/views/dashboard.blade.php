@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-<div class="card">
+<div class="card mx-auto">
   <br>
   <h1 class="card-title">Dashboard</h1>
   <div class="card-block">
