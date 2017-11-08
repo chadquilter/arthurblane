@@ -34,7 +34,7 @@
     background-image: url(/images/art-bg.jpg);
     width=100%;">
         @include('inc.navbar')
-        <div class="body-container" >
+        <div class="body-container">
           <div class="container">
             @include('inc.messages')
             @yield('content')
