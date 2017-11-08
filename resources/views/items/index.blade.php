@@ -4,7 +4,7 @@
   <div class="container">
   <div class="card mx-auto">
     <br>
-    <h1 class="card-title">Dashboard</h1>
+    <h1 class="card-title">Manage Items</h1>
     <div class="card-block">
       @if (session('status'))
       <div class="alert alert-success">
@@ -15,7 +15,6 @@
         <a href="/jobs/create" class="btn btn-primary">Create Job</a>
         <a href="/quotes" class="btn btn-success">Create Quote</a>
         <a href="/address" class="btn btn-warning">Manage Addresses</a>
-        <a href="/items" class="btn btn-warning">Manage Items</a>
         <br>
       </div>
 
@@ -37,7 +36,7 @@
                                 <strong> Cost: </strpmg> <span class="badge badge-secondary"> {{$item->item_amount}} </span>
                                 <strong> QTY: </strong> <span class="badge badge-secondary"> {{$item->item_count}} </span>
                               </td>
-                              <td width=10%><a href="/items/{{$item->id}}/edit" class="btn btn-default">Edit</a></td>
+                              <td width=10%><a href="/items/{{$item->id}}/edit" class="btn btn-primary">Edit</a></td>
                               <td width=10%>
                                 {!!Form::open(['action' => ['ItemsController@destroy', $item->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                                     {{Form::hidden('_method', 'DELETE')}}
