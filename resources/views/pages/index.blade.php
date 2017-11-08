@@ -12,12 +12,11 @@
       </div>
       <br>
 
-        <div class="card">
-          <h1 class="card-title">{{$title}}</h1>
-          <div class="card-block">
-            Test
-          </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1>{{$title}}</h1>
         </div>
+      </div>
 
       <br>
       <div class="row">
