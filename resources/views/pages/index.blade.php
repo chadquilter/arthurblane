@@ -13,9 +13,9 @@
       <br>
 
       <div class="jumbotron jumbotron-fluid">
-
+        <center>
           <h1>{{$title}}</h1>
-      
+        </center>
       </div>
 
       <br>
