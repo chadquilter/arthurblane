@@ -20,11 +20,11 @@
                      <ul class="nav navbar-nav navbar-right">
                          <!-- Authentication Links -->
                          @guest
-                             <li><a href="{{ route('login') }}">Login</a></li>
+                           <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
                          @else
                              <li class="nav-item dropdown">
                                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                                     {{ Auth::user()->name }} 
+                                     {{ Auth::user()->name }}
                                  </a>
 
                                  <ul class="dropdown-menu" aria-labelledby="Dashboard">
