@@ -18,7 +18,7 @@
     <br>
 
     @if(count($jobs) > 0)
-    <table class="table table-striped table-hover table-sm table-responsive">
+    <table class="table table-striped table-hover table-responsive">
       <thead class="thead-inverse">
         <tr>
           <th nowrap><h3><span class="badge">{{ $jobs->total() }}</span> Job Entries:</h3></th>
@@ -29,7 +29,7 @@
       <tbody>
         @foreach($jobs as $job)
           <tr>
-            <td><strong>Job: </strong>{{$job->job_title}}</td>
+            <td width=80%><strong>Job: </strong>{{$job->job_title}}</td>
             <td><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-default">Edit</a></td>
             <td>
               {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
@@ -63,7 +63,7 @@
         <tbody>
         @foreach($quotes as $quote)
         <tr>
-          <td><strong>Quote: </strong> {{$quote->title}}</td>
+          <td width=80%><strong>Quote: </strong> {{$quote->title}}</td>
           <td><a href="/quotes/{{$quote->id}}/edit" class="btn btn-default">Edit</a></td>
           <td>
             {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
