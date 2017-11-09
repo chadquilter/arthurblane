@@ -7,14 +7,16 @@
       <div class="card mx-auto">
         <br>
         <div class="card-block">
-          <div class="btn-group btn-group" role="group" aria-label="links">
-            <a href="/items" class="btn btn-primary"> <<< Back to Manage Items </a>
-            <a href="/dashboard" class="btn btn-primary"> <<< Back to Dashboard</a>
+          <div class="btn-group" role="group" aria-label="links">
+            <a href="/items" class="btn btn-primary">Back to Manage Items </a>
+            <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
           </div>
             <br>
-          <div class="btn-group btn-group" role="group" aria-label="links">
+          <div class="btn-group" role="group" aria-label="links">
             <a href="/jobs/create" class="btn btn-primary">Create Job</a>
             <a href="/quotes" class="btn btn-success">Create Quote</a>
+          </div>
+          <div class="btn-group" role="group" aria-label="links">
             <a href="/address" class="btn btn-warning">Manage Addresses</a>
             <a href="/items/create" class="btn btn-warning">Create Item</a>
           </div>
