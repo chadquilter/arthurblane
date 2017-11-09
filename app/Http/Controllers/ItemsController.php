@@ -61,9 +61,9 @@ class ItemsController extends Controller
         $this->validate($request, [
             'item_name' => 'required',
             'item_summary' => 'required',
-            'item_weight' => 'required',
-            'item_amount' => 'required',
-            'item_count' => 'required',
+            'item_weight' => 'required|numeric',
+            'item_amount' => 'required|numeric',
+            'item_count' => 'required|numeric',
             'item_uom' => 'required',
             'item_type' => 'required'
         ]);
