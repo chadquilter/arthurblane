@@ -8,7 +8,7 @@
         <br>
         <div class="card-block">
           <div class="btn-group" role="group" aria-label="links">
-            <a href="/items" class="btn btn-primary">Back to Manage Items </a>
+            <a href="/items" class="btn btn-primary">Back to Items </a>
             <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
           </div>
           <div class="btn-group" role="group" aria-label="links">
