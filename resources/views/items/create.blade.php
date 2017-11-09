@@ -3,7 +3,7 @@
 @section('content')
   <div class="container">
     <div class="jumbotron">
-      <h1 class="display-3">Manage Items</h1>
+      <h1 class="display-3">Add Item</h1>
       <div class="card mx-auto">
         <br>
         <div class="card-block">

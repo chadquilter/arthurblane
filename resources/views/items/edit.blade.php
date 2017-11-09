@@ -3,11 +3,12 @@
 @section('content')
   <div class="container">
     <div class="jumbotron">
-      <h1 class="display-3">Manage Items</h1>
+      <h1 class="display-3">Edit Item</h1>
       <div class="card mx-auto">
         <br>
         <div class="card-block">
           <div>
+            <a href="/items" class="btn btn-primary"> <<< Back </a>
             <a href="/dashboard" class="btn btn-primary"> <<< Back to Dashboard</a>
             <a href="/jobs/create" class="btn btn-primary">Create Job</a>
             <a href="/quotes" class="btn btn-success">Create Quote</a>
