@@ -34,7 +34,7 @@
                           @foreach($items as $item)
                           <tr>
                               <td width=80%>
-                                <a href="/items/{{$item->id}}/edit" class="btn btn-primary">
+                                <a href="/items/{{$item->id}}/edit">
                                   <strong> {{$item->item_name}} </strong>
                                   <hr class="my-1">
                                   Cost: </strpmg> <span class="badge badge-secondary"> {{$item->item_amount}} </span>
