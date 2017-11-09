@@ -4,12 +4,11 @@
 @section('content')
   <div class="container">
     <div class="jumbotron border border-secondary">
-      <h1 class="display-3">Edit Item</h1>
+      <h1 class="display-3">Create Job</h1>
       <div class="card mx-auto border border-secondary">
         <br>
         <div class="card-body">
           <div class="btn-group" role="group" aria-label="links">
-            <a href="/items" class="btn btn-primary">Back to Items </a>
             <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
           </div>
           <div class="btn-group" role="group" aria-label="links">
@@ -18,7 +17,7 @@
           </div>
           <div class="btn-group" role="group" aria-label="links">
             <a href="/address" class="btn btn-warning">Manage Addresses</a>
-            <a href="/items/create" class="btn btn-warning">Create Item</a>
+            <a href="/items" class="btn btn-warning">Manage Items</a>
           </div>
           <hr class="my-1">
           @include('inc.messages')
@@ -160,6 +159,6 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
   <br>
 @endsection
