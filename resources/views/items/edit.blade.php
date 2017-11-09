@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="container">
+  <div class="container border border-secondary">
     <div class="jumbotron">
       <h1 class="display-3">Edit Item</h1>
       <div class="card mx-auto">
