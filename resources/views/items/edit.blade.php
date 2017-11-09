@@ -19,6 +19,7 @@
             <a href="/address" class="btn btn-warning">Manage Addresses</a>
             <a href="/items/create" class="btn btn-warning">Create Item</a>
           </div>
+          <hr class="my-1">
           <br>
           {!! Form::open(['action' => ['ItemsController@update', $item->id], 'method' => 'POST']) !!}
           <div class="form=group">
