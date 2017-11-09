@@ -7,16 +7,16 @@
   </div>
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item {{ (\Request::route()->getName() == 'index') ? 'active' : '' }}">
+      <li class="nav-item {{ ( Request::route()->getName() == 'index') ? 'active' : '' }}">
         <a class="nav-link" href="/">Home {{ Request::route()->getName() }}</a>
       </li>
-      <li class="nav-item {{ (\Request::route()->getName() == 'quotes.create') ? 'active' : '' }}">
+      <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
         <a class="nav-link" href="/quotes">Quote</a>
       </li>
-      <li class="nav-item" {{ (\Request::route()->getName() == 'services') ? 'active' : '' }}>
+      <li class="nav-item" {{ ( Request::route()->getName() == 'services') ? 'active' : '' }}>
         <a class="nav-link" href="/services">Services</a>
       </li>
-      <li class="nav-item" {{ (\Request::route()->getName() == 'jobs.index') ? 'active' : '' }}>
+      <li class="nav-item" {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}>
         <a class="nav-link" href="/jobs">Jobs</a>
       </li>
     </ul>
