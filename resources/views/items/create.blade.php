@@ -68,7 +68,7 @@
           <br> &nbsp
           <div id="job_option_group" class="form=group collapse">
             <div class="form-check form-check-inline">
-              {{Form::label('item_online_price', 'Show Online Prices? ', 'class' => 'form-check-label')}}
+              {{Form::label('item_online_price', 'Show Online Prices? ', ['class' => 'form-check-label'])}}
               {{Form::checkbox('item_online_price','1', false, ['class' => 'form-check-input'])}}
             </div>
             <div class="form=group">
