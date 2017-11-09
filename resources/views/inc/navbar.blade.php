@@ -13,7 +13,7 @@
       <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
         <a class="nav-link" href="/quotes">Quote</a>
       </li>
-      <li class="nav-item {{ ( Request::route()->getName() == url().'/services' ) ? 'active' : '' }}">
+      <li class="nav-item {{ ( Request::route()->getName() == \url().'/services' ) ? 'active' : '' }}">
         <a class="nav-link" href="/services">Services</a>
       </li>
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
@@ -25,7 +25,7 @@
         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
       @else
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}</a>
+          <a class="nav-link dropdown-toggle" href="{{ url() }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}</a>
           <div class="dropdown-menu" aria-labelledby="Dashboard">
             <a class="dropdown-item" href="/dashboard">Dashboard</a>
             <a class="dropdown-item" href="{{ url('/logout') }}"
