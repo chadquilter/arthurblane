@@ -7,9 +7,15 @@
       <div class="card mx-auto">
         <br>
         <div class="card-block">
-          <a href="/items" class="btn btn-primary">Back to Item Manager</a>
-          <br>
-          <h1>Edit Item</h1>
+          <div>
+            <a href="/dashboard" class="btn btn-primary"> <<< Back to Dashboard</a>
+            <a href="/jobs/create" class="btn btn-primary">Create Job</a>
+            <a href="/quotes" class="btn btn-success">Create Quote</a>
+            <a href="/address" class="btn btn-warning">Manage Addresses</a>
+            <a href="/items/create" class="btn btn-warning">Create Item</a>
+            <br>
+          </div>
+
           {!! Form::open(['action' => ['ItemsController@update', $item->id], 'method' => 'POST']) !!}
           <div class="form=group">
             {{Form::label('item_name', 'Item Name:')}}
