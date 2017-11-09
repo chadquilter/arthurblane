@@ -16,7 +16,7 @@
           </div>
           <div class="btn-group" role="group" aria-label="links">
             <a href="/address" class="btn btn-warning">Manage Addresses</a>
-            <a href="/items" classs="btn btn-warning">Manage Items</a>
+            <a href="/items" class="btn btn-warning">Manage Items</a>
           </div>
           <hr class="my-1">
           @include('inc.messages')
@@ -36,7 +36,7 @@
           </div>
           <div class="form=group">
             {{Form::label('state', 'State: ')}}
-            {{Form::text('state', '', ['class' => 'form-control', 'placeholder' => 'State'])}}
+            {{Form::select('state', '', ['class' => 'form-control', 'placeholder' => 'State'])}}
           </div>
           <div class="form=group">
             {{Form::label('zipcode', 'Zip Code: ')}}
