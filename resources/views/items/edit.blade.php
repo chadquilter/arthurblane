@@ -25,9 +25,9 @@
             {{Form::label('item_summary', 'Description:')}}
             {{Form::textarea('item_summary', $item->item_summary, ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Item Description'])}}
           </div>
-          <div class="afadsfd">
+          <div class="row">
             @if (count($item_types) > 0)
-              <div class="form=group">
+              <div class="form=group col-md-6">
                 {{Form::label('item_type', 'Item Type:')}}
                 @if(count($item_types) > 0)
                   {{ Form::select('item_type', $item_types, $item->item_type, ['class' => 'form-control m-bot15']) }}
@@ -36,22 +36,22 @@
                 @endif
               </div>
             @endif
-            <div class="form=group">
+            <div class="form=group col-md-6">
               {{Form::label('item_weight', 'Item Weight:')}}
               {{Form::number('item_weight',  $item->item_weight, ['class' => 'form-control', 'placeholder' => '0.00', 'step' => 'any'])}}
             </div>
-            <div class="form=group">
+            <div class="form=group col-md-6">
               {{Form::label('item_amount', 'Item Cost:')}}
               {{Form::number('item_amount',  $item->item_amount, ['class' => 'form-control', 'placeholder' => '0.00', 'step' => 'any'])}}
             </div>
           </div>
           <div class="row">
-            <div class="form=group">
+            <div class="form=group col-md-6">
               {{Form::label('item_count', 'Number of Items:')}}
               {{Form::number('item_count',  $item->item_count, ['class' => 'form-control', 'placeholder' => '0.00', 'step' => 'any'])}}
             </div>
             @if (count($uom) > 0)
-              <div class="form=group">
+              <div class="form=group col-md-6">
                 {{Form::label('item_uom', 'Item Unit of Measure:')}}
                 @if(count($uom) > 0)
                   {{ Form::select('item_uom', $uom, $item->item_uom, ['class' => 'form-control m-bot15']) }}
