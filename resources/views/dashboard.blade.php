@@ -3,7 +3,7 @@
 @section('content')
   <div class="container">
     <div class="jumbotron border border-secondary">
-      <h1 class="display-1">Welcome {{ Auth::user()->name }} to your Dashboard.</h1>
+      <h1 class="display-2">Welcome {{ Auth::user()->name }} to your Dashboard.</h1>
       <div class="card mx-auto border border-secondary">
         <br>
         <div class="card-body">
