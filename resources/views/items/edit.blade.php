@@ -13,8 +13,8 @@
             <a href="/quotes" class="btn btn-success">Create Quote</a>
             <a href="/address" class="btn btn-warning">Manage Addresses</a>
             <a href="/items/create" class="btn btn-warning">Create Item</a>
-            <br>
           </div>
+          <br>
 
           {!! Form::open(['action' => ['ItemsController@update', $item->id], 'method' => 'POST']) !!}
           <div class="form=group">
@@ -27,7 +27,7 @@
           </div>
           <div class="row">
             @if (count($item_types) > 0)
-              <div class="form=group col-xs-3">
+              <div class="form=group">
                 {{Form::label('item_type', 'Item Type:')}}
                 @if(count($item_types) > 0)
                   {{ Form::select('item_type', $item_types, $item->item_type, ['class' => 'form-control m-bot15']) }}
