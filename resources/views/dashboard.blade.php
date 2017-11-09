@@ -90,7 +90,7 @@
     @endif
 
     @if(count($addresses) > 0)
-    <table class="table table-striped table-hover table-responsive-xl">
+    <table class="table table-striped table-hover table-responsive-sm">
       <thead class="thead-inverse">
         <tr>
           <th nowrap><h3><span class="badge badge-secondary">{{ $addresses->total() }}</span> Saved Addresses:</h3></th>
