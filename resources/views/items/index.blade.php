@@ -5,6 +5,7 @@
   <div class="jumbotron">
   <h1 class="display-3">Manage Items</h1>
   <div class="card mx-auto">
+    <br>
     <div class="card-block">
       @if (session('status'))
       <div class="alert alert-success">
