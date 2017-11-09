@@ -15,6 +15,10 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="/images/dusk-home.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3> Things...</h3>
+              <p> Things...</p>
+            </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="/images/dusk-home.jpg" alt="Second slide">
