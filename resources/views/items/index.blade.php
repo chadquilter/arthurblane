@@ -34,10 +34,12 @@
                           @foreach($items as $item)
                           <tr>
                               <td width=80%>
-                                <strong> {{$item->item_name}} </strong>
-                                <hr class="my-1">
-                                Cost: </strpmg> <span class="badge badge-secondary"> {{$item->item_amount}} </span>
-                                QTY: </strong> <span class="badge badge-secondary"> {{$item->item_count}} </span>
+                                <a href="/items/{{$item->id}}/edit" class="btn btn-primary">
+                                  <strong> {{$item->item_name}} </strong>
+                                  <hr class="my-1">
+                                  Cost: </strpmg> <span class="badge badge-secondary"> {{$item->item_amount}} </span>
+                                  QTY: </strong> <span class="badge badge-secondary"> {{$item->item_count}} </span>
+                                </a>
                               </td>
                               <td width=10%><a href="/items/{{$item->id}}/edit" class="btn btn-primary">Edit</a></td>
                               <td width=10%>
