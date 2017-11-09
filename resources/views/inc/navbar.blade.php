@@ -10,13 +10,13 @@
       <li class="nav-item {{ ( url() == url() ) ? 'active' : '' }}">
         <a class="nav-link" href="/">Home {{ \Request::url()  }}</a>
       </li>
-      <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
+      <li class="nav-item {{ ( route()->getName() == 'quotes.index') ? 'active' : '' }}">
         <a class="nav-link" href="/quotes">Quote</a>
       </li>
-      <li class="nav-item {{ ( Request::route()->getName() == \url().'/services' ) ? 'active' : '' }}">
+      <li class="nav-item {{ ( url() == url('/services') ) ? 'active' : '' }}">
         <a class="nav-link" href="/services">Services</a>
       </li>
-      <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
+      <li class="nav-item {{ ( route()->getName() == 'jobs.index') ? 'active' : '' }}">
         <a class="nav-link" href="/jobs">Jobs</a>
       </li>
     </ul>
