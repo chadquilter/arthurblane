@@ -36,22 +36,22 @@
                 @endif
               </div>
             @endif
-            <div class="form=group col-xs-3">
+            <div class="form=group">
               {{Form::label('item_weight', 'Item Weight:')}}
               {{Form::number('item_weight',  $item->item_weight, ['class' => 'form-control', 'placeholder' => '0.00', 'step' => 'any'])}}
             </div>
-            <div class="form=group col-xs-3">
+            <div class="form=group">
               {{Form::label('item_amount', 'Item Cost:')}}
               {{Form::number('item_amount',  $item->item_amount, ['class' => 'form-control', 'placeholder' => '0.00', 'step' => 'any'])}}
             </div>
           </div>
           <div class="row">
-            <div class="form=group col-xs-3">
+            <div class="form=group">
               {{Form::label('item_count', 'Number of Items:')}}
               {{Form::number('item_count',  $item->item_count, ['class' => 'form-control', 'placeholder' => '0.00', 'step' => 'any'])}}
             </div>
             @if (count($uom) > 0)
-              <div class="form=group col-xs-3">
+              <div class="form=group">
                 {{Form::label('item_uom', 'Item Unit of Measure:')}}
                 @if(count($uom) > 0)
                   {{ Form::select('item_uom', $uom, $item->item_uom, ['class' => 'form-control m-bot15']) }}
