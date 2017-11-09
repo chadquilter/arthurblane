@@ -38,6 +38,7 @@
               </div>
             @endif
           </div>
+          <br>
           <div class="row">
             <div class="form=group col-md-6">
               {{Form::label('item_weight', 'Item Weight:')}}
