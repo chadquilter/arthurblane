@@ -87,8 +87,12 @@
               {{Form::checkbox('item_has_image','1', false, ['class' => 'form-control'])}}
             </div>
             <div class="form-group">
-              {{Form::label('item_has_address', 'Item haas Address? ')}}
-              {{Form::checkbox('item_has_address','1', false, ['class' => 'form-control'])}}
+              <div class="form-check">
+            
+                <label class="form-check-label">
+                  {{Form::checkbox('item_has_address','1', false, ['class' => 'form-control'])}} Item haas Address?
+                </label>
+              </div>
             </div>
             <div class="form-group">
               {{Form::label('item_active', 'Item is Active? ')}}
