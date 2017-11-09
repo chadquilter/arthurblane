@@ -3,12 +3,12 @@
 @section('content')
   <div class="container">
     <div class="jumbotron border border-secondary">
-      <h1 class="display-3">Manage Items</h1>
+      <h1 class="display-3">Welcome {{ Auth::user()->name }} to your Dashboard.</h1>
       <div class="card mx-auto border border-secondary">
         <br>
         <div class="card-body">
           <div class="btn-group" role="group" aria-label="links">
-            <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
+            <a href="{{ url('/logout') }}" class="btn btn-primary">Logout of Dashboard</a>
           </div>
           <div class="btn-group" role="group" aria-label="links">
             <a href="/jobs/create" class="btn btn-success">Create Job</a>
@@ -16,7 +16,7 @@
           </div>
           <div class="btn-group" role="group" aria-label="links">
             <a href="/address" class="btn btn-warning">Manage Addresses</a>
-            <a href="/items/create" class="btn btn-warning">Create Item</a>
+            <a href="/items" class="btn btn-warning">Manage Items</a>
           </div>
           <hr class="my-1">
           @include('inc.messages')
