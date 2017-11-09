@@ -34,9 +34,9 @@
       <tbody>
         @foreach($jobs as $job)
           <tr>
-            <td nowrap><strong>Job: </strong>{{$job->job_title}}</td>
-            <td nowrap><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a></td>
-            <td nowrap>
+            <td width=90%><strong>Job: </strong>{{$job->job_title}}</td>
+            <td width=5%><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a></td>
+            <td width=5%>
               {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                 {{Form::hidden('_method', 'DELETE')}}
                 {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
@@ -68,9 +68,9 @@
         <tbody>
         @foreach($quotes as $quote)
         <tr>
-          <td nowrap><strong>Quote: </strong> {{$quote->title}}</td>
-          <td nowrap><a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a></td>
-          <td nowrap>
+          <td width=90%><strong>Quote: </strong> {{$quote->title}}</td>
+          <td width=5%><a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a></td>
+          <td with=5%>
             {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
             {{Form::hidden('_method', 'DELETE')}}
             {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
@@ -90,7 +90,7 @@
     @endif
 
     @if(count($addresses) > 0)
-    <table class="table table-striped table-hover table-responsive-sm">
+    <table class="table table-striped table-hover table-responsive">
       <thead class="thead-inverse">
         <tr>
           <th nowrap><h3><span class="badge badge-secondary">{{ $addresses->total() }}</span> Saved Addresses:</h3></th>
@@ -101,7 +101,7 @@
       <tbody>
         @foreach($addresses as $address)
         <tr>
-          <td nowrap><strong>Address: </strong>
+          <td width=90%><strong>Address: </strong>
             <div class=row>
               <div class="col-md-4">
                 <br> {{$address->address1}}
@@ -118,8 +118,8 @@
               </div>
             </div>
           </td>
-          <td nowrap><a href="/address/{{$address->id}}/edit" class="btn btn-primary">Edit</a></td>
-          <td nowrap>
+          <td width=5%><a href="/address/{{$address->id}}/edit" class="btn btn-primary">Edit</a></td>
+          <td width=5%>
             {!!Form::open(['action' => ['AddressController@destroy', $address->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
             {{ Form::hidden('_method', 'DELETE') }}
             {{ Form::submit('Delete', ['class' => 'btn btn-danger'])}}
