@@ -13,7 +13,7 @@
       <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
         <a class="nav-link" href="/quotes">Quote</a>
       </li>
-      <li class="nav-item {{ ( Request::route()->getName() == url('/services') ) ? 'active' : '' }}">
+      <li class="nav-item {{ ( Request::route()->getName() == url().'/services' ) ? 'active' : '' }}">
         <a class="nav-link" href="/services">Services</a>
       </li>
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
