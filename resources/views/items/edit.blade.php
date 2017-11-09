@@ -10,6 +10,7 @@
           <div>
             <a href="/items" class="btn btn-primary"> <<< Back to Manage Items </a>
             <a href="/dashboard" class="btn btn-primary"> <<< Back to Dashboard</a>
+            <br>
             <a href="/jobs/create" class="btn btn-primary">Create Job</a>
             <a href="/quotes" class="btn btn-success">Create Quote</a>
             <a href="/address" class="btn btn-warning">Manage Addresses</a>
