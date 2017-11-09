@@ -6,7 +6,7 @@
       <h1 class="display-3">Edit Item</h1>
       <div class="card mx-auto border border-secondary">
         <br>
-        <div class="card-block">
+        <div class="card-body">
           <div class="btn-group" role="group" aria-label="links">
             <a href="/items" class="btn btn-primary">Back to Items </a>
             <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
