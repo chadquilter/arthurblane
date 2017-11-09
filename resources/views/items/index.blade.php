@@ -28,7 +28,7 @@
           @endif
 
           @if(count($items) > 0)
-            <table class="table table-striped table-hover table-responsive">
+            <table class="table table-striped table-hover table-responsive border border-secondary">
               <thead class="thead-inverse">
                 <tr>
                   <th nowrap><h3><span class="badge badge-secondary">{{ $items->total() }}</span> Total Items:</h3></th>
