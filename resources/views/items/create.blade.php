@@ -14,6 +14,7 @@
             <a href="/address" class="btn btn-warning">Manage Addresses</a>
             <a href="/items/create" class="btn btn-warning">Create Item</a>
           </div>
+          @include('inc.messages')
           <br>
           {!! Form::open(['action' => 'ItemsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
           <div class="form-group">
