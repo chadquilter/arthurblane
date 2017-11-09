@@ -28,7 +28,7 @@
             </div>
           @endif
           @if(count($jobs) > 0)
-            <table class="table table-striped table-hover table-responsive">
+            <table class="table table-striped table-hover table-responsive border border-secondary">
               <thead class="thead-inverse">
                 <tr>
                   <th nowrap><h3><span class="badge badge-secondary">{{ $jobs->total() }}</span> Job Entries:</h3></th>
