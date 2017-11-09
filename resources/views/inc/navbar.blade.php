@@ -8,7 +8,7 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item {{ ( \Request::url() == url() ) ? 'active' : '' }}">
-        <a class="nav-link" href="/">Home {{ \Request::url()  }}</a>
+        <a class="nav-link" href="/">Home {{ \Request::url() url()  }}</a>
       </li>
       <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
         <a class="nav-link" href="/quotes">Quote</a>
