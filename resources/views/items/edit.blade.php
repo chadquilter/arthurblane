@@ -93,6 +93,7 @@
             </div>
           </div>
           <br>
+          <hr class="my-1">
           <div>
             {{Form::hidden('_method', 'PUT')}}
             {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
