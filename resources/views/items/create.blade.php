@@ -20,10 +20,12 @@
             {{Form::label('item_name', 'Item Name:')}}
             {{Form::text('item_name',  '', ['class' => 'form-control', 'placeholder' => 'brick, 2x4 plywood, etc..'])}}
           </div>
+          <br>
           <div class="form=group">
             {{Form::label('item_summary', 'Description:')}}
             {{Form::textarea('item_summary', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Item Description'])}}
           </div>
+          <br>
           <div class="row">
             @if (count($item_types) > 0)
               <div class="form=group col-md-6">
@@ -60,6 +62,7 @@
               </div>
             @endif
           </div>
+          <br>
           <h3> Item Options </h3>
           <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
           <br> &nbsp
