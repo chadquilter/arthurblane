@@ -3,7 +3,7 @@
 @section('content')
   <div class="container">
     <div class="jumbotron border border-secondary">
-      <h1 class="display-3">Create Job</h1>
+      <h1 class="display-3">Edit Job</h1>
       <div class="card mx-auto border border-secondary">
         <br>
         <div class="card-body">
@@ -16,7 +16,7 @@
           </div>
           <div class="btn-group" role="group" aria-label="links">
             <a href="/address" class="btn btn-warning">Manage Addresses</a>
-            <a href="/items" class="btn btn-warning">Manage Items</a>
+            <a href="/items" classs="btn btn-warning">Manage Items</a>
           </div>
           <hr class="my-1">
           @include('inc.messages')
@@ -177,7 +177,7 @@
             }
           });
           </script>
-          
+
         </div>
       </div>
     </div>

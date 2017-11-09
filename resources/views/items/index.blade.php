@@ -2,11 +2,25 @@
 
 @section('content')
   <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-3">Manage Items</h1>
-      <div class="card mx-auto">
+    <div class="jumbotron border border-secondary">
+      <h1 class="display-3">Edit Job</h1>
+      <div class="card mx-auto border border-secondary">
         <br>
-        <div class="card-block">
+        <div class="card-body">
+          <div class="btn-group" role="group" aria-label="links">
+            <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
+          </div>
+          <div class="btn-group" role="group" aria-label="links">
+            <a href="/jobs/create" class="btn btn-success">Create Job</a>
+            <a href="/quotes" class="btn btn-success">Create Quote</a>
+          </div>
+          <div class="btn-group" role="group" aria-label="links">
+            <a href="/address" class="btn btn-warning">Manage Addresses</a>
+            <a href="/items" classs="btn btn-warning">Manage Items</a>
+          </div>
+          <hr class="my-1">
+          @include('inc.messages')
+          <br>
           @if (session('status'))
             <div class="alert alert-success">
               {{ session('status') }}
