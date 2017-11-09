@@ -15,16 +15,17 @@
             <a href="/items/create" class="btn btn-warning">Create Item</a>
           </div>
           <br>
-
           {!! Form::open(['action' => ['ItemsController@update', $item->id], 'method' => 'POST']) !!}
           <div class="form=group">
             {{Form::label('item_name', 'Item Name:')}}
             {{Form::text('item_name',  $item->item_name, ['class' => 'form-control', 'placeholder' => 'brick, 2x4 plywood, etc..'])}}
           </div>
+          <br>
           <div class="form=group">
             {{Form::label('item_summary', 'Description:')}}
             {{Form::textarea('item_summary', $item->item_summary, ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Item Description'])}}
           </div>
+          <br>
           <div class="row">
             @if (count($item_types) > 0)
               <div class="form=group col-md-6">
@@ -45,6 +46,7 @@
               {{Form::number('item_amount',  $item->item_amount, ['class' => 'form-control', 'placeholder' => '0.00', 'step' => 'any'])}}
             </div>
           </div>
+          <br>
           <div class="row">
             <div class="form=group col-md-6">
               {{Form::label('item_count', 'Number of Items:')}}
