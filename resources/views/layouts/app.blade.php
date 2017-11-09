@@ -19,6 +19,9 @@
   <main role="main">
     @include('inc.navbar')
     <div class="body-container">
+      <br>
+    
+      <br>
       @yield('content')
     </div>
     @include('inc.footer')
