@@ -15,6 +15,7 @@
 			<div class="col-md-6">
 				<div class="jumbotron">
 					<h1 class="display-3">{{$title}}</h1>
+					<hr class="my-4">
 					<p class="lead">
 						@if(count($services) > 0)
 							<ul>
@@ -26,7 +27,6 @@
 							<li>Our services listing are currently under construction!</li>
 						@endif
 					</p>
-					<hr class="my-4">
 				</div>
 			</div>
 			<div class="col-md-6">
