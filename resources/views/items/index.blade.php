@@ -35,7 +35,6 @@
                           <tr>
                               <td width=80%>
                                 <h4> {{$item->item_name}} </h4>
-                                <br>
                                 <h5> Cost: </strpmg> <span class="badge badge-secondary"> {{$item->item_amount}} </span> </h5>
                                 <h5> QTY: </strong> <span class="badge badge-secondary"> {{$item->item_count}} </span> </h5>
                               </td>
