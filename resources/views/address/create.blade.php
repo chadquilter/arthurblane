@@ -36,7 +36,7 @@
           </div>
           <div class="form=group">
             {{Form::label('state', 'State: ')}}
-            {{Form::select('state', '', ['class' => 'form-control', 'placeholder' => 'State'])}}
+            {{Form::text('state', '', ['class' => 'form-control', 'placeholder' => 'State'])}}
           </div>
           <div class="form=group">
             {{Form::label('zipcode', 'Zip Code: ')}}
