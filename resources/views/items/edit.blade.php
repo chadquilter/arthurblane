@@ -4,7 +4,7 @@
   <div class="container">
     <div class="jumbotron border border-secondary">
       <h1 class="display-3">Edit Item</h1>
-      <div class="card mx-auto">
+      <div class="card mx-auto border border-secondary">
         <br>
         <div class="card-block">
           <div class="btn-group" role="group" aria-label="links">
