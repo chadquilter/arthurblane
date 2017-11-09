@@ -20,6 +20,7 @@
             <a href="/items/create" class="btn btn-warning">Create Item</a>
           </div>
           <hr class="my-1">
+          @include('inc.messages')
           <br>
           {!! Form::open(['action' => ['ItemsController@update', $item->id], 'method' => 'POST']) !!}
           <div class="form=group">
