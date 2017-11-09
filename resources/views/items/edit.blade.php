@@ -10,7 +10,7 @@
           <div class="btn-group btn-group" role="group" aria-label="links">
             <a href="/items" class="btn btn-primary"> <<< Back to Manage Items </a>
             <a href="/dashboard" class="btn btn-primary"> <<< Back to Dashboard</a>
-          <div>
+          </div>
             <br>
           <div class="btn-group btn-group" role="group" aria-label="links">
             <a href="/jobs/create" class="btn btn-primary">Create Job</a>
