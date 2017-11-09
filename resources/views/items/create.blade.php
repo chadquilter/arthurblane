@@ -67,9 +67,9 @@
           <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
           <br> &nbsp
           <div id="job_option_group" class="form=group collapse">
-            <div class="form=group">
-              {{Form::label('item_online_price', 'Show Online Prices? ')}}
-              {{Form::checkbox('item_online_price','1', false, ['class' => 'form-control'])}}
+            <div class="form-check form-check-inline">
+              {{Form::label('item_online_price', 'Show Online Prices? ', 'class' => 'form-check-label')}}
+              {{Form::checkbox('item_online_price','1', false, ['class' => 'form-check-input'])}}
             </div>
             <div class="form=group">
               {{Form::label('item_has_subitems', 'Has Subitems? ')}}
