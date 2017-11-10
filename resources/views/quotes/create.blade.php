@@ -23,7 +23,7 @@
   		</div>
   	</div>
   	<br>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron border border-secondary">
       <div class="container">
         <h1 class="display-3">Create a Quote:</h1>
         <br>
