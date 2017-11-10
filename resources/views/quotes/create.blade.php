@@ -23,37 +23,37 @@
   		</div>
   	</div>
   	<br>
-    <div class="jumbotron border border-secondary">
+    <div class="jumbotron">
       <div class="container">
         <h1 class="display-3">Create a Quote:</h1>
         <br>
-  		{!! Form::open(['action' => 'QuotesController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
-  			<div class="form=group">
-  					{{Form::label('title', 'Name:')}}
-  					{{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Name'])}}
-  			</div>
-  			<div id="app-6" class="form=group">
-  					{{Form::label('phone', 'Phone:')}}
-  					{{Form::text('phone', '', ['class' => 'form-control', 'placeholder' => 'Phone'])}}
-  			</div>
-  			<div class="form=group">
-  					{{Form::label('email', 'Email:')}}
-  					{{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
-  			</div>
-  			<div class="form=group">
-  					{{Form::label('description', 'Description:')}}
-  					{{Form::textarea('description', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Quote Description'])}}
-  			</div>
+        {!! Form::open(['action' => 'QuotesController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
+        <div class="form=group">
+          {{Form::label('title', 'Name:')}}
+          {{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Name'])}}
+        </div>
+        <div id="app-6" class="form=group">
+          {{Form::label('phone', 'Phone:')}}
+          {{Form::text('phone', '', ['class' => 'form-control', 'placeholder' => 'Phone'])}}
+        </div>
+        <div class="form=group">
+          {{Form::label('email', 'Email:')}}
+          {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
+        </div>
+        <div class="form=group">
+          {{Form::label('description', 'Description:')}}
+          {{Form::textarea('description', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Quote Description'])}}
+        </div>
         <br>
-  			<div class="form=group">
-  					{{Form::label('notes', 'Notes:')}}
-  					{{Form::text('notes', '', ['class' => 'form-control', 'placeholder' => 'Additional Notes'])}}
-  			</div>
-  			<br>
-  			<div class="form=group">
-  				{{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
-  			</div>
-  		{!! Form::close() !!}
+        <div class="form=group">
+          {{Form::label('notes', 'Notes:')}}
+          {{Form::text('notes', '', ['class' => 'form-control', 'placeholder' => 'Additional Notes'])}}
+        </div>
+        <br>
+        <div class="form=group">
+          {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+        </div>
+        {!! Form::close() !!}
   		<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
   		<script>
   				CKEDITOR.replace( 'article-ckeditor' );
