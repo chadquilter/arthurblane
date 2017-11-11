@@ -42,7 +42,7 @@
                     <td>
                       <div class="container">
                         <div class="row">
-                          <div class="col-12">
+                          <div class="col-10">
                             <strong>Job: </strong>{{$job->job_title}}
                           </div>
                           <div class="col-4 btn-group" role="group" aria-label="Job List">
@@ -84,7 +84,7 @@
                     <td>
                       <div class="container">
                         <div class="row">
-                          <div class="col-12">
+                          <div class="col-10">
                             <strong>Quote: </strong> {{$quote->title}}
                           </div>
                           <div class="col-4 btn-group" role="group" aria-label="Quote List">
@@ -123,7 +123,7 @@
               <tbody>
                 @foreach($addresses as $address)
                   <tr>
-                    <td width=90%><strong>Address: </strong>
+                    <td><strong>Address: </strong>
                       <div class=row>
                         <div class="col-md-4">
                           <br> {{$address->address1}}
