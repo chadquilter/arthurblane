@@ -56,7 +56,7 @@
           <div>
             {{Form::hidden('_method', 'PUT')}}
             {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
-            <a class="btn btn-info" href="{{ URL::previous() }}">back</a>
+            <a class="btn btn-danger" href="{{ URL::previous() }}">Cancel</a>
           </div>
           {!! Form::close() !!}
         </div>
