@@ -28,6 +28,7 @@
           @endif
 
           @if(count($items) > 0)
+            <div class="border border-secondary rounded shadow_only">
             <table class="table table-striped table-hover table-responsive border border-secondary">
               <thead class="thead-inverse">
                 <tr>
@@ -65,6 +66,7 @@
                 </tr>
               </tfoot>
             </table>
+          </div>
           @else
             <p>No Items found</p>
           @endif
