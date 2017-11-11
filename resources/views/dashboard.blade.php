@@ -31,8 +31,6 @@
                 </h3>
                 <hr class="my-1">
                 @foreach($jobs as $job)
-
-
                         <div class="row">
                           <div class="col-12 col-md-8">
                             <strong>Job: </strong>{{$job->job_title}}
@@ -44,8 +42,8 @@
                             {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                             {!!Form::close()!!}
                           </div>
-                          <hr class="my-1">
                         </div>
+                        <hr class="my-1">
                 @endforeach
                 <br>
                 <div class="row">
@@ -57,14 +55,11 @@
               <br>
           @endif
           @if(count($quotes) > 0)
-
                 <div id="quotes_div" name="quotes_div" class="container border border-secondary rounded shadow_only">
                   <h3 class="display-8">
                     <span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:
                   </h3>
-
                 @foreach($quotes as $quote)
-
                   <div class="row">
                     <div class="col-12 col-md-8">
                       <strong>Quote: </strong>{{$quote->title}}
@@ -76,8 +71,8 @@
                       {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                       {!!Form::close()!!}
                     </div>
-                    <hr class="my-1">
                   </div>
+                  <hr class="my-1">
                 @endforeach
                 <br>
                 <div class="row">
@@ -86,7 +81,6 @@
                   </div>
                 </div>
               </div>
-
           @endif
           <br>
           @if(count($addresses) > 0)
