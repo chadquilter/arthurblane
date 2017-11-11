@@ -53,7 +53,7 @@
                 <br>
                 {{$jobs->links()}}
               </div>
-
+              <br>
           @endif
           @if(count($quotes) > 0)
 
