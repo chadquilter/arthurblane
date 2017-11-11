@@ -84,10 +84,10 @@
                     <td>
                       <div class="container-fluid">
                         <div class="row">
-                          <div class="col-8">
+                          <div class="col-12 col-md-8">
                             <strong>Quote: </strong> {{$quote->title}}
                           </div>
-                          <div class="col-4 btn-group" role="group" aria-label="Quote List">
+                          <div class="col-6 col-md-4 btn-group" role="group" aria-label="Quote List">
                             <a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a>
                             {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                             {{Form::hidden('_method', 'DELETE')}}
