@@ -8,6 +8,21 @@
     <div class="card mx-auto">
       <br>
       <div class="card-body">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+        <div id="app">
+          <button @click="show = !show">
+            Toggle render
+          </button>
+          <transition
+            name="custom-classes-transition"
+            enter-active-class="animated tada"
+            leave-active-class="animated bounceOutRight">
+            <p v-if="show">hello</p>
+          </transition>
+        </div>
+
         <div class="btn-group" role="group" aria-label="links">
           <a href="/jobs/create" class="btn btn-success">Create Job</a>
           <a href="/quotes" class="btn btn-success">Create Quote</a>
