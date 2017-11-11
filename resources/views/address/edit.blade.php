@@ -9,6 +9,7 @@
         <div class="card-body">
           <div class="btn-group" role="group" aria-label="links">
             <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
+            <a href="/address" class="btn btn-primary">Manage Addresses</a>
           </div>
           <div class="btn-group" role="group" aria-label="links">
             <a href="/jobs/create" class="btn btn-success">Create Job</a>
@@ -55,7 +56,7 @@
           <div>
             {{Form::hidden('_method', 'PUT')}}
             {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
-            {{Form::button('Cancel', ['class' => 'btn btn-primary', 'action' => 'onClick="location='.URL::previous().'"'  ])}}
+            <a class="btn btn-info" href="{{ URL::previous() }}">back</a>
           </div>
           {!! Form::close() !!}
         </div>
