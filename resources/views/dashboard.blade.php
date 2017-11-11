@@ -3,7 +3,7 @@
 @section('content')
   <div class="container">
     <div class="jumbotron">
-      <h1 class="display-2">Dashboard <h1>
+      <h1 class="display-3">Dashboard <h1>
       <h3 class="display-5"> Welcome {{ Auth::user()->name }}.</h3>
       <div class="card mx-auto">
         <br>
