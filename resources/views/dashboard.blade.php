@@ -9,9 +9,6 @@
         <br>
         <div class="card-body">
           <div class="btn-group" role="group" aria-label="links">
-            <a href="{{ url('/logout') }}" class="btn btn-primary">Logout of Dashboard</a>
-          </div>
-          <div class="btn-group" role="group" aria-label="links">
             <a href="/jobs/create" class="btn btn-success">Create Job</a>
             <a href="/quotes" class="btn btn-success">Create Quote</a>
           </div>
