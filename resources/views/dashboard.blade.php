@@ -48,7 +48,6 @@
                             {!!Form::close()!!}
                           </div>
                         </div>
-                      </div>
 
                 @endforeach
 
