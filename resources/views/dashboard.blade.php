@@ -41,9 +41,9 @@
                             <strong>Job: </strong>{{$job->job_title}}
                           </div>
                           <div class="col-6 col-md-4 btn-group" role="group" aria-label="Job List">
-                            <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
                             {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                             {{Form::hidden('_method', 'DELETE')}}
+                            <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
                             {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                             {!!Form::close()!!}
                           </div>
