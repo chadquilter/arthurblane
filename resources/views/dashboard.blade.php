@@ -40,7 +40,7 @@
                 @foreach($jobs as $job)
                   <tr>
                     <td>
-                      <div class="container">
+                      <div class="container-fluid">
                         <div class="row">
                           <div class="col-12 col-md-8">
                             <strong>Job: </strong>{{$job->job_title}}
@@ -82,7 +82,7 @@
                 @foreach($quotes as $quote)
                   <tr>
                     <td>
-                      <div class="container">
+                      <div class="container-fluid">
                         <div class="row">
                           <div class="col-8">
                             <strong>Quote: </strong> {{$quote->title}}
