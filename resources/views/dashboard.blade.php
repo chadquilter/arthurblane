@@ -32,7 +32,7 @@
                 <h3 class="display-8">
                   <span class="badge badge-secondary">{{ $jobs->total() }}</span> Job Entries:
                 </h3>
-
+                <hr class="my-1">
                 @foreach($jobs as $job)
 
 
