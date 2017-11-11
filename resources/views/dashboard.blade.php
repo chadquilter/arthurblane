@@ -51,7 +51,9 @@
 
                 @endforeach
                 <br>
-                {{$jobs->links()}}
+                <div class="row">
+                  {{$jobs->links()}}
+                </div>
               </div>
               <br>
           @endif
@@ -78,10 +80,12 @@
                   </div>
                 @endforeach
                 <br>
-                {{$jobs->links()}}
+                <div class="row">
+                  {{$quotes->links()}}
+                </div>
               </div>
           @endif
-
+          <br>
           @if(count($addresses) > 0)
             <table class="table table-striped table-hover table-responsive border border-secondary">
               <thead class="thead-inverse">
