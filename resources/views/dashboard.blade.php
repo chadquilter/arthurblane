@@ -28,7 +28,7 @@
             </div>
           @endif
           @if(count($jobs) > 0)
-              <div class="container-fluid border-info border-secondary rounded">
+              <div class="container-fluid border border-secondary rounded">
                 <h3 class="display-8">
                   <span class="badge badge-secondary">{{ $jobs->total() }}</span> Job Entries:
                 </h3>
@@ -48,7 +48,7 @@
                             {!!Form::close()!!}
                           </div>
                         </div>
-                        <hr class="my-1">
+
                 @endforeach
                 <br>
                 <div class="row">
@@ -61,7 +61,7 @@
           @endif
           @if(count($quotes) > 0)
 
-                <div class="container-fluid border-info border-secondary rounded">
+                <div class="container-fluid border border-secondary rounded">
                   <h3 class="display-8">
                     <span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:
                   </h3>
@@ -80,7 +80,6 @@
                       {!!Form::close()!!}
                     </div>
                   </div>
-                  <hr class="my-1">
                 @endforeach
                 <br>
                 <div class="row">
