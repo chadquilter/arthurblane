@@ -16,7 +16,7 @@
           </div>
           <div class="btn-group" role="group" aria-label="links">
             <a href="/items" class="btn btn-warning">Manage Items</a>
-            <a href="/address/create" class="btn btn-warning">Create Addresss</a>
+            <a href="/address/create" class="btn btn-warning">Create Addresses</a>
           </div>
           <hr class="my-1">
           @include('inc.messages')
