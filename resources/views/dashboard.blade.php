@@ -5,7 +5,7 @@
     <div class="jumbotron">
       <h1 class="display-2">Dashboard <h1>
       <h3 class="display-5"> Welcome {{ Auth::user()->name }}.</h3>
-      <div class="card mx-auto border border-secondary">
+      <div class="card mx-auto">
         <br>
         <div class="card-body">
           <div class="btn-group" role="group" aria-label="links">
