@@ -52,7 +52,9 @@
                 @endforeach
                 <br>
                 <div class="row">
-                  {{$jobs->links()}}
+                  <div class="col-12 col-md-8">
+                    {{$jobs->links()}}
+                  </div>
                 </div>
               </div>
               <br>
@@ -81,7 +83,9 @@
                 @endforeach
                 <br>
                 <div class="row">
-                  {{$quotes->links()}}
+                  <div class="col-12 col-md-8">
+                    {{$quotes->links()}}
+                  </div>
                 </div>
               </div>
           @endif
