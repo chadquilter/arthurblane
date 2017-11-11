@@ -73,9 +73,9 @@
                       <strong>Job: </strong>{{$quote->title}}
                     </div>
                     <div class="col-6 col-md-4 btn-group" role="group" aria-label="Job List">
-                      <a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a>
                       {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                       {{Form::hidden('_method', 'DELETE')}}
+                      <a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a>
                       {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                       {!!Form::close()!!}
                     </div>
