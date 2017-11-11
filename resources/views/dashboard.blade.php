@@ -40,7 +40,7 @@
                           <div class="col w-300">
                             <strong>Job: </strong>{{$job->job_title}}
                           </div>
-                          <div class="col" role="group" aria-label="Job List">
+                          <div class="col w-100" role="group" aria-label="Job List">
                             {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                             {{Form::hidden('_method', 'DELETE')}}
                             <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
