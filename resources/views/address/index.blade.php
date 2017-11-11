@@ -28,6 +28,7 @@
           @endif
 
           @if(count($addresses) > 0)
+          <div class="container border border-secondary rounded shadow_only">
             <table class="table table-striped table-hover table-responsive border border-secondary">
               <thead class="thead-inverse">
                 <tr>
@@ -73,6 +74,7 @@
                   </tr>
                 </tfoot>
               </table>
+            </div>
             @endif
 
           </div>
