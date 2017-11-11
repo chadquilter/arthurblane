@@ -10,6 +10,10 @@
     text-align: center;
   }
 
+  div.shadow_only {
+    box-shadow: 0 4rem 8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20rem 0 rgba(0, 0, 0, 0.19);
+  }
+
   div.image_display_text_container {
     padding: 1rem;
     background-color: white;
