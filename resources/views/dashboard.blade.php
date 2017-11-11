@@ -48,7 +48,7 @@
                             {!!Form::close()!!}
                           </div>
                         </div>
-
+                        <hr class="my-1">
                 @endforeach
                 <br>
                 <div class="row">
@@ -80,6 +80,7 @@
                       {!!Form::close()!!}
                     </div>
                   </div>
+                  <hr class="my-1">
                 @endforeach
                 <br>
                 <div class="row">
