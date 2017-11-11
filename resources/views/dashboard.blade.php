@@ -44,8 +44,8 @@
                             {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                             {!!Form::close()!!}
                           </div>
+                          <hr class="my-1">
                         </div>
-
                 @endforeach
                 <br>
                 <div class="row">
@@ -76,6 +76,7 @@
                       {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                       {!!Form::close()!!}
                     </div>
+                    <hr class="my-1">
                   </div>
                 @endforeach
                 <br>
@@ -85,6 +86,7 @@
                   </div>
                 </div>
               </div>
+
           @endif
           <br>
           @if(count($addresses) > 0)
