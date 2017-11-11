@@ -42,7 +42,7 @@
                     <td>
                       <div class="container">
                         <div class="row">
-                          <div class="col-8">
+                          <div class="col col-12 ">
                             <strong>Job: </strong>{{$job->job_title}}
                           </div>
                           <div class="col-4 btn-group" role="group" aria-label="job list">
