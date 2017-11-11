@@ -37,7 +37,7 @@
 
 
                         <div class="row">
-                          <div class="col-8">
+                          <div class="col-12 col-md-8">
                             <strong>Job: </strong>{{$job->job_title}}
                           </div>
                           <div class="col col-md-4 btn-group" role="group" aria-label="Job List">
