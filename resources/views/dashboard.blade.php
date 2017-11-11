@@ -44,7 +44,7 @@
                             {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                             {{Form::hidden('_method', 'DELETE')}}
                             <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
-                            {{Form::submit('Delete', ['class' => 'btn btn-delete'])}}
+                            {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                             {!!Form::close()!!}
                           </div>
                         </div>
