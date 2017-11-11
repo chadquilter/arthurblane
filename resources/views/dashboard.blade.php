@@ -84,7 +84,8 @@
           @endif
           <br>
           @if(count($addresses) > 0)
-            <table class="table table-striped table-hover table-responsive border border-secondary">
+            <div id="quotes_div" name="quotes_div" class="container border border-secondary rounded shadow_only">
+            <table class="table table-striped table-hover table-responsive">
               <thead class="thead-inverse">
                 <tr>
                   <th nowrap><h3><span class="badge badge-secondary">{{ $addresses->total() }}</span> Saved Addresses:</h3></th>
@@ -130,6 +131,7 @@
                 </tr>
               </tfoot>
             </table>
+          </div>
           @endif
         </div>
       </div>
