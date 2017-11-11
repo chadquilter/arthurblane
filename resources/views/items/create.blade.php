@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="container">
-    <div class="jumbotrony">
+    <div class="jumbotron">
       <h1 class="display-3">Add Item</h1>
       <div class="card mx-auto border border-secondary">
         <br>
@@ -111,7 +111,7 @@
           {!! Form::close() !!}
           <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
           <script>
-          CKEDITOR.replace( 'article-ckeditor' );
+            CKEDITOR.replace( 'article-ckeditor' );
           </script>
         </div>
         <br>

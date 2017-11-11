@@ -103,6 +103,7 @@
           <br>
           <div class="page-buttons">
             {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+            <a class="btn btn-danger" href="{{ URL::previous() }}">Cancel</a>
           </div>
           {!! Form::close() !!}
           <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
