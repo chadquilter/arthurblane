@@ -44,7 +44,7 @@
 
                       <div class="container">
                         <div class="row">
-                          <div class="col-sm">
+                          <div class="col-xl">
                             <strong>Job: </strong>{{$job->job_title}}
                           </div>
                           <div class="col-sm">
