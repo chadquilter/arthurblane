@@ -39,13 +39,26 @@
               <tbody>
                 @foreach($jobs as $job)
                   <tr>
-                    <td width=90%><strong>Job: </strong>{{$job->job_title}}</td>
-                    <td width=5%><a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a></td>
-                    <td width=5%>
-                      {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
-                      {{Form::hidden('_method', 'DELETE')}}
-                      {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
-                      {!!Form::close()!!}
+
+                    <td>
+
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm">
+                            <strong>Job: </strong>{{$job->job_title}}
+                          </div>
+                          <div class="col-sm">
+                            <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
+                          </div>
+                          <div class="col-sm">
+                            {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                            {{Form::hidden('_method', 'DELETE')}}
+                            {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                            {!!Form::close()!!}
+                          </div>
+                        </div>
+                      </div>
+
                     </td>
                   </tr>
                 @endforeach
