@@ -28,12 +28,11 @@
             </div>
           @endif
           @if(count($jobs) > 0)
-
+              <div class="container-fluid border border-secondary rounded">
                 <h3 class="display-8">
                   <span class="badge badge-secondary">{{ $jobs->total() }}</span> Job Entries:
                 </h3>
                 <hr class="my-1">
-                <div class="container-fluid border border-secondary rounded">
                 @foreach($jobs as $job)
 
 
@@ -62,11 +61,11 @@
           @endif
           @if(count($quotes) > 0)
 
-
+                <div class="container-fluid border border-secondary rounded">
                   <h3 class="display-8">
                     <span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:
                   </h3>
-<div class="container-fluid border border-secondary rounded">
+
                 @foreach($quotes as $quote)
 
                   <div class="row row-fluid show-grid">
