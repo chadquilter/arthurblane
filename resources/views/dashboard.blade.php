@@ -55,7 +55,7 @@
               <br>
           @endif
           @if(count($quotes) > 0)
-                <div id="quotes_div" name="quotes_div" class="container border border-secondary rounded shadow_only">
+                <div id="quotes_div" name="quotes_div" class="container shadow_only">
                   <h3 class="display-8">
                     <span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:
                   </h3>
