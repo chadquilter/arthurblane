@@ -53,6 +53,7 @@
                 @endforeach
 
                     {{$jobs->links()}}
+              </div>
 
           @endif
           @if(count($quotes) > 0)
