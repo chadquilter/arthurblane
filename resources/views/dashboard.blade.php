@@ -45,9 +45,8 @@
                           <div class="col-12">
                             <strong>Job: </strong>{{$job->job_title}}
                           </div>
-                          <div class="col-4 btn-group" role="group" aria-label="job list">
+                          <div class="col-4 btn-group" role="group" aria-label="Job List">
                             <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
-
                             {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                             {{Form::hidden('_method', 'DELETE')}}
                             {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
@@ -85,13 +84,11 @@
                     <td>
                       <div class="container">
                         <div class="row">
-                          <div class="col-8">
+                          <div class="col-12">
                             <strong>Quote: </strong> {{$quote->title}}
                           </div>
-                          <div class="col-2">
+                          <div class="col-4 btn-group" role="group" aria-label="Quote List">
                             <a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a>
-                          </div>
-                          <div class="col-2">
                             {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                             {{Form::hidden('_method', 'DELETE')}}
                             {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
