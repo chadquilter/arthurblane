@@ -28,19 +28,14 @@
             </div>
           @endif
           @if(count($jobs) > 0)
-            <table class="table table-striped table-hover table-responsive border border-secondary">
-              <thead class="thead-inverse">
-                <tr>
-                  <th nowrap><h3><span class="badge badge-secondary">{{ $jobs->total() }}</span> Job Entries:</h3></th>
-                  <th></th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
+              <div class="container-fluid border border-secondary">
+                <h3 class="display-8">
+                  <span class="badge badge-secondary">{{ $jobs->total() }}</span> Job Entries:
+                </h3>
+
                 @foreach($jobs as $job)
-                  <tr>
-                    <td>
-                      <div class="container-fluid">
+
+
                         <div class="row">
                           <div class="col-12 col-md-8">
                             <strong>Job: </strong>{{$job->job_title}}
@@ -54,20 +49,11 @@
                           </div>
                         </div>
                       </div>
-                    </td>
-                  </tr>
+
                 @endforeach
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td>
+
                     {{$jobs->links()}}
-                  </td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tfoot>
-            </table>
+
           @endif
           @if(count($quotes) > 0)
             <table class="table table-striped table-hover table-responsive border border-secondary">
