@@ -42,10 +42,10 @@
                     <td>
                       <div class="container">
                         <div class="row">
-                          <div class="col-10">
+                          <div class="col-12 col-md-8">
                             <strong>Job: </strong>{{$job->job_title}}
                           </div>
-                          <div class="col-2 btn-group" role="group" aria-label="Job List">
+                          <div class="col-6 col-md-4 btn-group" role="group" aria-label="Job List">
                             <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
                             {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                             {{Form::hidden('_method', 'DELETE')}}
