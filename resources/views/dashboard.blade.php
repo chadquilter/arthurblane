@@ -50,51 +50,36 @@
                         </div>
 
                 @endforeach
-
-                    {{$jobs->links()}}
+                <br>
+                {{$jobs->links()}}
               </div>
 
           @endif
           @if(count($quotes) > 0)
-            <table class="table table-striped table-hover table-responsive border border-secondary">
-              <thead class="thead-inverse">
-                <tr>
-                  <th nowrap><h3><span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:</h3></th>
-                  <th></th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                @foreach($quotes as $quote)
-                  <tr>
-                    <td>
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-12 col-md-8">
-                            <strong>Quote: </strong> {{$quote->title}}
-                          </div>
-                          <div class="col-6 col-md-4 btn-group" role="group" aria-label="Quote List">
-                            <a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a>
-                            {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
-                            {{Form::hidden('_method', 'DELETE')}}
-                            {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
-                            {!!Form::close()!!}
-                          </div>
-                        </div>
-                      </div>
 
-                    </td>
-                  </tr>
+                <div class="container-fluid border border-secondary">
+                  <h3 class="display-8">
+                    <span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:
+                  </h3>
+
+                @foreach($quotes as $quote)
+
+                  <div class="row">
+                    <div class="col-12 col-md-8">
+                      <strong>Job: </strong>{{$quote->title}}
+                    </div>
+                    <div class="col-6 col-md-4 btn-group" role="group" aria-label="Job List">
+                      <a href="/jobs/{{$quote->id}}/edit" class="btn btn-primary">Edit</a>
+                      {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                      {{Form::hidden('_method', 'DELETE')}}
+                      {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                      {!!Form::close()!!}
+                    </div>
+                  </div>
                 @endforeach
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td>{{$quotes->links()}}</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tfoot>
-            </table>
+                <br>
+                {{$jobs->links()}}
+              </div>
           @endif
 
           @if(count($addresses) > 0)
