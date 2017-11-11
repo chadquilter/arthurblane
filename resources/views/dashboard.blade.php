@@ -7,7 +7,7 @@
       <h3 class="display-5"> Welcome {{ Auth::user()->name }}.</h3>
       <div class="card mx-auto">
         <br>
-        <div class="card-title">
+        <div class="card-body">
           <div class="btn-group" role="group" aria-label="links">
             <a href="{{ url('/logout') }}" class="btn btn-primary">Logout of Dashboard</a>
           </div>
@@ -19,8 +19,6 @@
             <a href="/address" class="btn btn-warning">Manage Addresses</a>
             <a href="/items" class="btn btn-warning">Manage Items</a>
           </div>
-        </div>
-        <div class="card-body">
           <hr class="my-1">
           @include('inc.messages')
           <br>
