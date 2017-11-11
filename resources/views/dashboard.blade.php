@@ -92,10 +92,10 @@
                           <div class="col-8">
                             <strong>Quote: </strong> {{$quote->title}}
                           </div>
-                          <div class="col-4">
+                          <div class="col-2">
                             <a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a>
                           </div>
-                          <div class="col-4">
+                          <div class="col-2">
                             {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                             {{Form::hidden('_method', 'DELETE')}}
                             {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
