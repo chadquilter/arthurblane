@@ -70,7 +70,7 @@
 
                   <div class="row">
                     <div class="col-12 col-md-8">
-                      <strong>Job: </strong>{{$quote->title}}
+                      <strong>Quote: </strong>{{$quote->title}}
                     </div>
                     <div class="col col-md-4 btn-group" role="group" aria-label="Job List">
                       {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
