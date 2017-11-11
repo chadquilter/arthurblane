@@ -66,7 +66,7 @@
 
                 @foreach($quotes as $quote)
 
-                  <div class="row">
+                  <div class="row row-fluid show-grid">
                     <div class="col-12 col-md-8">
                       <strong>Job: </strong>{{$quote->title}}
                     </div>
