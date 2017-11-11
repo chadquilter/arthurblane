@@ -86,13 +86,24 @@
               <tbody>
                 @foreach($quotes as $quote)
                   <tr>
-                    <td width=90%><strong>Quote: </strong> {{$quote->title}}</td>
-                    <td width=5%><a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a></td>
-                    <td with=5%>
-                      {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
-                      {{Form::hidden('_method', 'DELETE')}}
-                      {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
-                      {!!Form::close()!!}
+                    <td>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-8">
+                            <strong>Quote: </strong> {{$quote->title}}
+                          </div>
+                          <div class="col-4">
+                            <a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a>
+                          </div>
+                          <div class="col-4">
+                            {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                            {{Form::hidden('_method', 'DELETE')}}
+                            {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                            {!!Form::close()!!}
+                          </div>
+                        </div>
+                      </div>
+
                     </td>
                   </tr>
                 @endforeach
