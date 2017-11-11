@@ -28,7 +28,7 @@
             </div>
           @endif
           @if(count($jobs) > 0)
-              <div class="container-fluid border border-secondary">
+              <div class="container-fluid border border-secondary rounded">
                 <h3 class="display-8">
                   <span class="badge badge-secondary">{{ $jobs->total() }}</span> Job Entries:
                 </h3>
@@ -61,7 +61,7 @@
           @endif
           @if(count($quotes) > 0)
 
-                <div class="container-fluid border border-secondary">
+                <div class="container-fluid border border-secondary rounded">
                   <h3 class="display-8">
                     <span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:
                   </h3>
