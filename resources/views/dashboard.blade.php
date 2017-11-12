@@ -9,9 +9,9 @@
       <br>
       <div class="card-body">
 
-
+<div id='app'>
   <example></example>
-
+</div>
 
         <div class="btn-group" role="group" aria-label="links">
           <a href="/jobs/create" class="btn btn-success">Create Job</a>

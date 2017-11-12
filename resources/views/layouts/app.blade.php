@@ -17,13 +17,11 @@
 </head>
 <body>
   <main role="main">
-    <div id='app'>
       @include('inc.navbar')
       <div class="body-container">
         @yield('content')
       </div>
     @include('inc.footer')
-    </div>
   </main>
     <!-- Scripts -->
   <script src="{{ asset('js/app.js') }}"></script>
