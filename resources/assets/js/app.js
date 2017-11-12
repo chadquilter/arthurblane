@@ -31,7 +31,7 @@ const app = new Vue({
 });
 
 var example2 = new Vue({
-el: '#example-2',
+el: '#app',
 data: {
   parentMessage: 'Parent',
   items: [
