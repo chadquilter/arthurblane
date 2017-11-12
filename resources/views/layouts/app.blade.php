@@ -17,11 +17,13 @@
 </head>
 <body>
   <main role="main">
-    @include('inc.navbar')
-    <div class="body-container">
-      @yield('content')
-    </div>
+    <div id='app'>
+      @include('inc.navbar')
+      <div class="body-container">
+        @yield('content')
+      </div>
     @include('inc.footer')
+    </div>
   </main>
     <!-- Scripts -->
   <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
