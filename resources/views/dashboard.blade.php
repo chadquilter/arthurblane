@@ -9,7 +9,7 @@
       <br>
       <div class="card-body">
 
-<div id="app">
+<div name="app" id="app" class="app">
 <example-component></example-component>
 </div>
         <div class="btn-group" role="group" aria-label="links">
