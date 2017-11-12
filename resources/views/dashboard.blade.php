@@ -10,7 +10,7 @@
       <div class="card-body">
 
 <div id='app'>
-  <example></example>
+  <recordui></recordui>
 </div>
 
         <div class="btn-group" role="group" aria-label="links">

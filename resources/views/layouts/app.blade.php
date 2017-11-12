@@ -13,7 +13,6 @@
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
     <link href="/css/image_styles.css" rel="stylesheet">
-
 </head>
 <body>
   <main role="main">
