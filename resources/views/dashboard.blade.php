@@ -9,9 +9,9 @@
       <br>
       <div class="card-body">
 
-
-<incbtn-component></incbtn-component>
-
+<div id=app>
+<example-component></example-component>
+</div>
         <div class="btn-group" role="group" aria-label="links">
           <a href="/jobs/create" class="btn btn-success">Create Job</a>
           <a href="/quotes" class="btn btn-success">Create Quote</a>
