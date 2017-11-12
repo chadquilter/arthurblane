@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
   <div class="jumbotron">
-    <h3 class="display-4">Dashboard<h3>
+    <h3 class="display-4">Dashboard</h3>
     <h3 class="display-5"> Welcome {{ Auth::user()->name }}.</h3>
     <div class="card mx-auto">
       <br>
@@ -29,7 +29,7 @@
           </div>
         @endif
         @if(count($jobs) > 0)
-            <div id="jobs_di"v name="jobs_div" class="container border border-secondary rounded shadow_only">
+            <div id="jobs_div" name="jobs_div" class="container border border-secondary rounded shadow_only">
               <h3 class="display-8">
                 <span class="badge badge-secondary">{{ $jobs->total() }}</span> Job Entries:
               </h3>
