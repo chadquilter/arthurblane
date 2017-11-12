@@ -29,3 +29,14 @@ Vue.component('recordui', require('./components/RecordUI.vue'));
 const app = new Vue({
     el: '#app'
 });
+
+var example2 = new Vue({
+el: '#example-2',
+data: {
+  parentMessage: 'Parent',
+  items: [
+    { message: 'Foo' },
+    { message: 'Bar' }
+  ]
+}
+});
