@@ -10,7 +10,7 @@
       <div class="card-body">
 
 
-  <example-component></example-component>
+  <example></example>
 
 
         <div class="btn-group" role="group" aria-label="links">
