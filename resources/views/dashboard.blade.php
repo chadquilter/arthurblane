@@ -89,7 +89,7 @@
         @endif
         <br>
         @if(count($addresses) > 0)
-          <div id="quotes_div" name="quotes_div" class="container rounded shadow_only">
+          <div id="quotes_div" name="quotes_div" class="container border rounded shadow_only">
           <table class="table table-striped table-hover table-responsive">
             <thead class="thead-inverse">
               <tr>
