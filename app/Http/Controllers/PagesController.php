@@ -10,7 +10,7 @@ class PagesController extends Controller
 
     public function __construct()
     {
-      $title = 'Welcome to '.config('app.name')
+      $title = 'Welcome to '.config('app.name');
       $services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
     }
 
