@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Service;
 
 class PagesController extends Controller
 {
@@ -19,20 +20,13 @@ class PagesController extends Controller
     }
 
     public function services(){
-       $data = array(
+      $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
+      $data = array(
 		       'title' => 'Services',
-		       'services' => ['Custom Homes',
-              'Custom Concrete',
-              'Custom Kitchen and Bath',
-              'Construction Management',
-              'Excavation',
-              'Concrete and Asphalt (structural and paving)',
-              'Structural Steel',
-              'Interior Finish Out',
-              'Ground Up Construction',
-              'Demolition'
-            ]);
-       return view('pages.services')->with($data);
+		       'services' => [$service_listing]
+      );
+
+      return view('pages.services')->with($data);
     }
 
 }
