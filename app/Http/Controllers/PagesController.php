@@ -23,7 +23,7 @@ class PagesController extends Controller
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $data = array(
 		       'title' => 'Services',
-		       'services' => [$service_listing]
+		       'services' => $service_listing
       );
 
       return view('pages.services')->with($data);
