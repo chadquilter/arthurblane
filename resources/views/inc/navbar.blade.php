@@ -13,9 +13,17 @@
       <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
         <a class="nav-link" href="/quotes">Quote</a>
       </li>
+      @if (count($service_listing) > 0)
       <li class="nav-item {{ ( \Request::url() == url('/services') ) ? 'active' : '' }}">
         <a class="nav-link" href="/services">Services</a>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="nav-services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+          <div class="dropdown-menu" aria-labelledby="nav-services">
+            @foreach ($service_listing as $service)
+            <a class="dropdown-item" href="/{{ $service->serivce_name }}"> {{ $service->service_name }} </a>
       </li>
+      @endif
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
         <a class="nav-link" href="/jobs">Jobs</a>
       </li>
