@@ -42,8 +42,6 @@ class PagesController extends Controller
     }
 
     public function services(){
-
-       $data = this->service_listing();
-       return view('pages.services')->with($data);
+       return view('pages.services')->with($this->service_listing);
     }
 }
