@@ -19,7 +19,7 @@ class CreateServicesTable extends Migration
             $table->timestamps();
         });
 
-        DB::table('users')->insert(
+        DB::table('services')->insert(
           array(
             'service_name' => 'Custom Homes'
           ),(
