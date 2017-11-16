@@ -7,11 +7,6 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
 
-  public function __construct()
-  {
-      $this->service_listing = service_listing();
-  }
-
   public function service_listing(){
       $data = array(
         'title' => 'Services',
@@ -29,6 +24,10 @@ class PagesController extends Controller
       return $data;
     }
 
+    public function __construct()
+    {
+        $this->service_listing = service_listing();
+    }
     public function index(){
        $title = 'Welcome to '.config('app.name');
 	//al method to pass values to page
