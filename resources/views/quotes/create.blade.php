@@ -28,6 +28,7 @@
         <h1 class="display-3">Create a Quote:</h1>
         <div class="card mx-auto border border-secondary">
           <div class="card-body">
+            @include('inc.messages')
             {!! Form::open(['action' => 'QuotesController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
             <div class="form=group">
               {{Form::label('title', 'Name:')}}
