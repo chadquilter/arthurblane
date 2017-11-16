@@ -16,13 +16,6 @@ class PagesController extends Controller
        return view('pages.index')
         ->with('title', $title)
         ->with('services', $services);
-
-
-        return view('dashboard')
-          ->with('jobs', $jobs)
-          ->with('user', $user)
-          ->with('quotes', $quotes)
-          ->with('addresses', $addresses);
     }
 
     public function quote(){
@@ -42,7 +35,7 @@ class PagesController extends Controller
       );
 
       return view('pages.services')
-        ->with('services', $services),
+        ->with('services', $services)
         ->with('data', $data);
     }
 
