@@ -56,7 +56,7 @@ class QuotesController extends Controller
           $this->validate($request, [
               'title' => 'required',
               'phone' => 'required',
-              'email' => 'required:email',
+              'email' => 'required|email',
               'description' => 'required'
           ]);
 
@@ -152,7 +152,7 @@ class QuotesController extends Controller
           $this->validate($request, [
               'title' => 'required',
               'phone' => 'required',
-              'email' => 'required:email',
+              'email' => 'required|email',
               'description' => 'required'
           ]);
 
