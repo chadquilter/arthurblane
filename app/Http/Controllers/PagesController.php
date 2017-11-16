@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
 
+  public function __construct()
+  {
+      $this->service_listing = service_listing();
+  }
+
   public function service_listing(){
       $data = array(
         'title' => 'Services',
@@ -38,7 +43,7 @@ class PagesController extends Controller
 
     public function services(){
 
-       $data = this.service_listing();
+       $data = this->service_listing();
        return view('pages.services')->with($data);
     }
 }
