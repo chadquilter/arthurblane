@@ -21,7 +21,8 @@
           <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="nav-services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
           <div class="dropdown-menu" aria-labelledby="nav-services">
             @foreach ($service_listing as $service)
-            <a class="dropdown-item" href="/{{ $service->serivce_name }}"> {{ $service->service_name }} </a>
+              <a class="dropdown-item" href="/{{ $service->serivce_name }}"> {{ $service->service_name }} </a>
+            @endforeach
       </li>
       @endif
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
