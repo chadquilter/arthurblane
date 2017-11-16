@@ -19,20 +19,27 @@ class PagesController extends Controller
     }
 
     public function services(){
-       $data = array(
-		       'title' => 'Services',
-		       'services' => ['Custom Homes',
-              'Custom Concrete',
-              'Custom Kitchen and Bath',
-              'Construction Management',
-              'Excavation',
-              'Concrete and Asphalt (structural and paving)',
-              'Structural Steel',
-              'Interior Finish Out',
-              'Ground Up Construction',
-              'Demolition'
-            ]);
+
+       $data = service_listing();
        return view('pages.services')->with($data);
+    }
+
+    public function service_listing(){
+        $data = array(
+          'title' => 'Services',
+          'services' => ['Custom Homes',
+             'Custom Concrete',
+             'Custom Kitchen and Bath',
+             'Construction Management',
+             'Excavation',
+             'Concrete and Asphalt (structural and paving)',
+             'Structural Steel',
+             'Interior Finish Out',
+             'Ground Up Construction',
+             'Demolition'
+        ]);
+
+           return $data;
     }
 
 }
