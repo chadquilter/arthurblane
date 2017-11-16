@@ -15,14 +15,15 @@
       </li>
       @if (count($services) > 0)
       <li class="nav-item {{ ( \Request::url() == url('/services') ) ? 'active' : '' }}">
-        <a class="nav-link" href="/services">Services</a>
-
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="nav-services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-          <div class="dropdown-menu" aria-labelledby="nav-services">
-            @foreach ($services as $service)
+            <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="nav-services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+            <div class="dropdown-menu" aria-labelledby="nav-services">
+              @foreach($services as $service)
               <a class="dropdown-item" href="/"> {{ $service->service_name }} </a>
-            @endforeach
+              @endforeach
+            </div>
+          </a>
+        </li>
       </li>
       @endif
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
