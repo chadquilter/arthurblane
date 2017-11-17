@@ -19,7 +19,7 @@
             <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="nav-services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
             <div class="dropdown-menu" aria-labelledby="nav-services">
               @foreach($mdg_services as $mdg_service)
-              <a class="dropdown-item" href="/"> {{ $mdg_service->mdg_service_name }} </a>
+              <a class="dropdown-item" href="/"> {{ $mdg_services->service_name }} </a>
               @endforeach
             </div>
           </a>
