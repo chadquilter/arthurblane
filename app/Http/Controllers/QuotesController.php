@@ -7,6 +7,7 @@ use App\Quote;
 use App\User;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\QuoteMail;
+use App\Service;
 
 class QuotesController extends Controller
 {
@@ -32,7 +33,12 @@ class QuotesController extends Controller
           //use db to do custom sql instead
           //$jobs = Job::orderBy('created_at', 'job_desc')->get();
           //$jobs = Job::orderBy('created_at', 'asc')->take(1)->get(); for limit
-          return view('quotes.create');
+
+          // get mdg services
+          $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+
+          return view('quotes.create')
+            ->with('mdg_services', $mdg_services);
       }
 
       /**
@@ -69,6 +75,8 @@ class QuotesController extends Controller
           $identifier = 'Filler TEXT';
           $guestimate_amount = '1';
           $current_user = '1';
+          // get mdg services
+          $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
 
           // create job
           $quote = new Quote;
