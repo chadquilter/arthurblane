@@ -7,6 +7,7 @@ use App\Job;
 use App\User;
 use App\Item;
 use App\JobItem;
+use App\Service;
 
 class JobsController extends Controller
 {
@@ -32,10 +33,14 @@ class JobsController extends Controller
         //use db to do custom sql instead
         //$jobs = Job::orderBy('created_at', 'job_desc')->get();
         //$jobs = Job::orderBy('created_at', 'asc')->take(1)->get(); for limit
-
+        // get mdg services
+        $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+        //
         $jobs = Job::where('job_display', '=', '1')->orderBy('created_at', 'desc', 'name')->paginate(1);
         //$jobs = Job::orderBy('created_at', 'asc')->get();
-        return view('jobs.index')->with('jobs', $jobs);
+        return view('jobs.index')
+          ->with('jobs', $jobs)
+          ->with('mdg_services', $mdg_services);
     }
 
     /**
