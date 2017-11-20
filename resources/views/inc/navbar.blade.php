@@ -15,7 +15,7 @@
       </li>
       @if (count($mdg_services) > 0)
       <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
-        <a class="nav-link" href="/quotes">Route</a>
+        <a class="nav-link" href="/services">Services</a>
       </li>
       @endif
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
