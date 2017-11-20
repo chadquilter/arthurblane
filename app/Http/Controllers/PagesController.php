@@ -38,7 +38,7 @@ class PagesController extends Controller
       return view('pages.services')
         ->with('title', $title)
         ->with('mdg_services', $mdg_services)
-        ->with('services', $services);
+        ->with('services', $service_listing);
     }
 
 }
