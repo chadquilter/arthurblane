@@ -36,9 +36,6 @@
           <div class="col">
             <strong> Phone: </strong>
           </div>
-          <div class="col">
-            <strong> Email: </strong>
-          </div>
         </div>
         <div class="row">
           <div class="col">
@@ -47,9 +44,6 @@
           <div class="col">
               <strong>(830)220-2876</strong>
           </div>
-          <div class="col">
-              <strong>mikegrounds55@cutaboveconstruction55.com</strong>
-          </div>
         </div>
         <div class="row">
           <div class="col">
@@ -57,9 +51,6 @@
           </div>
           <div class="col">
               <strong>(830)296-0941</strong>
-          </div>
-          <div class="col">
-              <strong>bobbarrian@arthurblane.com</strong>
           </div>
         </div>
 
