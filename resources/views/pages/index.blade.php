@@ -45,7 +45,7 @@
         <div class="image_display_r">
           <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" style="max-height:100%; width: 100%; display: block;">
           <div class="image_display_text_container">
-            <p>Custom Design!</p>
+            <p>Custom Metal Work!</p>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@
         <div class="image_display_r">
           <img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_00111.jpg" style="max-height:100%; width: 100%; display: block;">
           <div class="image_display_text_container">
-            <p>Custom Metal Work for Stair Wells, Frames, Railing and so much more!</p>
+            <p>Stair Wells, Frames, Railing and so much more!</p>
           </div>
         </div>
       </div>
