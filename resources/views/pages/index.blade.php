@@ -41,7 +41,7 @@
     </div>
     <br>
     <div class="row">
-      <div class="col-md-8">
+      <div class="col">
         <div class="image_display_r">
           <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" style="max-height:100%; width: 100%; display: block;">
           <div class="image_display_text_container">
