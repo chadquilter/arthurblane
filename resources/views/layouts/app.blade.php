@@ -17,11 +17,12 @@
 </head>
 <body>
   <main role="main">
-      @include('inc.navbar')
-      <div class="body-container" style="background-attachment:fixed;background-color:#fff;background-position:center top;background-repeat:repeat-x;background-image: url(/images/art-bg.jpg); width=100%;">
-        <br>
-        @yield('content')
-      </div>
+    @include('inc.navbar')
+    <br>
+    <div class="body-container" style="background-attachment:fixed;background-color:#fff;background-position:center top;background-repeat:repeat-x;background-image: url(/images/art-bg.jpg); width=100%;">
+      <br>
+      @yield('content')
+    </div>
     @include('inc.footer')
   </main>
     <!-- Scripts -->
