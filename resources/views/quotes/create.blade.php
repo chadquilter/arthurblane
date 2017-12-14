@@ -28,6 +28,7 @@
         <h1 class="display-2">Feel free </h1> to send us a request for a Quote or any Messages or Questions!
         <br>
         We will be happy to help you in any way we can.
+        <br>
         <div class="card mx-auto border border-secondary">
           <div class="card-body">
             @include('inc.messages')
