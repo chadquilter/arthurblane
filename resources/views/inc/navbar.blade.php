@@ -11,7 +11,7 @@
         <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
-        <a class="nav-link" href="/quotes">Request Quote/Contact</a>
+        <a class="nav-link" href="/quotes">Contact/Request Quote</a>
       </li>
       <li class="nav-item {{ ( \Request::url() == url('services') ) ? 'active' : '' }}">
         <a class="nav-link" href="/services">Services</a>
