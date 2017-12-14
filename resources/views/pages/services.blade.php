@@ -37,12 +37,6 @@
 					</div>
 				</div>
 				<br>
-				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/ARCH1.JPG" style="max-height:100%; width: 100%; display: block;">
-					<div class="image_display_text_container">
-						<p>Custom Roofing!</p>
-					</div>
-				</div>
 			</div>
 		</div>
 
