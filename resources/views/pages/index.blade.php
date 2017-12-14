@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col">
         <div class="jumbotron">
           <p class="lead">
             <strong class="display-4"> {{ config('app.name', 'MDG')  }} </strong>
