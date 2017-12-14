@@ -10,7 +10,7 @@
               <div class="jumbotron">
               <div id="card">
                 <div class="card">
-                	<h1 class="card-title"><a href="/jobs/{{$job->job_id}}"> {{$job->job_title}} </a></h1>
+                	<h1 class="card-title"> {{$job->job_title}} </h1>
                 	<div class="card-block">
                     {!!$job->job_summary!!}
                   </div>
