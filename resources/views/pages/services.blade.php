@@ -55,9 +55,29 @@
 			</div>
 			<div class="col-md-6">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_00444.jpg" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BATHROOM1" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
 						<p>Custom Deck!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="image_display_r">
+					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/window1.jpg" style="max-height:100%; width: 100%; display: block;">
+					<div class="image_display_text_container">
+						<p>Room Renovation!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="image_display_r">
+					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/Cub1.jpg" style="max-height:100%; width: 100%; display: block;">
+					<div class="image_display_text_container">
+						<p>Custom Cupbord Remodeling!</p>
 					</div>
 				</div>
 			</div>
@@ -75,7 +95,7 @@
 			</div>
 			<div class="col-md-6">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/Hall1.jpg" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/hall.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
 						<p>Custom Remodeling!</p>
 					</div>
