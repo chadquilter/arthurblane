@@ -14,8 +14,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="jumbotron">
-					<h5 class="display-5">{{ config('app.name', 'MDG')  }}</h5>
-					<br> Our Services our "A CUT ABOVE!"
+					<h4 class="display-4">At {{ config('app.name', 'MDG')  }} Our Services our "A CUT ABOVE" the rest!</h4>
 					<hr class="my-4">
 					<p class="lead">
 						@if(count($mdg_services) > 0)
