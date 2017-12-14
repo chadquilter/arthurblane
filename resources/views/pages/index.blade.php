@@ -75,7 +75,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="image_display_r">
-          <img class="img-fluid" alt="A scenic home image" src="/images/dusk-home1.jpg" style="max-height:100%; width: 100%; display: block;">
+          <img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/00111.jpg" style="max-height:100%; width: 100%; display: block;">
           <div class="image_display_text_container">
             <p>Custom Outdoor Walkways!</p>
           </div>
@@ -83,7 +83,7 @@
       </div>
       <div class="col-md-6">
         <div class="image_display_r">
-          <img class="img-fluid" alt="A scenic home image" src="/images/home-renovation.jpg" style="max-height:100%; width: 100%; display: block;">
+          <img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/00P.jpg" style="max-height:100%; width: 100%; display: block;">
           <div class="image_display_text_container">
             <p>Custom Rock!</p>
           </div>
