@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <br>
-      <div class="col-md-6">
+      <div class="col">
         <div class="image_display_r">
           <img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BATHROOM2.JPG" style="max-height:100%; width: 100%; display: block;">
           <div class="image_display_text_container">
@@ -13,7 +13,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col">
         <div class="image_display_r">
           <img class="img-fluid" alt="A scenic home image" src="/images/CAB1.JPG" style="max-height:100%; width: 100%; display: block;">
           <div class="image_display_text_container">
@@ -29,6 +29,37 @@
         <br>
         We will be happy to help you in any way we can.
         <br>
+        <div class="row">
+          <div class="col">
+            <strong> Name: </strong>
+          </div>
+          <div class="col">
+            <strong> Phone: </strong>
+          </div>
+          <div class="col">
+            <strong> Email: </strong>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <strong> Mike Grounds </strong>
+          </div>
+          <div class="col">
+              <strong>(830)296-094</strong>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <strong> Robert Butner </strong>
+          </div>
+          <div class="col">
+              <strong>(830)296-0941</strong>
+          </div>
+        </div>
+
+
+        <br>
+
         <div class="card mx-auto border border-secondary">
           <div class="card-body">
             @include('inc.messages')
