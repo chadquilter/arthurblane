@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'PagesController@index');
-Route::resource('Contact/Request Quote', 'QuotesController');
+Route::resource('quotes', 'QuotesController');
 Route::get('/services', 'PagesController@services');
 Route::resource('jobs', 'JobsController');
 Route::resource('address', 'AddressController');
