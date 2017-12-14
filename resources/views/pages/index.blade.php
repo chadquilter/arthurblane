@@ -58,12 +58,10 @@
           </p>
         </div>
         <br>
-        <div class="col-md-6">
-          <div class="image_display_r">
-            <img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_00111.jpg" style="max-height:100%; width: 100%; display: block;">
-            <div class="image_display_text_container">
-              <p>Custom Metal Work for Stair Wells, Frames, Railing and so much more!</p>
-            </div>
+        <div class="image_display_r">
+          <img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_00111.jpg" style="max-height:100%; width: 100%; display: block;">
+          <div class="image_display_text_container">
+            <p>Custom Metal Work for Stair Wells, Frames, Railing and so much more!</p>
           </div>
         </div>
       </div>
