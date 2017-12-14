@@ -47,7 +47,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/5_orig.jpg" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_0756.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
 						<p>Custom Repair Siding and Damage!</p>
 					</div>
@@ -55,7 +55,7 @@
 			</div>
 			<div class="col-md-6">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/4_orig.jpg" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_00444.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
 						<p>Custom Outdoor Rock Paths and Stairs!</p>
 					</div>
@@ -67,7 +67,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/5_orig.jpg" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_0756.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
 						<p>Custom Repair Siding and Damage!</p>
 					</div>
