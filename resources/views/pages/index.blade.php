@@ -79,9 +79,9 @@
     </div>
     <br>
     <div class="image_display_r">
-			<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_00P.jpg" style="max-height:100%; width: 100%; display: block;">
+			<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/3_orig.jpg" style="max-height:100%; width: 100%; display: block;">
 			<div class="image_display_text_container">
-				<p>Custom Outdoor Metal Structures and Concrete Pads!</p>
+				<p>Custom Driveways and Concrete Pads!</p>
 			</div>
 		</div>
   </div>
