@@ -14,7 +14,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="jumbotron">
-					<h1 class="display-3">{{ $title }}</h1>
+					<h3 class="display-3">{{ $title }}</h3>
 					<hr class="my-4">
 					<p class="lead">
 						@if(count($mdg_services) > 0)
