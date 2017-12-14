@@ -7,6 +7,7 @@
     @if(count($jobs) > 0)
         @foreach($jobs as $job)
             <div class="container">
+              <div class="jumbotron">
               <div id="card">
                 <div class="card">
                 	<h1 class="card-title"><a href="/jobs/{{$job->job_id}}"> {{$job->job_title}} </a></h1>
@@ -15,6 +16,7 @@
                   </div>
                 </div>
               </div>
+            </div>
             </div>
         @endforeach
         {{$jobs->links()}}
