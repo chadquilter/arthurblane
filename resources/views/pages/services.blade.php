@@ -12,7 +12,7 @@
 		<br>
 
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col">
 				<div class="jumbotron">
 						<strong class="display-2">Services</strong>
 						<br>
@@ -32,7 +32,7 @@
 					<hr class="my-4">
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/ARCH1.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
@@ -45,7 +45,7 @@
 
 		<br>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/CustomShower.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
@@ -53,7 +53,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BATHROOM1.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
@@ -65,7 +65,7 @@
 
 		<br>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/window1.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
@@ -73,7 +73,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/Cub1.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
@@ -85,7 +85,7 @@
 
 		<br>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_44444.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
@@ -93,7 +93,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/hall.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
@@ -105,7 +105,7 @@
 
 		<br>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/5_orig.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
@@ -113,7 +113,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/4_orig.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
@@ -125,7 +125,7 @@
 
 		<br>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BEDROOM1.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
@@ -133,7 +133,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BEDROOM1A.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
