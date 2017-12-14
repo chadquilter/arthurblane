@@ -66,8 +66,7 @@
       </div>
     </div>
     <br>
-    <div class="row">
-      <div class="col-md-8">
+    <div>
         <div class="jumbotron">
           <p class="lead">
             <strong>Whatever Custom Home </strong> you have in mind, from a quaint cottage in Austin,
@@ -78,15 +77,14 @@
             With over 10 years of building experience based in the center of Texas, you can be rest assured that our work is a cut above the rest!
           </p>
         </div>
-      </div>
     </div>
     <br>
-        <div class="image_display_r">
-          <img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_00P.jpg" style="max-height:100%; width: 100%; display: block;">
-          <div class="image_display_text_container">
-            <p>Custom Outdoor Metal structures and Concrete pads!</p>
-          </div>
-        </div>
+    <div class="image_display_r">
+			<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_00P.jpg" style="max-height:100%; width: 100%; display: block;">
+			<div class="image_display_text_container">
+				<p>Custom Outdoor Metal Structures and Concrete Pads!</p>
+			</div>
+		</div>
   </div>
   <br>
 @endsection
