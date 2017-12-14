@@ -25,7 +25,7 @@
     <br>
     <div class="jumbotron">
       <div class="container">
-        <h1 class="display-2">Feel free </h1> to send us a request for a Quote or any Messages or Questions!
+        <h1 class="display-2">Feel free </h1> to send us a request for a Quote, Message or any Questions!
         <br>
         <div class="row">
           <div class="col">
