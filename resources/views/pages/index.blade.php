@@ -66,7 +66,7 @@
           </p>
           <br>
           <p class="lead">
-              Over 10 years of building experience and still a cut above the rest!
+              With over 10 years of building experience based in the center of Texas, you can be rest assured that our work is a cut above the rest!
           </p>
         </div>
       </div>
