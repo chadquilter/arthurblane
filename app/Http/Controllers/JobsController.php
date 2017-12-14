@@ -193,9 +193,9 @@ class JobsController extends Controller
                 ->paginate(1000, array('job_items.*'), 'job_items');
 
         //check for auth
-        if(auth()->user()->id !==$job->user_id) {
-          return redirect('/dashboard')->with('error', 'Unauthorized Page!');
-        }
+        //if(auth()->user()->id !==$job->user_id) {
+        //  return redirect('/dashboard')->with('error', 'Unauthorized Page!');
+        //}
 
         //edit view
         return view('jobs.edit')
@@ -283,9 +283,9 @@ class JobsController extends Controller
 
         $job = Job::find($id);
         //authorized?
-        if(auth()->user()->id !==$job->user_id) {
-          return redirect('/login')->with('error', 'Unauthorized Page!');
-        }
+        //if(auth()->user()->id !==$job->user_id) {
+        //  return redirect('/login')->with('error', 'Unauthorized Page!');
+        //}
 
         $job->delete();
         return redirect('/dashboard')->with('success', 'Job Deleted');
