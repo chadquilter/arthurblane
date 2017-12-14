@@ -14,13 +14,13 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="jumbotron">
-					<h1 class="display-3">{{$title}}</h1>
+					<h1 class="display-3">{{ $title }}</h1>
 					<hr class="my-4">
 					<p class="lead">
-						@if(count($services) > 0)
+						@if(count($mdg_services) > 0)
 							<ul>
-								@foreach($services as $service)
-									<li>{{$service}}</li>
+								@foreach($mdg_services as $mdg_service)
+									<li>{{$mdg_service}}</li>
 								@endforeach
 							</ul>
 						@else

@@ -13,19 +13,9 @@
       <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
         <a class="nav-link" href="/quotes">Quote</a>
       </li>
-      @if (count($mdg_services) > 0)
-      <li class="nav-item {{ ( \Request::url() == url('/services') ) ? 'active' : '' }}">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="nav-services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-            <div class="dropdown-menu" aria-labelledby="nav-services">
-              @foreach($mdg_services as $mdg_service)
-              <a class="dropdown-item" href="/"> {{ $mdg_service }} </a>
-              @endforeach
-            </div>
-          </a>
-        </li>
+      <li class="nav-item {{ ( \Request::url() == url('services') ) ? 'active' : '' }}">
+        <a class="nav-link" href="/services">Services</a>
       </li>
-      @endif
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
         <a class="nav-link" href="/jobs">Jobs</a>
       </li>
