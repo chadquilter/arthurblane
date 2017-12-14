@@ -14,7 +14,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="jumbotron">
-						<strong class="display-1">Services</strong>
+						<strong class="display-2">Services</strong>
 						<br>
 						include but are not limited to:
 					<hr class="my-4">
@@ -55,7 +55,7 @@
 			</div>
 			<div class="col-md-6">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BATHROOM1" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BATHROOM1.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
 						<p>Custom Deck!</p>
 					</div>
