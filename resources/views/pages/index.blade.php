@@ -55,8 +55,11 @@
             <strong class="display-5"> {{ config('app.name', 'MDG')  }} </strong>
             <br> has helped thousands of happy homeowners across Texas build the new custom-designed home of their dreams.
             We build "eco-friendly" green custom homes of all sizes for all budgets.
-            <br>
-            <br>
+          </p>
+        </div>
+        <br>
+        <div class="jumbotron">
+          <p class="lead">
             <strong>Whatever</strong> custom home you have in mind, from a quaint cottage in Austin,
             a rambling farm house in the Hill Country or an elegant luxury estate home in Houston, Dallas or San Antonio, we can build, repair, or add to it at an affordable price.
           </p>
