@@ -54,7 +54,7 @@
         <br>
         <div class="row">
           <div class="col">
-            <strong> Contact or Request Quote:</strong>
+            <strong> Send Message or Request Quote:</strong>
           </div>
         </div>
 
