@@ -6,7 +6,7 @@
 		<div class="image_display_r">
 			<img class="img-fluid" alt="A scenic home image" src="/images/2_orig.jpg" style="max-height:100%; width: 100%; display: block;">
 			<div class="image_display_text_container">
-				<p>Custom Bathroom and Counters!</p>
+				<p>Custom Built Outdoor walkways and Paths!</p>
 			</div>
 		</div>
 		<br>
@@ -35,7 +35,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/ARCH1.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Roofing!</p>
+						<p>Custom Extensions/Overhauls for Rooms and Roofing!</p>
 					</div>
 				</div>
 				<br>
@@ -48,7 +48,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/5_orig.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Outdoor Walkways!</p>
+						<p>Custom Repair Siding and Damage!</p>
 					</div>
 				</div>
 			</div>
@@ -56,7 +56,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/4_orig.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Rock!</p>
+						<p>Custom Outdoor Rock Paths and Stairs!</p>
 					</div>
 				</div>
 			</div>
@@ -68,7 +68,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BEDROOM1.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Counter Space!</p>
+						<p>Custom Vanity!</p>
 					</div>
 				</div>
 			</div>
