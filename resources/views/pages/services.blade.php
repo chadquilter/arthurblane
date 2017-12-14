@@ -14,7 +14,10 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="jumbotron">
-					<h5 class="display-5">At {{ config('app.name', 'MDG')  }} Our Services our "A CUT ABOVE" the rest!</h5>
+					<h5 class="display-5">At {{ config('app.name', 'MDG')  }} our services are a cut above the rest!
+						<br>
+						Our Services include:
+					</h5>
 					<hr class="my-4">
 					<p class="lead">
 						@if(count($mdg_services) > 0)
