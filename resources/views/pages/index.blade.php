@@ -51,7 +51,7 @@
         <br>
         <div class="jumbotron">
           <p class="lead">
-            <strong>Whatever Custom Home </strong> you have in mind, from a quaint cottage in Austin,
+            <strong class="display-4">Whatever Custom Home </strong> you have in mind, from a quaint cottage in Austin,
             a rambling farm house in the Hill Country or an elegant luxury estate home in Houston, Dallas or San Antonio,
             we can build, repair, or add to it at an affordable price.
           </p>
@@ -75,19 +75,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <br>
-    <div>
-        <div class="jumbotron">
-          <p class="lead">
-            <strong>Whatever Custom Home </strong> you have in mind, from a quaint cottage in Austin,
-            a rambling farm house in the Hill Country or an elegant luxury estate home in Houston, Dallas or San Antonio,
-            we can build, repair, or add to it at an affordable price.
-          </p>
-          <p class="lead">
-            With over 10 years of building experience based in the center of Texas, you can be rest assured that our work is a cut above the rest!
-          </p>
-        </div>
     </div>
     <br>
     <div class="image_display_r">
