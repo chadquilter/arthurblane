@@ -14,9 +14,10 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="jumbotron">
-					<h5 class="display-5">At {{ config('app.name', 'MDG')  }} our services are a cut above the rest!
+					<h5 class="display-5">At {{ config('app.name', 'MDG')  }} our proffesional quality services are a cut above the rest!
 						<br>
-						Our Services include:
+						<br>
+						Our Services include but not limited to:
 					</h5>
 					<hr class="my-4">
 					<p class="lead">
