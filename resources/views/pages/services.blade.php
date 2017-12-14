@@ -4,9 +4,9 @@
 <br>
 <div class="container">
 		<div class="image_display_r">
-			<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BATHROOM1.JPG" style="max-height:100%; width: 100%; display: block;">
+			<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BATHROOM1.JPG" style="max-height:50%; width: 50%; display: block;">
 			<div class="image_display_text_container">
-				<p>Our work is a cut above the rest!</p>
+				<p>Custom Bathroom and Counters!</p>
 			</div>
 		</div>
 		<br>
@@ -33,7 +33,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/ARCH1.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Our work is a cut above the rest!</p>
+						<p>Custom Roofing!</p>
 					</div>
 				</div>
 			</div>
@@ -45,7 +45,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BEDROOM1.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Our work is a cut above the rest!</p>
+						<p>Custom Counter Space!</p>
 					</div>
 				</div>
 			</div>
@@ -53,7 +53,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BEDROOM1A.JPG" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Our work is a cut above the rest!</p>
+						<p>Custom Ceiling and Molding!</p>
 					</div>
 				</div>
 			</div>

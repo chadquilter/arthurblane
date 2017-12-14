@@ -9,7 +9,7 @@
 			<div class="image_display_r">
 				<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BATHROOM2.JPG" style="max-height:450%; width: 100%; display: block;">
 				<div class="image_display_text_container">
-					<p>Our work is a cut above the rest!</p>
+					<p>Custom Bash and Counters!</p>
 				</div>
 			</div>
 		</div>
@@ -17,7 +17,7 @@
 			<div class="image_display_r">
 				<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_F1F2_1.JPG" style="max-height:450%; width: 100%; display: block;">
 				<div class="image_display_text_container">
-					<p>Our work is a cut above the rest!</p>
+					<p>>Custom Kitchen Design!</p>
 				</div>
 			</div>
 		</div>
@@ -62,7 +62,7 @@
 	<div class="image_display_r">
 		<img class="img-fluid"  alt="A scenic home image" src="/images/3_orig.jpg" style="max-height:450%; width: 100%; display: block;">
 		<div class="image_display_text_container">
-			<p>Custom Design!</p>
+			<p>Custom Concrete and Paving!</p>
 		</div>
 	</div>
 	<br>
