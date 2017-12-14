@@ -17,7 +17,7 @@
         <div class="image_display_r">
           <img class="img-fluid" alt="A scenic home image" src="/images/CAB1.JPG" style="max-height:100%; width: 100%; display: block;">
           <div class="image_display_text_container">
-            <p>Our work is a cut above the rest!</p>
+            <p>Custom Design!</p>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
     <br>
     <div class="jumbotron">
       <div class="container">
-        <h1 class="display-3">Get a Quote:</h1>
+        <h1 class="display-2">Feel free </h1> to request a Quote, ask Questions or Send a Comment:
         <div class="card mx-auto border border-secondary">
           <div class="card-body">
             @include('inc.messages')
