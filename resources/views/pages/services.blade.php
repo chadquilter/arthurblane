@@ -14,8 +14,9 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="jumbotron">
-						<strong class="display-4">Our Services: </strong>
-					</h5>
+						<strong class="display-4">Our Services:</strong>
+						<br>
+						include but are not limited to:
 					<hr class="my-4">
 					<p class="lead">
 						@if(count($mdg_services) > 0)
