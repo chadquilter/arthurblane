@@ -7,10 +7,7 @@
       <center>
         <p class="text-muted">
           <br>
-          &copy; 2017,  {{ config('app.name', 'MDG') }} Inc.,
-          <br>
-          &trade; " {{ config('app.name', 'MDG') }}" is an Equal Opportunity Employer.
-          All Rights Reserved.
+          2017,  {{ config('app.name', 'MDG') }}
         </p>
       </center>
     </div>
