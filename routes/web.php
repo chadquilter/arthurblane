@@ -25,6 +25,7 @@ Route::get('/groundupconstruction', 'PagesController@groundupconstruction');
 Route::get('/interior', 'PagesController@interior');
 Route::get('/kitchenbath', 'PagesController@kitchenbath');
 Route::get('/steel', 'PagesController@steel');
+Route::get('/homes', 'PagesController@homes');
 
 Route::resource('jobs', 'JobsController');
 Route::resource('address', 'AddressController');

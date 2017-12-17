@@ -176,4 +176,19 @@ class PagesController extends Controller
         ->with('services', $service_listing);
     }
 
+    public function homes(){
+      $title = 'Custom Homes';
+      $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+      $data = array(
+           'title' => 'Services',
+           'services' => $service_listing
+      );
+
+      return view('pages.homes')
+        ->with('title', $title)
+        ->with('mdg_services', $mdg_services)
+        ->with('services', $service_listing);
+    }
+
 }
