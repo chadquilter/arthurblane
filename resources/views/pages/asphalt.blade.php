@@ -15,7 +15,7 @@
 				<strong class="display-4"> {{ $title }} </strong>
 			</div>
 		</div>
-		</div>
+
 
 
 
@@ -26,6 +26,8 @@
 				<p>Customized Asphalt Driveway!</p>
 			</div>
 		</div>
+		
+	</div>
 		<br>
 
 		<div class="row">
