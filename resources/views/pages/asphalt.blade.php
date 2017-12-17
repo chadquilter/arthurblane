@@ -5,7 +5,7 @@
 <div class="container">
 
 
-	<div class="jumbotron">
+
 		<div class="row">
 			<div class="col-sm-2 alert alert-primary">
 				<h1><span class="badge badge-secondary">BAM!</span></h1>
@@ -22,7 +22,7 @@
   			</div>
 			</div>
 		</div>
-	</div>
+
 
 	<br>
 
