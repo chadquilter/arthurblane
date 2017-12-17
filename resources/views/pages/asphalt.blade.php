@@ -7,15 +7,11 @@
 
 	<div class="jumbotron">
 		<div class="row">
-			<div class="col-sm-2">
-				<div class="card">
-					<h2 class="card-title">  </h2>
-				</div>
+			<div class="col-sm-2 alert alert-primary">
+				<strong class="display-2">  </strong>
 			</div>
-			<div class="col-sm-10">
-				<div class="card">
-					<h2 class="card-title"> {{ $title }} </h2>
-				</div>
+			<div class="col-sm-10 alert alert-light image_display_r">
+				<strong class="display-3"> {{ $title }} </strong>
 			</div>
 		</div>
 		<div class="image_display_r">
