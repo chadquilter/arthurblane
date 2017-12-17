@@ -8,7 +8,7 @@
 	<div class="jumbotron">
 		<div class="row">
 			<div class="col-sm-2 alert alert-primary">
-				<strong class="display-2">  </strong>
+				<strong class="display-2">Bam:</strong>
 			</div>
 			<div class="col-sm-10 alert alert-light image_display_r">
 				<strong class="display-3"> {{ $title }} </strong>
