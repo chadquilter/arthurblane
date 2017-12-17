@@ -10,7 +10,7 @@
       <div class="card">
         <div class="card-title">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col">
               <h1 class="card-title alert alert-success"> Job: </h1>
             </div>
             <div class="col">
