@@ -17,7 +17,7 @@
               </center>
             </div>
           </div>
-        </center>
+
         <div class="card">
           <div class="card-title ">
             @include('inc.pagelabel')
