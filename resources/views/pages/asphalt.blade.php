@@ -19,14 +19,14 @@
 
 
 
-
-		<div class="image_display_r">
+		<div class="row">
+		<div class="col image_display_r">
 			<img class="img-fluid" alt="A scenic home image" src="/images/3_orig.jpg" style="max-height:100%; width: 100%; display: block;">
 			<div class="image_display_text_container">
 				<p>Customized Asphalt Driveway!</p>
 			</div>
 		</div>
-		
+	</div>
 	</div>
 		<br>
 
