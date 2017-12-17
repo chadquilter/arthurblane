@@ -16,10 +16,11 @@
                     </div>
                     <div class="col">
                       <h1 class="card-title"> {{$job->job_title}} </h1>
-                    </div>
+                    
                 	<div class="card-block image_display_r">
                     {!!$job->job_summary!!}
                   </div>
+                </div>
                 </div>
                 </div>
               </div>
