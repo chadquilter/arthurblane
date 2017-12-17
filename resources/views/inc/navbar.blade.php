@@ -13,9 +13,6 @@
       <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
         <a class="nav-link" href="/quotes">Contact/Request Quote</a>
       </li>
-      <li class="nav-item {{ ( \Request::url() == url('services') ) ? 'active' : '' }}">
-        <a class="nav-link" href="/services">Services</a>
-      </li>
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
