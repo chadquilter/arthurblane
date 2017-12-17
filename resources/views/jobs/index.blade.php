@@ -12,16 +12,16 @@
                 <div class="card">
                 	<div class="card-title row">
                     <div class="col-sm-3">
-                      <h1 class="card-title alert alert-success"> JOB </h1>
+                      <h1 class="card-title alert alert-success"> Job: </h1>
                     </div>
                     <div class="col-lg-12">
                       <h1 class="card-title"> {{$job->job_title}} </h1>
-
+                    </div>
+                    </div>
                 	<div class="card-block image_display_r">
                     {!!$job->job_summary!!}
                   </div>
-                </div>
-                </div>
+
                 </div>
               </div>
             </div>
