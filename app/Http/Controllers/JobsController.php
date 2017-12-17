@@ -36,7 +36,7 @@ class JobsController extends Controller
         // get mdg services
         $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
         //
-        $jobs = Job::where('job_display', '=', '1')->orderBy('created_at', 'desc', 'name')->paginate(1);
+        $jobs = Job::where('job_display', '=', '1')->orderBy('modified_at', 'desc', 'name')->paginate(1);
         //$jobs = Job::orderBy('created_at', 'asc')->get();
         return view('jobs.index')
           ->with('jobs', $jobs)
