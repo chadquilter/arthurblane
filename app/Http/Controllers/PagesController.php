@@ -50,7 +50,7 @@ class PagesController extends Controller
            'services' => $service_listing
       );
 
-      return view('pages.services')
+      return view('pages.aphalt')
         ->with('title', $title)
         ->with('mdg_services', $mdg_services)
         ->with('services', $service_listing);
@@ -65,7 +65,7 @@ class PagesController extends Controller
            'services' => $service_listing
       );
 
-      return view('pages.services')
+      return view('pages.cm')
         ->with('title', $title)
         ->with('mdg_services', $mdg_services)
         ->with('services', $service_listing);
@@ -80,7 +80,7 @@ class PagesController extends Controller
            'services' => $service_listing
       );
 
-      return view('pages.services')
+      return view('pages.concrete')
         ->with('title', $title)
         ->with('mdg_services', $mdg_services)
         ->with('services', $service_listing);
@@ -95,7 +95,7 @@ class PagesController extends Controller
            'services' => $service_listing
       );
 
-      return view('pages.services')
+      return view('pages.kitchenbath')
         ->with('title', $title)
         ->with('mdg_services', $mdg_services)
         ->with('services', $service_listing);
@@ -110,7 +110,7 @@ class PagesController extends Controller
            'services' => $service_listing
       );
 
-      return view('pages.services')
+      return view('pages.demolition')
         ->with('title', $title)
         ->with('mdg_services', $mdg_services)
         ->with('services', $service_listing);
@@ -125,7 +125,7 @@ class PagesController extends Controller
            'services' => $service_listing
       );
 
-      return view('pages.services')
+      return view('pages.excavation')
         ->with('title', $title)
         ->with('mdg_services', $mdg_services)
         ->with('services', $service_listing);
@@ -140,7 +140,7 @@ class PagesController extends Controller
            'services' => $service_listing
       );
 
-      return view('pages.services')
+      return view('pages.groundupconstruction')
         ->with('title', $title)
         ->with('mdg_services', $mdg_services)
         ->with('services', $service_listing);
@@ -155,7 +155,7 @@ class PagesController extends Controller
            'services' => $service_listing
       );
 
-      return view('pages.services')
+      return view('pages.finishout')
         ->with('title', $title)
         ->with('mdg_services', $mdg_services)
         ->with('services', $service_listing);
@@ -170,7 +170,7 @@ class PagesController extends Controller
 		       'services' => $service_listing
       );
 
-      return view('pages.services')
+      return view('pages.steel')
         ->with('title', $title)
         ->with('mdg_services', $mdg_services)
         ->with('services', $service_listing);
