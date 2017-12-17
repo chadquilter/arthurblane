@@ -14,7 +14,7 @@
                     <div class="col-sm-3">
                       <h1 class="card-title alert alert-success"> JOB </h1>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-12">
                       <h1 class="card-title"> {{$job->job_title}} </h1>
 
                 	<div class="card-block image_display_r">
