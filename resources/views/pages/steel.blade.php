@@ -4,7 +4,7 @@
 <br>
 <div class="container">
 		<div class="image_display_r">
-			<img class="img-fluid" alt="A scenic home image" src="/images/IMG_00111.jpg" style="max-height:100%; width: 100%; display: block;">
+			<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_00111.jpg" style="max-height:100%; width: 100%; display: block;">
 			<div class="image_display_text_container">
 				<p>Custom Built Outdoor walkways and Paths!</p>
 			</div>
