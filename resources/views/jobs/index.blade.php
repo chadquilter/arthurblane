@@ -8,8 +8,8 @@
     @foreach($jobs as $job)
     <div class="jumbotron">
       <div class="card">
-        <div class="card-title image_display_r">
-          <div class="row">
+        <div class="card-title ">
+          <div class="row image_display_r">
             <div class="col-sm-4 alert alert-success">
               <strong class="display-4"> Job: </strong>
             </div>
