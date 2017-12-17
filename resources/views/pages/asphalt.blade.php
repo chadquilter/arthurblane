@@ -7,8 +7,10 @@
 
 	<div class="jumbotron">
 		<div class="row">
-			<div class="col-sm-2 alert alert-primary">
-				<strong class="display-2">  </strong>
+			<div class="col-sm-2">
+				<div class="card">
+					<h2 class="card-title">  </h2>
+				</div>
 			</div>
 			<div class="col-sm-10">
 				<div class="card">
