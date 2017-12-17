@@ -26,10 +26,10 @@
             {!!$job->job_summary!!}
           </div>
           <br>
-          <center>
-            {{$jobs->links()}}
-          </center>
         </div>
+        <center>
+          {{$jobs->links()}}
+        </center>
       </div>
       @endforeach
       @else
