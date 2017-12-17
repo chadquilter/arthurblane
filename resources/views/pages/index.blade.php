@@ -4,6 +4,8 @@
 
   <div class="container">
     <br>
+    @include('inc.pagelabel')
+    <br>
     <div class="image_display_r">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
