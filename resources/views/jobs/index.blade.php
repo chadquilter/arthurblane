@@ -10,6 +10,9 @@
         $title = $job->job_title
       @endphp
       <div class="jumbotron">
+        <center>
+          {{$jobs->links()}}
+        </center>
         <div class="card">
           <div class="card-title ">
             @include('inc.pagelabel')
@@ -18,7 +21,9 @@
             {!!$job->job_summary!!}
           </div>
           <br>
-          {{$jobs->links()}}
+          <center>
+            {{$jobs->links()}}
+          </center>
         </div>
       </div>
       @endforeach
