@@ -48,7 +48,9 @@ class QuotesController extends Controller
        */
       public function create()
       {
-          return view('quotes.create');
+          $title = 'Contact/Request Quote';
+          return view('quotes.create')
+            ->with('title', $title);
       }
 
       /**

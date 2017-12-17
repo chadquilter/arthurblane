@@ -6,10 +6,12 @@
   <div class="container">
   @if(count($jobs) > 0)
     @foreach($jobs as $job)
+      {{ $title = $job->job_title }}
     <div class="jumbotron">
       <div class="card">
         <div class="card-title ">
 
+          @include('inc.pagelabel')
           <div class="row">
     				<div class="col-sm-2 alert alert-primary">
     					<h1><span class="badge badge-secondary">BAM!</span></h1>
