@@ -18,7 +18,7 @@
 		<div class="row">
 			<div class="col">
 				<div class="jumbotron">
-						<h4 class="display4">{{$title}}</h4>
+						<h3 class="display3">{{$title}}</h3>
 						<br>
 						include but are not limited to:
 					<hr class="my-4">
@@ -36,8 +36,15 @@
 					<hr class="my-4">
 				</div>
 			</div>
+			<div class="col">
+				<div class="image_display_r">
+					<img class="img-fluid" alt="A scenic home image" src="/images/ARCH1.JPG" style="max-height:100%; width: 100%; display: block;">
+					<div class="image_display_text_container">
+						<p>Custom Roof and Room Extension!</p>
+					</div>
+				</div>
+			</div>
 		</div>
-
 
 		<br>
 		<div class="row">
