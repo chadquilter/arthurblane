@@ -11,7 +11,7 @@
 				<strong class="display-2">  </strong>
 			</div>
 			<div class="col-sm-10">
-				<div class="card"
+				<div class="card">
 					<h2 class="card-title"> {{ $title }} </h2>
 				</div>
 			</div>
