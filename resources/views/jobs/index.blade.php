@@ -6,14 +6,14 @@
   <div class="container">
   @if(count($jobs) > 0)
     @foreach($jobs as $job)
-      {{ $title = $job->job_title }}
+      @php
+        $title = $job->job_title
+      @endphp
     <div class="jumbotron">
       <div class="card">
         <div class="card-title ">
-
           @include('inc.pagelabel')
-
-
+        </div>
         <div class="card-block">
           {!!$job->job_summary!!}
         </div>
