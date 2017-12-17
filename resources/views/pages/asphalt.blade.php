@@ -19,15 +19,15 @@
 
 
 
-		<div class="row">
-		<div class="col image_display_r">
+
+		<div class="image_display_r">
 			<div class="card mb-3">
   			<img class="card-img-top" src="/images/3_orig.jpg" alt="Card image cap">
   			<div class="card-body">
     			<h4 class="card-title">Customized Asphalt Driveway</h4>
   			</div>
+			</div>
 		</div>
-	</div>
 	</div>
 		<br>
 
