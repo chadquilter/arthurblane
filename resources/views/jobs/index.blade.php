@@ -11,7 +11,9 @@
       @endphp
       <div class="jumbotron">
         <center>
-          {{$jobs->links()}}
+          <div>
+            {{$jobs->links()}}
+          </div>
         </center>
         <div class="card">
           <div class="card-title ">
