@@ -12,14 +12,7 @@
         <div class="card-title ">
 
           @include('inc.pagelabel')
-          <div class="row">
-    				<div class="col-sm-2 alert alert-primary">
-    					<h1><span class="badge badge-secondary">BAM!</span></h1>
-    				</div>
-    				<div class="col-sm-10 alert alert-success image_display_r">
-    					<strong class="display-3"> {{ $job->job_title }} </strong>
-    				</div>
-    			</div>
+
 
         <div class="card-block">
           {!!$job->job_summary!!}
