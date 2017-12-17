@@ -4,20 +4,24 @@
 <br>
 <div class="container">
 
-	<div class="row">
-		<div class="col">
-			<div class="jumbotron">
-					<strong class="display-2">{{$title}}</strong>
+
+			<div class="row">
+				<div class="col-sm-2 alert alert-primary">
+					<h1><span class="badge badge-secondary">BAM!</span></h1>
+				</div>
+				<div class="col-sm-10 alert alert-light image_display_r">
+					<strong class="display-3"> {{ $title }} </strong>
+				</div>
 			</div>
-		</div>
-	</div>
-	
-		<div class="image_display_r">
-			<img class="img-fluid" alt="A scenic home image" src="/images/2_orig.jpg" style="max-height:100%; width: 100%; display: block;">
-			<div class="image_display_text_container">
-				<p>Custom Built Outdoor walkways and Paths!</p>
+
+			<div class="image_display_r">
+				<div class="card">
+	  			<img class="card-img-top" src="/images/3_orig.jpg" alt="Card image cap">
+	  			<div class="card-body">
+	    			<h5 class="card-title">Customized Asphalt Driveway</h5>
+	  			</div>
+				</div>
 			</div>
-		</div>
 		<br>
 
 		<div class="row">
