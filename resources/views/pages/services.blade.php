@@ -15,7 +15,7 @@
 		<div class="row">
 			<div class="col">
 				<div class="jumbotron">
-						<strong class="display-2">Services</strong>
+						<h3 class="display-3">Services</h3>
 						<br>
 						include but are not limited to:
 					<hr class="my-4">
