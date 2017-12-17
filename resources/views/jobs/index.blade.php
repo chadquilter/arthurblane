@@ -11,7 +11,7 @@
               <div id="card">
                 <div class="card">
                 	<div class="card-title row">
-                    <div class="col-xs-1">
+                    <div class="col-sm">
                       <h1 class="card-title"> JOB </h1>
                     </div>
                     <div class="col">
