@@ -14,7 +14,7 @@
 		<div class="row">
 			<div class="col">
 				<div class="jumbotron">
-						<strong class="display-2">Services</strong>
+						<strong class="display-2">{{$title}}</strong>
 						<br>
 						include but are not limited to:
 					<hr class="my-4">
