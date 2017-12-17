@@ -9,15 +9,15 @@
     <div class="jumbotron">
       <div class="card">
         <div class="card-title ">
+
           <div class="row">
-            <div class="col-sm-4 alert alert-success image_display_r">
-              <strong class="display-4"> JOB: </strong>
-            </div>
-            <div class="col-sm-8 alert alert-info image_display_r">
-              <strong class="display-4"> {{$job->job_title}} </strong>
-            </div>
-          </div>
-        </div>
+    				<div class="col-sm-2 alert alert-primary">
+    					<h1><span class="badge badge-secondary">BAM!</span></h1>
+    				</div>
+    				<div class="col-sm-10 alert alert-success image_display_r">
+    					<strong class="display-3"> {{ $job->job_title }} </strong>
+    				</div>
+    			</div>
 
         <div class="card-block">
           {!!$job->job_summary!!}
