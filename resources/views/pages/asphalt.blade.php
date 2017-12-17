@@ -14,8 +14,9 @@
 				<strong class="display-3"> {{ $title }} </strong>
 			</div>
 		</div>
+
 		<div class="image_display_r">
-			<div class="card mb-3">
+			<div class="card">
   			<img class="card-img-top" src="/images/3_orig.jpg" alt="Card image cap">
   			<div class="card-body">
     			<h5 class="card-title">Customized Asphalt Driveway</h5>
