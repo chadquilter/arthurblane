@@ -8,25 +8,29 @@
         @foreach($jobs as $job)
             <div class="container">
               <div class="jumbotron">
-              <div id="card">
                 <div class="card">
-                	<div class="card-title row">
-                    <div class="col-sm-3">
-                      <h1 class="card-title alert alert-success"> Job: </h1>
-                    </div>
-                    <div class="col">
-                      <h1 class="card-title"> {{$job->job_title}} </h1>
-                    </div>
 
-                	<div class="card-block row">
-                    <div class="col">
-                    {!!$job->job_summary!!}
+                	<div class="card-title">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h1 class="card-title alert alert-success"> Job: </h1>
+                      </div>
+                      <div class="col">
+                        <h1 class="card-title"> {{$job->job_title}} </h1>
+                      </div>
+                    <div>
+                  </div>
+
+                	<div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        {!!$job->job_summary!!}
+                      </div>
                     </div>
                   </div>
-                </div>
+
                 </div>
               </div>
-            </div>
             </div>
             <br>
         @endforeach
