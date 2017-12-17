@@ -16,13 +16,13 @@
 
 			<div class="image_display_r">
 				<div class="card">
-	  			<img class="card-img-top" src="/images/3_orig.jpg" alt="Card image cap">
+	  			<img class="card-img-top" src="/images/dusk-home.jpg" alt="Card image cap">
 	  			<div class="card-body">
-	    			<h5 class="card-title">Customized Asphalt Driveway</h5>
+	    			<h5 class="card-title">Customized Homes!</h5>
 	  			</div>
 				</div>
 			</div>
-			
+
 		<br>
 
 		<div class="row">
