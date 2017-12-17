@@ -5,21 +5,15 @@
 <div class="container">
 
 
-<div class="jumbotron">
+	<div class="jumbotron">
 		<div class="row">
-
 			<div class="col-sm-2 alert alert-primary image_display_r">
 				<strong class="display-2">  </strong>
 			</div>
 			<div class="col-sm-10 alert alert-light image_display_r">
-				<strong class="display-4"> {{ $title }} </strong>
+				<strong class="display-3"> {{ $title }} </strong>
 			</div>
 		</div>
-
-
-
-
-
 		<div class="image_display_r">
 			<div class="card mb-3">
   			<img class="card-img-top" src="/images/3_orig.jpg" alt="Card image cap">
@@ -29,7 +23,8 @@
 			</div>
 		</div>
 	</div>
-		<br>
+
+	<br>
 
 		<div class="row">
 			<div class="col">
