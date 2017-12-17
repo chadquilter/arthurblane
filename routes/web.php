@@ -15,16 +15,16 @@ Route::get('/', 'PagesController@index');
 Route::resource('quotes', 'QuotesController');
 
 Route::get('/services', 'PagesController@services');
-Route::get('/asphalt', 'PagesController@services');
-Route::get('/cm', 'PagesController@services');
-Route::get('/concrete', 'PagesController@services');
-Route::get('/demolition', 'PagesController@services');
-Route::get('/excavation', 'PagesController@services');
-Route::get('/finishout', 'PagesController@services');
-Route::get('/groundupconstruction', 'PagesController@services');
-Route::get('/interior', 'PagesController@services');
-Route::get('/kitchenbath', 'PagesController@services');
-Route::get('/steel', 'PagesController@services');
+Route::get('/asphalt', 'PagesController@asphalt');
+Route::get('/cm', 'PagesController@cm');
+Route::get('/concrete', 'PagesController@concrete');
+Route::get('/demolition', 'PagesController@demolition');
+Route::get('/excavation', 'PagesController@excavation');
+Route::get('/finishout', 'PagesController@finishout');
+Route::get('/groundupconstruction', 'PagesController@groundupconstruction');
+Route::get('/interior', 'PagesController@interior');
+Route::get('/kitchenbath', 'PagesController@kitchenbath');
+Route::get('/steel', 'PagesController@steel');
 
 Route::resource('jobs', 'JobsController');
 Route::resource('address', 'AddressController');
