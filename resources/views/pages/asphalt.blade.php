@@ -10,8 +10,10 @@
 			<div class="col-sm-2 alert alert-primary">
 				<strong class="display-2">  </strong>
 			</div>
-			<div class="col-sm-10 alert alert-light">
-				<strong class="display-3"> {{ $title }} </strong>
+			<div class="col-sm-10">
+				<div class="card"
+					<h2 class="card-title"> {{ $title }} </h2>
+				</div>
 			</div>
 		</div>
 		<div class="image_display_r">
