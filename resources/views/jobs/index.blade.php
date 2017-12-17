@@ -13,7 +13,7 @@
             <div class="col-sm-2">
               <h1 class="alert alert-success"> Job: </h1>
             </div>
-            <div class="col-sm-10">
+            <div class="col">
               <h1 class="alert alert-info"> {{$job->job_title}} </h1>
             </div>
           </div>
