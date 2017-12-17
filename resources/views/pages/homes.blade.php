@@ -3,7 +3,6 @@
 @section('content')
 <br>
 <div class="container">
-
 			@include('inc.pagelabel')
 			<div class="image_display_r">
 				<div class="card">
@@ -13,9 +12,7 @@
 	  			</div>
 				</div>
 			</div>
-
 		<br>
-
 		<div class="row">
 			<div class="col">
 				<div class="jumbotron">
