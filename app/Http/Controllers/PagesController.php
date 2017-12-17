@@ -42,7 +42,7 @@ class PagesController extends Controller
     }
 
     public function asphalt(){
-      $title = 'Welcome to '.config('app.name');
+      $title = 'Concrete and Aphalt';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
       $data = array(
@@ -57,7 +57,7 @@ class PagesController extends Controller
     }
 
     public function cm(){
-      $title = 'Welcome to '.config('app.name');
+      $title = 'Construction Management';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
       $data = array(
@@ -72,7 +72,7 @@ class PagesController extends Controller
     }
 
     public function concrete(){
-      $title = 'Welcome to '.config('app.name');
+      $title = 'Custom Concrete';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
       $data = array(
@@ -87,7 +87,7 @@ class PagesController extends Controller
     }
 
     public function kitchenbath(){
-      $title = 'Welcome to '.config('app.name');
+      $title = 'Kitchen and Bath';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
       $data = array(
@@ -102,7 +102,7 @@ class PagesController extends Controller
     }
 
     public function demolition(){
-      $title = 'Welcome to '.config('app.name');
+      $title = 'Demolition';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
       $data = array(
@@ -117,7 +117,7 @@ class PagesController extends Controller
     }
 
     public function excavation(){
-      $title = 'Welcome to '.config('app.name');
+      $title = 'Excavation';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
       $data = array(
@@ -132,7 +132,7 @@ class PagesController extends Controller
     }
 
     public function groundupconstruction(){
-      $title = 'Welcome to '.config('app.name');
+      $title = 'Ground Up Construction';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
       $data = array(
@@ -147,7 +147,7 @@ class PagesController extends Controller
     }
 
     public function finishout(){
-      $title = 'Welcome to '.config('app.name');
+      $title = 'Interior Finish out';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
       $data = array(
@@ -161,8 +161,8 @@ class PagesController extends Controller
         ->with('services', $service_listing);
     }
 
-    public function stell(){
-      $title = 'Welcome to '.config('app.name');
+    public function steel(){
+      $title = 'Custom Steel';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
       $data = array(
