@@ -7,11 +7,11 @@
 
 	<div class="jumbotron">
 		<div class="row">
-			<div class="col-sm-4 alert alert-success image_display_r">
+			<div class="col-sm-4 alert alert-primary image_display_r">
 				<strong class="display-4"> Service: </strong>
 			</div>
-			<div class="col-sm-8 alert alert-info image_display_r">
-				<strong class="display-4"> $title </strong>
+			<div class="col-sm-8 alert alert-secondary image_display_r">
+				<strong class="display-4"> {{ $title }} </strong>
 			</div>
 		</div>
 	</div>
