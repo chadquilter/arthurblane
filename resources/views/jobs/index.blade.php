@@ -28,6 +28,7 @@
           <br>
         </div>
         <center>
+          <br>
           {{$jobs->links()}}
         </center>
       </div>
