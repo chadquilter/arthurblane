@@ -5,9 +5,9 @@
 <div class="container">
 
 
-
+<div class="jumbotron">
 		<div class="row">
-			<div class="jumbotron">
+
 			<div class="col-sm-2 alert alert-dark image_display_r">
 				<strong class="display-2">  </strong>
 			</div>
