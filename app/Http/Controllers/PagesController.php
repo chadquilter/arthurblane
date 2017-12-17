@@ -42,7 +42,7 @@ class PagesController extends Controller
     }
 
     public function asphalt(){
-      $title = 'Concrete and Aphalt';
+      $title = 'Concrete and Asphalt';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
       $data = array(
