@@ -10,11 +10,11 @@
       <div class="card">
         <div class="card-title">
           <div class="row">
-            <div class="col-sm-4">
-              <strong class="alert alert-success"> Job: </strong>
+            <div class="col-sm-4 alert alert-success">
+              <strong class="display-4"> Job: </strong>
             </div>
-            <div class="col-sm-8">
-              <strong class="alert alert-info"> {{$job->job_title}} </strong>
+            <div class="col-sm-8 alert alert-info">
+              <strong class="display-4"> {{$job->job_title}} </strong>
             </div>
           </div>
         </div>
