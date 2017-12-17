@@ -22,13 +22,9 @@
                   </div>
 
                 	<div class="card-block">
-                    <div class="row">
-                      <div class="col">
-                        {!!$job->job_summary!!}
-                      </div>
-                    </div>
+                    {!!$job->job_summary!!}
                   </div>
-
+                  
                 </div>
               </div>
             </div>
