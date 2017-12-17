@@ -18,7 +18,7 @@
 		<div class="row">
 			<div class="col">
 				<div class="jumbotron">
-						<strong class="display-2">{{$title}}</strong>
+						<h2 class="display-2">{{$title}}</h2>
 						<br>
 						include but are not limited to:
 					<hr class="my-4">
