@@ -11,7 +11,7 @@
 			<div class="col-sm-2 alert alert-primary image_display_r">
 				<strong class="display-2">  </strong>
 			</div>
-			<div class="col-sm-10 alert alert-secondary image_display_r">
+			<div class="col-sm-10 alert alert-white image_display_r">
 				<strong class="display-4"> {{ $title }} </strong>
 			</div>
 		</div>
