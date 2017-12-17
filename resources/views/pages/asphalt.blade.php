@@ -7,7 +7,7 @@
 
 
 		<div class="row">
-			<div class="col-sm-4 alert alert-dark image_display_r">
+			<div class="col-sm-2 alert alert-dark image_display_r">
 				<strong class="display-2">  </strong>
 			</div>
 			<div class="col-sm-8 alert alert-secondary image_display_r">
