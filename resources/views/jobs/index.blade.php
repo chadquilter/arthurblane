@@ -11,7 +11,7 @@
               <div id="card">
                 <div class="card">
                 	<h1 class="card-title"> {{$job->job_title}} </h1>
-                	<div class="card-block">
+                	<div class="card-block image_display_r">
                     {!!$job->job_summary!!}
                   </div>
                 </div>
