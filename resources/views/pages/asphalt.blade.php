@@ -4,14 +4,20 @@
 <br>
 <div class="container">
 
-	<div class="row">
-		<div class="col">
-			<div class="jumbotron">
-					<strong class="display-2">{{$title}}</strong>
+
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-sm-4 alert alert-success image_display_r">
+				<strong class="display-4"> Service: </strong>
+			</div>
+			<div class="col-sm-8 alert alert-info image_display_r">
+				<strong class="display-4"> $title </strong>
 			</div>
 		</div>
 	</div>
-	
+
+
+
 		<div class="image_display_r">
 			<img class="img-fluid" alt="A scenic home image" src="/images/3_orig.jpg" style="max-height:100%; width: 100%; display: block;">
 			<div class="image_display_text_container">
