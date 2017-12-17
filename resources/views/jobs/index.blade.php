@@ -17,8 +17,8 @@
                     <div class="col">
                       <h1 class="card-title"> {{$job->job_title}} </h1>
                     </div>
-                    </div>
-                	<div class="card-block image_display_r">
+                  </div>
+                	<div class="card-block row image_display_r">
                     {!!$job->job_summary!!}
                   </div>
 
