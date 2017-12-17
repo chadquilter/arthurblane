@@ -18,15 +18,15 @@
         <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
         <div class="dropdown-menu" aria-labelledby="Services">
           <a class="dropdown-item {{ ( \Request::url() == url('services') ) ? 'active' : '' }}" href="/services">Services Overview</a>
-          <a class="dropdown-item {{ ( \Request::url() == url('services1') ) ? 'active' : '' }}" href="/services">Concrete and Asphalt</a>
-          <a class="dropdown-item {{ ( \Request::url() == url('services2') ) ? 'active' : '' }}" href="/services">Construction Management</a>
-          <a class="dropdown-item {{ ( \Request::url() == url('services3') ) ? 'active' : '' }}" href="/services">Custom Concrete</a>
-          <a class="dropdown-item {{ ( \Request::url() == url('services4') ) ? 'active' : '' }}" href="/services">Custom Kitchen and Bath</a>
-          <a class="dropdown-item {{ ( \Request::url() == url('services5') ) ? 'active' : '' }}" href="/services">Demolition</a>
-          <a class="dropdown-item {{ ( \Request::url() == url('services6') ) ? 'active' : '' }}" href="/services">Excavation</a>
-          <a class="dropdown-item {{ ( \Request::url() == url('services7') ) ? 'active' : '' }}" href="/services">Ground Up Construction</a>
-          <a class="dropdown-item {{ ( \Request::url() == url('services8') ) ? 'active' : '' }}" href="/services">Interior Finish Out</a>
-          <a class="dropdown-item {{ ( \Request::url() == url('services9') ) ? 'active' : '' }}" href="/services">Structural Steel</a>
+          <a class="dropdown-item {{ ( \Request::url() == url('services1') ) ? 'active' : '' }}" href="/asphalt">Concrete and Asphalt</a>
+          <a class="dropdown-item {{ ( \Request::url() == url('services2') ) ? 'active' : '' }}" href="/cm">Construction Management</a>
+          <a class="dropdown-item {{ ( \Request::url() == url('services3') ) ? 'active' : '' }}" href="/concrete">Custom Concrete</a>
+          <a class="dropdown-item {{ ( \Request::url() == url('services4') ) ? 'active' : '' }}" href="/kitchenbath">Custom Kitchen and Bath</a>
+          <a class="dropdown-item {{ ( \Request::url() == url('services5') ) ? 'active' : '' }}" href="/demolition">Demolition</a>
+          <a class="dropdown-item {{ ( \Request::url() == url('services6') ) ? 'active' : '' }}" href="/excavation">Excavation</a>
+          <a class="dropdown-item {{ ( \Request::url() == url('services7') ) ? 'active' : '' }}" href="/groundupconstruction">Ground Up Construction</a>
+          <a class="dropdown-item {{ ( \Request::url() == url('services8') ) ? 'active' : '' }}" href="/finishout">Interior Finish Out</a>
+          <a class="dropdown-item {{ ( \Request::url() == url('services9') ) ? 'active' : '' }}" href="/steel">Structural Steel</a>
         </div>
       </li>
 
