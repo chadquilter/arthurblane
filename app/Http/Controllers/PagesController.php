@@ -50,7 +50,7 @@ class PagesController extends Controller
            'services' => $service_listing
       );
 
-      return view('pages.aphalt')
+      return view('pages.asphalt')
         ->with('title', $title)
         ->with('mdg_services', $mdg_services)
         ->with('services', $service_listing);
