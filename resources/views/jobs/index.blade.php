@@ -11,8 +11,8 @@
               <div id="card">
                 <div class="card">
                 	<div class="card-title row">
-                    <div class="col-xs-1">
-                      <h1 class="card-title"> <strong> J O B </strong> </h1>
+                    <div class="col-xs">
+                      <h1 class="card-title"> JOB </h1>
                     </div>
                     <div class="col">
                       <h1 class="card-title"> {{$job->job_title}} </h1>
