@@ -7,10 +7,10 @@
 
 	<div class="jumbotron">
 		<div class="row">
-			<div class="col-sm-2 alert alert-primary image_display_r">
+			<div class="col-sm-2 alert alert-primary">
 				<strong class="display-2">  </strong>
 			</div>
-			<div class="col-sm-10 alert alert-light image_display_r">
+			<div class="col-sm-10 alert alert-light">
 				<strong class="display-3"> {{ $title }} </strong>
 			</div>
 		</div>
@@ -18,7 +18,7 @@
 			<div class="card mb-3">
   			<img class="card-img-top" src="/images/3_orig.jpg" alt="Card image cap">
   			<div class="card-body">
-    			<h4 class="card-title">Customized Asphalt Driveway</h4>
+    			<h5 class="card-title">Customized Asphalt Driveway</h5>
   			</div>
 			</div>
 		</div>
