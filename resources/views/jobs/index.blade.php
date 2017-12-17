@@ -9,11 +9,11 @@
     <div class="jumbotron">
       <div class="card">
         <div class="card-title ">
-          <div class="row image_display_r">
-            <div class="col-sm-4 alert alert-success">
+          <div class="row">
+            <div class="col-sm-4 alert alert-success image_display_r">
               <strong class="display-4"> Job: </strong>
             </div>
-            <div class="col-sm-8 alert alert-info">
+            <div class="col-sm-8 alert alert-info image_display_r">
               <strong class="display-4"> {{$job->job_title}} </strong>
             </div>
           </div>
