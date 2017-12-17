@@ -18,16 +18,8 @@ class PagesController extends Controller
         ->with('mdg_services', $mdg_services);
     }
 
-    public function quote(){
-      $title = 'Welcome to '.config('app.name');
-      $services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
-       return view('pages.quote')
-        ->with('title', $title)
-        ->with('mdg_services', $mdg_services);
-    }
-
     public function services(){
-      $title = 'Welcome to '.config('app.name');
+      $title = config('app.name').' Services';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
       $data = array(
