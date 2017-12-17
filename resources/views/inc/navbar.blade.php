@@ -13,13 +13,17 @@
       <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
         <a class="nav-link" href="/quotes">Contact/Request Quote</a>
       </li>
-      <li class="nav-item {{ ( \Request::url() == url('services') ) ? 'active' : '' }} dropdown">
+      <li class="nav-item {{ ( \Request::url() == url('services') ) ? 'active' : '' }}">
+        <a class="nav-link" href="/services">Services</a>
+      </li>
 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
         <div class="dropdown-menu" aria-labelledby="Services">
           <a class="dropdown-item" href="/services">Services</a>
         </div>
-        
       </li>
+
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
         <a class="nav-link" href="/jobs">Jobs</a>
       </li>
