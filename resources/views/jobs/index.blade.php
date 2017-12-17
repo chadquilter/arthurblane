@@ -12,7 +12,7 @@
                 <div class="card">
                 	<div class="card-title row">
                     <div class="col-sm-1">
-                      <h1 class="card-title"> <strong> JOB </strong> </h1>
+                      <h1 class="card-title"> <strong> J O B </strong> </h1>
                     </div>
                     <div class="col">
                       <h1 class="card-title"> {{$job->job_title}} </h1>
