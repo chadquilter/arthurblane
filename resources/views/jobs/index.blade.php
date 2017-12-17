@@ -14,7 +14,7 @@
               <h1 class="card-title alert alert-success"> Job: </h1>
             </div>
             <div class="col">
-              <h1 class="card-title"> {{$job->job_title}} </h1>
+              <h1 class="card-title alert alert-info"> {{$job->job_title}} </h1>
             </div>
           </div>
         </div>
