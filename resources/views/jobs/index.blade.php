@@ -10,9 +10,12 @@
         $title = $job->job_title
       @endphp
       <div class="jumbotron">
-        <center>
-          <div>
-            {{$jobs->links()}}
+          <div class="row">
+            <div class="col">
+              <center>
+                {{$jobs->links()}}
+              </center>
+            </div>
           </div>
         </center>
         <div class="card">
