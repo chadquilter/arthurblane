@@ -3,39 +3,35 @@
 @section('content')
   <br>
   <center>
-  <div>
-    @if(count($jobs) > 0)
-        @foreach($jobs as $job)
-            <div class="container">
-              <div class="jumbotron">
-                <div class="card">
-
-                	<div class="card-title">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <h1 class="card-title alert alert-success"> Job: </h1>
-                      </div>
-                      <div class="col">
-                        <h1 class="card-title"> {{$job->job_title}} </h1>
-                      </div>
-                    <div>
-                  </div>
-
-                	<div class="card-block">
-                    {!!$job->job_summary!!}
-                  </div>
-                  
-                </div>
-              </div>
+  <div class="container">
+  @if(count($jobs) > 0)
+    @foreach($jobs as $job)
+    <div class="jumbotron">
+      <div class="card">
+        <div class="card-title">
+          <div class="row">
+            <div class="col-sm-3">
+              <h1 class="card-title alert alert-success"> Job: </h1>
             </div>
-            <br>
-        @endforeach
-        {{$jobs->links()}}
-    @else
-      <div class="well">
-        <p>No current jobs posted.</p>
+            <div class="col">
+              <h1 class="card-title"> {{$job->job_title}} </h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-block">
+          {!!$job->job_summary!!}
+        </div>
+        <br>
       </div>
+    </div>
+    @endforeach
+    {{$jobs->links()}}
+    @else
+    <div class="card-title">
+      <p>No current jobs posted.</p>
+    </div>
     @endif
-  </div>
+</div>
 </center>
 @endsection
