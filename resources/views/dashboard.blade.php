@@ -21,6 +21,9 @@
           <a href="/address" class="btn btn-warning">Manage Addresses</a>
           <a href="/items" class="btn btn-warning">Manage Items</a>
         </div>
+        <div class="btn-group" role="group" aria-label="links">
+          <a href="/forms" class="btn btn-warning">Manage Proposals/Letters/Forms</a>
+        </div>
         <hr class="my-1">
         @include('inc.messages')
         <br>
