@@ -3,6 +3,14 @@
 @section('content')
 <br>
 <div class="container">
+	<div class="row">
+		<div class="col">
+			<div class="jumbotron">
+					<strong class="display-2">{{$title}}</strong>
+			</div>
+		</div>
+	</div>
+
 		<div class="image_display_r">
 			<img class="img-fluid" alt="A scenic home image" src="/images/2_orig.jpg" style="max-height:100%; width: 100%; display: block;">
 			<div class="image_display_text_container">
