@@ -6,9 +6,7 @@
 
 	<div class="row">
 		<div class="col-sm-2 alert alert-primary">
-			<center>
 			<h1><span class="badge badge-secondary">BAM!</span></h1>
-		 </center>
 		</div>
 		<div class="col-sm-10 alert alert-light image_display_r">
 			<strong class="display-3"> Services </strong>
