@@ -70,7 +70,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/interior/window2.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Damage Repair!</p>
+						<p>Drywall and Floor Molding!</p>
 					</div>
 				</div>
 
