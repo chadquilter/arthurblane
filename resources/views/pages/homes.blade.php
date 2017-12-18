@@ -36,7 +36,7 @@
 			</div>
 			<div class="col">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/homes/home2.JPG" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/homes/home2.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
 						<p>Custom Roof and Room Extension!</p>
 					</div>
