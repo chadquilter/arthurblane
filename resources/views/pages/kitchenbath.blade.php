@@ -6,7 +6,7 @@
 			@include('inc.pagelabel')
 			<div class="image_display_r">
 				<div class="card">
-	  			<img class="card-img-top" src="/images/mdg_images/IMG_BEDROOM1A.JPG" alt="Card image cap">
+	  			<img class="card-img-top" src="/images/mdg_images/IMG_BEDROOM1.JPG" alt="Card image cap">
 	  			<div class="card-body">
 	    			<h5 class="card-title">Customized Bath and Shower!</h5>
 	  			</div>
@@ -60,6 +60,46 @@
 			<div class="col">
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BATHROOM1.JPG" style="max-height:100%; width: 100%; display: block;">
+					<div class="image_display_text_container">
+						<p>Custom Full Bath!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col">
+				<div class="image_display_r">
+					<img class="img-fluid" alt="A scenic home image" src="/images/kitchenbath/vanity1.jpg" style="max-height:100%; width: 100%; display: block;">
+					<div class="image_display_text_container">
+						<p>Custom Designed Shower!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="image_display_r">
+					<img class="img-fluid" alt="A scenic home image" src="/images/kitchenbath/counter1.jpg" style="max-height:100%; width: 100%; display: block;">
+					<div class="image_display_text_container">
+						<p>Custom Full Bath!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col">
+				<div class="image_display_r">
+					<img class="img-fluid" alt="A scenic home image" src="/images/kitchenbath/shower_tile1.jpg" style="max-height:100%; width: 100%; display: block;">
+					<div class="image_display_text_container">
+						<p>Custom Designed Shower!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="image_display_r">
+					<img class="img-fluid" alt="A scenic home image" src="/images/kitchenbath/shower_tile3.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
 						<p>Custom Full Bath!</p>
 					</div>
