@@ -37,9 +37,9 @@
 			</div>
 			<div class="col">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/steel/steel_barn3.JPG" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/steel/steel_barn3.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Steel for Barn Interior</p>
+						<p>Custom Steel Padlocks!</p>
 					</div>
 				</div>
 
@@ -51,9 +51,9 @@
 		<div class="row">
 			<div class="col">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/steel/steel_barn1.jpg" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/steel/steel_barn4.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Steel Barn!</p>
+						<p>Custom Steel Barn Interior!</p>
 					</div>
 				</div>
 			</div>
@@ -61,7 +61,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/steel/steel_barn2.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Customized Steel Housing!</p>
+						<p>Customized Steel Structures!</p>
 					</div>
 				</div>
 			</div>
@@ -71,7 +71,7 @@
 		<div class="image_display_r">
 			<img class="img-fluid" alt="A scenic home image" src="/images/steel/steel_barn1.jpg" style="max-height:100%; width: 100%; display: block;">
 			<div class="image_display_text_container">
-				<p>Custom Steel for Barn Interior!</p>
+				<p>Custom Steel Structures!</p>
 			</div>
 		</div>
 	</div>
