@@ -3,7 +3,7 @@
 @section('content')
   <div class="container">
     <div class="jumbotron">
-      <h1 class="display-3">Add New Address</h1>
+      <h1 class="display-3">New Form</h1>
       <div class="card mx-auto border border-secondary">
         <br>
         <div class="card-body">
@@ -28,11 +28,11 @@
           </div>
           <div class="form=group">
             {{Form::label('form_date', 'Date: ')}}
-            {{Form::text('form_date', '', ['class' => 'form-control', 'placeholder' => 'Form Date'])}}
+            {{Form::date('form_date', \Carbon\Carbon::now()), ['class' => 'form-control'] }}
           </div>
           <div class="form=group">
             {{Form::label('form_body', 'Form Body:')}}
-            {{Form::text('form_body', '', ['class' => 'form-control', 'placeholder' => 'Form Body'])}}
+            {{Form::textarea('form_body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Body'])}}
           </div>
           <div class="form=group">
             {{Form::label('form_active', 'Form Active? ')}}
@@ -49,4 +49,8 @@
       </div>
     </div>
   </div>
+  <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace( 'article-ckeditor' );
+  </script>
 @endsection
