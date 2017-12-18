@@ -28,9 +28,9 @@ class FormsController extends Controller
       {
           $forms = Form::orderBy('created_at', 'asc')->paginate(4);
           if ( count($forms) >= 1) {
-            return view('form.index')->with('forms', $forms);
+            return view('forms.index')->with('forms', $forms);
           }else{
-            return view('form.create');
+            return view('forms.create');
           }
       }
 
@@ -41,7 +41,7 @@ class FormsController extends Controller
        */
       public function create()
       {
-          return view('form.create');
+          return view('forms.create');
       }
 
       /**
@@ -82,7 +82,7 @@ class FormsController extends Controller
       public function show($id)
       {
           $form = form::find($id);
-          return view('form.show')->with('form', $form);
+          return view('forms.show')->with('form', $form);
       }
 
       /**
@@ -104,7 +104,7 @@ class FormsController extends Controller
           }
 
           //edit view
-          return view('form.edit')->with(compact('form', 'users'));
+          return view('forms.edit')->with(compact('form', 'users'));
       }
 
       /**
