@@ -39,7 +39,7 @@
             {{Form::textarea('form_body', '', ['id' => 'body-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Body goes here'])}}
           </div>
           <div class="form=group">
-            {{Form::label('form_closing', 'Form Cloae:')}}
+            {{Form::label('form_closing', 'Form Closing:')}}
             {{Form::textarea('form_closing', '', ['id' => 'closing-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Footer, leave emtpy if not needed'])}}
           </div>
           <div class="form=group">
