@@ -25,7 +25,6 @@
             {{Form::label('form_date', 'Date: ')}}
             {{Form::date('form_date', \Carbon\Carbon::now()), ['class' => 'form-control'] }}
           </div>
-          <br>
           {!! Form::open(['action' => 'FormsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
           <div class="form=group">
             {{Form::label('form_title', 'Title:')}}
