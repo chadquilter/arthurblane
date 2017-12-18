@@ -8,7 +8,7 @@
 				<div class="card">
 	  			<img class="card-img-top" src="/images/demolition/demo1.jpg" alt="Card image cap">
 	  			<div class="card-body">
-	    			<h5 class="card-title">Customized Excavation</h5>
+	    			<h5 class="card-title">Customized Demolition</h5>
 	  			</div>
 				</div>
 			</div>
