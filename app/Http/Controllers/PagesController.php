@@ -36,7 +36,7 @@ class PagesController extends Controller
     public function asphalt(){
       $title = 'Concrete and Asphalt';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'asphalt');
       $data = array(
            'title' => 'Services',
            'services' => $service_listing
@@ -51,7 +51,7 @@ class PagesController extends Controller
     public function cm(){
       $title = 'Construction Management';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'cm');
       $data = array(
            'title' => 'Services',
            'services' => $service_listing
@@ -81,7 +81,7 @@ class PagesController extends Controller
     public function kitchenbath(){
       $title = 'Kitchen and Bath';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'kitchenbath');
       $data = array(
            'title' => 'Services',
            'services' => $service_listing
@@ -96,7 +96,7 @@ class PagesController extends Controller
     public function demolition(){
       $title = 'Demolition';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'demolition');
       $data = array(
            'title' => 'Services',
            'services' => $service_listing
@@ -111,7 +111,7 @@ class PagesController extends Controller
     public function excavation(){
       $title = 'Excavation';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'excavation');
       $data = array(
            'title' => 'Services',
            'services' => $service_listing
@@ -126,7 +126,7 @@ class PagesController extends Controller
     public function groundupconstruction(){
       $title = 'Ground Up Construction';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'groundupconstruction');
       $data = array(
            'title' => 'Services',
            'services' => $service_listing
@@ -141,7 +141,7 @@ class PagesController extends Controller
     public function finishout(){
       $title = 'Interior Finish out';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'finishout');
       $data = array(
            'title' => 'Services',
            'services' => $service_listing
@@ -156,7 +156,7 @@ class PagesController extends Controller
     public function steel(){
       $title = 'Structural Steel';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'concrete');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'steel');
       $data = array(
 		       'title' => 'Services',
 		       'services' => $service_listing
@@ -171,7 +171,7 @@ class PagesController extends Controller
     public function homes(){
       $title = 'Custom Homes';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'homes');
       $data = array(
            'title' => 'Services',
            'services' => $service_listing
