@@ -31,8 +31,16 @@
             {{Form::text('form_title', '', ['class' => 'form-control', 'placeholder' => 'Form Title'])}}
           </div>
           <div class="form=group">
+            {{Form::label('form_salutation', 'Form Salutation:')}}
+            {{Form::textarea('form_salutation', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Salutation, leave empty if not needed'])}}
+          </div>
+          <div class="form=group">
             {{Form::label('form_body', 'Form Body:')}}
-            {{Form::textarea('form_body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Body'])}}
+            {{Form::textarea('form_body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Body goes here'])}}
+          </div>
+          <div class="form=group">
+            {{Form::label('form_closing', 'Form Footer:')}}
+            {{Form::textarea('form_closing', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Footer, leave emtpy if not needed'])}}
           </div>
           <div class="form=group">
             {{Form::label('form_active', 'Form Active? ')}}
