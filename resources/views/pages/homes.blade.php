@@ -38,7 +38,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/homes/home2.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Roof and Room Extension!</p>
+						<p>Call for Consultation!</p>
 					</div>
 				</div>
 
@@ -51,7 +51,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/homes/home1.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Repair Siding and Damage!</p>
+						<p>Roof and Room Extensions and Additions!</p>
 					</div>
 				</div>
 
@@ -59,12 +59,9 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/homes/home3.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Repair Siding and Damage!</p>
+						<p>Custom Homes done Right!</p>
 					</div>
 				</div>
-
-
-
 
 		<br>
 	</div>
