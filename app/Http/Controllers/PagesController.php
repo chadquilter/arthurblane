@@ -163,7 +163,7 @@ class PagesController extends Controller
     }
 
     public function finishout(){
-      $title = 'Interior Finish Out';
+      $title = 'Interior-Finish-Out';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')
         ->where('service_type', 'finishout')
