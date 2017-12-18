@@ -45,37 +45,6 @@
 			</div>
 		</div>
 
-		<br>
-		<div class="row">
-			<div class="col">
-				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/interior/window1.jpg" style="max-height:100%; width: 100%; display: block;">
-					<div class="image_display_text_container">
-						<p>Window Frames and Installation!</p>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/Cub1.jpg" style="max-height:100%; width: 100%; display: block;">
-					<div class="image_display_text_container">
-						<p>Custom Cupbord Remodeling!</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<br>
-
-				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/interior/window2.jpg" style="max-height:100%; width: 100%; display: block;">
-					<div class="image_display_text_container">
-						<p>Drywall and Floor Molding!</p>
-					</div>
-				</div>
-
-
-		<br>
-	</div>
+	
 </div>
 @endsection
