@@ -21,17 +21,16 @@
           <hr class="my-1">
           @include('inc.messages')
           <br>
-          {!! Form::open(['action' => 'FormsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
-          <div class="form=group">
-            {{Form::label('form_title', 'Title:')}}
-            {{Form::text('form_title', '', ['class' => 'form-control', 'placeholder' => 'Form Title'])}}
-          </div>
-          <br>
           <div class="form=group">
             {{Form::label('form_date', 'Date: ')}}
             {{Form::date('form_date', \Carbon\Carbon::now()), ['class' => 'form-control'] }}
           </div>
           <br>
+          {!! Form::open(['action' => 'FormsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
+          <div class="form=group">
+            {{Form::label('form_title', 'Title:')}}
+            {{Form::text('form_title', '', ['class' => 'form-control', 'placeholder' => 'Form Title'])}}
+          </div>
           <div class="form=group">
             {{Form::label('form_body', 'Form Body:')}}
             {{Form::textarea('form_body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Body'])}}
