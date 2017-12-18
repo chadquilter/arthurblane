@@ -36,7 +36,7 @@ class QuotesController extends Controller
 
           // get mdg services
           $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
-          $title = 'Contact/Request Quote';
+          $title = 'Contact';
 
           return view('quotes.create')
             ->with('mdg_services', $mdg_services)
