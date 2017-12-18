@@ -39,7 +39,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/Cub1.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Roof and Room Extension!</p>
+						<p>Custom Kitchen Cupboards!</p>
 					</div>
 				</div>
 
@@ -73,7 +73,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/kitchenbath/vanity1.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Designed Shower!</p>
+						<p>Custom Bath Counter!</p>
 					</div>
 				</div>
 			</div>
@@ -81,7 +81,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/kitchenbath/counter1.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Full Bath!</p>
+						<p>Custom Vanity!</p>
 					</div>
 				</div>
 			</div>
@@ -101,7 +101,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/kitchenbath/shower_tile3.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Full Bath!</p>
+						<p>Custom tile!</p>
 					</div>
 				</div>
 			</div>
