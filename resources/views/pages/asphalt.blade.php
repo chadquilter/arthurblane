@@ -42,7 +42,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/asphalt/concrete1z.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Roof and Room Extension!</p>
+						<p>Custom bridge!</p>
 					</div>
 				</div>
 
