@@ -8,7 +8,7 @@
 				<div class="card">
 	  			<img class="card-img-top" src="/images/2_orig.jpg" alt="Card image cap">
 	  			<div class="card-body">
-	    			<h5 class="card-title">Custom Excivation Work!</h5>
+	    			<h5 class="card-title">Custom Excivation Work before!</h5>
 	  			</div>
 				</div>
 			</div>
@@ -39,7 +39,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/4_orig.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Roof and Room Extension!</p>
+						<p>...and After!</p>
 					</div>
 				</div>
 
