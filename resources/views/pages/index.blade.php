@@ -53,7 +53,7 @@
         <br>
         <div class="jumbotron">
           <p class="lead">
-            <strong class="display-4">Whatever Custom Home </strong> you have in mind, from a quaint cottage in Austin,
+            <h4 class="display-4">Whatever Custom Home </h4> you have in mind, from a quaint cottage in Austin,
             to a rambling farm house in the Hill Country or an elegant luxury estate home in Houston, Dallas or San Antonio,
             we can build, repair, or add to it at an affordable price.
           </p>
@@ -66,7 +66,7 @@
       <div class="col">
         <div class="jumbotron">
           <p class="lead">
-            <strong class="display-4"> {{ config('app.name', 'MDG')  }} </strong>
+            <h4 class="display-4"> {{ config('app.name', 'MDG')  }} </h4>
             <br> has helped thousands of happy homeowners across Texas build the new custom-designed home of their dreams.
             We build "eco-friendly" green custom homes of all sizes for all budgets.
           </p>
