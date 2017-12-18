@@ -38,9 +38,9 @@
 			</div>
 			<div class="col">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/ARCH1.JPG" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/Cub1.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Roof and Room Extension!</p>
+						<p>Custom Kitchen Cupboards!</p>
 					</div>
 				</div>
 
