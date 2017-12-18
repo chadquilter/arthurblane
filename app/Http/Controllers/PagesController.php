@@ -66,7 +66,7 @@ class PagesController extends Controller
     public function concrete(){
       $title = 'Custom Concrete';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'steel');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'concrete');
       $data = array(
            'title' => 'Services',
            'services' => $service_listing
@@ -156,7 +156,7 @@ class PagesController extends Controller
     public function steel(){
       $title = 'Structural Steel';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', 'concrete');
       $data = array(
 		       'title' => 'Services',
 		       'services' => $service_listing
