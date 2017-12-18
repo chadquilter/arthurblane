@@ -39,7 +39,7 @@
 				<div class="image_display_r">
 					<img class="img-fluid" alt="A scenic home image" src="/images/interior/CABS1.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Custom Kitchen Cupboards!</p>
+						<p>Custom Kitchen Cabnets!</p>
 					</div>
 				</div>
 			</div>
