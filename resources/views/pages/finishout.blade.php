@@ -37,7 +37,7 @@
 			</div>
 			<div class="col">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/Cub1.jpg" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/interior/CABS1.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
 						<p>Custom Kitchen Cupboards!</p>
 					</div>
@@ -49,9 +49,9 @@
 		<div class="row">
 			<div class="col">
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/window1.jpg" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/interior/window1.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
-						<p>Room Renovation!</p>
+						<p>Window Frames and Installation!</p>
 					</div>
 				</div>
 			</div>
