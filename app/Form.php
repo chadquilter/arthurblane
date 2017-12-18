@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Form extends Model
 {
-    protected $table = 'form';
+    protected $table = 'forms';
     public $primaryKey = 'id';
     public $timestamps = true;
 
