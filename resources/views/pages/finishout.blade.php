@@ -66,24 +66,14 @@
 		</div>
 
 		<br>
-		<div class="row">
-			<div class="col">
+
 				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_44444.jpg" style="max-height:100%; width: 100%; display: block;">
+					<img class="img-fluid" alt="A scenic home image" src="/images/interior/window2.jpg" style="max-height:100%; width: 100%; display: block;">
 					<div class="image_display_text_container">
 						<p>Damage Repair!</p>
 					</div>
 				</div>
-			</div>
-			<div class="col">
-				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/hall.jpg" style="max-height:100%; width: 100%; display: block;">
-					<div class="image_display_text_container">
-						<p>Custom Remodeling!</p>
-					</div>
-				</div>
-			</div>
-		</div>
+
 
 		<br>
 	</div>
