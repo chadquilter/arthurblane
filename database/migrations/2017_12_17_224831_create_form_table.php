@@ -15,6 +15,13 @@ class CreateFormTable extends Migration
     {
         Schema::create('forms', function (Blueprint $table) {
             $table->increments('id');
+            $table->bigInteger('form_type');
+            $table->bigInteger('form_subtype')->nullable();
+            $table->mediumText('form_title');
+            $table->longText('form_body')->nullable();
+            $table->dateTime('form_date')->nullable();
+            $table->bigInteger('form_active');
+            $table->bigInteger('form_created_by');
             $table->timestamps();
         });
     }

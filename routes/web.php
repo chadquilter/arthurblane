@@ -30,5 +30,6 @@ Route::get('/homes', 'PagesController@homes');
 Route::resource('jobs', 'JobsController');
 Route::resource('address', 'AddressController');
 Route::resource('items', 'ItemsController');
+Route::resource('forms', 'FormsController');
 Auth::routes();
 Route::get('/dashboard', 'DashboardController@index');
