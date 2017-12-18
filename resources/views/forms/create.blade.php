@@ -32,15 +32,15 @@
           </div>
           <div class="form=group">
             {{Form::label('form_salutation', 'Form Salutation:')}}
-            {{Form::textarea('form_salutation', '', ['id' => 'salutation-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Salutation, leave empty if not needed'])}}
+            {{Form::textarea('form_salutation', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Salutation, leave empty if not needed'])}}
           </div>
           <div class="form=group">
             {{Form::label('form_body', 'Form Body:')}}
-            {{Form::textarea('form_body', '', ['id' => 'body-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Body goes here'])}}
+            {{Form::textarea('form_body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Body goes here'])}}
           </div>
           <div class="form=group">
-            {{Form::label('form_closing', 'Form Footer:')}}
-            {{Form::textarea('form_closing', '', ['id' => 'closing-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Footer, leave emtpy if not needed'])}}
+            {{Form::label('form_closing', 'Form Cloae:')}}
+            {{Form::textarea('form_closing', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Footer, leave emtpy if not needed'])}}
           </div>
           <div class="form=group">
             {{Form::label('form_active', 'Form Active? ')}}
@@ -59,6 +59,8 @@
   </div>
   <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
   <script>
-    CKEDITOR.replace( 'article-ckeditor' );
+    CKEDITOR.replace( 'salutation-ckeditor' );
+    CKEDITOR.replace( 'body-ckeditor' );
+    CKEDITOR.replace( 'closing-ckeditor' );
   </script>
 @endsection
