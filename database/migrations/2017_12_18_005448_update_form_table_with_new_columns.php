@@ -14,7 +14,10 @@ class UpdateFormTableWithNewColumns extends Migration
     public function up()
     {
         Schema::table('forms', function (Blueprint $table) {
-            //
+          $table->longText('form_salutation')->nullable();
+          $table->bigInteger('form_contact')->nullable();
+          $table->bigInteger('form_from')->nullable();
+          $table->longText('form_closing')->nullable();
         });
     }
 
