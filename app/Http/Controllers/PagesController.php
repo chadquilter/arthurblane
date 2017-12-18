@@ -156,7 +156,7 @@ class PagesController extends Controller
     public function steel(){
       $title = 'Structural Steel';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id')->where('service_type', '');
+      $mdg_services = Service::orderBy('service_name', 'asc')->where('service_type', 'steel')->pluck('service_name', 'id');
       $data = array(
 		       'title' => 'Services',
 		       'services' => $service_listing

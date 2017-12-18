@@ -12,6 +12,6 @@ class Service extends Model
 
   public $fillable = [
       'service_name',
-      'service_type'
+      'service_type',
   ];
 }
