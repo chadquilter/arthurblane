@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.arthurblane.com'),
+    'host' => env('MAIL_HOST', 'smtp.bamconstruction.net'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', '-fadmin@arthurblane.com'),
-        'name' => env('MAIL_FROM_NAME', 'Mail from Arthur Blane'),
+        'address' => env('MAIL_FROM_ADDRESS', '-fadmin@bamconstruction.net'),
+        'name' => env('MAIL_FROM_NAME', 'Mail from Bam! Construction'),
     ],
 
     /*
