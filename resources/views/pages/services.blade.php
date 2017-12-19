@@ -23,7 +23,7 @@
 						@if(count($mdg_services) > 0)
 							<ul>
 								@foreach($mdg_services as $mdg_id)
-									<li><a href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a></li>
+									<li><a class="badge badge-primary" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a></li>
 								@endforeach
 							</ul>
 						@else
