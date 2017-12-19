@@ -64,11 +64,13 @@
       </div>
       <div class="col">
         <div class="jumbotron">
+          <div>
           <p class="lead">
             <span class="display-4"> {{ config('app.name', 'MDG')  }} </span>
             <br> has helped numerous happy homeowners across Texas build the new custom-designed home of their dreams.
             We build "eco-friendly" green custom homes of all sizes for all budgets.
           </p>
+          </div>
         </div>
         <div class="image_display_r">
           <img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_00111.jpg" style="max-height:50%; width: 100%; display: block;">
