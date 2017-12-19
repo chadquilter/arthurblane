@@ -36,7 +36,9 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        // NO LOG IN FOR YOU!
+        //$this->middleware('guest');
+        Redirect::to('/')->send();
     }
 
     /**
