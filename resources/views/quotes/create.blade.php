@@ -37,10 +37,11 @@
         <div class="row">
           <div class="col">
             <strong> Contacts: </strong>
+            <hr class="my-4">
           </div>
         </div>
-        <hr class="my-4">
-        
+
+
         <div class="row">
           <div class="col">
             <div class="card border border-secondary">
@@ -114,6 +115,7 @@
         <div class="row">
           <div class="col">
             <strong> Send Message or Request Quote:</strong>
+            <hr class="my-4">
           </div>
         </div>
 
