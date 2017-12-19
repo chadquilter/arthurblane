@@ -1,8 +1,5 @@
 @extends('layouts.front')
 
-/images/interior/window2.jpg
-Drywall and Floor Molding!
-
 @section('content')
 <br>
 <div class="container">
