@@ -74,12 +74,15 @@
             We build "eco-friendly" green custom homes of all sizes for all budgets.
           </p>
         </div>
-        <div class="image_display_r">
-          <img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_00111.jpg" style="max-height:50%; width: 100%; display: block;">
-          <div class="image_display_text_container">
-            <p>Stair Wells, Frames, Railing and so much more!</p>
+
+          <div class="card image_display_r">
+            <img class="card-img-top" src="/images/mdg_images/IMG_00111.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-title">Stair Wells, Frames, Railing and so much more!</p>
+            </div>
           </div>
-        </div>
+
+
       </div>
     </div>
     <br>
