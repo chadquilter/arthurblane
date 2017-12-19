@@ -40,7 +40,8 @@ class RegisterController extends Controller
     {
         // NO LOG IN FOR YOU!
         //$this->middleware('guest');
-        return redirect('/');
+        //return redirect('/');
+        $this->middleware('auth');
     }
 
     /**
