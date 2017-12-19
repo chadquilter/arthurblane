@@ -63,7 +63,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="jumbotron text-md-left text-center">
+        <div class="jumbotron">
           <p class="lead">
             <span class="display-4"> {{ config('app.name', 'MDG')  }} </span>
             <br> has helped numerous happy homeowners across Texas build the new custom-designed home of their dreams.
