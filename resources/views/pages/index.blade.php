@@ -5,7 +5,8 @@
     <br>
     @include('inc.pagelabel')
     <br>
-    <div class="image_display_r">
+    <div class="card image_display_r">
+      <div class="card-image">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -15,9 +16,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="card">
-              <img class="card-image d-block w-100" src="/images/dusk-home.jpg" alt="First slide">
-            </div>
+            <img class="d-block w-100" src="/images/dusk-home.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="/images/LSIDEA.JPG" alt="Second slide">
@@ -41,6 +40,7 @@
       <div class="image_display_text_container">
         <p>Our work is a cut above the rest!</p>
       </div>
+    </div>
     </div>
     <br>
     <div class="row">
