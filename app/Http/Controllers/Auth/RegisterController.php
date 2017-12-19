@@ -38,7 +38,7 @@ class RegisterController extends Controller
     {
         // NO LOG IN FOR YOU!
         //$this->middleware('guest');
-        Redirect::to('/')->send();
+        return redirect('/');
     }
 
     /**
