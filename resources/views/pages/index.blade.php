@@ -49,7 +49,7 @@
           <div class="card">
             <img class="card-img-top" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Custom Metal Work!</h5>
+              <strong class="card-title">Custom Metal Work!</strong>
             </div>
           </div>
         </div>
