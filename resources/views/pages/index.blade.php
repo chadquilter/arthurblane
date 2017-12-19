@@ -15,7 +15,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="card">
-            <img class="card-img-top" src="/images/mdg_images/IMG_00111.jpg" alt="Card image cap">
+            <img class="card-img" src="/images/mdg_images/IMG_00111.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Customized Steel made to order!</h5>
             </div>
