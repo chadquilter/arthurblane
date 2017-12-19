@@ -21,13 +21,13 @@
 					<hr class="my-4">
 					<p class="lead">
 						@if(count($mdg_services) > 0)
-							<div class="row">
 								@foreach($mdg_services as $mdg_id)
-									<div class="col">
-										<a class="btn btn-light btn-lg" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
+									<div class="row">
+										<div class="col">
+											<a class="btn btn-light btn-lg" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
+										</div>
 									</div>
 								@endforeach
-							</div>
 						@else
 							Our services listing are currently under construction!
 						@endif
