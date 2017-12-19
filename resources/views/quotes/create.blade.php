@@ -7,18 +7,22 @@
     <div class="row">
       <br>
       <div class="col">
-        <div class="image_display_r">
-          <img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/IMG_BATHROOM2.JPG" style="max-height:100%; width: 100%; display: block;">
-          <div class="image_display_text_container">
-            <p>Our work is a cut above the rest!</p>
+        <div class="card image_display_r">
+          <img class="card-img-top" src="/images/mdg_images/IMG_BATHROOM2.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+          <div class="card-body">
+            <div class="card-title">
+              <p>Our work is a cut above the rest!</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="image_display_r">
-          <img class="img-fluid" alt="A scenic home image" src="/images/CAB1.JPG" style="max-height:100%; width: 100%; display: block;">
-          <div class="image_display_text_container">
-            <p>Custom Design!</p>
+        <div class="card image_display_r">
+          <img class="card-img-top" src="/images/CAB1.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+          <div class="card-body">
+            <div class="card-title">
+              <p>Custom Design!</p>
+            </div>
           </div>
         </div>
       </div>
@@ -101,10 +105,12 @@
       </div>
     </div>
     <br>
-    <div class="image_display_r">
-      <img class="img-fluid"  alt="A scenic home image" src="/images/LSIDEA.JPG" style="max-height:100%; width: 100%; display: block;">
-      <div class="image_display_text_container">
-        <p>Custom Design!</p>
+    <div class="card image_display_r">
+      <img class="card-img-top" src="/images/LSIDEA.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+      <div class="card-body">
+        <div class="card-title">
+          <p>Custom Design!</p>
+        </div>
       </div>
     </div>
     <br>
