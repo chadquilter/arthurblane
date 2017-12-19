@@ -37,7 +37,7 @@
         <div class="row">
           <strong> Contacts: </strong>
           <div class="col">
-            
+
             <div class="card">
               <div class="card-body">
                 <div class="card-title">
@@ -50,15 +50,16 @@
                     </div>
                   </div>
                   <div class="row">
-                  </div class="col">
-                  <strong> Mike Grounds </strong>
-                </div>
-                <div class="col">
-                  <strong> (830)220-2876</strong>
+                    <div class="col">
+                      <strong> Mike Grounds </strong>
+                    </div>
+                    <div class="col">
+                      <strong> (830)220-2876</strong>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
           <div class="card">
             <div class="card-body">
