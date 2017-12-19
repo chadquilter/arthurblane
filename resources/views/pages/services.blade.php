@@ -40,9 +40,8 @@
 						<p>Custom Kitchen Cupboards!</p>
 					</div>
 				</div>
-
 				<br>
 			</div>
 		</div>
-
+	</div>
 @endsection
