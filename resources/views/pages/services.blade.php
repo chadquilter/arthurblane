@@ -24,7 +24,7 @@
 								@foreach($mdg_services as $mdg_id)
 									<div class="alert alert-primary">
 									<a class="btn btn-lg btn-block" role="button" href="/{{ $mdg_id->service_url }}">
-											<h3 class="badge badge-secondary">{{ $mdg_id->service_name }}</h3>
+											<h3><div class="badge badge-secondary">{{ $mdg_id->service_name }}</div></h3>
 									</a>
 								</div>
 								@endforeach
