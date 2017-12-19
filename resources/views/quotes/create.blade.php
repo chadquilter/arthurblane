@@ -37,7 +37,7 @@
         <div class="row">
           <strong> Contacts: </strong>
           <br>
-          
+
           <div class="col">
             <div class="card border border-secondary">
               <div class="card-body">
@@ -67,19 +67,22 @@
               <div class="card-body">
                 <div class="card-title">
                   <div class="row">
-                    <strong>Name:</strong>
+                    <strong>Name: </strong>
                     <br>
                     <strong>Robert Burtner</strong>
                   </div>
                   <div class="row">
-                    <strong>Phone:</strong>
+                    <strong>Phone: </strong>
                     <br>
                     <strong>(830)265-0941</strong>
                   </div>
                   <div class="row">
-                    <strong>Email:</strong>
-                    <br>
-                    <strong> robertburtner@bamconstruction.net </strong>
+                    <div class="col">
+                      <strong>Email: </strong>
+                    </div>
+                    <div class="col"
+                      <strong> robertburtner@bamconstruction.net </strong>
+                    </div>
                   </div>
                 </div>
               </div>
