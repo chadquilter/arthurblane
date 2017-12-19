@@ -22,8 +22,8 @@
 					<p class="lead">
 						@if(count($mdg_services) > 0)
 							<ul>
-								@foreach($mdg_services as $mdg_service)
-									<li>{{$mdg_service}} {{ $mdg_url }}</li>
+								@foreach($mdg_services as $mdg_id)
+									<li>{{$mdg_services[$mdg_id]->'service_url'}}</li>
 								@endforeach
 							</ul>
 						@else

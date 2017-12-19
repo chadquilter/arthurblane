@@ -21,9 +21,7 @@ class PagesController extends Controller
     public function services(){
       $title = config('app.name').' Services';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')
-      ->where('service_type', '')
-      ->pluck('service_name', 'id', 'service_url');
+      $mdg_services = Service::orderBy('service_name', 'asc')->where('service_type', '');
 
       $data = array(
 		       'title' => 'Services',
