@@ -20,7 +20,7 @@ class PagesController extends Controller
 
     public function services(){
       $title = config('app.name').' Services';
-      $mdg_services = Service::orderBy('service_name', 'asc')->where('service_type', '')->paginate(4, ['*'], 'mdg_services');
+      $mdg_services = Service::orderBy('service_name', 'asc')->where('service_type', '')->paginate(1000, ['*'], 'mdg_services');
 
       return view('pages.services')
         ->with('title', $title)
