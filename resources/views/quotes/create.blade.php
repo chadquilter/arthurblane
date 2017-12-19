@@ -80,7 +80,7 @@
                     <div class="col">
                       <strong>Email: </strong>
                     </div>
-                    <div class="col"
+                    <div class="col">
                       <strong> robertburtner@bamconstruction.net </strong>
                     </div>
                   </div>
