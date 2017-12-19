@@ -58,14 +58,14 @@
           </p>
           <p class="lead">
             With over 15 years of building experience based in the Texas Hill Country, you can be rest assured that our work is a cut above the rest!
-            Contact us to day to recieve a free Quote!
+            Contact us to day to recieve a <a href="/quotes">Free Quote!</a>
           </p>
         </div>
       </div>
       <div class="col">
         <div class="jumbotron">
           <p class="lead">
-            <strong class="display-4"> {{ config('app.name', 'MDG')  }} </strong>
+            <span class="display-4"> {{ config('app.name', 'MDG')  }} </span>
             <br> has helped numerous happy homeowners across Texas build the new custom-designed home of their dreams.
             We build "eco-friendly" green custom homes of all sizes for all budgets.
           </p>
