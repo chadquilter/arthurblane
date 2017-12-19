@@ -21,15 +21,11 @@
 					<hr class="my-4">
 					<p class="lead">
 						@if(count($mdg_services) > 0)
-							<div class="card image_display_r">
-								<div class="card-body">
-									<ul>
+							<ul>
 								@foreach($mdg_services as $mdg_service)
-										<li>{{$mdg_service}}</li>
+									<li>{{$mdg_service}}</li>
 								@endforeach
-									</ul>
-								</div>
-							</div>
+							</ul>
 						@else
 							<li>Our services listing are currently under construction!</li>
 						@endif
