@@ -31,13 +31,11 @@
 						@endif
 
 						@if(count($mdg_services) > 0)
-								<br>
 								@foreach($mdg_services as $mdg_id)
-									<li><a class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a></li>
-									<br>
+									<a class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
 								@endforeach
 						@else
-							<li>Our services listing are currently under construction!</li>
+							Our services listing are currently under construction!
 						@endif
 					</p>
 					<hr class="my-4">
