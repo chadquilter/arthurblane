@@ -21,15 +21,7 @@
 					include but are not limited to:
 					<hr class="my-4">
 					<p class="lead">
-						@if(count($mdg_services) > 0)
-							<ul>
-								@foreach($mdg_services as $mdg_service)
-									<li>{{$mdg_service}}</li>
-								@endforeach
-							</ul>
-						@else
-							<li>Our services listing are currently under construction!</li>
-						@endif
+						@include('inc.subservice')
 					</p>
 					<hr class="my-4">
 				</div>
