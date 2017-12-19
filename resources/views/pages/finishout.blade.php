@@ -7,16 +7,13 @@ Drywall and Floor Molding!
 <br>
 <div class="container">
 	@include('inc.pagelabel')
-	<div class="image_display_r">
-		<div class="card">
-			<img class="card-img-top" src="/images/mdg_images/hall.jpg" alt="Card image cap">
-			<div class="card-body">
-				<h5 class="card-title">Professional Interior Finishout, Done right.</h5>
-			</div>
+	<div class="card image_display_r">
+		<img class="card-img-top" src="/images/mdg_images/hall.jpg" alt="Card image cap">
+		<div class="card-body">
+			<h5 class="card-title">Professional Interior Finishout, Done right.</h5>
 		</div>
 	</div>
 	<br>
-
 	<div class="row">
 		<div class="col">
 			<div class="jumbotron">
@@ -39,44 +36,51 @@ Drywall and Floor Molding!
 			</div>
 		</div>
 		<div class="col">
-			<div class="image_display_r">
-				<img class="img-fluid" alt="A scenic home image" src="/images/interior/CABS1.jpg" style="max-height:100%; width: 100%; display: block;">
-				<div class="image_display_text_container">
-					<p>Custom Cupboards!</p>
+			<div class="card image_display_r">
+				<img class="card-img-top" alt="A scenic home image" src="/images/interior/CABS1.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+				<div class="card-body">
+					<div class="card-title">
+						<p>Custom Cupboards! </p>
+					</div>
 				</div>
 			</div>
-
 			<br>
 		</div>
 	</div>
-
 	<br>
 	<div class="row">
 		<div class="col">
-			<div class="image_display_r">
-				<img class="img-fluid" alt="A scenic home image" src="/images/interior/window1.jpg" style="max-height:100%; width: 100%; display: block;">
-				<div class="image_display_text_container">
-					<p>Window Frames and Installation!</p>
+			<div class="card image_display_r">
+				<img class="card-img-top" alt="A scenic home image" src="/images/interior/window1.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+				<div class="card-body">
+					<div class="card-title">
+						<p>>Window Frames and Installation! </p>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col">
-			<div class="image_display_r">
-				<img class="img-fluid" alt="A scenic home image" src="/images/mdg_images/Cub1.jpg" style="max-height:100%; width: 100%; display: block;">
-				<div class="image_display_text_container">
-					<p>Custom Cupbord Remodeling!</p>
+			<div class="card image_display_r">
+				<img class="card-img-top" alt="A scenic home image" src="/images/mdg_images/Cub1.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+				<div class="card-body">
+					<div class="card-title">
+						<p>Custom Cupbord Remodeling! </p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<br>
-	<div class="image_display_r">
-		<img class="img-fluid" alt="A scenic home image" src="/images/interior/window2.jpg" style="max-height:100%; width: 100%; display: block;">
-		<div class="image_display_text_container">
-			<p>Custom Bath Counter!</p>
+	<div class="card image_display_r">
+		<img class="card-img-top" alt="A scenic home image" src="/images/interior/window2.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+		<div class="card-body">
+			<div class="card-title">
+				<p>Custom Bath Counter! </p>
+			</div>
 		</div>
 	</div>
+
 	<br>
 </div>
-</div>
+
 @endsection

@@ -12,42 +12,40 @@
 			</div>
 		</div>
 	</div>
-		<br>
-
-		<div class="row">
-			<div class="col">
-				<div class="jumbotron">
-						<h4 class="display-4">{{$title}}</h4>
-						<br>
-						include but are not limited to:
-					<hr class="my-4">
-					<p class="lead">
-						@if(count($mdg_services) > 0)
-							<ul>
-								@foreach($mdg_services as $mdg_service)
-									<li>{{$mdg_service}}</li>
-								@endforeach
-							</ul>
-						@else
-							<li>Our services listing are currently under construction!</li>
-						@endif
-					</p>
-					<hr class="my-4">
-				</div>
+	<br>
+	<div class="row">
+		<div class="col">
+			<div class="jumbotron">
+				<h4 class="display-4">{{$title}}</h4>
+				<br>
+				include but are not limited to:
+				<hr class="my-4">
+				<p class="lead">
+					@if(count($mdg_services) > 0)
+						<ul>
+							@foreach($mdg_services as $mdg_service)
+								<li>{{$mdg_service}}</li>
+							@endforeach
+						</ul>
+					@else
+						<li>Our services listing are currently under construction!</li>
+					@endif
+				</p>
+				<hr class="my-4">
 			</div>
-			<div class="col">
-				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/asphalt/concrete1z.jpg" style="max-height:100%; width: 100%; display: block;">
-					<div class="image_display_text_container">
+		</div>
+		<div class="col">
+			<div class="card image_display_r">
+				<img class="card-img-top" alt="A scenic home image" src="/images/asphalt/concrete1z.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+				<div class="card-body">
+					<div class="card-title">
 						<p>Custom bridge!</p>
 					</div>
 				</div>
-
-				<br>
 			</div>
 		</div>
-
 		<br>
 	</div>
+	<br>
 </div>
 @endsection
