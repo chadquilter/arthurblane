@@ -35,8 +35,11 @@
         <br>
 
         <div class="row">
-          <strong> Contacts: </strong>
-          <br>
+          <div class="col">
+            <strong> Contacts: </strong>
+          </div>
+        </div>
+        <div class="row">
 
           <div class="col">
             <div class="card border border-secondary">
