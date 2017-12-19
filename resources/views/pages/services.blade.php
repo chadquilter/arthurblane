@@ -7,9 +7,7 @@
 		<div class="card image_display_r">
 			<img class="card-img-top" src="/images/2_orig.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 			<div class="card-body">
-				<div class="card-title">
-					<p>Custom Built Outdoor Walkways and Paths!</p>
-				</div>
+				<h5 class="card-title">Professional Excivation and Stonework!</h5>
 			</div>
 		</div>
 		<br>
@@ -37,11 +35,9 @@
 			</div>
 			<div class="col">
 				<div class="card image_display_r">
-					<img class="card-img-top" alt="A scenic home image" src="/images/ARCH1.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-					<div class="card-body">
-						<div class="card-title">
-							<p>Custom Roof and Room Extension!</p>
-						</div>
+					<img class="card-img-top" alt="A scenic home image" src="/images/mdg_images/Cub1.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+					<div class="image_display_text_container">
+						<p>Custom Kitchen Cupboards!</p>
 					</div>
 				</div>
 
@@ -49,8 +45,4 @@
 			</div>
 		</div>
 
-
-		<br>
-
-	</div>
 @endsection

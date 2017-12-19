@@ -5,7 +5,6 @@
 <div class="container">
 	@include('inc.pagelabel')
 	<div class="card image_display_r">
-		<div class="card">
 			<img class="card-img-top" src="/images/mdg_images/IMG_00111.jpg" alt="Card image cap">
 			<div class="card-body">
 				<h5 class="card-title">Customized Steel made to order!</h5>
@@ -82,6 +81,6 @@
 			</div>
 		</div>
 	</div>
-	
+
 </div>
 @endsection
