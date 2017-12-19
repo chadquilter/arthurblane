@@ -13,10 +13,7 @@
   			</div>
 			</div>
 		</div>
-
-
 	<br>
-
 		<div class="row">
 			<div class="col">
 				<div class="jumbotron">
@@ -39,18 +36,15 @@
 				</div>
 			</div>
 			<div class="col">
-				<div class="image_display_r">
-					<img class="img-fluid" alt="A scenic home image" src="/images/asphalt/concrete1z.jpg" style="max-height:100%; width: 100%; display: block;">
-					<div class="image_display_text_container">
-						<p>Custom bridge!</p>
-					</div>
+				<div class="card image_display_r">
+					<img class="card-img-top" alt="A scenic home image" src="/images/asphalt/concrete1z.jpg">
+					<div class="card-body">
+            <p class="card-title">Custom Metal Work!</p>
+          </div>
 				</div>
-
 				<br>
 			</div>
 		</div>
-
-
 		<br>
 	</div>
 </div>
