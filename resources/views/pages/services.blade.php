@@ -25,7 +25,7 @@
 
 									<a class="alert alert-primary btn btn-lg btn-block" role="button" href="/{{ $mdg_id->service_url }}">
 										<h3>
-											<span class="badge badge-secondary">{{ $mdg_id->service_name }}</span>
+											<div class="badge badge-secondary">{{ $mdg_id->service_name }}</div>
 										</h3>
 									</a>
 
