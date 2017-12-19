@@ -23,10 +23,9 @@
 						@if(count($mdg_services) > 0)
 								@foreach($mdg_services as $mdg_id)
 									<div class="row">
-										<div class="col">
+									
 											<a class="btn btn-info btn-sm btn-block" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
-
-										</div>
+											<br>
 									</div>
 								@endforeach
 						@else
