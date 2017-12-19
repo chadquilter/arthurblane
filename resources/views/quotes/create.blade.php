@@ -36,9 +36,10 @@
 
         <div class="row">
           <strong> Contacts: </strong>
+          <br>
           <div class="col">
 
-            <div class="card">
+            <div class="card border border-secondary">
               <div class="card-body">
                 <div class="card-title">
                   <div class="row">
@@ -64,7 +65,7 @@
           </div>
           <div class="col">
 
-            <div class="card">
+            <div class="card border border-secondary">
               <div class="card-body">
                 <div class="card-title">
                   <div class="row">
