@@ -39,8 +39,9 @@
             <strong> Contacts: </strong>
           </div>
         </div>
+        <hr class="my-4">
+        
         <div class="row">
-
           <div class="col">
             <div class="card border border-secondary">
               <div class="card-body">
