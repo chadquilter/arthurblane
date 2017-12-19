@@ -8,7 +8,7 @@
 			<img class="card-img-top" alt="A scenic home image" src="/images/2_orig.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 			<div class="card-body">
 				<div class="card-title">
-					<p>Custom Built Outdoor walkways and Paths!</p>
+					<p>Custom Built Outdoor Walkways and Paths!</p>
 				</div>
 			</div>
 		</div>
