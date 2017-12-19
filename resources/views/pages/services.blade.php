@@ -22,9 +22,11 @@
 					<p class="lead">
 						@if(count($mdg_services) > 0)
 								@foreach($mdg_services as $mdg_id)
-									<a class="alert alert-primary btn btn-lg btn-block" role="button" href="/{{ $mdg_id->service_url }}">
-											<div class="badge badge-secondary">{{ $mdg_id->service_name }}</div>
+									<div class="alert alert-primary">
+									<a class="btn btn-lg btn-block" role="button" href="/{{ $mdg_id->service_url }}">
+											<h4 class="badge badge-secondary">{{ $mdg_id->service_name }}</h4>
 									</a>
+								</div>
 								@endforeach
 						@else
 							Our services listing are currently under construction!
