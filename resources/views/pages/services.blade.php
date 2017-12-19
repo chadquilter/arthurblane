@@ -22,9 +22,9 @@
 					<p class="lead">
 						@if(count($mdg_services) > 0)
 								@foreach($mdg_services as $mdg_id)
-									<div class="card">
-										<div class="card-body">
-											<a class="btn btn-info btn-sm btn-block" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
+									<div class="row">
+										<div class="col">
+											<a class="btn btn-dark btn-lg btn-block" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
 										</div>
 									</div>
 								@endforeach
