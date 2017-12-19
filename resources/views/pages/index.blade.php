@@ -14,25 +14,19 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="card">
-            <img class="card-img" src="/images/mdg_images/IMG_00111.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Customized Steel made to order!</h5>
-            </div>
-          </div>
           <div class="carousel-item active">
             <div class="card">
-              <img class="card-img-top d-block w-100" src="/images/dusk-home.jpg" alt="Custom Homes">
+              <img class="card-image d-block w-100" src="/images/dusk-home.jpg" alt="First slide">
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/images/LSIDEA.JPG" alt="Custom Construction">
+            <img class="d-block w-100" src="/images/LSIDEA.JPG" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/images/LSIDE.JPG" alt="Custom Construction">
+            <img class="d-block w-100" src="/images/LSIDE.JPG" alt="Third slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/images/ARCH4.JPG" alt="Custom Construction">
+            <img class="d-block w-100" src="/images/ARCH4.JPG" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
