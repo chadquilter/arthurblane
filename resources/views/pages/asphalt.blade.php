@@ -38,7 +38,7 @@
 				<div class="card image_display_r">
 					<img class="card-img-top" alt="A scenic home image" src="/images/asphalt/concrete1z.jpg">
 					<div class="card-body">
-						<p class="card-title">Custom Metal Work!</p>
+						<p class="card-title">Custom Road and Bridge Work!</p>
 					</div>
 				</div>
 				<br>
