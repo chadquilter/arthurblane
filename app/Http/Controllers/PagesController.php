@@ -22,7 +22,6 @@ class PagesController extends Controller
       $title = config('app.name').' Services';
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')->where('service_type', '');
-      $service_arr = $mdg_services->KeyBy('id');
 
       $data = array(
 		       'title' => 'Services',
@@ -31,7 +30,7 @@ class PagesController extends Controller
 
       return view('pages.services')
         ->with('title', $title)
-        ->with('mdg_services', $service_arr->all())
+        ->with('mdg_services', $mdg_services)
         ->with('services', $service_listing);
     }
 
