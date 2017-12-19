@@ -23,7 +23,7 @@
 						@if(count($mdg_services) > 0)
 							<ul>
 								@foreach($mdg_services as $mdg_id)
-									<li>{{$mdg_services[$mdg_id]->'service_url'}}</li>
+									<li>{{ $mdg_services[$mdg_id]->service_url }}</li>
 								@endforeach
 							</ul>
 						@else
