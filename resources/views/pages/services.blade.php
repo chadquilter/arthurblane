@@ -24,7 +24,7 @@
 								@foreach($mdg_services as $mdg_id)
 									<div class="row">
 										<div class="col alert alert-primary">
-											<a class="btn btn-outline-dark btn-lg btn-block" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
+											<a class="btn btn-outline-primary btn-lg btn-block" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
 										</div>
 									</div>
 								@endforeach
