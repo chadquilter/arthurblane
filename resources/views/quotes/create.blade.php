@@ -61,31 +61,34 @@
               </div>
             </div>
 
-          <div class="card">
-            <div class="card-body">
-              <div class="card-title">
-                <div class="row">
-                  <div class="col">
-                    <strong> Name: </strong>
+          </div>
+          <div class="col">
+
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  <div class="row">
+                    <div class="col">
+                      <strong> Name: </strong>
+                    </div>
+                    <div class="col">
+                      <strong> Phone: </strong>
+                    </div>
                   </div>
-                  <div class="col">
-                    <strong> Phone: </strong>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <strong> Robert Burtner </strong>
-                  </div>
-                  <div class="col">
-                    <strong>(830)265-0941</strong>
+                  <div class="row">
+                    <div class="col">
+                      <strong> Robert Burtner </strong>
+                    </div>
+                    <div class="col">
+                      <strong>(830)265-0941</strong>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
-      </div>
 
         <br>
         <div class="row">
