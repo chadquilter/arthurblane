@@ -37,72 +37,55 @@
         <div class="row">
           <strong> Contacts: </strong>
           <br>
+          
           <div class="col">
-
             <div class="card border border-secondary">
               <div class="card-body">
                 <div class="card-title">
                   <div class="row">
-                    <div class="col">
-                      <strong> Name: </strong>
-                      <br>
-                      <strong> Mike Grounds </strong>
-                    </div>
-                    <div class="col">
-                      <strong> Phone: </strong>
-                    </div>
-                    <div class="col">
-                      <strong> Email: </strong>
-                    </div>
+                    <strong> Name: </strong>
+                    <br>
+                    <strong> Mike Grounds </strong>
                   </div>
                   <div class="row">
-                    <div class="col">
-                      <strong> Mike Grounds </strong>
-                    </div>
-                    <div class="col">
-                      <strong> (830)220-2876</strong>
-                    </div>
-                    <div class="col">
-                      <strong> mikegrounds@bamconstruction.net </strong>
-                    </div>
+                    <strong> Phone: </strong>
+                    <br>
+                    <strong> (830)220-2876</strong>
+                  </div>
+                  <div class="row">
+                    <strong> Email: </strong>
+                    <br>
+                    <strong> mikegrounds@bamconstruction.net </strong>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
-          <div class="col">
 
+          <div class="col">
             <div class="card border border-secondary">
               <div class="card-body">
                 <div class="card-title">
                   <div class="row">
-                    <div class="col">
-                      <strong> Name: </strong>
-                    </div>
-                    <div class="col">
-                      <strong> Phone: </strong>
-                    </div>
-                    <div class="col">
-                      <strong> Email: </strong>
-                    </div>
+                    <strong>Name:</strong>
+                    <br>
+                    <strong>Robert Burtner</strong>
                   </div>
                   <div class="row">
-                    <div class="col">
-                      <strong> Robert Burtner </strong>
-                    </div>
-                    <div class="col">
-                      <strong>(830)265-0941</strong>
-                    </div>
-                    <div class="col">
-                      <strong> robertburtner@bamconstruction.net </strong>
-                    </div>
+                    <strong>Phone:</strong>
+                    <br>
+                    <strong>(830)265-0941</strong>
+                  </div>
+                  <div class="row">
+                    <strong>Email:</strong>
+                    <br>
+                    <strong> robertburtner@bamconstruction.net </strong>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
+
         </div>
 
         <br>
