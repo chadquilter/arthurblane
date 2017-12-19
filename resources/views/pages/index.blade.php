@@ -7,50 +7,48 @@
     <br>
     <div class="card image_display_r">
       <div class="card-img-top">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="/images/dusk-home.jpg" alt="First slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="/images/dusk-home.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/images/LSIDEA.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/images/LSIDE.JPG" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/images/ARCH4.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="/images/LSIDEA.JPG" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="/images/LSIDE.JPG" alt="Third slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="/images/ARCH4.JPG" alt="Third slide">
-          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="image_display_text_container">
+          <p>Our work is a cut above the rest!</p>
+        </div>
       </div>
-      <div class="image_display_text_container">
-        <p>Our work is a cut above the rest!</p>
-      </div>
-    </div>
     </div>
     <br>
     <div class="row">
       <div class="col">
-        <div class="image_display_r">
-          <div class="card">
-            <img class="card-img-top" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-title">Custom Metal Work!</p>
-            </div>
+        <div class="card image_display_r">
+          <img class="card-img-top" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+          <div class="card-body">
+            <p class="card-title">Custom Metal Work!</p>
           </div>
         </div>
         <br>
@@ -74,22 +72,19 @@
             We build "eco-friendly" green custom homes of all sizes for all budgets.
           </p>
         </div>
-
-          <div class="card image_display_r">
-            <img class="card-img-top" src="/images/mdg_images/IMG_00111.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-title">Stair Wells, Frames, Railing and so much more!</p>
-            </div>
+        <div class="card image_display_r">
+          <img class="card-img-top" src="/images/mdg_images/IMG_00111.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+          <div class="card-body">
+            <p class="card-title">Stair Wells, Frames, Railing and so much more!</p>
           </div>
-
-
+        </div>
       </div>
     </div>
     <br>
-    <div class="image_display_r">
-      <img class="img-fluid" alt="A scenic home image" src="/images/3_orig.jpg" style="max-height:100%; width: 100%; display: block;">
-      <div class="image_display_text_container">
-        <p>Custom Driveways and Concrete Pads!</p>
+    <div class="card image_display_r">
+      <img class="card-img-top" src="/images/3_orig.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+      <div class="card-body">
+        <p class="card-title">Custom Driveways and Concrete Pads!</p>
       </div>
     </div>
   </div>
