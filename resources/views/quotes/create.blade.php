@@ -11,7 +11,7 @@
           <img class="card-img-top" src="/images/mdg_images/IMG_BATHROOM2.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
           <div class="card-body">
             <div class="card-title">
-              <p>Our work is a cut above the rest!</p>
+              <p>A cut above the rest!</p>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@
     <br>
     <div class="jumbotron">
       <div class="container">
-        <h1 class="display-2">Feel free ...</h1> to send us a request for a Quote, Message or any Questions!
+        <h1 class="display-2">Feel Free ...</h1> to send us a request for a Quote, Message or any Questions!
         <br>
         <br>
         <div class="row">
