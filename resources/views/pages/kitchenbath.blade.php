@@ -1,23 +1,23 @@
 @extends('layouts.front')
 
 @section('content')
-<br>
-<div class="container">
-			@include('inc.pagelabel')
-			<div class="card image_display_r">
-	  			<img class="card-img-top" src="/images/mdg_images/IMG_BEDROOM1.JPG" alt="Card image cap">
-	  			<div class="card-body">
-	    			<h5 class="card-title">Customized Bath and Shower!</h5>
-	  			</div>
+	<br>
+	<div class="container">
+		@include('inc.pagelabel')
+		<div class="card image_display_r">
+			<img class="card-img-top" src="/images/mdg_images/IMG_BEDROOM1.JPG" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Customized Bath and Shower!</h5>
 			</div>
+		</div>
 		<br>
 
 		<div class="row">
 			<div class="col">
 				<div class="jumbotron">
-						<h4 class="display-4">{{$title}}</h4>
-						<br>
-						include but are not limited to:
+					<h4 class="display-4">{{$title}}</h4>
+					<br>
+					include but are not limited to:
 					<hr class="my-4">
 					<p class="lead">
 						@if(count($mdg_services) > 0)
@@ -107,5 +107,5 @@
 
 		<br>
 	</div>
-</div>
+
 @endsection
