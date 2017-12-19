@@ -46,9 +46,11 @@
     <div class="row">
       <div class="col">
         <div class="image_display_r">
-          <img class="img-fluid"  alt="A scenic home image" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" style="max-height:100%; width: 100%; display: block;">
-          <div class="image_display_text_container">
-            <p>Custom Metal Work!</p>
+          <div class="card">
+            <img class="card-img-top" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Custom Metal Work!</h5>
+            </div>
           </div>
         </div>
         <br>
