@@ -33,35 +33,59 @@
         <h1 class="display-2">Feel Free ...</h1> to send us a request for a Quote, Message or any Questions!
         <br>
         <br>
+
         <div class="row">
           <strong> Contacts: </strong>
           <div class="col">
-            <strong> Name: </strong>
+            
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  <div class="row">
+                    <div class="col">
+                      <strong> Name: </strong>
+                    </div>
+                    <div class="col">
+                      <strong> Phone: </strong>
+                    </div>
+                  </div>
+                  <div class="row">
+                  </div class="col">
+                  <strong> Mike Grounds </strong>
+                </div>
+                <div class="col">
+                  <strong> (830)220-2876</strong>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col">
-            <strong> Phone: </strong>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                <div class="row">
+                  <div class="col">
+                    <strong> Name: </strong>
+                  </div>
+                  <div class="col">
+                    <strong> Phone: </strong>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <strong> Robert Burtner </strong>
+                  </div>
+                  <div class="col">
+                    <strong>(830)265-0941</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col">
-            <strong> Name: </strong>
-          </div>
-          <div class="col">
-            <strong> Phone: </strong>
-          </div>
+
         </div>
-        <div class="row">
-          <div class="col">
-            <strong> Mike Grounds </strong>
-          </div>
-          <div class="col">
-              <strong>(830)220-2876</strong>
-          </div>
-          <div class="col">
-            <strong> Robert Burtner </strong>
-          </div>
-          <div class="col">
-              <strong>(830)265-0941</strong>
-          </div>
-        </div>
+      </div>
+
         <br>
         <div class="row">
           <div class="col">
