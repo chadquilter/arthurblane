@@ -23,7 +23,7 @@
 						@if(count($mdg_services) > 0)
 							<ul>
 								@foreach($mdg_services as $mdg_service)
-									<li>{{$mdg_service}}</li>
+									<li>{{$mdg_service}} {{ $mdg_url }}</li>
 								@endforeach
 							</ul>
 						@else
