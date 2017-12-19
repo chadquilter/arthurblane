@@ -65,7 +65,7 @@
       <div class="col">
         <div class="jumbotron">
           <p class="lead">
-            <strong class="display"> {{ config('app.name', 'MDG')  }} </strong>
+            <strong class="display-4"> {{ config('app.name', 'MDG')  }} </strong>
             <br> has helped numerous happy homeowners across Texas build the new custom-designed home of their dreams.
             We build "eco-friendly" green custom homes of all sizes for all budgets.
           </p>
