@@ -21,7 +21,7 @@
 					<hr class="my-4">
 					<p class="lead">
 						@if(count($mdg_services) > 0)
-							<div class="card">
+							<div class="card image_display_r">
 								<div class="card-body">
 									@foreach($mdg_services as $mdg_id)
 										<a class="alert alert-primary btn" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
