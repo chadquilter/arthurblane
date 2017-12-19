@@ -22,7 +22,7 @@
 					<p class="lead">
 						@if(count($mdg_services) > 0)
 								@foreach($mdg_services as $mdg_id)
-									<a class="btn btn-light btn-lg btn-block" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
+									<a class="btn btn-light btn-lg" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
 								@endforeach
 						@else
 							Our services listing are currently under construction!
