@@ -1,7 +1,6 @@
 @extends('layouts.front')
 
 @section('content')
-
   <div class="container">
     <br>
     @include('inc.pagelabel')
@@ -66,7 +65,7 @@
       <div class="col">
         <div class="jumbotron">
           <p class="lead">
-            <h4 class="display-4"> {{ config('app.name', 'MDG')  }} </h4>
+            <strong class="display-3"> {{ config('app.name', 'MDG')  }} </strong>
             <br> has helped numerous happy homeowners across Texas build the new custom-designed home of their dreams.
             We build "eco-friendly" green custom homes of all sizes for all budgets.
           </p>
@@ -81,11 +80,11 @@
     </div>
     <br>
     <div class="image_display_r">
-			<img class="img-fluid" alt="A scenic home image" src="/images/3_orig.jpg" style="max-height:100%; width: 100%; display: block;">
-			<div class="image_display_text_container">
-				<p>Custom Driveways and Concrete Pads!</p>
-			</div>
-		</div>
+      <img class="img-fluid" alt="A scenic home image" src="/images/3_orig.jpg" style="max-height:100%; width: 100%; display: block;">
+      <div class="image_display_text_container">
+        <p>Custom Driveways and Concrete Pads!</p>
+      </div>
+    </div>
   </div>
   <br>
 @endsection
