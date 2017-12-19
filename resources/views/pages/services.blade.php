@@ -25,7 +25,7 @@
 									<div class="row">
 										<div class="col">
 											<a class="btn btn-info btn-sm btn-block" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
-											<br>
+
 										</div>
 									</div>
 								@endforeach
