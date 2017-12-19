@@ -20,8 +20,7 @@ class PagesController extends Controller
 
     public function services(){
       $title = config('app.name').' Services';
-      $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->where('service_type', '');
+      $mdg_services = Service::orderBy('service_name', 'asc')->where('service_type', '')->paginate(4, ['*'], 'services');
 
       $data = array(
 		       'title' => 'Services',
@@ -30,8 +29,7 @@ class PagesController extends Controller
 
       return view('pages.services')
         ->with('title', $title)
-        ->with('mdg_services', $mdg_services)
-        ->with('services', $service_listing);
+        ->with('services', $mdg_services);
     }
 
     public function asphalt(){
