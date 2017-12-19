@@ -21,9 +21,13 @@
 					<hr class="my-4">
 					<p class="lead">
 						@if(count($mdg_services) > 0)
-								@foreach($mdg_services as $mdg_id)
-									<a class="alert alert-primary btn" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
-								@endforeach
+							<div class="card">
+								<div class="card-body">
+									@foreach($mdg_services as $mdg_id)
+										<a class="alert alert-primary btn" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
+									@endforeach
+								</div>
+							</div>
 						@else
 							Our services listing are currently under construction!
 						@endif
