@@ -58,7 +58,7 @@
             we can build, repair, or add to it at an affordable price.
           </p>
           <p class="lead">
-            With over 10 years of building experience based in the center of Texas, you can be rest assured that our work is a cut above the rest!
+            With over 15 years of building experience based in the Texas Hill Country, you can be rest assured that our work is a cut above the rest!
             Contact us to day to recieve a free Quote!
           </p>
         </div>
