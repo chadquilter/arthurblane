@@ -10,7 +10,7 @@ class PagesController extends Controller
 
     public function index(){
       $title = 'Welcome to '.config('app.name');
-      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id', 'service_url');
+      $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
 	//al method to pass values to page
        //return view('pages.index', compact('title'));
        return view('pages.index')
@@ -23,7 +23,7 @@ class PagesController extends Controller
       $service_listing = Service::orderBy('service_name', 'asc')->pluck('service_name');
       $mdg_services = Service::orderBy('service_name', 'asc')
       ->where('service_type', '')
-      ->pluck('service_name', 'id');
+      ->pluck('service_name', 'id', 'service_url');
 
       $data = array(
 		       'title' => 'Services',
