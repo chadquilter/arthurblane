@@ -49,6 +49,9 @@
                     <div class="col">
                       <strong> Phone: </strong>
                     </div>
+                    <div class="col">
+                      <strong> Email: </strong>
+                    </div>
                   </div>
                   <div class="row">
                     <div class="col">
@@ -56,6 +59,9 @@
                     </div>
                     <div class="col">
                       <strong> (830)220-2876</strong>
+                    </div>
+                    <div class="col">
+                      <strong> mikegrounds@bamconstruction.net </strong>
                     </div>
                   </div>
                 </div>
@@ -75,6 +81,9 @@
                     <div class="col">
                       <strong> Phone: </strong>
                     </div>
+                    <div class="col">
+                      <strong> Email: </strong>
+                    </div>
                   </div>
                   <div class="row">
                     <div class="col">
@@ -82,6 +91,9 @@
                     </div>
                     <div class="col">
                       <strong>(830)265-0941</strong>
+                    </div>
+                    <div class="col">
+                      <strong> robertburtner@bamconstruction.net </strong>
                     </div>
                   </div>
                 </div>
