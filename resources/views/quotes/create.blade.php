@@ -34,8 +34,15 @@
         <br>
         <br>
         <div class="row">
+          <strong> Contacts: </strong>
           <div class="col">
-            <strong> Contacts: </strong>
+            <strong> Name: </strong>
+          </div>
+          <div class="col">
+            <strong> Phone: </strong>
+          </div>
+          <div class="col">
+            <strong> Name: </strong>
           </div>
           <div class="col">
             <strong> Phone: </strong>
@@ -48,8 +55,6 @@
           <div class="col">
               <strong>(830)220-2876</strong>
           </div>
-        </div>
-        <div class="row">
           <div class="col">
             <strong> Robert Burtner </strong>
           </div>
