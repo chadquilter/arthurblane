@@ -51,7 +51,7 @@
         </div>
         <div class="row">
           <div class="col">
-            <strong> Robert Butner </strong>
+            <strong> Robert Burtner </strong>
           </div>
           <div class="col">
               <strong>(830)265-0941</strong>
