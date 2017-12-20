@@ -8,7 +8,7 @@
         <p class="text-muted">
           ‡ Serving ‡
           <br>
-          Marble Falls, TX -- Austin, TX -- San Antonio, TX -- Dallas/Fort Worth, TX
+          Marble Falls, TX • Austin, TX • San Antonio, TX • Dallas/Fort Worth, TX
           <br>
           2017,  {{ config('app.name', 'MDG') }}
         </p>
