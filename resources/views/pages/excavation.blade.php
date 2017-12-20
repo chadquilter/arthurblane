@@ -67,7 +67,7 @@
 				<img class="card-img-top" alt="A scenic home image" src="/images/excavation/excavation1.png" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 				<div class="card-body">
 					<div class="card-title">
-						<p>...for Leveling and Foundationss for new home development....</p>
+						<p> ...to clearing old structures or for water diversion!</p>
 					</div>
 				</div>
 			</div>
@@ -77,7 +77,7 @@
 				<img class="card-img-top" alt="A scenic home image" src="/images/excavation/excavation2.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 				<div class="card-body">
 					<div class="card-title">
-						<p>...to clearing old structures or for water diversion!</p>
+						<p>...for Leveling and Foundationss for new home development....</p>
 					</div>
 				</div>
 			</div>
