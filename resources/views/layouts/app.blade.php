@@ -27,6 +27,5 @@
   </main>
     <!-- Scripts -->
   <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-
 </body>
 </html>
