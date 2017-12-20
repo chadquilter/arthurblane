@@ -68,7 +68,7 @@
                       <strong> Email: </strong>
                     </div>
                     <div class="col">
-                      <strong> <a href="mailto:mikegrounds@bamconstruction.net?subject=Free%20Quote&body=Hello,%20I%20would%20like%20to%20request%20a%20free%20quote!">mikegrounds@bamconstruction.net</a></strong>
+                      <strong> <a href="mailto:mikegrounds@bamconstruction.net?subject=Contact/Recieve%20Free%20Quote&body=Hello,%20I%20would%20like%20to%20request%20a%20free%20quote!%0D">mikegrounds@bamconstruction.net</a></strong>
                     </div>
                   </div>
                 </div>
@@ -101,7 +101,7 @@
                       <strong>Email: </strong>
                     </div>
                     <div class="col">
-                      <strong> <a href="mailto:robertburtner@bamconstruction.net?subject=Free%20Quote&body=Hello,%20I%20would%20like%20to%20request%20a%20free%20quote!">robertburtner@bamconstruction.net</a></strong>
+                      <strong> <a href="mailto:robertburtner@bamconstruction.net?subject=Contact/Recieve%20Free%20Quote&body=Hello,%20I%20would%20like%20to%20request%20a%20free%20quote!%0D">robertburtner@bamconstruction.net</a></strong>
                     </div>
                   </div>
                 </div>
