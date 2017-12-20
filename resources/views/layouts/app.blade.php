@@ -26,7 +26,7 @@
     @include('inc.footer')
   </main>
     <!-- Scripts -->
-  <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+
   <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
