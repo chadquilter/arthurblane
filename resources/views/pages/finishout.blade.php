@@ -8,7 +8,7 @@
 		<img class="card-img-top" src="/images/mdg_images/hall.jpg" alt="Card image cap">
 		<div class="card-body">
 			<div class="card-title">
-				<p>Professional Interior Finish-out, Done right.</p>
+				<p>Professional Interior Finish-Out, Done right.</p>
 			</div>
 		</div>
 	</div>
