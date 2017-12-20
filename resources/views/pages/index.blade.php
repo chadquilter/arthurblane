@@ -37,8 +37,10 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <div class="image_display_text_container">
-          <p>Our work is a cut above the rest!</p>
+        <div class="card-body">
+          <div class="card-title">
+            <p>Our work is a cut above the rest!</p>
+          </div>
         </div>
       </div>
     </div>
