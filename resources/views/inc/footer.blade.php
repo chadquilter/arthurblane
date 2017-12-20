@@ -6,7 +6,9 @@
     <div class="footer-text" styel="width:70%;">
       <center>
         <p class="text-muted">
-          Serving: Marble Falls, TX -- Austin, TX -- San Antonio, TX -- Dallas/Fort Worth, TX
+          Serving:
+          <br> 
+          Marble Falls, TX -- Austin, TX -- San Antonio, TX -- Dallas/Fort Worth, TX
           <br>
           2017,  {{ config('app.name', 'MDG') }}
         </p>
