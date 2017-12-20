@@ -77,7 +77,7 @@
 				<img class="card-img-top" alt="A scenic home image" src="/images/excavation/excavation2.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 				<div class="card-body">
 					<div class="card-title">
-						<p>...from Leveling and Foundationss...</p>
+						<p>...from Leveling and Foundations...</p>
 					</div>
 				</div>
 			</div>
