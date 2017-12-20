@@ -5,10 +5,10 @@
 <div class="container">
 	@include('inc.pagelabel')
 	<div class="card image_display_r">
-		<div class="card">
-			<img class="card-img-top" src="/images/dusk-home.jpg" alt="Card image cap">
-			<div class="card-body">
-				<h5 class="card-title">Customized Homes!</h5>
+		<img class="card-img-top" src="/images/dusk-home.jpg" alt="Card image cap">
+		<div class="card-body">
+			<div class="card-title">
+				<p>Customized Homes!</p>
 			</div>
 		</div>
 	</div>
