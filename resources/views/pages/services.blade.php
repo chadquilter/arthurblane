@@ -17,7 +17,7 @@
 				<div class="jumbotron">
 					<strong class="display-2">{{$title}}</strong>
 					<br>
-					include but are not limited to:
+					<p class="lead">include but are not limited to:</p>
 					<hr class="my-4">
 					<p class="lead">
 						@if(count($mdg_services) > 0)

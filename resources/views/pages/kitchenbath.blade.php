@@ -17,7 +17,7 @@
 				<div class="jumbotron">
 					<h4 class="display-4">{{$title}}</h4>
 					<br>
-					include but are not limited to:
+					<p class="lead">include but are not limited to:</p>
 					<hr class="my-4">
 					<p class="lead">
 						@include('inc.subservice')
