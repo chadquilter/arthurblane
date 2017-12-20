@@ -49,6 +49,9 @@
                 <div class="card-title">
                   <div class="row">
                     <div class="col">
+                      <
+                    </div>
+                    <div class="col">
                       <strong> Mike Grounds </strong>
                     </div>
                   </div>
