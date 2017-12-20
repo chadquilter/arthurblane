@@ -13,6 +13,7 @@ try {
     //require('bootstrap-sass');
     require('jquery-ui');
     require('bootstrap');
+    require('ckeditor');
 } catch (e) {}
 
 window.Vue = require('vue');
