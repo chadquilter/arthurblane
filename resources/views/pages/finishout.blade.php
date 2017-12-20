@@ -7,7 +7,9 @@
 	<div class="card image_display_r">
 		<img class="card-img-top" src="/images/mdg_images/hall.jpg" alt="Card image cap">
 		<div class="card-body">
-			<h5 class="card-title">Professional Interior Finishout, Done right.</h5>
+			<div class="card-title">
+				<p>Professional Interior Finish-out, Done right.</p>
+			</div>
 		</div>
 	</div>
 	<br>
