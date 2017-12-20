@@ -14615,7 +14615,7 @@ return exports;
 }({},$,Popper));
 //# sourceMappingURL=bootstrap.js.map
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(5)["default"]))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(5)))
 
 /***/ }),
 /* 5 */
@@ -17682,12 +17682,8 @@ var example2 = new Vue({
 
 /***/ }),
 /* 15 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap__);
 
 window._ = __webpack_require__(16);
 
@@ -17702,7 +17698,7 @@ window._ = __webpack_require__(16);
 
 //    require('bootstrap');
 //} catch (e) {}
-
+__webpack_require__(4);
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
