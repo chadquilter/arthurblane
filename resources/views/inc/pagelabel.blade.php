@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-sm-2 alert alert-primary">
+  <div class="col-sm-4 alert alert-primary">
     <h3 class="display-3"><div class="badge badge-secondary">BAM!</div></h3>
   </div>
   <div class="col alert alert-light image_display_r">
