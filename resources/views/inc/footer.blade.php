@@ -6,7 +6,7 @@
     <div class="footer-text" styel="width:70%;">
       <center>
         <p class="text-muted">
-          %87 Serving %87
+          ‡ Serving ‡
           <br>
           Marble Falls, TX -- Austin, TX -- San Antonio, TX -- Dallas/Fort Worth, TX
           <br>
