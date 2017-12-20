@@ -49,11 +49,6 @@
                 <div class="card-title">
                   <div class="row">
                     <div class="col">
-                      <strong> Name: </strong>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
                       <strong> Mike Grounds </strong>
                     </div>
                   </div>
@@ -86,11 +81,6 @@
             <div class="card border border-secondary">
               <div class="card-body">
                 <div class="card-title">
-                  <div class="row">
-                    <div class="col">
-                      <strong>Name: </strong>
-                    </div>
-                  </div>
                   <div class="row">
                     <div class="col">
                       <strong>Robert Burtner</strong>
