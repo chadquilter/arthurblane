@@ -12,7 +12,7 @@ window._ = require('lodash');
 
 //    require('bootstrap');
 //} catch (e) {}
-import 'bootstrap';
+require('bootstrap');
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
