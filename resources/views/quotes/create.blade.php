@@ -50,6 +50,7 @@
                   <div class="row">
                     <div class="col">
                       <strong> Mike Grounds </strong>
+                      <hr class="my-4">
                     </div>
                   </div>
                   <div class="row">
@@ -74,8 +75,11 @@
                   <div class="row">
                     <div class="col">
                       <strong>Robert Burtner</strong>
+                      <hr class="my-4">
                     </div>
                   </div>
+                </div>
+
                   <div class="row">
                     <div class="col">
                       <strong>(830)265-0941</strong>
@@ -86,7 +90,6 @@
                       <strong> <a href="mailto:robertburtner@bamconstruction.net?subject=Contact/Recieve%20Free%20Quote&body=Hello,%20I%20would%20like%20to%20request%20a%20free%20quote!%0D">robertburtner@bamconstruction.net</a></strong>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
