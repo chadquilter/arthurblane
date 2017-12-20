@@ -28,17 +28,32 @@
 					<hr class="my-4">
 				</div>
 			</div>
+
 			<div class="col">
-				<div class="card image_display_r">
-					<img class="card-img-top" alt="A scenic home image" src="/images/ARCH1.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-					<div class="image_display_text_container">
-						<p>Custom Roof and Room Extension!</p>
+				<div class="row">
+					<div class="col">
+						<div class="card image_display_r">
+							<img class="card-img-top" alt="A scenic home image" src="/images/ARCH1.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+							<div class="image_display_text_container">
+								<p>Custom Roof and Room Extension!</p>
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<br>
+				<div class="row">
+					<div class="col">
+						<div class="card image_display_r">
+							<img class="card-img-top" alt="A scenic home image" src="/images/ARCH1.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+							<div class="image_display_text_container">
+								<p>Custom Roof and Room Extension!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
-		</div>
 
 		<br>
 		<div class="row">
