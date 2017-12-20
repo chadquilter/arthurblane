@@ -30,10 +30,10 @@
               <img class="d-block w-100" src="/images/LSIDE.JPG" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="/images/kitchenbath/shower_tile4.jpg" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
+              <img class="d-block w-100" src="/images/ARCH4.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="/images/ARCH4.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+              <img class="d-block w-100" src="/images/kitchenbath/shower_tile4.jpg" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
