@@ -4,11 +4,11 @@
 	<br>
 	<div class="container">
 		@include('inc.pagelabel')
-		<div class="image_display_r">
-			<div class="card">
-				<img class="card-img-top" src="/images/3_orig.jpg" alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Customized Asphalt Driveway</h5>
+		<div class="card image_display_r">
+			<img class="card-img-top" src="/images/3_orig.jpg" alt="Card image cap">
+			<div class="card-body">
+				<div class="card-title">
+					<p class="lead">Customized Asphalt Driveway</p>
 				</div>
 			</div>
 		</div>
