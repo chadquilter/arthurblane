@@ -51,6 +51,8 @@
                     <div class="col">
                       <strong> Name: </strong>
                     </div>
+                  </div>
+                  <div class="row">
                     <div class="col">
                       <strong> Mike Grounds </strong>
                     </div>
@@ -59,6 +61,8 @@
                     <div class="col">
                       <strong> Phone: </strong>
                     </div>
+                  </div>
+                  <div class="row">
                     <div class="col">
                       <strong> (830)220-2876</strong>
                     </div>
@@ -86,6 +90,8 @@
                     <div class="col">
                       <strong>Name: </strong>
                     </div>
+                  </div>
+                  <div class="row">
                     <div class="col">
                       <strong>Robert Burtner</strong>
                     </div>
@@ -94,6 +100,8 @@
                     <div class="col">
                       <strong>Phone: </strong>
                     </div>
+                  </div>
+                  <div class="row">
                     <div class="col">
                       <strong>(830)265-0941</strong>
                     </div>
