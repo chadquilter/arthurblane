@@ -85,7 +85,7 @@
         <div class="card image_display_r">
           <img class="card-img-top" src="/images/excavation/excavation2.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
           <div class="card-body">
-            <p class="card-title">Stair Wells, Frames, Railing and so much more!</p>
+            <p class="card-title">Build the Custom home you want!</p>
           </div>
         </div>
       </div>
