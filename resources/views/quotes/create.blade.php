@@ -99,7 +99,7 @@
                   </div>
                   <div class="row">
                     <div class="col">
-                      <strong>Email: </strong>
+                      <strong>Email: </strong><hr class="my-4">
                     </div>
                     <div class="col">
                       <hr class="my-4">
