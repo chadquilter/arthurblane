@@ -70,7 +70,8 @@
           </p>
           <p class="lead">
             With over 15 years of building experience based in the Texas Hill Country, you can be rest assured that our work is a cut above the rest!
-            Contact us to day to recieve a <a href="/quotes">Free Quote!</a>
+            <br>
+            Contact us today to recieve a <a href="/quotes">Free Quote!</a>
           </p>
         </div>
       </div>
