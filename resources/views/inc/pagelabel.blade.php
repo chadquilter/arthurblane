@@ -1,6 +1,7 @@
-<div class="card">
-  <div class="card-body-top">
+
 <div class="row">
+  <div class="card">
+    <div class="card-body-top">
   <div class="col-sm-4 alert alert-primary">
     <h4 class="display-4"><span class="badge badge-secondary">BAM!</span></h4>
   </div>
