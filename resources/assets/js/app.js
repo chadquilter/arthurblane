@@ -13,8 +13,6 @@ try {
     //require('bootstrap-sass');
     require('jquery-ui');
     require('bootstrap');
-    window.CKEDITOR_BASEPATH = 'node_modules/ckeditor/';
-    require('ckeditor');
 } catch (e) {}
 
 window.Vue = require('vue');
