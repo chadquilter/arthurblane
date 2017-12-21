@@ -24,7 +24,7 @@
 							<div class="card image_display_r">
 								<div class="card-body">
 									@foreach($mdg_services as $mdg_id)
-										<a class="btn btn-secondary" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
+										<a class="btn btn-light" role="button" href="/{{ $mdg_id->service_url }}">{{ $mdg_id->service_name }}</a>
 									@endforeach
 								</div>
 							</div>
