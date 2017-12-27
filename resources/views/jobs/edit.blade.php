@@ -88,12 +88,10 @@
             <br>
             <div id="job_option_group" class="form=group collapse">
               <div class="alert alert-info" role="alert">
+                <div class="row">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
-                  <div class="row">
                     <div class="col-xl-3">
                       {{Form::label($job_option_id, $job_option_name)}}
-                    </div>
-                    <div class="col-xl-3">
                       @if(count($bool_types) > 0)
                         @foreach($bool_types as $bool_id => $bool_name)
                           {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
@@ -102,8 +100,8 @@
                       @else
                         <h1>No Types Listed!</h1>
                       @endif
-                  </div>
                 @endforeach
+                </div>
               </div>
             </div>
           @endif
