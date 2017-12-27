@@ -124,7 +124,7 @@
               </div>
             </div>
           @endif
-
+          <br>
           <div>
             {{Form::hidden('_method', 'PUT')}}
             {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
