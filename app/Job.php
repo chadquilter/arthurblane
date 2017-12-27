@@ -15,13 +15,15 @@ class Job extends Model
         'job_title',
         'job_summary',
         'job_notes',
+        'job_display',
         'job_media',
         'job_account',
         'job_address',
         'job_certs',
         'job_quote',
         'job_reciepts',
-        'job_invoiced'
+        'job_invoiced',
+        'job_status'
     ];
 
     public function user(){
