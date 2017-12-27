@@ -8,7 +8,7 @@
         <p class="text-muted">
           ‡ Serving ‡
           <br>
-          Marble Falls, TX • Austin, TX • Houston, TX • San Antonio, TX • Dallas/Fort Worth, TX • Corpus Christi, TX • Texas, USA.
+          Marble Falls, TX • Austin, TX • Houston, TX • San Antonio, TX • Dallas/Fort Worth, TX • Corpus Christi, TX • El Paso, TX • Texas, USA.
           <br>
           2017,  {{ config('app.name', 'MDG') }}
         </p>
