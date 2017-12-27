@@ -90,7 +90,7 @@
               <div class="alert alert-info" role="alert">
                 <div class="row">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
-                    <div class="col-md-2">
+                    <div class="col">
                       {{Form::label($job_option_id, $job_option_name)}}
                       <br>
                       @if(count($bool_types) > 0)
