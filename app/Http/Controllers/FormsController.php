@@ -59,7 +59,7 @@ class FormsController extends Controller
 
           $active = ($request->input('active') ? $request->input('active') : 0);
 
-          // create address
+          // create form
           $form = new form;
           $form->form_type = $request->input('form_type');
           $form->form_subtype = $request->input('form_subtype');
@@ -68,7 +68,7 @@ class FormsController extends Controller
           $form->form_date = $request->input('form_date');
           $form->form_created_by = $request->input('form_created_by');
           $form->form_active = $active;
-          $address->save();
+          $form->save();
 
           return redirect('/forms')->with('success', 'Form Created!');
       }
@@ -123,7 +123,7 @@ class FormsController extends Controller
 
           $active = ($request->input('active') ? $request->input('active') : 0);
 
-          // create address
+          // create form
           $form = Form::find($id);
           $form->form_type = $request->input('form_type');
           $form->form_subtype = $request->input('form_subtype');
@@ -132,7 +132,7 @@ class FormsController extends Controller
           $form->form_date = $request->input('form_date');
           $form->form_created_by = $request->input('form_created_by');
           $form->form_active = $active;
-          $address->save();
+          $form->save();
 
           return redirect('/forms')->with('success', 'Form has been Updated!');
       }
@@ -152,7 +152,7 @@ class FormsController extends Controller
             return redirect('/login')->with('error', 'Unauthorized Page!');
           }
 
-          $address->delete();
+          $form->delete();
           return redirect('/forms')->with('success', 'Form Deleted');
       }
 }
