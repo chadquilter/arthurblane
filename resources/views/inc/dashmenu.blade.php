@@ -11,8 +11,17 @@
           <a href="/jobs/create" class="alert alert-primary btn btn-secondary" role="button">Create Job</a>
           <a href="/quotes" class="alert alert-primary btn btn-secondary" role="button">Create Quote</a>
           <a href="/address" class="alert alert-primary btn btn-secondary" role="button">Manage Addresses</a>
+          @if ( Request::route()->getName() == 'address.index') )
+             <a href="/address/create" class="alert alert-primary btn btn-secondary" role="button">Return to Dashboard</a>
+          @endif
           <a href="/items" class="alert alert-primary btn btn-secondary" role="button">Manage Items</a>
+          @if ( Request::route()->getName() == 'items.index') )
+             <a href="/items/create" class="alert alert-primary btn btn-secondary" role="button">Return to Dashboard</a>
+          @endif
           <a href="/forms" class="alert alert-primary btn btn-secondary" role="button">Manage Proposals</a>
+          @if ( Request::route()->getName() == 'forms.index') )
+             <a href="/forms/create" class="alert alert-primary btn btn-secondary" role="button">Return to Dashboard</a>
+          @endif
       </div>
     </div>
 </p>
