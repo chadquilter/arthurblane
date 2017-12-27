@@ -117,7 +117,7 @@
                     @else
                       <h1>No Types Listed!</h1>
                     @endif
-                    @if($loop->iteration === 3 || $loop->iteration >= 8 || $loop->last)
+                    @if($loop->iteration === 3 || $loop->iteration >= 7 || $loop->last)
                     </div>
                   @endif
                 @endforeach
