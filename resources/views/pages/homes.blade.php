@@ -61,7 +61,7 @@
 		<img class="card-img-top" alt="A scenic home image" src="/images/job4/front.png" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 		<div class="card-body">
 			<div class="card-title">
-				<p>Custom Homes on par with excellence!</p>
+				<p>Custom Golf Course Home!</p>
 			</div>
 		</div>
 	</div>
