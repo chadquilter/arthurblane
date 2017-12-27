@@ -4,6 +4,10 @@
       <div class="card-body">
         <p class="lead"><strong>Dashboard Services:</strong></p>
         <hr class="my-4">
+        @if (Request::route()->getName() != 'dashboard')
+           <a href="/jobs/create" class="alert alert-primary btn btn-secondary" role="button">Return to Dashboard</a>
+        @endif
+
           <a href="/jobs/create" class="alert alert-primary btn btn-secondary" role="button">Create Job</a>
           <a href="/quotes" class="alert alert-primary btn btn-secondary" role="button">Create Quote</a>
           <a href="/address" class="alert alert-primary btn btn-secondary" role="button">Manage Addresses</a>
