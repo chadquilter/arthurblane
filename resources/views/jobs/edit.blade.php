@@ -90,10 +90,10 @@
                 <div class="row">
                   @if(count($mdg_services) > 0)
                     @foreach($mdg_services as $mdg_id => $mdg_name)
-                      <div class="col-lg-3">
+                      <div class="col">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
                           <div class="card-title">
-                            {{Form::checkbox('job_type', $mdg_id, '', ['class' => 'form-control'])}} {{$mdg_name}}
+                            {{Form::label($mdg_id, $mdg_name)}} {{Form::checkbox('job_type', $mdg_id, '', ['class' => 'form-control'])}}
                           </div>
                         </div>
                       </div>
