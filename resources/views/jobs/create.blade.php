@@ -36,29 +36,34 @@
             </div>
           </div>
           <hr>
+          
           <div class="form=group">
             <h3>Job Type:</h3>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_service_group">Expand/Collapse Options</button>
             <br>
-            <div class="alert alert-info" role="alert">
-              @if(count($job_types) > 0)
+            <div id="job_service_group" class="form=group collapse">
+              <div class="alert alert-info" role="alert">
                 <div class="row">
-                @foreach($job_types as $job_id => $job_name)
-                  <div class="col-lg-3">
-                    <div class="card image_display_r border border-secondary rounded shadow_only">
-                      <div class="card-body">
-                        {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}}
+                  @if(count($mdg_services) > 0)
+                    @foreach($mdg_services as $mdg_id => $mdg_name)
+                      <div class="col-md-3">
+                        <div class="card image_display_r border border-secondary rounded shadow_only">
+                          <div class="card-title">
+                            {{Form::label($mdg_id, $mdg_name)}} {{Form::checkbox('job_type', $mdg_id, '', ['class' => 'form-control'])}}
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                @endforeach
-              @else
-                <h1>No Types Listed!</h1>
-              @endif
+                    @endforeach
+                  @else
+                    <h1>No Types Listed!</h1>
+                  @endif
+                </div>
               </div>
             </div>
           </div>
-          @if (count($job_option_types) > 0)
+          <br>
 
+          @if (count($job_option_types) > 0)
             <h3>Job Options:</h3>
             <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
             <br>
