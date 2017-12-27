@@ -47,12 +47,16 @@
                     @foreach($job_items_records as $jobItem)
                       <tr id="row{{ $loop->iteration }}" class="dynamic-added">
                         <td id="item_div_{{$loop->iteration}}">
-                          <strong>Item:</strong>
-                          @if(count($items) > 0)
-                            {{ Form::select('itemSelect'.$loop->iteration, $items, $jobItem->items_id , ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
-                          @else
-                            <h1>No Users Listed!</h1>
-                          @endif
+                          <div class="card image_display_r border border-secondary rounded shadow_only">
+                            <div class="card-body">
+                              <strong>Item:</strong>
+                              @if(count($items) > 0)
+                                {{ Form::select('itemSelect'.$loop->iteration, $items, $jobItem->items_id , ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
+                              @else
+                                <h1>No Users Listed!</h1>
+                              @endif
+                            </div>
+                          </div>
                         </td>
                         <td>
                           <strong>Amount: </strong>
