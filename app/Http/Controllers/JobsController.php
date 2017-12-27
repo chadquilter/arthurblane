@@ -196,6 +196,10 @@ class JobsController extends Controller
         //if(auth()->user()->id !==$job->user_id) {
         //  return redirect('/dashboard')->with('error', 'Unauthorized Page!');
         //}
+        $item_grand_total = 0;
+        foreach($job_items_records as $jobItem) {
+          $item_grand_total += $jobItem->amount;
+        }
 
         //edit view
         return view('jobs.edit')
@@ -205,6 +209,7 @@ class JobsController extends Controller
           ->with('bool_types', $bool_types)
           ->with('job_option_types', $job_option_types)
           ->with('users', $users)
+          ->with('$item_grand_total', $item_grand_total)
           ->with('items', $items);
     }
 
