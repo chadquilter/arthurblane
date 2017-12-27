@@ -52,7 +52,7 @@ class JobsController extends Controller
     {
         $job_option_types = array(
             'job_media' => 'Media?:',
-            'job_display' => 'Display to web?:',
+            'job_display' => 'Web?:',
             'job_account' => 'Account?:',
             'job_address'=> 'Address?:',
             'job_certs' => 'Paperwork?:',
@@ -163,7 +163,7 @@ class JobsController extends Controller
     {
         $job_option_types = array(
             'job_media' => 'Media?:',
-            'job_display' => 'Display to web?:',
+            'job_display' => 'Web?:',
             'job_account' => 'Account?:',
             'job_address'=> 'Address?:',
             'job_certs' => 'Paperwork?:',
