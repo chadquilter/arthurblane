@@ -38,7 +38,7 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach($addresses as $address)
+                @foreach($forms as $form)
                   <tr>
                     <td width=80%><strong>Form: </strong>
                       <div class=row>
