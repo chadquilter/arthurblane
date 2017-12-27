@@ -112,6 +112,7 @@
                           </div>
                         </div>
                       </div>
+                      <br>
                     </div>
                     @else
                       <h1>No Types Listed!</h1>
