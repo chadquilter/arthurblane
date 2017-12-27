@@ -25,8 +25,7 @@
     </div>
     @include('inc.footer')
   </main>
-    <!-- Scripts -->
-
-  <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 </body>
+<!-- Scripts -->
+<script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 </html>
