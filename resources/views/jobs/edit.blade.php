@@ -31,8 +31,8 @@
               <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#dynamic_field">Expand/Collapse Options</button>
               <br>
             @else
-            @endif
               <h3>Job Items:</h3>
+            @endif
               <table class="table table-sm table-responsive collapse" id="dynamic_field">
                 <tbody>
                   @if(count($job_items_records) > 0)
