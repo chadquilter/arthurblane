@@ -28,7 +28,7 @@
             @if(count($job_items_records) > 0)
               <h3><span class="badge">{{ $job_items_records->total() }}</span> Job Items:</h3>
               <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_item_group">Expand/Collapse Options</button>
-              <br> &nbsp
+              <br>
             @else
               <h3>Job Items:</h3>
             @endif
@@ -75,7 +75,7 @@
             <div class="alert alert-info" role="alert">
               @if(count($job_types) > 0)
                 @foreach($job_types as $job_id => $job_name)
-                  {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}} &nbsp
+                  {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}}
                 @endforeach
               @else
                 <h1>No Types Listed!</h1>
@@ -83,23 +83,22 @@
             </div>
           </div>
           @if (count($job_option_types) > 0)
-
             <h3>Job Options:</h3>
             <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
-            <br> &nbsp
+            <br>
             <div id="job_option_group" class="form=group collapse">
               <div class="alert alert-info" role="alert">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
                   @if($loop->first || $loop->iteration === 6)
                     <div class="row">
                     @endif
-                    <div class="col-md-2">
-                      {{Form::label($job_option_id, $job_option_name)}}
-                      <br>
-                      @if(count($bool_types) > 0)
-                        @foreach($bool_types as $bool_id => $bool_name)
-                          {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
-                        @endforeach
+                      <div class="col">
+                        {{Form::label($job_option_id, $job_option_name)}}
+                        <br>
+                        @if(count($bool_types) > 0)
+                          @foreach($bool_types as $bool_id => $bool_name)
+                            {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
+                          @endforeach
                       </div>
                     @else
                       <h1>No Types Listed!</h1>
