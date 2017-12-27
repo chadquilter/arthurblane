@@ -29,7 +29,7 @@ class DashboardController extends Controller
     public function index()
     {
         $dt = Carbon::now();
-        $fdt = $dt->format('l jS \\of F Y h:i:s A');
+        $fdt = $dt->format('l jS \\of F Y');
         $user_id = auth()->user()->id;
         $user = User::find($user_id);
 
