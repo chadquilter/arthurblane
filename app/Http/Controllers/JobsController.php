@@ -169,7 +169,7 @@ class JobsController extends Controller
             'job_certs' => 'Paperwork?:',
             'job_quote' => 'Quote?:',
             'job_reciepts' => 'Reciepts?:',
-            'job_status' => 'Job Closed?:',
+            'job_status' => 'Closed?:',
             'job_invoiced' => 'Invoiced?:'
           );
 
