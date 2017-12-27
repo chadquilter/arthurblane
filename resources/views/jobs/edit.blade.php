@@ -34,6 +34,7 @@
             {{Form::label('job_notes', 'Notes:')}}
             {{Form::text('job_notes', $job->job_notes, ['class' => 'form-control', 'placeholder' => 'Job Additional Notes'])}}
           </div>
+          <br>
           <div class="JobItemsDiv">
             @if(count($job_items_records) > 0)
               <h3><span class="badge">{{ $job_items_records->total() }}</span> Job Items:</h3>
