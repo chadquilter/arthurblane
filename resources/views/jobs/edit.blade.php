@@ -119,6 +119,8 @@
               </div>
             </div>
           @endif
+          <br>
+          <hr>
 
           <div>
             {{Form::hidden('_method', 'PUT')}}
