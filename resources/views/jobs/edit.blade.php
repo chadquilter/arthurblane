@@ -102,7 +102,7 @@
               <div class="alert alert-info" role="alert">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
                   @php
-                    $selected = $job->job_option_id
+                    $selected = $job->job_option_id;
                   @endphp
                   @if($loop->first || $loop->iteration === 4)
                     <div class="row">
