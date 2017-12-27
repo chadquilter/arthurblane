@@ -29,7 +29,7 @@ class DashboardController extends Controller
     public function index()
     {
         $dt = Carbon::now();
-        $dt->format('l jS \\of F Y h:i:s A');
+        $fdt = $dt->format('l jS \\of F Y h:i:s A');
         $user_id = auth()->user()->id;
         $user = User::find($user_id);
 
@@ -46,7 +46,7 @@ class DashboardController extends Controller
           ->with('jobs', $jobs)
           ->with('user', $user)
           ->with('quotes', $quotes)
-          ->with('dt', $dt)
+          ->with('dt', $fdt)
           ->with('addresses', $addresses);
     }
 }
