@@ -96,7 +96,7 @@
                       @if(count($bool_types) > 0)
                         @foreach($bool_types as $bool_id => $bool_name)
                           @php
-                            $selected = $job->$job_option_id == 1 ? 'True' ? 'False'
+                            $selected = $job->$job_option_id == 1 ? 'True' : 'False';
                           @endphp
                           {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control'])}} {{$bool_name $job->$job_display}}  <br>
                         @endforeach
