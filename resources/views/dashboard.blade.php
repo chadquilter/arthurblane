@@ -19,10 +19,9 @@
         @endif
         @if(count($jobs) > 0)
             <div id="jobs_div" name="jobs_div" class="container border border-secondary rounded shadow_only">
-              <h3 class="display-8">
-                <span class="badge badge-secondary">{{ $jobs->total() }}</span> Job Entries:
-              </h3>
-              <hr class="my-1">
+              <p class="lead"><span class="badge badge-secondary">{{ $jobs->total() }}</span><strong> Job Entries:</strong></p>
+              <hr class="my-4">
+              <br>
               @foreach($jobs as $job)
                 <div class="row">
                   <div class="col-12 col-md-8">
