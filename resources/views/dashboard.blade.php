@@ -48,9 +48,8 @@
         @endif
         @if(count($quotes) > 0)
               <div id="quotes_div" name="quotes_div" class="container border border-secondary rounded shadow_only">
-                <h3 class="display-8">
-                  <p class="lead"><h4 class="display-4"><span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:</h4><p>
-                </h3>
+                <p class="lead"><h4 class="display-4"><span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:</h4><p>
+                <hr class="my-4">      
               @foreach($quotes as $quote)
                 <div class="row">
                   <div class="col-12 col-md-8">
