@@ -9,7 +9,7 @@
       <br>
       <div class="card-body">
         <p class="lead"><h5 class="display-5"> Welcome {{ Auth::user()->name }}</h5></p>
-        <p class="lead"><strong> {{ $dt }} </strong></p>
+        <p class="lead"><strong> Todays Date: {{ $dt }} </strong></p>
         @include('inc.dashmenu')
         <hr class="my-1">
         @include('inc.messages')
