@@ -90,7 +90,7 @@
               <div class="alert alert-info" role="alert">
                 <div class="row">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
-                    <div class="col-xl-5">
+                    <div class="col-xl-3">
                       <div class="card">
                         <div class="card-title">
                           {{Form::label($job_option_id, $job_option_name)}}
