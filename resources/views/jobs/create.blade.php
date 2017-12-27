@@ -7,7 +7,7 @@
       <div class="card mx-auto border border-secondary">
         <br>
         <div class="card-body">
-          @include('inc.dashmenu')
+        @include('inc.dashmenu')
           <hr class="my-1">
           @include('inc.messages')
           <br>
@@ -42,7 +42,7 @@
             <div class="alert alert-info" role="alert">
               @if(count($job_types) > 0)
                 @foreach($job_types as $job_id => $job_name)
-                  {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}} &nbsp
+                  {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}}
                 @endforeach
               @else
                 <h1>No Types Listed!</h1>
@@ -53,7 +53,7 @@
 
             <h3>Job Options:</h3>
             <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
-            <br> &nbsp
+            <br>
             <div id="job_option_group" class="form=group collapse">
               <div class="alert alert-info" role="alert">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)

@@ -96,7 +96,7 @@
 
             <h3>Job Options:</h3>
             <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
-            <br> &nbsp
+            <br>
             <div id="job_option_group" class="form=group collapse">
               <div class="alert alert-info" role="alert">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
@@ -108,10 +108,7 @@
                       <br>
                       @if(count($bool_types) > 0)
                         @foreach($bool_types as $bool_id => $bool_name)
-                          @php
-                            $selected = $job->$job_option_id == 1 ? 'True' : 'False';
-                          @endphp
-                          {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control'])}} {{$bool_name}}
+                          {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
                         @endforeach
                       </div>
                     @else
@@ -124,7 +121,10 @@
               </div>
             </div>
           @endif
+
           <br>
+          <hr>
+
           <div>
             {{Form::hidden('_method', 'PUT')}}
             {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
