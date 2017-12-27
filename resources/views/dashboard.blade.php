@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
   <div class="jumbotron">
-    <h3 class="display-4">Dashboard</h3>
+    <h4 class="display-4">Dashboard</h4>
 
     <div class="card mx-auto">
       <br>
@@ -49,12 +49,12 @@
         @if(count($quotes) > 0)
               <div id="quotes_div" name="quotes_div" class="container border border-secondary rounded shadow_only">
                 <h3 class="display-8">
-                  <span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:
+                  <p class="lead"><h4 class="display-4"><span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:</h4><p>
                 </h3>
               @foreach($quotes as $quote)
                 <div class="row">
                   <div class="col-12 col-md-8">
-                    <strong>Quote: </strong>{{$quote->title}}
+                    <p class="lead"><strong>Quote: </strong>{{$quote->title}}</p>
                   </div>
                   <div class="col col-md-4 btn-group" role="group" aria-label="Job List">
                     {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
