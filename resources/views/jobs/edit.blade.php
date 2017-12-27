@@ -90,7 +90,7 @@
               <div class="alert alert-info" role="alert">
                 <div class="row">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
-                    <div class="col-lg-3">
+                    <div class="col">
                       <div class="card">
                         <div class="card-title">
                           {{Form::label($job_option_id, $job_option_name)}}
@@ -106,7 +106,6 @@
                             $selected = $job->$job_option_id == $bool_id ? $job->$job_option_id : 'False';
                           @endphp
                                 {{$bool_name}}{{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control']) }}
-                                <hr class="my-1">
                               </div>
                         @endforeach
                             </div>
