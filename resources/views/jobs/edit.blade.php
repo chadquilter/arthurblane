@@ -94,17 +94,17 @@
                       {{Form::label($job_option_id, $job_option_name)}}
                       <br>
                       @if(count($bool_types) > 0)
+                      <div class="col">
+                        <div class="row">
                         @foreach($bool_types as $bool_id => $bool_name)
                           @php
                             $selected = $job->$job_option_id == $bool_id ? $job->$job_option_id : 'False';
                           @endphp
-                          <div class="col">
-                            <div class="row">
-                          {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control'])}} {{$bool_name}}
-                        </div>
-                      </div>
+                            {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control'])}} {{$bool_name}}
                         @endforeach
-                      </div>
+                          </div>
+                        </div>
+                    </div>
                     @else
                       <h1>No Types Listed!</h1>
                     @endif
