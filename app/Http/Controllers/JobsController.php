@@ -197,7 +197,7 @@ class JobsController extends Controller
         //  return redirect('/dashboard')->with('error', 'Unauthorized Page!');
         //}
         $item_grand_total = 0;
-        foreach($job_items_records as $jobItem) {
+        foreach($job_items as $jobItem) {
           $item_grand_total += $jobItem->amount;
         }
 
