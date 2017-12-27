@@ -70,7 +70,7 @@
                             <div class="row">
                         @foreach($bool_types as $bool_id => $bool_name)
                               <div class="col">
-                                {{$bool_name}} {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control']) }}
+                                {{$bool_name}} {{Form::radio($job_option_id, $bool_id, 'True', ['class' => 'form-control']) }}
                               </div>
                         @endforeach
                             </div>
