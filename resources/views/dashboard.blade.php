@@ -8,7 +8,7 @@
     <div class="card mx-auto">
       <br>
       <div class="card-body">
-        <p class="lead"><h4 class="display-4"> Welcome {{ Auth::user()->name }}.</h3></p>
+        <p class="lead"><h5 class="display-5"> Welcome {{ Auth::user()->name }}.</h5></p>
         @include('inc.dashmenu')
         <hr class="my-1">
         @include('inc.messages')
