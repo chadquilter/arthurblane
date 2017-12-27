@@ -32,6 +32,14 @@
               <br>
             @else
               <h3>Job Items:</h3>
+              <div class="form=group alert alert-dark" role="alert">
+                <table class="table table-stripe table-responsive" id="dynamic_field">
+                  <tbody>
+                  </tbody>
+                </table>
+                <br>
+                {{Form::button('Add Item', ['class' => 'btn btn-primary', 'id' => 'add', 'name' => 'add'])}}
+              </div>
             @endif
               <table class="table table-sm table-responsive collapse" id="dynamic_field">
                 <tbody>
@@ -62,7 +70,6 @@
                     @endforeach
                   @endif
                 </tbody>
-
                 <tfoot>
                   <tr><td>
                   {{Form::button('Add Item', ['class' => 'btn btn-primary', 'id' => 'add', 'name' => 'add'])}}
