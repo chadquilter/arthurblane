@@ -59,7 +59,7 @@ class FormsController extends Controller
           $active = ($request->input('active') ? $request->input('active') : 0);
           $form_type = ($request->input('form_type') ? $request->input('form_type') : 1);
           $form_subtype = ($request->input('form_subtype') ? $request->input('form_subtype') : 0);
-          $form_created_by = ($request->input('form_created_by') ? $request->input('form_created_by') : auth()->user()->id):
+          $form_created_by = ($request->input('form_created_by') ? $request->input('form_created_by') : auth()->user()->id);
 
           // create form
           $form = new form;
@@ -126,7 +126,7 @@ class FormsController extends Controller
           $active = ($request->input('active') ? $request->input('active') : 0);
           $form_type = ($request->input('form_type') ? $request->input('form_type') : 1);
           $form_subtype = ($request->input('form_subtype') ? $request->input('form_subtype') : 0);
-          $form_created_by = ($request->input('form_created_by') ? $request->input('form_created_by') : auth()->user()->id):
+          $form_created_by = ($request->input('form_created_by') ? $request->input('form_created_by') : auth()->user()->id);
 
           // create form
           $form = Form::find($id);
