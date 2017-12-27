@@ -7,7 +7,17 @@
       <div class="card mx-auto border border-secondary">
         <br>
         <div class="card-body">
-          @include('inc.dashmenu')
+          <div class="btn-group" role="group" aria-label="links">
+            <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
+          </div>
+          <div class="btn-group" role="group" aria-label="links">
+            <a href="/jobs/create" class="btn btn-success">Create Job</a>
+            <a href="/quotes" class="btn btn-success">Create Quote</a>
+          </div>
+          <div class="btn-group" role="group" aria-label="links">
+            <a href="/address" class="btn btn-warning">Manage Addresses</a>
+            <a href="/items" class="btn btn-warning">Manage Items</a>
+          </div>
           <hr class="my-1">
           @include('inc.messages')
           <br>
@@ -28,7 +38,7 @@
             @if(count($job_items_records) > 0)
               <h3><span class="badge">{{ $job_items_records->total() }}</span> Job Items:</h3>
               <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_item_group">Expand/Collapse Options</button>
-              <br>
+              <br> &nbsp
             @else
               <h3>Job Items:</h3>
             @endif
@@ -75,7 +85,7 @@
             <div class="alert alert-info" role="alert">
               @if(count($job_types) > 0)
                 @foreach($job_types as $job_id => $job_name)
-                  {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}}
+                  {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}} &nbsp
                 @endforeach
               @else
                 <h1>No Types Listed!</h1>
@@ -83,33 +93,34 @@
             </div>
           </div>
           @if (count($job_option_types) > 0)
+
             <h3>Job Options:</h3>
             <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>
-            <br>
+            <br> &nbsp
             <div id="job_option_group" class="form=group collapse">
               <div class="alert alert-info" role="alert">
-                <div class="row">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
-                    <div class="col">
-
+                  @if($loop->first || $loop->iteration === 6)
+                    <div class="row">
+                    @endif
+                    <div class="col-md-2">
                       {{Form::label($job_option_id, $job_option_name)}}
+                      <br>
                       @if(count($bool_types) > 0)
                         @foreach($bool_types as $bool_id => $bool_name)
                           @php
                             $selected = $job->$job_option_id == 1 ? 'True' : 'False';
                           @endphp
-                          <div class="row">
-                            <div class="col">
-                              {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control'])}} {{$bool_name}}
-                            </div>
-                        </div>
+                          {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control'])}} {{$bool_name}}
                         @endforeach
+                      </div>
+                    @else
+                      <h1>No Types Listed!</h1>
+                    @endif
+                    @if($loop->iteration === 5 || $loop->iteration >= 10 || $loop->last)
                     </div>
-                      @else
-                        <h1>No Types Listed!</h1>
-                      @endif
+                  @endif
                 @endforeach
-                </div>
               </div>
             </div>
           @endif
