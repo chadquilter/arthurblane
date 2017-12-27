@@ -91,13 +91,18 @@
                 <div class="row">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
                     <div class="col">
+
                       {{Form::label($job_option_id, $job_option_name)}}
                       @if(count($bool_types) > 0)
                         @foreach($bool_types as $bool_id => $bool_name)
                           @php
                             $selected = $job->$job_option_id == 1 ? 'True' : 'False';
                           @endphp
-                          {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control'])}} {{$bool_name}} <br>
+                          <div class="row">
+                            <div class="col">
+                              {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control'])}} {{$bool_name}}
+                            </div>
+                        </div>
                         @endforeach
                     </div>
                       @else
