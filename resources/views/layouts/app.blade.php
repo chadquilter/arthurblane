@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Chad Quilter">
-    <meta name="keywords" content="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor"/>
+    <meta name="keywords" content="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor, marble falls, houston, dallas, fort worth, corpus christi, san antonio, el paso, texas, tx"/>
     <meta name="description" content="We design and build custom homes, custom construction, excavation, tile, remodeling, custom steel, finish-out, carports, garages, home remodeling and lots more! "/>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
