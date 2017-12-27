@@ -8,22 +8,7 @@
     <div class="card mx-auto">
       <br>
       <div class="card-body">
-
-<div id='app'>
-  <recordui></recordui>
-</div>
-
-        <div class="btn-group" role="group" aria-label="links">
-          <a href="/jobs/create" class="btn btn-success">Create Job</a>
-          <a href="/quotes" class="btn btn-success">Create Quote</a>
-        </div>
-        <div class="btn-group" role="group" aria-label="links">
-          <a href="/address" class="btn btn-warning">Manage Addresses</a>
-          <a href="/items" class="btn btn-warning">Manage Items</a>
-        </div>
-        <div class="btn-group" role="group" aria-label="links">
-          <a href="/forms" class="btn btn-warning">Manage Proposals/Letters/Forms</a>
-        </div>
+        @include('inc.dashmenu')
         <hr class="my-1">
         @include('inc.messages')
         <br>
