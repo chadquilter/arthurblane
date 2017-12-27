@@ -4,10 +4,11 @@
 <div class="container">
   <div class="jumbotron">
     <h3 class="display-4">Dashboard</h3>
-    <h3 class="display-5"> Welcome {{ Auth::user()->name }}.</h3>
+
     <div class="card mx-auto">
       <br>
       <div class="card-body">
+        <h3 class="display-5"> Welcome {{ Auth::user()->name }}.</h3>
         @include('inc.dashmenu')
         <hr class="my-1">
         @include('inc.messages')
@@ -21,7 +22,6 @@
             <div id="jobs_div" name="jobs_div" class="container border border-secondary rounded shadow_only">
               <p class="lead"><span class="badge badge-secondary">{{ $jobs->total() }}</span><strong> Job Entries:</strong></p>
               <hr class="my-4">
-              <br>
               @foreach($jobs as $job)
                 <div class="row">
                   <div class="col-12 col-md-8">
