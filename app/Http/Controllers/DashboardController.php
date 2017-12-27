@@ -27,6 +27,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
+        $dt = $dt = Carbon::now();
+        $dt->toDayDateTimeString();
         $user_id = auth()->user()->id;
         $user = User::find($user_id);
 
@@ -43,6 +45,7 @@ class DashboardController extends Controller
           ->with('jobs', $jobs)
           ->with('user', $user)
           ->with('quotes', $quotes)
+          ->with('dt', $dt)
           ->with('addresses', $addresses);
     }
 }

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
   <div class="jumbotron">
-    <h4 class="display-4">Dashboard</h4>
+    <h4 class="display-4">Dashboard {{ $dt }}</h4>
 
     <div class="card mx-auto">
       <br>
@@ -49,7 +49,7 @@
         @if(count($quotes) > 0)
               <div id="quotes_div" name="quotes_div" class="container border border-secondary rounded shadow_only">
                 <p class="lead"><h4 class="display-4"><span class="badge badge-secondary">{{ $quotes->total() }}</span> Quote Entries:</h4><p>
-                <hr class="my-4">      
+                <hr class="my-4">
               @foreach($quotes as $quote)
                 <div class="row">
                   <div class="col-12 col-md-8">
