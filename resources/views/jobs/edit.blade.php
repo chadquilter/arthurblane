@@ -96,10 +96,12 @@
                       <div class="col">
                         <div class="row">
                         @foreach($bool_types as $bool_id => $bool_name)
+                          <div class="col">
                           @php
                             $selected = $job->$job_option_id == $bool_id ? $job->$job_option_id : 'False';
                           @endphp
                             {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control']) }}:{{$bool_name}}
+                          </div>
                         @endforeach
                           </div>
                         </div>
