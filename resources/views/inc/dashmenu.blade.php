@@ -12,7 +12,7 @@
           <a href="/items" class="alert alert-primary btn btn-secondary" role="button">Manage Items</a>
         </div>
         <div class="btn-group" role="group" aria-label="links">
-          <a href="/forms" class="alert alert-primary btn btn-secondary" role="button">Manage Proposals/Letters/Forms</a>
+          <a href="/forms" class="alert alert-primary btn btn-secondary" role="button">Manage Proposals/Forms</a>
         </div>
       </div>
     </div>
