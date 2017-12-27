@@ -198,7 +198,8 @@ class JobsController extends Controller
         //}
         $item_grand_total = 0;
         foreach($job_items as $jobItem) {
-          $item_grand_total += $jobItem->amount;
+          $qty = $jobItem->qty == 0 ? 1 : $jobItem->qty;
+          $item_grand_total += $jobItem->amount * $qty;
         }
 
         //edit view
