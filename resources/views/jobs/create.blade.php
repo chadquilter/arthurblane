@@ -42,7 +42,11 @@
             <div class="alert alert-info" role="alert">
               @if(count($job_types) > 0)
                 @foreach($job_types as $job_id => $job_name)
-                  {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}}
+                  <div class="card image_display_r border border-secondary rounded shadow_only">
+                    <div class="card-body">
+                      {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}}
+                    </div>
+                  </div>
                 @endforeach
               @else
                 <h1>No Types Listed!</h1>
