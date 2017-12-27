@@ -117,7 +117,7 @@
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
                     <div class="col-lg-3">
                       <div class="card image_display_r border border-secondary rounded shadow_only">
-                        <div class="card-title">
+                        <div class="card-body">
                           {{Form::label($job_option_id, $job_option_name)}}
                           <hr class="my-1">
                         </div>
