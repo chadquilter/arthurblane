@@ -3,12 +3,13 @@
 @section('content')
 <div class="container">
   <div class="jumbotron">
-    <h4 class="display-4">Dashboard {{ $dt }}</h4>
+    <h4 class="display-4">Dashboard </h4>
 
     <div class="card mx-auto">
       <br>
       <div class="card-body">
-        <p class="lead"><h5 class="display-5"> Welcome {{ Auth::user()->name }}.</h5></p>
+        <p class="lead"><h5 class="display-5"> Welcome {{ Auth::user()->name }}</h5></p>
+        <p class="lead"><strong> {{ $dt }} </strong></p>
         @include('inc.dashmenu')
         <hr class="my-1">
         @include('inc.messages')
