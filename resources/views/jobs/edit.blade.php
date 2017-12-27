@@ -25,7 +25,7 @@
             {{Form::text('job_notes', $job->job_notes, ['class' => 'form-control', 'placeholder' => 'Job Additional Notes'])}}
           </div>
           <br>
-          <div class="JobItemsDiv">
+          <div class="JobItemsDiv alert alert-info" role="alert">
             @if(count($job_items_records) > 0)
               <h3><span class="badge badge-secondary">{{ $job_items_records->total() }}</span> Saved Items, Est. Total: <span class="badge badge-secondary">${{ $item_grand_total }}</span> </h3>
               <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#dynamic_field">Expand/Collapse Options</button>
@@ -45,7 +45,7 @@
                 <tbody>
                   @if(count($job_items_records) > 0)
                     @foreach($job_items_records as $jobItem)
-                      <tr id="row{{ $loop->iteration }}" class="dynamic-added image_display_r border border-secondary rounded shadow_only">
+                      <tr id="row{{ $loop->iteration }}" class="dynamic-added">
                         <td id="item_div_{{$loop->iteration}}">
                           <strong>Item:</strong>
                           @if(count($items) > 0)
