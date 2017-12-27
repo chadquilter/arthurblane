@@ -20,7 +20,7 @@
         @endif
         @if(count($jobs) > 0)
             <div id="jobs_div" name="jobs_div" class="container border border-secondary rounded shadow_only">
-              <p class="lead"><span class="badge badge-secondary">{{ $jobs->total() }}</span><h3 class="display-3"> Job Entries:</h3></p>
+              <p class="lead"><h3 class="display-3"><span class="badge badge-secondary">{{ $jobs->total() }}</span>Job Entries:</h3></p>
               <hr class="my-4">
               @foreach($jobs as $job)
                 <div class="row">
