@@ -28,6 +28,7 @@
           <div class="JobItemsDiv alert alert-info" role="alert">
             @if(count($job_items_records) > 0)
               <h3><span class="badge badge-secondary">{{ $job_items_records->total() }}</span> Saved Items, Est. Total: <span class="badge badge-secondary">${{ $item_grand_total }}</span> </h3>
+              <br>
               <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#dynamic_field">Expand/Collapse Options</button>
               <br>
             @else
