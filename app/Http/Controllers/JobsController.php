@@ -87,7 +87,7 @@ class JobsController extends Controller
               'job_option_types',
               'users',
               'current_user',
-              'mdg_services'
+              'mdg_services',
               'items'));
     }
 
