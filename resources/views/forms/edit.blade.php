@@ -60,4 +60,10 @@
     </div>
   </div>
   <br>
+  <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace( 'salutation-ckeditor' );
+    CKEDITOR.replace( 'body-ckeditor' );
+    CKEDITOR.replace( 'closing-ckeditor' );
+  </script>
 @endsection
