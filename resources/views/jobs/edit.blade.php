@@ -25,23 +25,45 @@
             {{Form::text('job_notes', $job->job_notes, ['class' => 'form-control', 'placeholder' => 'Job Additional Notes'])}}
           </div>
           <div class="JobItemsDiv">
-            <h3>Job Items: {{ count($job_items_records)}} </h3>
             @if(count($job_items_records) > 0)
               <h3><span class="badge">{{ $job_items_records->total() }}</span> Job Items:</h3>
               <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_item_group">Expand/Collapse Options</button>
               <br>
             @else
             @endif
-            <div id="job_item_group" class="form=group collapse alert alert-success" role="alert">
               <h3>Job Items:</h3>
               <table class="table table-sm table-responsive" id="dynamic_field">
                 <tbody>
-
+                  @if(count($job_items_records) > 0)
+                    @foreach($job_items_records as $jobItem)
+                      <tr id="row{{ $loop->iteration }}" class="dynamic-added">
+                        <td id="item_div_{{$loop->iteration}}">
+                          <strong>Item:</strong>
+                          @if(count($items) > 0)
+                            {{ Form::select('itemSelect'.$loop->iteration, $items, $jobItem->items_id , ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
+                          @else
+                            <h1>No Users Listed!</h1>
+                          @endif
+                        </td>
+                        <td>
+                          <strong>Amount: </strong>
+                          <input name="item_amount_{{ $loop->iteration }}" id="item_amount_{{ $loop->iteration }}" type="number" class="form-control" value="{{ $jobItem->amount }}" step="any" maxlength="10" size="10">
+                          <strong>QTY: </strong>
+                          <input name="item_qty_{{$loop->iteration}}" id="item_qty_{{$loop->iteration}}" type="number" value="{{ $jobItem->qty }}" class="form-control" step="any" maxlength="10" size="10">
+                          <input type="hidden" name="itemID[]" id="itemID{{$loop->iteration}}" value="{{$loop->iteration}}">
+                          <input type="hidden" name="itemRecordID{{$loop->iteration}}" id="itemRecordID{{$loop->iteration}}" value="{{ $jobItem->id }}">
+                        </td>
+                        <td width="5%">
+                          <strong>Action:</strong><br>
+                          <button type="button" name="remove" id="{{$loop->iteration}}" class="btn btn-danger btn_remove">Delete</button>
+                        </td>
+                      </tr>
+                    @endforeach
+                  @endif
                 </tbody>
               </table>
               <br>
               {{Form::button('Add Item', ['class' => 'btn btn-primary', 'id' => 'add', 'name' => 'add'])}}
-            </div>
           </div>
           <hr>
 
