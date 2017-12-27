@@ -104,7 +104,7 @@
                   @php
                     $selected = $job->job_option_id
                   @endphp
-                  @if($loop->first || $loop->iteration === 6)
+                  @if($loop->first || $loop->iteration === 4)
                     <div class="row">
                     @endif
                     <div class="col-md-2">
@@ -117,7 +117,7 @@
                     @else
                       <h1>No Types Listed!</h1>
                     @endif
-                    @if($loop->iteration === 5 || $loop->iteration >= 10 || $loop->last)
+                    @if($loop->iteration === 3 || $loop->iteration >= 7 || $loop->last)
                     </div>
                   @endif
                 @endforeach
