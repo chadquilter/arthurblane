@@ -25,7 +25,7 @@
               @foreach($jobs as $job)
                 <div class="row">
                   <div class="col-12 col-md-8">
-                    <strong>Job: </strong>{{$job->job_title}}
+                    <p class="lead"><strong>Job: </strong>{{$job->job_title}}</p>
                   </div>
                   <div class="col col-md-4 btn-group" role="group" aria-label="Job List">
                     {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
