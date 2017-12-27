@@ -32,7 +32,7 @@
             <table class="table table-striped table-hover table-responsive">
               <thead class="thead-inverse">
                 <tr>
-                  <th nowrap><h3><span class="badge">{{ $forms->total() }}</span> Saved Addresses:</h3></th>
+                  <th nowrap><h3><span class="badge">{{ $forms->total() }}</span> Saved Forms:</h3></th>
                   <th></th>
                   <th></th>
                 </tr>
@@ -40,16 +40,16 @@
               <tbody>
                 @foreach($addresses as $address)
                   <tr>
-                    <td width=80%><strong>Address: </strong>
+                    <td width=80%><strong>Form: </strong>
                       <div class=row>
                         <div class="col-md-4">
-                          <br> {{$form->title}}
+                          <br> {{$form->form_title}}
                           <br> {{$form->form_date}}
                         </div>
                       </td>
-                      <td><a href="/address/{{$form->id}}/edit" class="btn btn-primary">Edit</a></td>
+                      <td><a href="/forms/{{$form->id}}/edit" class="btn btn-primary">Edit</a></td>
                       <td>
-                        {!!Form::open(['action' => ['AddressController@destroy', $form->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                        {!!Form::open(['action' => ['FormsController@destroy', $form->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                         {{Form::hidden('_method', 'DELETE')}}
                         {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                         {!!Form::close()!!}

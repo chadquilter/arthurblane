@@ -53,7 +53,7 @@ class FormsController extends Controller
       public function store(Request $request)
       {
           $this->validate($request, [
-              'title' => 'required'
+              'form_title' => 'required'
           ]);
 
 
@@ -118,7 +118,7 @@ class FormsController extends Controller
       {
           //
           $this->validate($request, [
-              'title' => 'required'
+              'form_title' => 'required'
           ]);
 
           $active = ($request->input('active') ? $request->input('active') : 0);
