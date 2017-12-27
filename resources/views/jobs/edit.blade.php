@@ -87,7 +87,7 @@
             <div class="alert alert-info" role="alert">
               @if(count($mdg_services) > 0)
                 @foreach($mdg_services as $mdg_id => $mdg_name)
-                  {{Form::checkbox('job_type', $mdg_id, ['class' => 'form-control'])}} {{$mdg_name}}
+                  {{Form::checkbox('job_type', $mdg_id, '', ['class' => 'form-control'])}} {{$mdg_name}}
                 @endforeach
               @else
                 <h1>No Types Listed!</h1>
