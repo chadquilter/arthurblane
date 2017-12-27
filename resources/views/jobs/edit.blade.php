@@ -93,7 +93,7 @@
                     <div class="col">
                       <div class="card">
                         <div class="card-title">
-                          {{Form::label($job_option_id, $job_option_name)}}
+                          <p class="lead">{{Form::label($job_option_id, $job_option_name)}}</p>
                           <hr class="my-1">
                         </div>
                       @if(count($bool_types) > 0)
@@ -105,7 +105,7 @@
                           @php
                             $selected = $job->$job_option_id == $bool_id ? $job->$job_option_id : 'False';
                           @endphp
-                                {{$bool_name}}{{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control']) }}
+                                <p class="lead">{{$bool_name}}{{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control']) }}</p>
                               </div>
                         @endforeach
                             </div>
