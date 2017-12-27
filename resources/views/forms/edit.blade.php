@@ -24,16 +24,25 @@
           <br>
           {!! Form::open(['action' => ['FormsController@update', $form->id], 'method' => 'POST']) !!}
           <div class="form=group">
+            {{Form::label('form_date', 'Date: ')}}
+            {{Form::date('form_date', \Carbon\Carbon::now()), ['class' => 'form-control'] }}
+          </div>
+          {!! Form::open(['action' => 'FormsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
+          <div class="form=group">
             {{Form::label('form_title', 'Title:')}}
-            {{Form::text('form_title', '', ['class' => 'form-control', 'placeholder' => 'Form Title'])}}
+            {{Form::text('form_title', $form->form_title, ['class' => 'form-control', 'placeholder' => 'Form Title'])}}
           </div>
           <div class="form=group">
-            {{Form::label('form_date', 'Date: ')}}
-            {{Form::text('form_date', '', ['class' => 'form-control', 'placeholder' => 'Form Date'])}}
+            {{Form::label('form_salutation', 'Form Salutation:')}}
+            {{Form::textarea('form_salutation', $form->form_salutation, ['id' => 'salutation-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Salutation, leave empty if not needed'])}}
           </div>
           <div class="form=group">
             {{Form::label('form_body', 'Form Body:')}}
-            {{Form::text('form_body', '', ['class' => 'form-control', 'placeholder' => 'Form Body'])}}
+            {{Form::textarea('form_body', $form->form_body , ['id' => 'body-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Body goes here'])}}
+          </div>
+          <div class="form=group">
+            {{Form::label('form_closing', 'Form Closing:')}}
+            {{Form::textarea('form_closing', $form->form_closing, ['id' => 'closing-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Footer, leave emtpy if not needed'])}}
           </div>
           <div class="form=group">
             {{Form::label('form_active', 'Form Active? ')}}
