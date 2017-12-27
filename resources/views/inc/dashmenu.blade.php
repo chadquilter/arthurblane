@@ -17,4 +17,3 @@
       </div>
     </div>
 </p>
-<hr class="my-4">
