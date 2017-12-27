@@ -209,7 +209,7 @@ class JobsController extends Controller
           ->with('bool_types', $bool_types)
           ->with('job_option_types', $job_option_types)
           ->with('users', $users)
-          ->with('$item_grand_total', $item_grand_total)
+          ->with('item_grand_total', $item_grand_total)
           ->with('items', $items);
     }
 
