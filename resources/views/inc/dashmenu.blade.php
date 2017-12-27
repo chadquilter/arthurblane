@@ -1,6 +1,4 @@
-<strong class="display-2">Dashboard Services:</strong>
-<br>
-<p class="lead">include but are not limited to:</p>
+<p class="lead">Dashboard Services:</p>
 <hr class="my-4">
 <p class="lead">
     <div class="card image_display_r">
