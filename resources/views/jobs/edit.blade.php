@@ -47,7 +47,7 @@
                 <tbody>
                   @if(count($job_items_records) > 0)
                     @foreach($job_items_records as $jobItem)
-                      <tr id="row{{ $loop->iteration }}" class="dynamic-added image_display_r border border-secondary">
+                      <tr id="row{{ $loop->iteration }}" class="dynamic-added">
                         <td id="item_div_{{$loop->iteration}}">
                           <strong>Item:</strong>
                           @if(count($items) > 0)
