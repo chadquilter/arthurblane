@@ -56,17 +56,19 @@ class FormsController extends Controller
               'form_title' => 'required'
           ]);
 
-
           $active = ($request->input('active') ? $request->input('active') : 0);
+          $form_type = ($request->input('form_type') ? $request->input('form_type') : 1);
+          $form_subtype = ($request->input('form_subtype') ? $request->input('form_subtype') : 0);
+          $form_created_by = ($request->input('form_created_by') ? $request->input('form_created_by') : auth()->user()->id):
 
           // create form
           $form = new form;
-          $form->form_type = $request->input('form_type');
-          $form->form_subtype = $request->input('form_subtype');
+          $form->form_type = $form_type;
+          $form->form_subtype = $form_subtype;
           $form->form_title = $request->input('form_title');
           $form->form_body = $request->input('form_body');
           $form->form_date = $request->input('form_date');
-          $form->form_created_by = $request->input('form_created_by');
+          $form->form_created_by = $form_created_by;
           $form->form_active = $active;
           $form->save();
 
@@ -122,15 +124,18 @@ class FormsController extends Controller
           ]);
 
           $active = ($request->input('active') ? $request->input('active') : 0);
+          $form_type = ($request->input('form_type') ? $request->input('form_type') : 1);
+          $form_subtype = ($request->input('form_subtype') ? $request->input('form_subtype') : 0);
+          $form_created_by = ($request->input('form_created_by') ? $request->input('form_created_by') : auth()->user()->id):
 
           // create form
           $form = Form::find($id);
-          $form->form_type = $request->input('form_type');
-          $form->form_subtype = $request->input('form_subtype');
+          $form->form_type = $form_type;
+          $form->form_subtype = $form_subtype;
           $form->form_title = $request->input('form_title');
           $form->form_body = $request->input('form_body');
           $form->form_date = $request->input('form_date');
-          $form->form_created_by = $request->input('form_created_by');
+          $form->form_created_by = $form_created_by;
           $form->form_active = $active;
           $form->save();
 
