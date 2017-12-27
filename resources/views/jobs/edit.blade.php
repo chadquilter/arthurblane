@@ -33,7 +33,7 @@
             @else
             @endif
               <h3>Job Items:</h3>
-              <table class="table table-sm table-responsive" id="dynamic_field">
+              <table class="table table-sm table-responsive collapse" id="dynamic_field">
                 <tbody>
                   @if(count($job_items_records) > 0)
                     @foreach($job_items_records as $jobItem)
