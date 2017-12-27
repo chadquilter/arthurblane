@@ -99,7 +99,7 @@
                           @php
                             $selected = $job->$job_option_id == $bool_id ? $job->$job_option_id : 'False';
                           @endphp
-                            {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control'])}} {{$bool_name}}
+                            {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control']) }}:{{$bool_name}}
                         @endforeach
                           </div>
                         </div>
