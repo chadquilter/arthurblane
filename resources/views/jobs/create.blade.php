@@ -43,7 +43,7 @@
               @if(count($job_types) > 0)
                 <div class="row">
                 @foreach($job_types as $job_id => $job_name)
-                  <div class="col">
+                  <div class="col-lg-3">
                     <div class="card image_display_r border border-secondary rounded shadow_only">
                       <div class="card-body">
                         {{Form::checkbox('job_type', $job_id, ['class' => 'form-control'])}} {{$job_name}}
