@@ -96,8 +96,8 @@
                           {{Form::label($job_option_id, $job_option_name)}}
                           <hr class="my-1">
                         </div>
-                        <div class="card-body">
                       @if(count($bool_types) > 0)
+                        <div class="card-body">
                           <div class="col">
                             <div class="row">
                         @foreach($bool_types as $bool_id => $bool_name)
@@ -109,6 +109,7 @@
                                 <hr class="my-1">
                               </div>
                         @endforeach
+                            </div>
                           </div>
                         </div>
                       </div>
