@@ -92,7 +92,6 @@
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
                     <div class="col">
                       {{Form::label($job_option_id, $job_option_name)}}
-                      <br>
                       @if(count($bool_types) > 0)
                       <div class="col">
                         <div class="row">
