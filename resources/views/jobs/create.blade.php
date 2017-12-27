@@ -56,28 +56,38 @@
             <br>
             <div id="job_option_group" class="form=group collapse">
               <div class="alert alert-info" role="alert">
+                <div class="row">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
-                  @if($loop->first || $loop->iteration === 6)
-                    <div class="row">
-                    @endif
-                    <div class="col-md-2">
-                      {{Form::label($job_option_id, $job_option_name)}}
-                      <br>
+                    <div class="col-lg-3">
+                      <div class="card image_display_r border border-secondary rounded shadow_only">
+                        <div class="card-title">
+                          {{Form::label($job_option_id, $job_option_name)}}
+                          <hr class="my-1">
+                        </div>
                       @if(count($bool_types) > 0)
+                        <div class="card-body">
+                          <div class="col">
+                            <div class="row">
                         @foreach($bool_types as $bool_id => $bool_name)
-                          {{Form::radio($job_option_id, $bool_id, ['class' => 'form-control'])}} {{$bool_name}}
+                              <div class="col">
+                                {{$bool_name}} {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control']) }}
+                              </div>
                         @endforeach
+                            </div>
+                          </div>
+                        </div>
                       </div>
+                      <br>
+                    </div>
                     @else
                       <h1>No Types Listed!</h1>
                     @endif
-                    @if($loop->iteration === 5 || $loop->iteration >= 10 || $loop->last)
-                    </div>
-                  @endif
                 @endforeach
+              </div>
               </div>
             </div>
           @endif
+
           <br>
           <hr>
           @if (count($users) > 0)
