@@ -47,9 +47,7 @@
                 <tbody>
                   @if(count($job_items_records) > 0)
                     @foreach($job_items_records as $jobItem)
-                      <tr id="row{{ $loop->iteration }}" class="dynamic-added">
-                        <div class="card image_display_r border border-secondary rounded shadow_only">
-                          <div class="card-title">
+                      <tr id="row{{ $loop->iteration }}" class="dynamic-added image_display_r border border-secondary">
                         <td id="item_div_{{$loop->iteration}}">
                           <strong>Item:</strong>
                           @if(count($items) > 0)
@@ -70,8 +68,6 @@
                           <strong>Action:</strong><br>
                           <button type="button" name="remove" id="{{$loop->iteration}}" class="btn btn-danger btn_remove">Delete</button>
                         </td>
-                        </div>
-                        </div>
                       </tr>
                     @endforeach
                   @endif
