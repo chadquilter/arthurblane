@@ -8,7 +8,7 @@
           <a href="/quotes" class="alert alert-primary btn btn-secondary" role="button">Create Quote</a>
           <a href="/address" class="alert alert-primary btn btn-secondary" role="button">Manage Addresses</a>
           <a href="/items" class="alert alert-primary btn btn-secondary" role="button">Manage Items</a>
-          <a href="/forms" class="alert alert-primary btn btn-secondary" role="button">Manage Proposals/Forms</a>
+          <a href="/forms" class="alert alert-primary btn btn-secondary" role="button">Manage Proposals</a>
       </div>
     </div>
 </p>
