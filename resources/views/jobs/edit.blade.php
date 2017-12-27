@@ -26,8 +26,7 @@
           </div>
           <div class="JobItemsDiv">
             @if(count($job_items_records) > 0)
-              <h3><span class="badge">{{ $job_items_records->total() }}</span> Job Items:</h3>
-              <h3><span class="badge">${{ $item_grand_total }}</span> Job Grand Total: </h3>
+              <h3><span class="badge">{{ $job_items_records->total() }}</span> Job Items @ ${{ $item_grand_total }} </h3>
               <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_item_group">Expand/Collapse Options</button>
               <br>
             @else
