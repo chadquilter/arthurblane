@@ -99,9 +99,7 @@
             <div id="job_option_group" class="form=group collapse">
               <div class="alert alert-info" role="alert">
                 @foreach ($job_option_types as $job_option_id => $job_option_name)
-                  @php
-                    $selected = $job->$job_option_id;
-                  @endphp
+
                   @if($loop->first || $loop->iteration === 6)
                     <div class="row">
                     @endif
@@ -110,7 +108,9 @@
                       <br>
                       @if(count($bool_types) > 0)
                         @foreach($bool_types as $bool_id => $bool_name)
-
+                          @php
+                            $selected = $job->$job_option_id == $bool_id ? $job->$job_option_id : 'False';
+                          @endphp
                           {{Form::radio($job_option_id, $bool_id, $selected, ['class' => 'form-control'])}} {{$bool_name}}
                         @endforeach
                       </div>
