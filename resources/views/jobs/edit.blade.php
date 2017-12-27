@@ -62,9 +62,13 @@
                     @endforeach
                   @endif
                 </tbody>
+
+                <tfoot>
+                  <tr><td>
+                  {{Form::button('Add Item', ['class' => 'btn btn-primary', 'id' => 'add', 'name' => 'add'])}}
+                  </tr></td>
+                </tfoot>
               </table>
-              <br>
-              {{Form::button('Add Item', ['class' => 'btn btn-primary', 'id' => 'add', 'name' => 'add'])}}
           </div>
           <hr>
 
