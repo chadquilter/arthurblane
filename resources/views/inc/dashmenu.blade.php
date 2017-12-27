@@ -5,7 +5,7 @@
         <p class="lead"><strong>Dashboard Services:</strong></p>
         <hr class="my-4">
         @if ( Request::url() != url('dashboard') )
-           <a href="/jobs/create" class="alert alert-primary btn btn-secondary" role="button">Return to Dashboard</a>
+           <a href="/dashboard" class="alert alert-primary btn btn-secondary" role="button">Return to Dashboard</a>
         @endif
 
           <a href="/jobs/create" class="alert alert-primary btn btn-secondary" role="button">Create Job</a>
