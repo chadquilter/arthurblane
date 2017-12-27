@@ -78,12 +78,16 @@ class JobsController extends Controller
         $users = User::pluck('name', 'id');
         $current_user = auth()->user()->id;
 
+        // get mdg services
+        $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+
         return view('jobs.create')
             ->with(compact('job_types',
               'bool_types',
               'job_option_types',
               'users',
               'current_user',
+              'mdg_services'
               'items'));
     }
 
@@ -202,6 +206,9 @@ class JobsController extends Controller
           $item_grand_total += $jobItem->amount * $qty;
         }
 
+        // get mdg services
+        $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+
         //edit view
         return view('jobs.edit')
           ->with('job', $job)
@@ -211,6 +218,7 @@ class JobsController extends Controller
           ->with('job_option_types', $job_option_types)
           ->with('users', $users)
           ->with('item_grand_total', $item_grand_total)
+          ->with('mdg_services', $mdg_services)
           ->with('items', $items);
     }
 
