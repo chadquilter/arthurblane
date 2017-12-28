@@ -39,19 +39,18 @@
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Delete Job!</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
                           </div>
                           <div class="modal-body">
-                            ...
+                            Are you sure you wish to delete this job?
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                             {{Form::hidden('_method', 'DELETE')}}
-                            <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
                             {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                             {!!Form::close()!!}
                           </div>
