@@ -29,10 +29,10 @@
                     <p class="lead"><strong>Job: </strong>{{$job->job_title}}</p>
                   </div>
                   <div class="col col-md-4 btn-group" role="group" aria-label="Job List">
+
+                    <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal{{$job->job_id}}">
-                      Launch demo modal
-                    </button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal{{$job->job_id}}">Delete</button>
 
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal{{$job->job_id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
