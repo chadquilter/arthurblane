@@ -32,13 +32,13 @@
 
                     <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal{{$job->job_id}}">Delete</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#jobModal{{$job->job_id}}">Delete</button>
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal{{$job->job_id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel{{$job->job_id}}" aria-hidden="true">
+                    <div class="modal fade" id="jobModal{{$job->job_id}}" tabindex="-1" role="dialog" aria-labelledby="jobModalLabel{{$job->job_id}}" aria-hidden="true">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel{{$job->job_id}}">Delete Job!</h5>
+                            <h5 class="modal-title" id="jobModalLabel{{$job->job_id}}">Delete Job!</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
@@ -85,9 +85,9 @@
                     <a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a>
 
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#quoteModal{{$quotes->id}}">Delete</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#quoteModal{{$quote->id}}">Delete</button>
                     <!-- Modal -->
-                    <div class="modal fade" id="quoteModal{{$quote->id}}" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel{{$quotes->id}}" aria-hidden="true">
+                    <div class="modal fade" id="quoteModal{{$quote->id}}" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel{{$quote->id}}" aria-hidden="true">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
