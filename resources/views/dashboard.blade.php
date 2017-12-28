@@ -29,26 +29,36 @@
                     <p class="lead"><strong>Job: </strong>{{$job->job_title}}</p>
                   </div>
                   <div class="col col-md-4 btn-group" role="group" aria-label="Job List">
-                    {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
-                    {{Form::hidden('_method', 'DELETE')}}
-                    <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
-                    {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
-                    {!!Form::close()!!}
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal{{$job->job_id}}">
+                      Launch demo modal
+                    </button>
 
-                    <script>
-                    $(document).ready(function(){
-                        $('form').submit(function(e){
-                          e.preventDefault();
-                            url = $(this).parent().attr('action');
-                            BootstrapDialog.confirm('Are you sure you want to delete?', function(result){
-                                if(result) {
-                                    $.ajax(url);
-                                }
-                            });
-                        });
-
-                    });
-                    </script>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal{{$job->job_id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            {!!Form::open(['action' => ['JobsController@destroy', $job->job_id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                            {{Form::hidden('_method', 'DELETE')}}
+                            <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
+                            {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                            {!!Form::close()!!}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!---end---->
 
                   </div>
                 </div>
