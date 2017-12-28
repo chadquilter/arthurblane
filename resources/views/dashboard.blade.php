@@ -34,6 +34,22 @@
                     <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
                     {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                     {!!Form::close()!!}
+
+                    <script>
+                    $(document).ready(function(){
+                        $('form').submit(function(e){
+                          e.preventDefault();
+                            url = $(this).parent().attr('action');
+                            BootstrapDialog.confirm('Are you sure you want to delete?', function(result){
+                                if(result) {
+                                    $.ajax(url);
+                                }
+                            });
+                        });
+
+                    });
+                    </script>
+
                   </div>
                 </div>
                 <hr class="my-1">

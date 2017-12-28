@@ -104,6 +104,7 @@ class JobsController extends Controller
             'job_summary' => 'required',
             'job_notes' => 'required',
             'job_created_by' => 'required',
+            'job_type' => 'required'
         ]);
 
         // create job
