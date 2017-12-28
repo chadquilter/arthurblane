@@ -33,7 +33,6 @@
                     <a href="/jobs/{{$job->job_id}}/edit" class="btn btn-primary">Edit</a>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal{{$job->job_id}}">Delete</button>
-
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal{{$job->job_id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel{{$job->job_id}}" aria-hidden="true">
                       <div class="modal-dialog" role="document">
@@ -45,7 +44,7 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                            Are you sure you wish to delete this job?
+                            Are you sure you wish to delete this Job?
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -82,11 +81,36 @@
                     <p class="lead"><strong>Quote: </strong>{{$quote->title}}</p>
                   </div>
                   <div class="col col-md-4 btn-group" role="group" aria-label="Job List">
-                    {!!Form::open(['action' => ['QuotesController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
-                    {{Form::hidden('_method', 'DELETE')}}
+
                     <a href="/quotes/{{$quote->id}}/edit" class="btn btn-primary">Edit</a>
-                    {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
-                    {!!Form::close()!!}
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#quoteModal{{$quotes->id}}">Delete</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="quoteModal{{$quote->id}}" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel{{$quotes->id}}" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel{{$quote->id}}">Delete Job!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Are you sure you wish to delete this Quote?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            {!!Form::open(['action' => ['JobsController@destroy', $quote->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+                            {{Form::hidden('_method', 'DELETE')}}
+                            {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                            {!!Form::close()!!}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!---end---->
+
                   </div>
                 </div>
                 <hr class="my-1">
