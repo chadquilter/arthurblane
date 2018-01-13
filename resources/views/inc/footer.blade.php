@@ -10,7 +10,7 @@
           <br>
           Marble Falls, TX • Austin, TX • Houston, TX • San Antonio, TX • Dallas/Fort Worth, TX • Corpus Christi, TX • El Paso, TX • Texas, USA.
           <br>
-          2017,  {{ config('app.name', 'MDG') }}
+          2018,  {{ config('app.name', 'MDG') }}
         </p>
       </center>
     </div>
