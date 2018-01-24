@@ -8,6 +8,7 @@ use App\User;
 use App\Item;
 use App\JobItem;
 use App\Service;
+use App\JobService;
 
 class JobsController extends Controller
 {
