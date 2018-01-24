@@ -109,7 +109,7 @@
 
           <div id="service_test">
           @foreach ($job->services as $service) {
-              {{ $service->service_name }}
+              {{ $service->pivot->service_name }}
           }
           </div>
         @endforeach
