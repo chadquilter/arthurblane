@@ -154,7 +154,7 @@
           <br>
           <hr>
 @php
-  echo $directories;
+  echo $files;
 @endphp
 
 <br>
