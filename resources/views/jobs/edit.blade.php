@@ -90,10 +90,13 @@
                 <div class="row">
                   @if(count($mdg_services) > 0)
                     @foreach($mdg_services as $mdg_id => $mdg_name)
+                      @php
+                        $job_service_checked = App\Job::find(1)->services()->where('service_id', $mdg_id)->first() ne '' ? 'True' : 'False';
+                      @endphp
                       <div class="col-md-3">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
                           <div class="card-title">
-                            {{Form::label($mdg_id, $mdg_name)}} {{Form::checkbox('serviceID[]', $mdg_id, '', ['class' => 'form-control', 'id' => 'serviceID'.$mdg_id ])}}
+                            {{Form::label($mdg_id, $mdg_name)}} {{Form::checkbox('serviceID[]', $mdg_id, $job_service_checked, ['class' => 'form-control', 'id' => 'serviceID'.$mdg_id ])}}
                           </div>
                         </div>
                       </div>
@@ -106,15 +109,6 @@
             </div>
           </div>
           <br>
-
-          <div id="service_test">
-            test
-          @foreach ($job->services as $service) {
-              {{ $service }}
-          }
-            <br>
-          </div>
-        @endforeach
 
           @if (count($job_option_types) > 0)
             <h3>Job Options:</h3>
