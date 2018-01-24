@@ -211,7 +211,8 @@ class JobsController extends Controller
         // get mdg services
         $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
         //$mdg_services_1 = Job::find($id)->services()->orderBy('service_name', 'asc')->pluck('service_name', 'service_id');
-
+        $directory = '\images';
+        $files = File::allFiles($directory);
         //edit view
         return view('jobs.edit')
           ->with('job', $job)
@@ -222,7 +223,8 @@ class JobsController extends Controller
           ->with('users', $users)
           ->with('item_grand_total', $item_grand_total)
           ->with('mdg_services', $mdg_services)
-          ->with('items', $items);
+          ->with('items', $items)
+          ->with('files', $files);
     }
 
     /**
