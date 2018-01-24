@@ -239,6 +239,7 @@ class JobsController extends Controller
             'job_title' => 'required',
             'job_summary' => 'required',
             'job_notes' => 'required',
+            'serviceID[]' => 'required',
         ]);
 
 /**
@@ -282,6 +283,16 @@ class JobsController extends Controller
              $jobitem->user_id = $job->user_id;
              $jobitem->amount = $request->input('item_amount_'.$itemID);
              $jobitem->qty = $request->input('item_qty_'.$itemID);
+             $jobitem->save();
+           }
+        }
+
+        if ($request->get('serviceID')) {
+           $deleteItems = JobService::where('job_services', $job->job_id)->delete();
+           foreach($request->get('serviceID') as $key => $serviceID) {
+             $jobserivce = new JobService;
+             $jobservice->job_id = $job->job_id;
+             $jobservice->service_id = $serviceID;
              $jobitem->save();
            }
         }

@@ -93,7 +93,7 @@
                       <div class="col-md-3">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
                           <div class="card-title">
-                            {{Form::label($mdg_id, $mdg_name)}} {{Form::checkbox('job_type', $mdg_id, '', ['class' => 'form-control'])}}
+                            {{Form::label($mdg_id, $mdg_name)}} {{Form::checkbox('serviceID[]', $mdg_id, '', ['class' => 'form-control', 'id' => 'serviceID{{$mdg_id}}'])}}
                           </div>
                         </div>
                       </div>
