@@ -153,7 +153,9 @@
           @endif
           <br>
           <hr>
-
+{{$directories}}
+<br>
+{{$files}}
           <div>
             {{Form::hidden('_method', 'PUT')}}
             {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}

@@ -10,7 +10,6 @@ use App\JobItem;
 use App\Service;
 use App\JobService;
 use App\Http\Requests\StoreJob;
-
 use Storage;
 
 class JobsController extends Controller
