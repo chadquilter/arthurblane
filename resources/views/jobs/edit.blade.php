@@ -153,9 +153,9 @@
           @endif
           <br>
           <hr>
-@foreach ($directory as $directories)
-  {{ $directory }}
-@endforeach
+@php
+  echo $directories;
+@endphp
 
 <br>
 
