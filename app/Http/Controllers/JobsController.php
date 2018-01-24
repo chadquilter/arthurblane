@@ -9,7 +9,6 @@ use App\Item;
 use App\JobItem;
 use App\Service;
 use App\JobService;
-use App\Http\Requests\StoreJob;
 
 class JobsController extends Controller
 {
@@ -286,6 +285,7 @@ class JobsController extends Controller
      */
     public function destroy($id)
     {
+
         $job = Job::find($id);
         $deleteItems = JobItem::where('job_items_job_id', $job->job_id)->delete();
         $deleteServices = JobService::where('job_id', $job->job_id)->delete();
