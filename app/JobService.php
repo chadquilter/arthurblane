@@ -17,12 +17,4 @@ class JobService extends Model
       'service_id'
   ];
 
-  public function service(){
-      return $this->hasOne('App\Service', 'id', 'service_id');
-  }
-
-  public function job(){
-      return $this->belongsToMany('App\Job');
-  }
-
 }
