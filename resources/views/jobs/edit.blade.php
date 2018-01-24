@@ -153,9 +153,12 @@
           @endif
           <br>
           <hr>
-{{$directories}}
+@foreach ($directory as $directories)
+  {{ $directory }}
+@endforeach
+
 <br>
-{{$files}}
+
           <div>
             {{Form::hidden('_method', 'PUT')}}
             {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
