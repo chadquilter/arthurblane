@@ -211,8 +211,9 @@ class JobsController extends Controller
         // get mdg services
         $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
         //$mdg_services_1 = Job::find($id)->services()->orderBy('service_name', 'asc')->pluck('service_name', 'service_id');
-        $directory = '\images';
-        $files = File::allFiles($directory);
+        $directory = 'public';
+        $files = Storage::allFiles($directory);
+        $directories = Storage::allDirectories($directory);
         //edit view
         return view('jobs.edit')
           ->with('job', $job)
