@@ -121,11 +121,11 @@ class JobsController extends Controller
         $job->job_reciepts = $request->input('job_reciepts');
         $job->job_invoiced = $request->input('job_invoiced');
         $job->job_quote = $request->input('job_quote');
+        $job->save();
 
         if ($request->get('itemID')) {
-           $deleteItems = JobItem::where('job_items_job_id', $job->job_id)->delete();
            foreach($request->get('itemID') as $key => $itemID) {
-             $job->items()->attach($job->job_id, [
+             $job->items()->sync($job->job_id, [
                'items_id' =>  $request->input('itemSelect'.$itemID),
                'user_id' => $job->user_id,
                'amount' =>  $request->input('item_amount_'.$itemID),
