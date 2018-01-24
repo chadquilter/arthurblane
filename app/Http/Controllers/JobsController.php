@@ -291,7 +291,7 @@ class JobsController extends Controller
            $deleteItems = JobService::where('job_id', $job->job_id)->delete();
            foreach($request->get('serviceID') as $key => $serviceID) {
              $jobserivce = new JobService;
-             $jobservice->job_id = $job->job_id;
+             $jobservice->job_id = 17;
              $jobservice->service_id = 19;
              $jobitem->save();
            }
