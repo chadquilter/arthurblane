@@ -155,7 +155,7 @@
           <hr>
 
           @foreach($files as $file)
-             {{ $file }} // I'm not sure about lastModified property, but you get the point
+             {{ $file }} 
           @endforeach
 
           <br>
