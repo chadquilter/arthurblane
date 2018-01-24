@@ -91,7 +91,8 @@
                   @if(count($mdg_services) > 0)
                     @foreach($mdg_services as $mdg_id => $mdg_name)
                       @php
-                        $job_service_checked = App\Job::find(1)->services()->where('service_id', $mdg_id)->first() != '' ? 'True' : 'False';
+                        $has_service = App\Job::find(1)->services()->where('service_id', $mdg_id)->first();
+                        $job_service_checked = $has_service != null ? 'True' : 'False';
                       @endphp
                       <div class="col-md-3">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
