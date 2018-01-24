@@ -110,7 +110,7 @@
           <div id="service_test">
             test
           @foreach ($job->services as $service) {
-              {{ $service->service_name }}
+              {{ $service->service_id }}
           }
             <br>
           </div>
