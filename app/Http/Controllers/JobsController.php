@@ -9,7 +9,7 @@ use App\Item;
 use App\JobItem;
 use App\Service;
 use App\JobService;
-use App\Requests\StoreJob;
+use App\Http\Requests\StoreJob;
 
 class JobsController extends Controller
 {
