@@ -97,7 +97,7 @@
                       <div class="col-md-3">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
                           <div class="card-title">
-                            {{Form::label('serviceID[]', $mdg_name)}} {{Form::checkbox('serviceID[]', $mdg_id, $job_service_checked, ['class' => 'form-control', 'id' => 'serviceID'.$mdg_id ])}}
+                            {{Form::label('serviceID[]', $mdg_name)}} {{Form::checkbox('serviceID[]', $mdg_id, $job_service_checked, ['class' => 'form-control' ])}}
                           </div>
                         </div>
                       </div>
@@ -155,7 +155,7 @@
           <hr>
 
           @foreach($files as $file)
-             {{ $file }} 
+             {{ $file }}
           @endforeach
 
           <br>
