@@ -125,7 +125,7 @@ class JobsController extends Controller
 
         if ($request->get('itemID')) {
            foreach($request->get('itemID') as $key => $itemID) {
-             $job->items()->sync($job->job_id, [
+             $job->items()->attach($job->job_id, [
                'items_id' =>  $request->input('itemSelect'.$itemID),
                'user_id' => $job->user_id,
                'amount' =>  $request->input('item_amount_'.$itemID),
