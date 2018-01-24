@@ -3,8 +3,6 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Service;
-use Job;
 
 class JobService extends Model
 {
@@ -14,7 +12,7 @@ class JobService extends Model
 
   public $fillable = [
       'job_id',
-      'service_id'
+      'service_id',
   ];
 
 }
