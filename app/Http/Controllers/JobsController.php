@@ -246,7 +246,7 @@ class JobsController extends Controller
             'job_title' => 'required',
             'job_summary' => 'required',
             'job_notes' => 'required',
-            'serviceID' => 'required'
+            'serviceID' => 'required|message:Please select a job service type!'
         ]);
 
 /**
