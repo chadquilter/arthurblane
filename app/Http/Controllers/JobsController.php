@@ -105,7 +105,7 @@ class JobsController extends Controller
         // create job
         $job = new Job;
         $job->job_title = $request->input('job_title');
-        $job->job_type = $request->input('job_type');
+        $job->job_type = 1;
         $job->job_summary = $request->input('job_summary');
         $job->job_notes = $request->input('job_notes');
         $job->job_status = $request->input('job_status');
