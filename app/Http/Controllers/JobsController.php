@@ -134,10 +134,10 @@ class JobsController extends Controller
            }
         }
 
-        if ($request->get('service_id')) {
+        if ($request->get('serviceID')) {
            $deleteServices = JobService::where('job_id', $job->job_id)->delete();
-           foreach($request->get('service_id') as $key => $service_id) {
-             $job->services()->attach($service_id);
+           foreach($request->get('service_id') as $key => $serviceID) {
+             $job->services()->attach($serviceID);
            }
         }
 

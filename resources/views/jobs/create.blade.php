@@ -36,7 +36,7 @@
             </div>
           </div>
           <hr>
-          
+
           <div class="form=group">
             <h3>Job Type:</h3>
             <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_service_group">Expand/Collapse Options</button>
@@ -49,7 +49,7 @@
                       <div class="col-md-3">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
                           <div class="card-title">
-                            {{Form::label($mdg_id, $mdg_name)}} {{Form::checkbox('job_type', $mdg_id, '', ['class' => 'form-control'])}}
+                            {{Form::label('service_id[]', $mdg_name)}} {{Form::checkbox('service_id[]', $mdg_id, '', ['class' => 'form-control' ])}}
                           </div>
                         </div>
                       </div>
