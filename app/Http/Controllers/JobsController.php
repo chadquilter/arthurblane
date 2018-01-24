@@ -292,7 +292,7 @@ class JobsController extends Controller
            foreach($request->get('serviceID') as $key => $serviceID) {
              $jobserivce = new JobService;
              $jobservice->job_id = $job->job_id;
-             $jobservice->service_id = $serviceID;
+             $jobservice->service_id = $key;
              $jobitem->save();
            }
         }
