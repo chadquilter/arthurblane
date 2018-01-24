@@ -112,6 +112,7 @@
               {{ $service->service_name }}
           }
           </div>
+        @endforeach
 
           @if (count($job_option_types) > 0)
             <h3>Job Options:</h3>
