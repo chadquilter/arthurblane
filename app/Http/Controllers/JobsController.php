@@ -127,21 +127,28 @@ class JobsController extends Controller
         $job->job_reciepts = $request->input('job_reciepts');
         $job->job_invoiced = $request->input('job_invoiced');
         $job->job_quote = $request->input('job_quote');
-        $job->save();
 
-        $item_count = 0;
-        //$schedule->tasks()->delete();
         if ($request->get('itemID')) {
+           $deleteItems = JobItem::where('job_items_job_id', $job->job_id)->delete();
            foreach($request->get('itemID') as $key => $itemID) {
-             $jobitem = new Jobitem;
-             $jobitem->job_id = $job->job_id;
-             $jobitem->items_id = $request->input('itemSelect'.$itemID);;
-             $jobitem->user_id = $job->user_id;
-             $jobitem->amount = $request->input('item_amount_'.$itemID);
-             $jobitem->qty = $request->input('item_qty_'.$itemID);
-             $jobitem->save();
+             $job->items()->attach($job->job_id, [
+               'items_id' =>  $request->input('itemSelect'.$itemID),
+               'user_id' => $job->user_id,
+               'amount' =>  $request->input('item_amount_'.$itemID),
+               'qty' =>  $request->input('item_qty_'.$itemID)
+             ]);
            }
         }
+
+        if ($request->get('serviceID')) {
+           $deleteServices = JobService::where('job_id', $job->job_id)->delete();
+           foreach($request->get('serviceID') as $key => $serviceID) {
+             $job->services()->attach($serviceID);
+           }
+        }
+
+        ///save job
+        $job->save();
 
         return redirect('/dashboard')->with('success', 'Job Created');
 
@@ -239,7 +246,7 @@ class JobsController extends Controller
             'job_title' => 'required',
             'job_summary' => 'required',
             'job_notes' => 'required',
-            'serviceID' => 'required',
+            'serviceID' => 'required'
         ]);
 
 /**
