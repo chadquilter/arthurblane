@@ -33,7 +33,7 @@ class Job extends Model
     }
 
     public function items(){
-        return $this->belongsToMany('App\Item', 'job_items', 'job_id', 'item_id');
+        return $this->belongsToMany('App\Item', 'job_items', 'job_id', 'items_id');
     }
 
     public function services(){
