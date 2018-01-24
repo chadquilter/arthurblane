@@ -27,7 +27,6 @@ class StoreJob extends FormRequest
           'job_title' => 'required',
           'job_summary' => 'required',
           'job_notes' => 'required',
-          'job_created_by' => 'required',
           'serviceID' => 'required'
         ];
     }
@@ -38,7 +37,6 @@ class StoreJob extends FormRequest
         'job_title.required' => 'A job title is required!',
         'job_summay.required'  => 'A job summary is required!',
         'job_notes.required' => 'Notes for job are required!',
-        'job_created_by.required' => 'A job creator ID is required!',
         'serviceID.required' => 'A job service/type is required!',
     ];
   }
