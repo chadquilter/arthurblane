@@ -153,11 +153,12 @@
           @endif
           <br>
           <hr>
-@php
-  echo $files;
-@endphp
 
-<br>
+          @foreach($files as $file)
+             {{ Storage::url($file) }} - {{ $file->lastModified }} // I'm not sure about lastModified property, but you get the point
+          @endforeach
+
+          <br>
 
           <div>
             {{Form::hidden('_method', 'PUT')}}
