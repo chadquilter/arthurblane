@@ -20,6 +20,10 @@ class Item extends Model
         'item_count'
     ];
 
+    public function jobs(){
+        return $this->belongsToMany('App\Job', 'job_items', 'items_id', 'id');
+    }
+
     public function ItemType(){
         return $this->belongsTo('App\ItemType');
     }
