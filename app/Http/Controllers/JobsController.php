@@ -272,7 +272,7 @@ class JobsController extends Controller
         $job->job_reciepts = $request->input('job_reciepts');
         $job->job_invoiced = $request->input('job_invoiced');
         $job->job_quote = $request->input('job_quote');
-        $job->save();
+
 
         if ($request->get('itemID')) {
            $deleteItems = JobItem::where('job_items_job_id', $job->job_id)->delete();
@@ -290,12 +290,16 @@ class JobsController extends Controller
         if ($request->get('serviceID')) {
            $deleteServices = JobService::where('job_id', $job->job_id)->delete();
            foreach($request->get('serviceID') as $key => $serviceID) {
-             $jobservice = new JobService;
-             $jobservice->job_id = $job->job_id;
-             $jobservice->service_id = $serviceID;
-             $jobservice->save();
+             //$jobservice = new JobService;
+             //$jobservice->job_id = $job->job_id;
+             //$jobservice->service_id = $serviceID;
+             //$jobservice->save();
+             $job->services()->attach($serviceID);
            }
         }
+
+        ///save job
+        $job->save();
 
         return redirect('/dashboard')->with('success', 'Job Updated');
     }
