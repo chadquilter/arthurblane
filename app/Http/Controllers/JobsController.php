@@ -98,16 +98,8 @@ class JobsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreJob $request)
     {
-        $this->validate($request, [
-            'job_title' => 'required',
-            'job_summary' => 'required',
-            'job_notes' => 'required',
-            'job_created_by' => 'required',
-            'job_type' => 'required'
-        ]);
-
         // create job
         $job = new Job;
         $job->job_title = $request->input('job_title');
@@ -239,29 +231,8 @@ class JobsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(StoreJob $request, $id)
     {
-        //
-        $this->validate($request, [
-            'job_title' => 'required',
-            'job_summary' => 'required',
-            'job_notes' => 'required',
-            'serviceID' => 'required|message:Please select a job service type!'
-        ]);
-
-/**
-*        if($request->hasFile('cover_image')){
-*          $filenameWithExt = $request->file('cover_image')->getClientOriginalImage();
-*          //get just filenameWithExt
-*          $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-*          //file PATHINFO_FILENAM
-*          $extension = $request->file('cover_image')->getOriginalClientExtension();
-*          //file to store
-*          $filenNameToStore= $filename.'_'.time().'.'.$extension;
-*          //upload
-*          $path = $request->file('cover_image')->sotreAs('public/cover_image', $filenNameToStore);
-*        }
-*/
         // create job
         $job = Job::find($id);
         $job->job_title = $request->input('job_title');
@@ -314,13 +285,9 @@ class JobsController extends Controller
      */
     public function destroy($id)
     {
-
         $job = Job::find($id);
-        //authorized?
-        //if(auth()->user()->id !==$job->user_id) {
-        //  return redirect('/login')->with('error', 'Unauthorized Page!');
-        //}
-
+        $deleteItems = JobItem::where('job_items_job_id', $job->job_id)->delete();
+        $deleteServices = JobService::where('job_id', $job->job_id)->delete();
         $job->delete();
         return redirect('/dashboard')->with('success', 'Job Deleted');
     }
