@@ -283,7 +283,7 @@ class JobsController extends Controller
              //$jobitem->user_id = $job->user_id;
              //$jobitem->amount = $request->input('item_amount_'.$itemID);
              //$jobitem->qty = $request->input('item_qty_'.$itemID);
-             $job->items()->attach($job->job_id, ['items_id' =>  $request->input('itemSelect'.$itemID), 'user_id' => $job_user_id, 'amount' =>  $request->input('item_amount_'.$itemID), 'qty' =>  $request->input('item_qty_'.$itemID) ]);
+             $job->items()->attach($job->job_id, ['items_id' =>  $request->input('itemSelect'.$itemID), 'user_id' => $job->user_id, 'amount' =>  $request->input('item_amount_'.$itemID), 'qty' =>  $request->input('item_qty_'.$itemID) ]);
              $jobitem->save();
            }
         }
