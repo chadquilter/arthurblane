@@ -226,6 +226,7 @@ class JobsController extends Controller
           ->with('item_grand_total', $item_grand_total)
           ->with('mdg_services', $mdg_services)
           ->with('items', $items)
+          ->with('directories', $directories)
           ->with('files', $files);
     }
 
