@@ -91,7 +91,7 @@
                   @if(count($mdg_services) > 0)
                     @foreach($mdg_services as $mdg_id => $mdg_name)
                       @php
-                        $has_service = App\Job::find(1)->services()->where('service_id', $mdg_id)->first();
+                        $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
                         $job_service_checked = $has_service != null ? 'True' : 'False';
                       @endphp
                       <div class="col-md-3">
