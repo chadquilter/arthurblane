@@ -92,7 +92,7 @@
                     @foreach($mdg_services as $mdg_id => $mdg_name)
                       @php
                         $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
-                        $job_service_checked = cont($has_service) > 0 ? 'true' : '';
+                        $job_service_checked = count($has_service) > 0 ? 'true' : '';
                       @endphp
                       <div class="col-md-3">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
