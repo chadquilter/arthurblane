@@ -155,7 +155,7 @@
           <hr>
 
           @foreach($files as $file)
-             {{ Storage::url($file) }} - {{ $file->lastModified }} // I'm not sure about lastModified property, but you get the point
+             {{ $file }} // I'm not sure about lastModified property, but you get the point
           @endforeach
 
           <br>
