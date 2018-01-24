@@ -89,7 +89,6 @@
               <div class="alert alert-info" role="alert">
                 <div class="row">
                   @if(count($mdg_services) > 0)
-                    @php $job_service_checked = ''; @endphp
                     @foreach($mdg_services as $mdg_id => $mdg_name)
                       @php
                         $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
@@ -98,7 +97,7 @@
                       <div class="col-md-3">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
                           <div class="card-title">
-                            {{Form::label('serviceID[]', $mdg_name)}} {{Form::checkbox('serviceID[]', $mdg_id, $job_service_checked, ['class' => 'form-control' ])}}
+                            {{Form::label('serviceID[]', $mdg_name)}} {{Form::checkbox('serviceID[]', $mdg_id, $job_service_checked, ['class' => 'form-control', 'id' => 'serviceID'.$mdg_id ])}}
                           </div>
                         </div>
                       </div>
