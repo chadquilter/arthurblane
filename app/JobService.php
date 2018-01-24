@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Service;
+use Job;
 
 class JobService extends Model
 {
@@ -17,7 +18,11 @@ class JobService extends Model
   ];
 
   public function service(){
-      return $this->hasMany('App\Service', 'id', 'service_id');
+      return $this->hasOne('App\Service', 'id', 'service_id');
+  }
+
+  public function job(){
+      return $this->belongsToMany('App\Job');
   }
 
 }

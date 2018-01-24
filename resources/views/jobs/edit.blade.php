@@ -107,6 +107,12 @@
           </div>
           <br>
 
+          <div id="service_test">
+          @foreach ($job->services as $service) {
+              {{ $service->service_name }};
+          }
+          </div>
+
           @if (count($job_option_types) > 0)
             <h3>Job Options:</h3>
             <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_option_group">Expand/Collapse Options</button>

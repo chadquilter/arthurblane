@@ -5,8 +5,6 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Item;
 use Service;
-use JobItem;
-use JobService;
 
 class Job extends Model
 {
@@ -34,12 +32,12 @@ class Job extends Model
         return $this->belongsTo('App\User');
     }
 
-    public function jobitems(){
-        return $this->hasMany('App\JobItem', 'job_items_job_id', 'job_id');
+    public function items(){
+        return $this->hasMany('App\Item', 'job_items', 'job_items_job_id', 'job_id');
     }
 
-    public function jobservices(){
-        return $this->hasMany('App\JobItem', 'job_id', 'job_id');
+    public function services(){
+        return $this->belongsToMany('App\Service', 'job_service', 'job_id', 'service_id');
     }
 
 }
