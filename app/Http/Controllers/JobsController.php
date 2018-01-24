@@ -277,24 +277,20 @@ class JobsController extends Controller
         if ($request->get('itemID')) {
            $deleteItems = JobItem::where('job_items_job_id', $job->job_id)->delete();
            foreach($request->get('itemID') as $key => $itemID) {
-             $jobitem = new Jobitem;
-             $jobitem->job_items_job_id = $job->job_id;
-             $jobitem->items_id = $request->input('itemSelect'.$itemID);
-             $jobitem->user_id = $job->user_id;
-             $jobitem->amount = $request->input('item_amount_'.$itemID);
-             $jobitem->qty = $request->input('item_qty_'.$itemID);
+             //$jobitem = new Jobitem;
+             //$jobitem->job_items_job_id = $job->job_id;
+             //$jobitem->items_id = $request->input('itemSelect'.$itemID);
+             //$jobitem->user_id = $job->user_id;
+             //$jobitem->amount = $request->input('item_amount_'.$itemID);
+             //$jobitem->qty = $request->input('item_qty_'.$itemID);
+             $job->items()->attach($job->job_id, ['items_id' =>  $request->input('itemSelect'.$itemID), 'user_id' => $job_user_id, 'amount' =>  $request->input('item_amount_'.$itemID), 'qty' =>  $request->input('item_qty_'.$itemID) ]);
              $jobitem->save();
            }
         }
 
         if ($request->get('serviceID')) {
            $deleteServices = JobService::where('job_id', $job->job_id)->delete();
-           //$job->services()->deattach();
            foreach($request->get('serviceID') as $key => $serviceID) {
-             //$jobservice = new JobService;
-             //$jobservice->job_id = $job->job_id;
-             //$jobservice->service_id = $serviceID;
-             //$jobservice->save();
              $job->services()->attach($serviceID);
            }
         }
