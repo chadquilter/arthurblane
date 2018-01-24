@@ -89,6 +89,7 @@
               <div class="alert alert-info" role="alert">
                 <div class="row">
                   @if(count($mdg_services) > 0)
+                    @php $job_service_checked = ''; @endphp
                     @foreach($mdg_services as $mdg_id => $mdg_name)
                       @php
                         $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
