@@ -3,16 +3,21 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Service;
 
-class Service extends Model
+class JobService extends Model
 {
-  protected $table = 'services';
+  protected $table = 'job_services';
   public $primaryKey = 'id';
   public $timestamps = true;
 
   public $fillable = [
-      'service_name',
-      'service_type',
-      'service_url'
+      'job_id',
+      'service_id'
   ];
+
+  public function service(){
+      return $this->hasMany('App\Service', 'id', 'service_id');
+  }
+
 }

@@ -35,11 +35,11 @@ class Job extends Model
     }
 
     public function jobitems(){
-        return $this->hasMany('App\JobItem');
+        return $this->hasMany('App\JobItem', 'job_items_job_id', 'job_id');
     }
 
     public function jobservices(){
-        return $this->hasMany('App\JobService');
+        return $this->hasMany('App\JobItem', 'job_id', 'job_id');
     }
 
 }
