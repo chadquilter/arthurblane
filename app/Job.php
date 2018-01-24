@@ -37,7 +37,7 @@ class Job extends Model
     }
 
     public function services(){
-        return $this->belongsToMany('App\Service');
+        return $this->belongsToMany('App\Service', 'job_services');
     }
 
 }
