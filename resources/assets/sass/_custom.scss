@@ -2,7 +2,8 @@
 .carousel.carousel-fade .carousel-item {
     display: block;
     opacity: 0;
-    transition: opacity ease-out .75s;
+    zoom: 150%;
+    transition: zoom opacity ease-out 1.0s;
 }
 
 .carousel.carousel-fade .carousel-item.active {
