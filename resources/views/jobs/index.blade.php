@@ -11,7 +11,7 @@
           @endphp
           <br>
           @include('inc.pagelabel')
-          <div class="jumbotron" class="border border-secondary rounded">
+          <div class="jumbotron" class="border border-primary rounded">
             <div class="row">
               <div class="col">
                 <center>
