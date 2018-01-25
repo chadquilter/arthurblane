@@ -55,7 +55,7 @@
               </div>
               <div class="card">
                 <div class="card-body">
-                  <p class="lead"><strong class="display-5">{{!! $job->job_summary !!}}</strong></p>
+                  <p class="lead">{{ $job->job_summary }}</strong></p>
                 </div>
               </div>
               @php
