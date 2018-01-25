@@ -5,7 +5,7 @@
     <br>
     @include('inc.pagelabel')
     <br>
-
+wtf??
     <div id="carousel-fade" class="carousel carousel-fade" data-ride="carousel" data-interval="2000">
         <ol class="carousel-indicators">
             <li data-target="#carousel-fade" data-slide-to="0" class="active"></li>
