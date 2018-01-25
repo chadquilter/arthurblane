@@ -21,7 +21,7 @@
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card bg-dark text-white">
                 <div class="card-body">
                   <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                   {!! Form::open() !!}
