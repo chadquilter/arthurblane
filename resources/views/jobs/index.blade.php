@@ -21,9 +21,6 @@
             </div>
 
             <div class="card">
-              <div class="card-title">
-                <p class="lead">{!!$job->job_summary!!}</p>
-              </div>
               <div class="card-body">
                 <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                 {!! Form::open() !!}
@@ -56,7 +53,7 @@
                 </div>
                 {!! Form::close() !!}
               </div>
-              <p class="lead">{{ $job->job_summary }}</p>
+              <p class="lead"><strong class="display-4">{{ $job->job_summary }}</strong></p>
               @php
               $jdir = 'job'.$job->job_id.'/';
               $files = Storage::disk('images')->files($jdir);
