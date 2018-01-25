@@ -27,6 +27,7 @@
               <div class="alert alert-info" role="alert">
                 <div class="row">
                   @if(count($mdg_services) > 0)
+                    test
                     {!! Form::open() !!}
                     @foreach($mdg_services as $mdg_id => $mdg_name)
                       @php
