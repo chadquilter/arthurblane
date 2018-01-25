@@ -1,7 +1,6 @@
 // Carousel fade transition
 .carousel.carousel-fade .carousel-item {
     display: block;
-    position: absolute;
     opacity: 0;
     height:auto;
     transition: opacity ease-out .75s;
