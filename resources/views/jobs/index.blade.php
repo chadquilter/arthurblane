@@ -56,6 +56,7 @@
                 </div>
                 {!! Form::close() !!}
               </div>
+              <p class="lead">{!!$job->job_summary!!}</p>
               @php
               $jdir = 'job'.$job->job_id.'/';
               $files = Storage::disk('images')->files($jdir);
