@@ -21,11 +21,11 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-
               <div class="carousel-caption">
                 <img src="/images/mdg_images/IMG_00111.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
                 <h3>First slide label</h3>
               </div>
+            </div>
             <div class="carousel-item">
               <img src="/images/job2/show_frame_front.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
             </div>
