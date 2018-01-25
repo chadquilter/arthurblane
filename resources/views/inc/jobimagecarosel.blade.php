@@ -3,7 +3,7 @@
 <br>
 <div class="card image_display_r">
   <div class="card-img-top">
-    <div id="carouselExampleIndicators" class="carousel slide fadein" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
       <ol class="carousel-indicators">
         @foreach($files as $file)
           @php $active = $loop->index === 0 ? 'active' : ''; @endphp
