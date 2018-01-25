@@ -23,12 +23,10 @@
         <div class="card">
           <div class="card-title ">
 
-            <div id="job_service_group" class="form=group collapse">
+            <div id="job_service_group" class="form=group">
               <div class="alert alert-info" role="alert">
                 <div class="row">
-                  {{ count($mdg_services) }}
                   @if(count($mdg_services) > 0)
-                    test
                     {!! Form::open() !!}
                     @foreach($mdg_services as $mdg_id => $mdg_name)
                       @php
