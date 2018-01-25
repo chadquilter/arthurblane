@@ -10,6 +10,7 @@
     opacity: 1 !important;
     transform: scale(1.15);
     transition: transform ease-in 10.75s;
+    transition: opacity ease-in .75s;
 }
 
 @media (orientation: portrait) {
