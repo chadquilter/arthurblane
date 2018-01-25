@@ -23,19 +23,19 @@
         <div class="card">
 
           <div class="card-body">
-
+            {!! Form::open() !!}
             <div id="job_service_group" class="form=group">
               <div class="alert alert-info" role="alert">
                 <div class="row">
                   @if(count($mdg_services) > 0)
-                    {!! Form::open() !!}
+
                     @foreach($mdg_services as $mdg_id => $mdg_name)
                       @php
                         $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
                         $job_service_checked = count($has_service) > 0 ? 'true' : '';
                       @endphp
-                      @if ($job_service_checked != '') {
-                      <div class="col">
+                      @if ($job_service_checked != '')
+                      <div class="col-mx">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
                           <div class="card-title">
                             {{Form::label('serviceID[]', $mdg_name)}} {{Form::checkbox('serviceID[]', '', $job_service_checked, ['class' => 'form-control', 'disabled' => 'true' ])}}
@@ -44,14 +44,14 @@
                       </div>
                       @endif
                     @endforeach
-                    {!! Form::close() !!}
+
                   @else
                     <h1>No Types Listed!</h1>
                   @endif
                 </div>
               </div>
             </div>
-
+            {!! Form::close() !!}
           </div>
 
             {!!$job->job_summary!!}
