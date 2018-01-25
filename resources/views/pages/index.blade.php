@@ -5,7 +5,7 @@
     <br>
     @include('inc.pagelabel')
     <br>
-    <div class="card image_display_r">
+    <div class="card">
       <div class="card-img-top">
 
 
