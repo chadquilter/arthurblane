@@ -11,7 +11,7 @@
           @endphp
           <br>
           @include('inc.pagelabel')
-          <div class="card bg-dark text-white border border-primary rounded">
+          <div class="card bg-dark border border-dark rounded">
             <div class="card-body">
               <div class="row">
                 <div class="col">
