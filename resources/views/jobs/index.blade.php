@@ -33,7 +33,7 @@
                       @php
                         $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
                         $job_service_checked = count($has_service) > 0 ? 'true' : '';
-                        $loop->next if ($job_service_checked != '');
+                        next if ($job_service_checked != '');
                       @endphp
                       <div class="col">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
