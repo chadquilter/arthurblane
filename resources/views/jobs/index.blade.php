@@ -26,6 +26,7 @@
             <div id="job_service_group" class="form=group collapse">
               <div class="alert alert-info" role="alert">
                 <div class="row">
+                  {{ count($mdg_services) }}
                   @if(count($mdg_services) > 0)
                     test
                     {!! Form::open() !!}
