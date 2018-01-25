@@ -6,55 +6,65 @@
     @include('inc.pagelabel')
     <br>
 
-    <div id="carousel-fade" class="carousel carousel-fade" data-ride="carousel" data-interval="2000">
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-fade" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-fade" data-slide-to="1"></li>
-            <li data-target="#carousel-fade" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel-inner embed-responsive embed-responsive-16by9" role="listbox">
-          <div class="carousel-item embed-responsive-item active">
-            <img src="http://via.placeholder.com/1600x900/483D8B/ffffff?text=Slide%201" alt="First slide image" class="img-fluid">
-            <div class="carousel-caption">
-              <h3>First slide Heading</h3>
-              <p>First slide Caption</p>
+    <div class="card image_display_r">
+      <div class="card-img-top">
+        <div id="carouselExampleIndicators" class="carousel carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+          </ol>
+          <div class="carousel-inner embed-responsive embed-responsive-16by9" role="listbox">
+            <div class="carousel-item embed-responsive-item active">
+              <img class="img-fluid"class="img-fluid" src="/images/mdg_images/IMG_00111.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+            </div>
+            <div class="carousel-item embed-responsive-item">
+              <img class="d-block w-100" src="/images/job2/show_frame_front.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+            </div>
+            <div class="carousel-item embed-responsive-item">
+              <img class="d-block w-100" src="/images/dusk-home.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+            </div>
+            <div class="carousel-item embed-responsive-item">
+              <img class="d-block w-100" src="/images/job2/show_frame_side.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+            </div>
+            <div class="carousel-item embed-responsive-item">
+              <img class="d-block w-100" src="/images/LSIDE.JPG" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
+            </div>
+            <div class="carousel-item embed-responsive-item">
+              <img class="d-block w-100" src="/images/ARCH4.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+            </div>
+            <div class="carousel-item embed-responsive-item">
+              <img class="d-block w-100" src="/images/kitchenbath/shower_tile4.jpg" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
+            </div>
+            <div class="carousel-item embed-responsive-item">
+              <img class="d-block w-100" src="/images/job4/front.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
+            </div>
+            <div class="carousel-item embed-responsive-item">
+              <img class="d-block w-100" src="/images/job4/back_porch.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
             </div>
           </div>
-
-          <div class="carousel-item embed-responsive-item">
-            <img src="http://via.placeholder.com/1600x900/9400D3/ffffff?text=Slide%202" alt="Second slide image" class="img-fluid">
-            <div class="carousel-caption">
-              <h3>Second slide Heading</h3>
-              <p>Second slide Caption</p>
-            </div>
-          </div>
-
-          <div class="carousel-item embed-responsive-item">
-            <img src="http://via.placeholder.com/1600x900/FF1493/ffffff?text=Slide%203" alt="Third slide image" class="img-fluid">
-            <div class="carousel-caption">
-              <h3>Third slide Heading</h3>
-              <p>Third slide Caption</p>
-            </div>
-          </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#carousel-fade" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-fade" role="button" data-slide="next">
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-        </a>
+          </a>
+        </div>
+        <div class="card-body">
+          <div class="card-title">
+            <p>Our work is a cut above the rest!</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <br>
-
-
-
-
-
     <br>
     <div class="row">
       <div class="col">
