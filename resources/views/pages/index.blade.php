@@ -5,63 +5,10 @@
     <br>
     @include('inc.pagelabel')
     <br>
+
     <div class="card image_display_r">
       <div class="card-img-top">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="/images/mdg_images/IMG_00111.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/job2/show_frame_front.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/dusk-home.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/job2/show_frame_side.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/LSIDE.JPG" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/ARCH4.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/kitchenbath/shower_tile4.jpg" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/job4/front.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/job4/back_porch.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div class="card-body">
-          <div class="card-title">
-            <p>Our work is a cut above the rest!</p>
-          </div>
-        </div>
+        @include('inc.jobimagecarosel')
       </div>
     </div>
     <br>

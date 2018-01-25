@@ -1,20 +1,20 @@
 
-@if (count($files) > 0) {
+@if (count($files) > 0)
 <br>
 <div class="card image_display_r">
   <div class="card-img-top">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel carousel-fade" data-ride="carousel">
       <ol class="carousel-indicators">
         @foreach($files as $file)
           @php $active = $loop->index === 0 ? 'active' : ''; @endphp
           <li data-target="#carouselExampleIndicators" data-slide-to="{{$loop->index}}" class={{$active}}></li>
         @endforeach
       </ol>
-      <div class="carousel-inner">
+      <div class="carousel-inner embed-responsive embed-responsive-1by1" role="listbox">
         @foreach($files as $file)
           @php $active = $loop->index === 0 ? 'active' : ''; @endphp
-        <div class="carousel-item {{$active}}">
-          <img class="d-block w-100" src="/images/{{$file}}" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+        <div class="carousel-item embed-responsive-item {{$active}}">
+          <img class="img-fluid" src="/images/{{$file}}" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
         </div>
         @endforeach
       </div>
@@ -27,16 +27,15 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <div class="card-body">
-      <div class="card-title">
-        <p>Our work is a cut above the rest!</p>
-      </div>
-    </div>
   </div>
 </div>
 <br>
 @else
   <br>
+<<<<<<< HEAD
     <div class="alert alert-warning" for="alert">No Images available inside job directory (i.e .. /images/job{{$job->job_id}} ..add images.)</div>
+=======
+    <div class="alert alert-warning" for="alert">No Images available inside directory (i.e .. /images/xx123 .. )</div>
+>>>>>>> 51c84ea648f81c3b9fa896d56529d7100513d5ec
   <br>
 @endif
