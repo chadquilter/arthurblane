@@ -21,7 +21,8 @@
           </div>
 
         <div class="card">
-          <div class="card-title ">
+
+          <div class="card-body">
 
             <div id="job_service_group" class="form=group">
               <div class="alert alert-info" role="alert">
@@ -50,7 +51,7 @@
             </div>
 
           </div>
-          <div class="card-block">
+
             {!!$job->job_summary!!}
             @php
               $jdir = 'job'.$job->job_id.'/';
