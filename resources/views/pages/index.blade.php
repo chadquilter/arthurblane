@@ -7,7 +7,32 @@
     <br>
     <div class="card image_display_r">
       <div class="card-img-top">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+        <div id="carousel" class="carousel carousel-fade" data-ride="carousel">
+    			<div class="carousel-inner" role="listbox">
+    				<div class="carousel-item active">
+    					<img class="d-block w-100" src="https://i.imgur.com/FmtTabr.jpg" alt="First slide">
+    				</div> <!-- close carousel-item 1 -->
+    				<div class="carousel-item" style="position: absolute; top:0px; width: 100% ; height: 100%">
+    					<img class="d-block w-100" src="https://i.imgur.com/UioJ4ix.jpg" alt="Second slide">
+    				</div> <!-- close carousel-item 2 -->
+    				<div class="carousel-item" style="position: absolute; top:0px; width: 100% ; height: 100%">
+    					<img class="d-block w-100" src="https://i.imgur.com/UkPZYcB.jpg" alt="Third slide">
+    				</div> <!-- close carousel-item 3 -->
+    			</div> <!-- close carousel-inner -->
+
+    			<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Previous</span>
+    			</a>
+    			<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+    			</a>
+    		</div> <!-- close carousel -->
+
+
+        <div id="carouselExampleIndicators" class="carousel carousel-fade" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
