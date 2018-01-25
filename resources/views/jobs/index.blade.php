@@ -35,7 +35,7 @@
                           $job_service_checked = count($has_service) > 0 ? 'true' : '';
                           @endphp
                           @if ($job_service_checked != '')
-                            <div class="col-5 mx-auto">
+                            <div class="col-4 mx-auto">
                               <div class="card image_display_r border border-secondary rounded shadow_only">
                                 <div class="card-title">
                                   {{Form::label('serviceID[]', $mdg_name)}} {{Form::checkbox('serviceID[]', '', $job_service_checked, ['class' => 'form-control', 'disabled' => 'true' ])}}
