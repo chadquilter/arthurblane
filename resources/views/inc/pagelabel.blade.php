@@ -1,5 +1,6 @@
-<div class="row">
-  <div class="col">
+<div class="card mx-auto border border-secondary">
+  <div class="card-body">
+
         <div class="row">
           <div class="col-sm-4 alert alert-primary">
             <h4 class="display-4"><span class="badge badge-secondary">BAM!</span></h4>
@@ -8,5 +9,6 @@
             <h4 class="display-4"> {{ $title }} </h4>
           </div>
         </div>
+
       </div>
-    </div>
+  </div>
