@@ -20,7 +20,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
           </ol>
-          <div class="carousel-inner embed-responsive embed-responsive-4by3" role="listbox">
+          <div class="carousel-inner embed-responsive" role="listbox">
             <div class="carousel-item embed-responsive-item active">
               <img src="/images/mdg_images/IMG_00111.jpg" class="img-fluid" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
             </div>
