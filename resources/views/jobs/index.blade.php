@@ -68,11 +68,12 @@
                 </div>
               </div>
             </div>
+                        {{$jobs->links()}}
             <br>
           </div>
           <center>
             <br>
-            {{$jobs->links()}}
+
           </center>
         </div>
       @endforeach
