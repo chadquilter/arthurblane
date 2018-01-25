@@ -13,8 +13,10 @@ class PagesController extends Controller
       $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
 	//al method to pass values to page
        //return view('pages.index', compact('title'));
+       $files = Storage::disk('images')->files('showcase');
        return view('pages.index')
         ->with('title', $title)
+        ->with('files', $files)
         ->with('mdg_services', $mdg_services);
     }
 
