@@ -7,59 +7,47 @@
     <br>
     <div class="card image_display_r">
       <div class="card-img-top">
-        <div id="carouselExampleIndicators" class="carousel carousel-fade" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <div class="carousel-caption">
-                <img src="/images/mdg_images/IMG_00111.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-                <h3>First slide label</h3>
+
+
+
+
+        <div data-ride="carousel" class="carousel carousel-fade" id="carousel-example-captions">
+            <ol class="carousel-indicators">
+              <li class="active" data-slide-to="0" data-target="#carousel-example-captions"></li>
+              <li data-slide-to="1" data-target="#carousel-example-captions" class=""></li>
+              <li data-slide-to="2" data-target="#carousel-example-captions" class=""></li>
+            </ol>
+            <div role="listbox" class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption">
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="/images/job2/show_frame_front.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/dusk-home.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/job2/show_frame_side.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/LSIDE.JPG" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/ARCH4.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/kitchenbath/shower_tile4.jpg" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/job4/front.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/job4/back_porch.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
-            </div>
+            <a data-slide="prev" role="button" href="#carousel-example-captions" class="left carousel-control">
+              <span aria-hidden="true" class="icon-prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a data-slide="next" role="button" href="#carousel-example-captions" class="right carousel-control">
+              <span aria-hidden="true" class="icon-next"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+
+
         <div class="card-body">
           <div class="card-title">
             <p>Our work is a cut above the rest!</p>
