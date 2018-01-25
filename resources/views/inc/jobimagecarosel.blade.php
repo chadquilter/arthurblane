@@ -1,3 +1,5 @@
+
+@if (count($files) > 0) {
 <br>
 <div class="card image_display_r">
   <div class="card-img-top">
@@ -33,3 +35,8 @@
   </div>
 </div>
 <br>
+@else
+  <br>
+    <div>No Images available inside job directory (i.e .. /images/job{{$job->job_id}} .. )</div>
+  <br>
+@endif
