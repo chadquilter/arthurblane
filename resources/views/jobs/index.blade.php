@@ -22,10 +22,10 @@
 
             <div class="card">
               <div class="card-title">
-                {!!$job->job_summary!!}
+                <p class="lead">{!!$job->job_summary!!}</p>
               </div>
               <div class="card-body">
-                <strong class="lead">Services Provided:</strong>
+                <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                 {!! Form::open() !!}
                 <div id="job_service_group" class="form=group">
                   <div class="alert alert-info" role="alert">
