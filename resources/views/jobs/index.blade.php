@@ -24,6 +24,10 @@
           </div>
           <div class="card-block">
             {!!$job->job_summary!!}
+            @php
+              $jdir = 'job'.$job->job_id.'/';
+              $files = Storage::disk('images')->files($jdir);
+            @endphp
             @include('inc.jobimagecarosel')
           </div>
           <br>
