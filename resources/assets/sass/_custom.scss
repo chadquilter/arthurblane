@@ -1,19 +1,15 @@
 // Carousel fade transition
 .carousel.carousel-fade .carousel-item {
     display: block;
-    position: absolute;
+    position: fixed;
     opacity: 0;
-    width:100%;
-    height:auto;
+    height:100%;
     transition: opacity ease-out .75s;
 
 }
 
 .carousel.carousel-fade .carousel-item.active {
     opacity: 1 !important;
-    width:100%;
-    position: absolute;
-    height:auto;
     transform: scale(1.15);
     transition: transform ease-in 5s, opacity ease-out .75s;
 }
