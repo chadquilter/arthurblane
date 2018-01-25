@@ -33,8 +33,8 @@
                       @php
                         $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
                         $job_service_checked = count($has_service) > 0 ? 'true' : '';
-                        if ($job_service_checked != '') { next;}
                       @endphp
+                      @if ($job_service_checked != '') {
                       <div class="col">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
                           <div class="card-title">
@@ -42,6 +42,7 @@
                           </div>
                         </div>
                       </div>
+                      @endif
                     @endforeach
                     {!! Form::close() !!}
                   @else
