@@ -38,7 +38,7 @@
           <hr>
 
           <div class="form=group">
-            <h3>Job Type:</h3>
+            <h3>Job Services Provided:</h3>
             <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#job_service_group">Expand/Collapse Options</button>
             <br>
             <div id="job_service_group" class="form=group collapse">
