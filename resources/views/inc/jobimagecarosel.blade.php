@@ -32,10 +32,6 @@
 <br>
 @else
   <br>
-<<<<<<< HEAD
-    <div class="alert alert-warning" for="alert">No Images available inside job directory (i.e .. /images/job{{$job->job_id}} ..add images.)</div>
-=======
     <div class="alert alert-warning" for="alert">No Images available inside directory (i.e .. /images/xx123 .. )</div>
->>>>>>> 51c84ea648f81c3b9fa896d56529d7100513d5ec
   <br>
 @endif
