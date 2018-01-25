@@ -10,7 +10,8 @@
       </ol>
       <div class="carousel-inner">
         @foreach($files as $file)
-        <div class="carousel-item active">
+          @php $active = $loop->index === 0 ? 'active' : ''; @endphp
+        <div class="carousel-item {{$active}}">
           <img class="d-block w-100" src="/images/{{$file}}" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
         </div>
         @endforeach
