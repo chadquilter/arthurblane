@@ -1,12 +1,17 @@
 // Carousel fade transition
 .carousel.carousel-fade .carousel-item {
+    display: block;
     opacity: 0;
+    width:100%;
+    height:auto;
     transition: opacity ease-out .75s;
 
 }
 
 .carousel.carousel-fade .carousel-item.active {
     opacity: 1 !important;
+    width:100%;
+    height:auto;
     transform: scale(1.15);
     transition: transform ease-in 5s, opacity ease-out .75s;
 }
@@ -17,7 +22,7 @@
     .carousel-item-prev {
         display: block;
         width:100%;
-        height:100%;
+        height:auto;
     }
 }
 
@@ -27,6 +32,6 @@
     .carousel-item-prev {
         display: block;
         width:100%;
-        height:100%;
+        height:96vh;
     }
 }
