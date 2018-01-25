@@ -20,33 +20,33 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
           </ol>
-          <div class="carousel-inner embed-responsive" role="listbox">
+          <div class="carousel-inner embed-responsive embed-responsive-16by9" role="listbox">
             <div class="carousel-item embed-responsive-item active">
-              <img src="/images/mdg_images/IMG_00111.jpg" class="img-fluid" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+              <img class="d-block w-100" src="/images/mdg_images/IMG_00111.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
             </div>
             <div class="carousel-item embed-responsive-item">
-              <img src="/images/job2/show_frame_front.jpg" class="img-fluid" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+              <img class="d-block w-100" src="/images/job2/show_frame_front.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
             </div>
             <div class="carousel-item embed-responsive-item">
-              <img class="img-fluid" src="/images/dusk-home.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+              <img class="d-block w-100" src="/images/dusk-home.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
             </div>
             <div class="carousel-item embed-responsive-item">
-              <img class="img-fluid" src="/images/job2/show_frame_side.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+              <img class="d-block w-100" src="/images/job2/show_frame_side.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
             </div>
             <div class="carousel-item embed-responsive-item">
-              <img class="img-fluid" src="/images/LSIDE.JPG" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
+              <img class="d-block w-100" src="/images/LSIDE.JPG" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
             </div>
             <div class="carousel-item embed-responsive-item">
-              <img class="img-fluid" src="/images/ARCH4.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+              <img class="d-block w-100" src="/images/ARCH4.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
             </div>
             <div class="carousel-item embed-responsive-item">
-              <img class="img-fluid" src="/images/kitchenbath/shower_tile4.jpg" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
+              <img class="d-block w-100" src="/images/kitchenbath/shower_tile4.jpg" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
             </div>
             <div class="carousel-item embed-responsive-item">
-              <img class="img-fluid" src="/images/job4/front.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
+              <img class="d-block w-100" src="/images/job4/front.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
             </div>
             <div class="carousel-item embed-responsive-item">
-              <img class="img-fluid" src="/images/job4/back_porch.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
+              <img class="d-block w-100" src="/images/job4/back_porch.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
