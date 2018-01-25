@@ -154,6 +154,7 @@
           <br>
           <hr>
 
+          @include('inc.jobimagecarosel')
           @foreach($files as $file)
              {{ $file }}
           @endforeach
