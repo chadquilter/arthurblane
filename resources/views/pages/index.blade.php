@@ -7,7 +7,6 @@
     <br>
     <div class="card image_display_r">
       <div class="card-img-top">
-
         <div id="carouselExampleIndicators" class="carousel carousel-fade" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -20,7 +19,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
           </ol>
-          <div class="carousel-inner" role="listbox">
+          <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-block w-100" src="/images/mdg_images/IMG_00111.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
             </div>
