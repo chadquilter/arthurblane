@@ -9,6 +9,8 @@
       @php
         $title = $job->job_title
       @endphp
+      <br>
+      @include('inc.pagelabel')
       <div class="jumbotron">
           <div class="row">
             <div class="col">
@@ -20,7 +22,31 @@
 
         <div class="card">
           <div class="card-title ">
-            @include('inc.pagelabel')
+
+            <div id="job_service_group" class="form=group collapse">
+              <div class="alert alert-info" role="alert">
+                <div class="row">
+                  @if(count($mdg_services) > 0)
+                    @foreach($mdg_services as $mdg_id => $mdg_name)
+                      @php
+                        $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
+                        $job_service_checked = count($has_service) > 0 ? 'true' : '';
+                      @endphp
+                      <div class="col-md-3">
+                        <div class="card image_display_r border border-secondary rounded shadow_only">
+                          <div class="card-title">
+                            {{Form::label('serviceID[]', $mdg_name)}} {{Form::checkbox('serviceID[]', $mdg_id, $job_service_checked, ['class' => 'form-control', 'id' => 'serviceID'.$mdg_idm, 'disabled' => 'true' ])}}
+                          </div>
+                        </div>
+                      </div>
+                    @endforeach
+                  @else
+                    <h1>No Types Listed!</h1>
+                  @endif
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="card-block">
             {!!$job->job_summary!!}
