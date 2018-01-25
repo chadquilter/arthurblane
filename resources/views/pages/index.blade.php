@@ -46,7 +46,7 @@
               <img class="img-fluid" src="/images/job4/front.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
             </div>
             <div class="carousel-item embed-responsive-item">
-              <img class="img-fluid" src="/images/job4/back_porch.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
+              <img class="imf-fluid" src="/images/job4/back_porch.png" alt="House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
