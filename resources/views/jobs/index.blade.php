@@ -28,7 +28,11 @@
               $jdir = 'job'.$job->job_id.'/';
               $files = Storage::disk('images')->files($jdir);
             @endphp
-            @include('inc.jobimagecarosel')
+            <div class="card image_display_r">
+              <div class="card-img-top">
+                @include('inc.jobimagecarosel')
+              </div>
+            </div>
           </div>
           <br>
         </div>
