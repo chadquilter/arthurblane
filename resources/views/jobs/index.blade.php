@@ -24,6 +24,7 @@
           </div>
           <div class="card-block">
             {!!$job->job_summary!!}
+            @include('inc.jobimagecarosel')
           </div>
           <br>
         </div>
