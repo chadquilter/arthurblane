@@ -16,10 +16,10 @@
     <link href="/css/image_styles.css" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
-<body>
+<body style="background-attachment:absolute;background-color:#fff;background-position:center top;background-repeat:repeat-x;background-image: url(/images/art-bg.jpg); width=100%; z-index: 1;">
   <main role="main">
     @include('inc.navbar')
-    <div class="body-container" style="background-attachment:absolute;background-color:#fff;background-position:center top;background-repeat:repeat-x;background-image: url(/images/art-bg.jpg); width=100%; z-index: 1;">
+    <div class="body-container" >
       <br>
       @include('inc.messages')
       <br>
