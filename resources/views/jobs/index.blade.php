@@ -27,6 +27,7 @@
               <div class="alert alert-info" role="alert">
                 <div class="row">
                   @if(count($mdg_services) > 0)
+                    {!! Form::open() !!}
                     @foreach($mdg_services as $mdg_id => $mdg_name)
                       @php
                         $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
@@ -40,6 +41,7 @@
                         </div>
                       </div>
                     @endforeach
+                    {!! Form::close() !!}
                   @else
                     <h1>No Types Listed!</h1>
                   @endif
