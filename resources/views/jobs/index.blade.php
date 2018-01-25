@@ -68,13 +68,9 @@
                 </div>
               </div>
             </div>
-                        {{$jobs->links()}}
             <br>
+            {{$jobs->links()}}
           </div>
-          <center>
-            <br>
-
-          </center>
         </div>
       @endforeach
     @else
