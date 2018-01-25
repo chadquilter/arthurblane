@@ -8,7 +8,8 @@
 
 .carousel.carousel-fade .carousel-item.active {
     opacity: 1 !important;
-    transition: opacity ease-in .75s;
+    transform: scale(1.2);
+    transition: transform ease-in .75s;
 }
 
 @media (orientation: portrait) {
