@@ -10,11 +10,11 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="{{$loop->index}}" class={{$active}}></li>
         @endforeach
       </ol>
-      <div class="carousel-inner">
+      <div class="carousel-inner embed-responsive embed-responsive-1by1" role="listbox">
         @foreach($files as $file)
           @php $active = $loop->index === 0 ? 'active' : ''; @endphp
-        <div class="carousel-item {{$active}}">
-          <img class="d-block w-100" src="/images/{{$file}}" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
+        <div class="carousel-item embed-responsive-item {{$active}}">
+          <img class="d-block img-fluid" src="/images/{{$file}}" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
         </div>
         @endforeach
       </div>
