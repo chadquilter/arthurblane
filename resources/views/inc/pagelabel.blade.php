@@ -1,4 +1,4 @@
-<div class="card mx-auto border border-secondary">
+<div class="card border border-secondary">
   <div class="card-body">
 
         <div class="row">
@@ -12,3 +12,4 @@
 
       </div>
   </div>
+  <br>
