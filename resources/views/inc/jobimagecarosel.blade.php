@@ -1,5 +1,5 @@
 
-@if (count($files) > 0) {
+@if (count($files) > 0)
 <br>
 <div class="card image_display_r">
   <div class="card-img-top">
