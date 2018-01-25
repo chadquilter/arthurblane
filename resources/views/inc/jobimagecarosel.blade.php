@@ -37,6 +37,6 @@
 <br>
 @else
   <br>
-    <div>No Images available inside job directory (i.e .. /images/job{{$job->job_id}} .. )</div>
+    <div class="alert alert-warning" for="alert">No Images available inside job directory (i.e .. /images/job{{$job->job_id}} .. )</div>
   <br>
 @endif
