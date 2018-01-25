@@ -53,7 +53,7 @@
                 </div>
                 {!! Form::close() !!}
               </div>
-              <p class="lead"><strong class="display-4">{{ $job->job_summary }}</strong></p>
+              <p class="lead"><strong class="display-5">{{ $job->job_summary }}</strong></p>
               @php
               $jdir = 'job'.$job->job_id.'/';
               $files = Storage::disk('images')->files($jdir);
