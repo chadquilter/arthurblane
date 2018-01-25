@@ -33,8 +33,9 @@
                       @php
                         $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
                         $job_service_checked = count($has_service) > 0 ? 'true' : '';
+                        next if ($job_service_checked != '');
                       @endphp
-                      <div class="col-md-3">
+                      <div class="col">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
                           <div class="card-title">
                             {{Form::label('serviceID[]', $mdg_name)}} {{Form::checkbox('serviceID[]', '', $job_service_checked, ['class' => 'form-control', 'disabled' => 'true' ])}}
