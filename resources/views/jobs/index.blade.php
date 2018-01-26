@@ -15,7 +15,8 @@
           @include('inc.pagelabel')
           <div class="card bg-secondary border border-dark rounded">
             <div class="card-body">
-              <div class="row ">
+
+              <div class="row">
                 <div class="col image_display_r">
                   <center>
                     {{$jobs->links()}}
@@ -56,22 +57,26 @@
                   </div>
                   {!! Form::close() !!}
                 </div>
-                <div class="card image_display_r">
-                  <div class="card-body">
-                    <p class="lead">{!! $job->job_summary !!}</p>
-                  </div>
-                </div>
-                <br>
-                <div class="card image_display_r">
-                  <div class="card-img-top">
-                    @include('inc.jobimagecarosel')
-                  </div>
+              </div>
+              <br>
+              <div class="card image_display_r">
+                <div class="card-body">
+                  <p class="lead">{!! $job->job_summary !!}</p>
                 </div>
               </div>
               <br>
-              {{$jobs->links()}}
+              <div class="card image_display_r">
+                <div class="card-img-top">
+                  @include('inc.jobimagecarosel')
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  {{$jobs->links()}}
+                </div>
+              </div>
             </div>
-          </div>
         </div>
       @endforeach
     @else
