@@ -56,6 +56,7 @@
       </li>
     @endguest
   </ul>
-  <div class="text-white">Phone: (830)220-2876 •---• (830)265-0941</div>
 </div>
+<br>
+<div class="text-white">Phone: (830)220-2876 •---• (830)265-0941</div>
 </nav>
