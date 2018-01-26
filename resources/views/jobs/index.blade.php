@@ -40,7 +40,7 @@
                                 <div class="card image_display_r border border-secondary rounded shadow_only">
                                   <div class="card-body">
                                     <p class="lead">
-                                      <strong class="display 4">
+                                      <strong class="display-5">
                                         {{ $mdg_name }}
                                       </strong>
                                     </p>
