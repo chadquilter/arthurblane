@@ -15,8 +15,8 @@
           @include('inc.pagelabel')
           <div class="card bg-secondary border border-dark rounded">
             <div class="card-body">
-              <div class="row image_display_r">
-                <div class="col">
+              <div class="row ">
+                <div class="col image_display_r">
                   <center>
                     {{$jobs->links()}}
                   </center>
