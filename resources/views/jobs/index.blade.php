@@ -13,7 +13,7 @@
           @endphp
           <br>
           @include('inc.pagelabel')
-          <div class="card bg-light border border-dark rounded">
+          <div class="card bg-secondary border border-dark rounded">
             <div class="card-body">
               <div class="row image_display_r">
                 <div class="col">
