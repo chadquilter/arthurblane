@@ -31,22 +31,20 @@
                     <div class="alert alert-info" role="info">
                       <div class="card image_display_r border border-secondary rounded shadow_only">
                         <div class="card-body">
-                          <ol>
+                          <div class="list-group">
                             @if(count($mdg_services) > 0)
-                              @foreach($mdg_services as $mdg_id => $mdg_name)
+                              @foreach($mdg_services as $mdg_record)
                                 @php
-                                  $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
+                                  $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_record->id)->first();
                                 @endphp
                                 @if ($has_service != '')
-                                  <li class="lead">
-                                    {{ $mdg_name }}
-                                  </li>
+                                  <a href="/{{$mdg_record->service_url}}" class="list-group-item list-group-item-action">{{ $mdg_name }}</a>
                                 @endif
                               @endforeach
                             @else
                               <h1>No Types Listed!</h1>
                             @endif
-                          </ol>
+                          </div>
                         </div>
                       </div>
                     </div>
