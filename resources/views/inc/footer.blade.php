@@ -1,5 +1,5 @@
-<footer class="footer">
-  <div class="foot-container navbar-dark bg-dark">
+<footer class="footer navbar-dark bg-dark text-white">
+  <div class="foot-container">
     <div class="footer-top-1">
       &nbsp;
     </div>
