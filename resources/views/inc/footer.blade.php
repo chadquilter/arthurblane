@@ -3,10 +3,10 @@
     <div class="footer-top-1">
       &nbsp;
     </div>
-    <div class="footer-text" styel="width:70%;">
+    <div class="footer-text" styel="width:50%;">
       <center>
         <p class="lead">
-          2018,  {{ config('app.name', 'MDG') }}<br>
+          2018,  {{ config('app.name', 'MDG') }}<hr>
           P.O. Box 1583 Marble Falls, Tx 78654<br>
           Tele: (830)220-2876 (830)265-0941<br>
           ‡ Serving ‡<br>
