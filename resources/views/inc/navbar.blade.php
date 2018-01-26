@@ -11,7 +11,7 @@
         <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
-        <a class="nav-link" href="/quotes">Contact/Request Quote</a>
+        <a class="nav-link" href="/quotes">Contact</a>
       </li>
 
       <li class="nav-item dropdown">
@@ -56,6 +56,6 @@
       </li>
     @endguest
   </ul>
-  <div class="text-white">Contact US! (830)220-2876 •---• (830)265-0941</div>
+  <div class="text-white">Phone: (830)220-2876 •---• (830)265-0941</div>
 </div>
 </nav>
