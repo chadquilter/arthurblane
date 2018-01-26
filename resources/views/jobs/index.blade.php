@@ -7,13 +7,15 @@
       @if(count($jobs) > 0)
         @foreach($jobs as $job)
           @php
-          $title = $job->job_title
+            $title = $job->job_title;
+            $jdir = 'job'.$job->job_id.'/';
+            $files = Storage::disk('images')->files($jdir);
           @endphp
           <br>
           @include('inc.pagelabel')
           <div class="card bg-warning border border-dark rounded">
             <div class="card-body">
-              <div class="row">
+              <div class="row image_display_r">
                 <div class="col">
                   <center>
                     {{$jobs->links()}}
@@ -21,7 +23,7 @@
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card image_display_r">
                 <div class="card-body">
                   <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                   {!! Form::open() !!}
@@ -54,15 +56,12 @@
                   </div>
                   {!! Form::close() !!}
                 </div>
-                <div class="card">
+                <div class="card image_display_r">
                   <div class="card-body">
                     <p class="lead">{!! $job->job_summary !!}</p>
                   </div>
                 </div>
-                @php
-                $jdir = 'job'.$job->job_id.'/';
-                $files = Storage::disk('images')->files($jdir);
-                @endphp
+                <br>
                 <div class="card image_display_r">
                   <div class="card-img-top">
                     @include('inc.jobimagecarosel')
