@@ -38,7 +38,7 @@
                             @if ($has_service != '')
                               <div class="col-4 mx-auto">
                                 <div class="card image_display_r border border-secondary rounded shadow_only">
-                                  <div class="card-title">
+                                  <div class="card-body">
                                     <p class="lead">
                                       <strong class="display 4">
                                         {{ $mdg_name }}
