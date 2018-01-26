@@ -40,8 +40,7 @@ class JobsController extends Controller
 
         //
         $jobs = Job::where('job_display', '=', '1')->orderBy('updated_at', 'asc')->paginate(1);
-        //$jobs = Job::orderBy('created_at', 'asc')->get();
-        $mdg_services = Service::orderBy('service_name', 'asc')->pluck('service_name', 'id');
+        $mdg_services = Service::orderBy('service_name', 'asc')->where('service_type', '')->paginate(1000, ['*'], 'mdg_services');
 
         return view('jobs.index')
           ->with('jobs', $jobs)
