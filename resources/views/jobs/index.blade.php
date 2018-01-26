@@ -38,7 +38,7 @@
                                   $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_record->id)->first();
                                 @endphp
                                 @if ($has_service != '')
-                                  <a href="/{{$mdg_record->service_url}}" class="list-group-item list-group-item-action">{{ $mdg_name }}</a>
+                                  <a href="/{{$mdg_record->service_url}}" class="list-group-item list-group-item-action">{{ $mdg_record->service_name }}</a>
                                 @endif
                               @endforeach
                             @else
