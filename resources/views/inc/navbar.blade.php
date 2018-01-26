@@ -1,7 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <div>
     <a class="navbar-brand" href="/"><img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png"></a>
-    <div class="nav-item">Tele: (830)220-2876 •---• (830)265-0941</div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -58,4 +57,5 @@
     @endguest
   </ul>
 </div>
+<div class="nav-item"><hr>Tele: (830)220-2876 •---• (830)265-0941</div>
 </nav>
