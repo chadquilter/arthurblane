@@ -39,7 +39,11 @@
                               <div class="col-4 mx-auto">
                                 <div class="card image_display_r border border-secondary rounded shadow_only">
                                   <div class="card-title">
-                                    <p class="lead"><strong class="display 4">{{$mdg_name)}}</strong></p>
+                                    <p class="lead">
+                                      <strong class="display 4">
+                                        {{ $mdg_name }}
+                                      </strong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
