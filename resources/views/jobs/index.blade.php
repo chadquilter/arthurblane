@@ -29,31 +29,28 @@
                   {!! Form::open() !!}
                   <div id="job_service_group" class="form=group">
                     <div class="alert alert-info" role="info">
-                      <div class="row">
-                        @if(count($mdg_services) > 0)
-                          @foreach($mdg_services as $mdg_id => $mdg_name)
-                            @php
-                            $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
-                            @endphp
-                            @if ($has_service != '')
-                              <div class="col">
-                                <div class="card image_display_r border border-secondary rounded shadow_only">
-                                  <div class="card-body">
-                                    <p class="lead">
-                                      {{ $mdg_name }}
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
+                      <div class="card image_display_r border border-secondary rounded shadow_only">
+                        <div class="card-body">
+                          <ol>
+                            @if(count($mdg_services) > 0)
+                              @foreach($mdg_services as $mdg_id => $mdg_name)
+                                @php
+                                  $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
+                                @endphp
+                                @if ($has_service != '')
+                                  <li class="lead">
+                                    {{ $mdg_name }}
+                                  </li>
+                                @endif
+                              @endforeach
+                            @else
+                              <h1>No Types Listed!</h1>
                             @endif
-                          @endforeach
-                        @else
-                          <h1>No Types Listed!</h1>
-                        @endif
+                          </ol>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  {!! Form::close() !!}
                 </div>
               </div>
               <br>
