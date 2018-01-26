@@ -36,13 +36,11 @@
                             $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
                             @endphp
                             @if ($has_service != '')
-                              <div class="col-3">
+                              <div class="col">
                                 <div class="card image_display_r border border-secondary rounded shadow_only">
                                   <div class="card-body">
                                     <p class="lead">
-                                      <strong class="display-5">
-                                        {{ $mdg_name }}
-                                      </strong>
+                                      {{ $mdg_name }}
                                     </p>
                                   </div>
                                 </div>
