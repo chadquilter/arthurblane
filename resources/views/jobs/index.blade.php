@@ -13,7 +13,7 @@
           @endphp
           <br>
           @include('inc.pagelabel')
-          <div class="card bg-warning border border-dark rounded">
+          <div class="card bg-light border border-dark rounded">
             <div class="card-body">
               <div class="row image_display_r">
                 <div class="col">
@@ -28,7 +28,7 @@
                   <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                   {!! Form::open() !!}
                   <div id="job_service_group" class="form=group">
-                    <div class="alert alert-info" role="alert">
+                    <div class="alert alert-info" role="info">
                       <div class="row">
                         @if(count($mdg_services) > 0)
 
