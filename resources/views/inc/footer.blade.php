@@ -8,7 +8,7 @@
         <p class="lead">
           2018,  {{ config('app.name', 'MDG') }}<hr>
           P.O. Box 1583 Marble Falls, Tx 78654<br>
-          Tele: (830)220-2876 <-----> (830)265-0941<br>
+          Tele: (830)220-2876 •---• (830)265-0941<br>
           ‡ Serving ‡<br>
           Marble Falls, TX • Austin, TX • Houston, TX • San Antonio, TX • Dallas/Fort Worth, TX • Corpus Christi, TX • El Paso, TX • Texas, USA.
         </p>
