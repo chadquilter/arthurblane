@@ -37,12 +37,13 @@
       </li>
     </ul>
 
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav mc-auto">
       <li class="nav-item">
-        <div class="text-nowrap">
-          <img src="/images/icons/phoneicon.png" width="30" height="30"  alt="phone-icon"> (830)220-2876-•-(830)265-0941
-        </div>
+          <a class="nav-link" href="/quote"><img src="/images/icons/phoneicon.png" width="30" height="30"  alt="phone-icon"> (830)220-2876-•-(830)265-0941
       </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
       @guest
         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
       @else
