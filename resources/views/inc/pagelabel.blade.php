@@ -2,8 +2,8 @@
   <div class="card-body">
       <div class="row">
         <div class="col alert alert-primary">
-        
-          <img src="/images/icons/hammernail.jpg" width="50%" height="50%">
+
+          <img src="/images/icons/hammernail.jpg">
         </div>
         <div class="col alert alert-light">
           <h4 class="display-4"> {{ $title }} </h4>
