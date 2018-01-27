@@ -10,6 +10,7 @@
         <hr class="my-5">
       </div>
       <div class="card-body">
+        <div class="jumbotron">
           <div class="panel panel-default">
             <div class="panel-body">
               <form class="form-horizontal" method="POST" action="{{ route('login') }}">
@@ -59,6 +60,7 @@
                 </div>
               </form>
             </div>
+          </div>
           </div>
         </div>
       </div>
