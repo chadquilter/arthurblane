@@ -1,4 +1,4 @@
-<div class="card border border-secondary image_display_r">
+<div class="card bg-dark border border-secondary image_display_r">
   <div class="card-body">
       <div class="row">
         <div class="col alert alert-primary">
