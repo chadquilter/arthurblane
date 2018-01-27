@@ -36,7 +36,7 @@
         <a class="nav-link" href="/jobs">Jobs</a>
       </li>
       <li class="nav-item align-top">
-          <a class="nav-link" href="/quotes"><img src="/images/icons/phoneicon.png" width="30" height="30" alt="phone-icon"> (830)220-2876
+          <a class="nav-link" href="/quotes"><img src="/images/icons/phoneicon.png" width="30" height="30" alt="phone-icon"> •(830)220-2876<br>•(830)265-0941
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
