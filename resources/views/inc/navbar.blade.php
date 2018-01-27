@@ -16,7 +16,7 @@
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Services">
+        <div class="dropdown-menu" aria-labelledby="Services">
           <a class="dropdown-item {{ ( \Request::url() == url('services') ) ? 'active' : '' }}" href="/services">Services Overview</a>
           <a class="dropdown-item {{ ( \Request::url() == url('asphalt') ) ? 'active' : '' }}" href="/asphalt">Concrete and Asphalt</a>
           <a class="dropdown-item {{ ( \Request::url() == url('cm') ) ? 'active' : '' }}" href="/cm">Construction Management</a>
