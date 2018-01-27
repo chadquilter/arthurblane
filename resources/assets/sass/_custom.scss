@@ -2,7 +2,8 @@
 .carousel.carousel-fade .carousel-item {
     display: block;
     opacity: 0;
-    height:auto;
+    width: 100%;
+    max-height: 70%;
     background-color: #e3f2fd;
     transition: opacity ease-out .75s;
 
