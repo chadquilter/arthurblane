@@ -5,7 +5,11 @@
     <br>
     @include('inc.pagelabel')
     <br>
-    @include('inc.jobimagecarosel')
+    <div class="card bg-secondary border border-dark rounded image_display_r">
+      <div class="card-img-top">
+        @include('inc.jobimagecarosel')
+      </div>
+    </div>
     <br>
   <div class="card bg-secondary border border-dark rounded image_display_r">
     <div class="card-body">
