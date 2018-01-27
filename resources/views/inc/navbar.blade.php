@@ -37,7 +37,8 @@
       </li>
       <li>
         <div class="text-small text-left text-white">
-          <img src="/images/icons/phoneicon.png" width="30" height="30" class="d-inline-block" alt="phone-icon">(830)220-2876-•-(830)265-0941
+          <img src="/images/icons/phoneicon.png" width="30" height="30" class="d-inline-block" alt="phone-icon">
+          <div class="text-nowrap">(830)220-2876-•-(830)265-0941</div>
         </div>
       </li>
     </ul>
