@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
     <a class="navbar-brand" href="/"><img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -16,7 +16,7 @@
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-        <div class="dropdown-menu" aria-labelledby="Services">
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Services">
           <a class="dropdown-item {{ ( \Request::url() == url('services') ) ? 'active' : '' }}" href="/services">Services Overview</a>
           <a class="dropdown-item {{ ( \Request::url() == url('asphalt') ) ? 'active' : '' }}" href="/asphalt">Concrete and Asphalt</a>
           <a class="dropdown-item {{ ( \Request::url() == url('cm') ) ? 'active' : '' }}" href="/cm">Construction Management</a>
@@ -36,6 +36,7 @@
         <a class="nav-link" href="/jobs">Jobs</a>
       </li>
     </ul>
+
     <div class="text-small text-left text-white">
       <img src="/images/icons/phoneicon.png" width="30" height="30" class="d-inline-block align-top" alt="phone-icon">(830)220-2876-•-(830)265-0941
     </div>
@@ -45,7 +46,7 @@
       @else
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}</a>
-          <div class="dropdown-menu" aria-labelledby="Dashboard">
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Dashboard">
             <a class="dropdown-item" href="/dashboard">Dashboard</a>
             <a class="dropdown-item" href="{{ url('/logout') }}"
             onclick="event.preventDefault();
