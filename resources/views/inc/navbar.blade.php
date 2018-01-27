@@ -33,7 +33,7 @@
       </li>
 
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
-        <a class="nav-link" href="/jobs">Jobs</a>
+        <a class="nav-link" href="/jobs">Client Portfolio</a>
       </li>
       <li class="nav-item align-top">
         <a class="nav-link" href="/quotes">
