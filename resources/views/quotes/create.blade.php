@@ -42,9 +42,7 @@
           <br>
           <div class="row">
             <div class="col">
-              <p class="lead">
-                <strong> Contacts: </strong>
-              </p>
+              <strong class="lead">Contacts:</strong>
               <hr class="my-4">
             </div>
           </div>
