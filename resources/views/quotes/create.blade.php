@@ -13,7 +13,7 @@
             <img class="card-img-top" src="/images/mdg_images/IMG_BATHROOM2.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
             <div class="card-body">
               <div class="card-title">
-                <p>A cut above the rest!</p>
+                <p class="lead">A cut above the rest!</p>
               </div>
             </div>
           </div>
@@ -23,7 +23,7 @@
             <img class="card-img-top" src="/images/CAB1.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
             <div class="card-body">
               <div class="card-title">
-                <p>Custom Design!</p>
+                <p class="lead">Custom Design!</p>
               </div>
             </div>
           </div>
@@ -48,7 +48,6 @@
               <hr class="my-4">
             </div>
           </div>
-
 
           <div class="row">
             <div class="col">
@@ -88,7 +87,7 @@
                     </div>
                     <div class="row">
                       <div class="col">
-                        <strong class="clead">(830)265-0941</strong>
+                        <strong class="lead">(830)265-0941</strong>
                       </div>
                     </div>
                     <div class="row">
@@ -111,7 +110,7 @@
             </div>
           </div>
 
-          <div class="card mx-auto border border-secondary">
+          <div class="card mx-auto border border-secondary float-right">
             <div class="card-body">
               @include('inc.messages')
               {!! Form::open(['action' => 'QuotesController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
