@@ -7,7 +7,9 @@
           </div>
         </div>
         <div class="col alert alert-light">
-          <h4 class="display-4"> {{ $title }} </h4>
+          <div class="card image_display_r">
+            <h4 class="display-4"> {{ $title }} </h4>
+          </div>
         </div>
       </div>
   </div>
