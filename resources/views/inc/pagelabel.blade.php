@@ -7,7 +7,7 @@
           </div>
         </div>
         <div class="col alert alert-light image_display_r border border-dark rounded">
-          <h5 class="lead display-5"> {{ $title }} </h4>
+          <h4 class="lead display-4"> {{ $title }} </h4>
         </div>
       </div>
   </div>

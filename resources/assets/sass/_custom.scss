@@ -2,7 +2,6 @@
 .carousel.carousel-fade .carousel-item {
     display: block;
     opacity: 0;
-    width: auto;
     max-width: 80%;
     height: 100%;
     background-color: #e3f2fd;
@@ -20,7 +19,6 @@
  .carousel-inner > .carousel-item > a > img {
      display: block;
      margin: auto;
-     width: auto;
      max-width: 80% !important;
      height: 100% !important;
 }
