@@ -6,11 +6,10 @@
 
     <div class="card bg-secondary border border-dark rounded">
       <div class="card-title">
-        <h1 class="lead display-3">Login: wtf</h1>
+        <h1 class="lead display-3">Login:</h1>
         <hr class="my-5">
       </div>
-    </div>
-
+      <div class="card-body">
           <div class="panel panel-default">
             <div class="panel-body">
               <form class="form-horizontal" method="POST" action="{{ route('login') }}">
@@ -60,8 +59,9 @@
                 </div>
               </form>
             </div>
-
           </div>
         </div>
+      </div>
+    </div>
   <br>
 @endsection
