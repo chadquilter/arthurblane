@@ -11,7 +11,6 @@
             $jdir = 'job'.$job->job_id.'/';
             $files = Storage::disk('images')->files($jdir);
           @endphp
-          <br>
           @include('inc.pagelabel')
           <div class="card bg-secondary border border-dark rounded">
             <div class="card-body">

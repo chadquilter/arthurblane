@@ -3,6 +3,7 @@
 
 @section('content')
   <div class="container">
+    <br>
     @include('inc.pagelabel')
     <div class="row">
       <br>
