@@ -9,7 +9,8 @@
         <h1 class="lead display-3">Login:</h1>
         <hr class="my-5">
       </div>
-      <div class="card-body">
+      <div class="card-block">
+
           <div class="panel panel-default">
             <div class="panel-body">
               <form class="form-horizontal" method="POST" action="{{ route('login') }}">
@@ -60,9 +61,9 @@
               </form>
             </div>
           </div>
+
         </div>
       </div>
     </div>
-  </div>
   <br>
 @endsection
