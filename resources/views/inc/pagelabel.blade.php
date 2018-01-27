@@ -8,7 +8,7 @@
         </div>
         <div class="col alert alert-light image_display_r border border-dark rounded">
           <div class="jumbotron">
-            <h1 class="display-2">{{$title}}</h1>
+            <h1 class="display-3">{{$title}}</h1>
           </div>
         </div>
       </div>
