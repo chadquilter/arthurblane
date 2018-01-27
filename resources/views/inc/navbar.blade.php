@@ -37,9 +37,9 @@
       </li>
     </ul>
 
-    <ul class="navbar-nav mc-auto">
+    <ul class="navbar-nav mr-auto text-nowrap">
       <li class="nav-item">
-          <a class="nav-link" href="/quote"><img src="/images/icons/phoneicon.png" width="30" height="30"  alt="phone-icon"> (830)220-2876-•-(830)265-0941
+          <a class="nav-link" href="/quotes"><img src="/images/icons/phoneicon.png" width="30" height="30"  alt="phone-icon"> (830)220-2876-•-(830)265-0941
       </li>
     </ul>
 
