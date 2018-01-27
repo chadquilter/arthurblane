@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div>
     <a class="navbar-brand" href="/"><img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,11 +35,13 @@
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
         <a class="nav-link" href="/jobs">Jobs</a>
       </li>
+      <li>
+        <div class="text-small text-left text-white">
+          <img src="/images/icons/phoneicon.png" width="30" height="30" class="d-inline-block align-top" alt="phone-icon">(830)220-2876-•-(830)265-0941
+        </div>
+      </li>
     </ul>
-
-    <div class="text-small text-left text-white">
-      <img src="/images/icons/phoneicon.png" width="30" height="30" class="d-inline-block align-top" alt="phone-icon">(830)220-2876-•-(830)265-0941
-    </div>
+    
     <ul class="navbar-nav ml-auto">
       @guest
         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
