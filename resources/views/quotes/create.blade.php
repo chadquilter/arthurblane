@@ -110,7 +110,7 @@
             </div>
           </div>
 
-          <div class="card mx-auto border border-secondary float-right">
+          <div class="card mx-auto border border-secondary text-left">
             <div class="card-body">
               @include('inc.messages')
               {!! Form::open(['action' => 'QuotesController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
