@@ -3,18 +3,19 @@
 @section('content')
   <div class="container">
     <br>
-    <div class="card bg-secondary border border-dark rounded image_display_r">
+
+    <div class="card bg-secondary border border-dark rounded">
+      <div class="card-title">
+        <h1 class="lead display-3">Login:</h1>
+        <hr class="my-5">
+      </div>
       <div class="card-body">
-        <br>
-        <div class="jumbotron">
-          <h1 class="lead display-3">Login:</h1>
-          <hr class="my-5">
           <div class="panel panel-default">
             <div class="panel-body">
               <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                 {{ csrf_field() }}
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                  <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                  <label for="email" class="col-md-4 lead">E-Mail Address</label>
 
                   <div class="col-md-6">
                     <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
@@ -27,7 +28,7 @@
                   </div>
                 </div>
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                  <label for="password" class="col-md-4 control-label">Password</label>
+                  <label for="password" class="col-md-4 lead">Password</label>
                   <div class="col-md-6">
                     <input id="password" type="password" class="form-control" name="password" required>
                     @if ($errors->has('password'))
