@@ -36,9 +36,8 @@
         <a class="nav-link" href="/jobs">Jobs</a>
       </li>
     </ul>
-    <div class="text-small text-white">
-      <img src="/images/icons/phoneicon.png" width="30" height="30" class="d-inline-block align-top" alt="phone-icon">
-      (830) 220-2876 • (830)265-0941
+    <div class="text-small text-left text-white">
+      <img src="/images/icons/phoneicon.png" width="30" height="30" class="d-inline-block align-top" alt="phone-icon">(830)220-2876•(830)265-0941
     </div>
     <ul class="navbar-nav ml-auto">
       @guest
