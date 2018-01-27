@@ -38,9 +38,9 @@
     </ul>
 
     <ul class="navbar-nav ml-auto">
-      <li>
-        <div class="text-small text-left text-white text-nowrap">
-          <img src="/images/icons/phoneicon.png" width="30" height="30" class="d-inline-block align-bottom" alt="phone-icon">(830)220-2876-•-(830)265-0941
+      <li class="nav-item">
+        <div class="text-nowrap">
+          <img src="/images/icons/phoneicon.png" width="30" height="30"  alt="phone-icon"> (830)220-2876-•-(830)265-0941
         </div>
       </li>
       @guest
