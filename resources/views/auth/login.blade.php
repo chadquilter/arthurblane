@@ -5,11 +5,9 @@
     <br>
 
     <div class="card bg-secondary border border-dark rounded">
-      <div class="card-title">
+      <div class="card-body">
         <h1 class="lead display-3">Login:</h1>
         <hr class="my-5">
-      </div>
-      <div class="card-body">
         <div class="jumbotron">
           <div class="panel panel-default">
             <div class="panel-body">
