@@ -3,7 +3,7 @@
     display: block;
     opacity: 0;
     max-width: 80%;
-    height: 100%;
+    height: auto;
     background-color: #e3f2fd;
     transition: opacity ease-out .75s;
 
@@ -23,7 +23,7 @@
      height: 100% !important;
 }
 
-
+/*
 @media (orientation: portrait) {
     .carousel-item.active,
     .carousel-item-next,
@@ -43,3 +43,4 @@
         height:96vh;
     }
 }
+*/
