@@ -17,7 +17,7 @@
 		<div class="row">
 			<div class="col">
 				<div class="jumbotron">
-					<strong class="lead display-2">{{$title}}</strong>
+					<strong class="lead display-2 text-nowrap">{{$title}}</strong>
 					<br>
 					<p class="lead">include but are not limited to:</p>
 					<hr class="my-4">
