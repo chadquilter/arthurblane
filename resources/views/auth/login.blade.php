@@ -5,7 +5,8 @@
     <br>
     <div class="card bg-secondary border border-dark rounded image_display_r">
       <div class="card-body">
-        <div class="jumbotron jumbotron-fluid">
+        <br>
+        <div class="jumbotron">
           <h1 class="display-3">Login:</h1>
           <hr class="my-5">
           <div class="panel panel-default">
