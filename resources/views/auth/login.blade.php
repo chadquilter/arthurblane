@@ -7,7 +7,7 @@
       <div class="card-body">
         <br>
         <div class="jumbotron">
-          <h1 class="display-3">Login:</h1>
+          <h1 class="lead display-3">Login:</h1>
           <hr class="my-5">
           <div class="panel panel-default">
             <div class="panel-body">
