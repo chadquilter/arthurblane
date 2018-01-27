@@ -4,11 +4,8 @@
   <div class="container">
     <br>
     @include('inc.pagelabel')
-    <div class="card image_display_r">
-      <div class="card-img-top">
-        @include('inc.jobimagecarosel')
-      </div>
-    </div>
+    <br>
+    @include('inc.jobimagecarosel')
     <br>
   <div class="card bg-secondary border border-dark rounded image_display_r">
     <div class="card-body">
