@@ -46,7 +46,7 @@
       @else
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="{{ url('') }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}</a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Dashboard">
+          <div class="dropdown-menu" aria-labelledby="Dashboard">
             <a class="dropdown-item" href="/dashboard">Dashboard</a>
             <a class="dropdown-item" href="{{ url('/logout') }}"
             onclick="event.preventDefault();
