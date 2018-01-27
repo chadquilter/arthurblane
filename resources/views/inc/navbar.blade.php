@@ -35,7 +35,7 @@
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
         <a class="nav-link" href="/jobs">Jobs</a>
       </li>
-      <li class="nav-item text-nowrap align-top">
+      <li class="nav-item align-top">
           <a class="nav-link" href="/quotes"><img src="/images/icons/phoneicon.png" width="25" height="25" alt="phone-icon"> (830)220-2876•(830)265-0941
       </li>
     </ul>
