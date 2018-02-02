@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="opacity: 0.93; filter: alpha(opacity=93); ">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="opacity: 0.92; filter: alpha(opacity=92); ">
   <div>
     <a class="navbar-brand" href="/"><img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
