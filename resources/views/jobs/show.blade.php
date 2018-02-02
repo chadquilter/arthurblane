@@ -119,15 +119,19 @@
   //Flames
   function update() {
     for (var i = 0; i < 10; i++) {
+      //P = MID=1/2 WIDTH, X=520, XS = (RAND * 2 * 4 - 4) / 2, YS = 0 - RAND * 2 * 4
       var p = new Particle(mid, 520, (Math.random() * 2 * speed - speed) / 2, 0 - Math.random() * 2 * speed);
       particles.push(p);
     }
     stage.clearRect(0, 0, width, height);
     for (i = 0; i < particles.length; i++) {
+      //set particle transparancy using the life cycle of each partile in array
       stage.fillStyle = "rgba(" + (260 - (particles[i].life * 2)) + "," + ((particles[i].life * 2) + 50) + "," + (particles[i].life * 2) + "," + (((max - particles[i].life) / max) * 0.4) + ")";
+      //set particle trajectory
       stage.beginPath();
       stage.arc(particles[i].x, particles[i].y, (max - particles[i].life) / max * (size / 2) + (size / 2), 0, 2 * Math.PI);
       stage.fill();
+      //double up
       particles[i].x += particles[i].xs;
       particles[i].y += particles[i].ys;
       particles[i].life++;
