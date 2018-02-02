@@ -22,6 +22,10 @@
      height: 100% !important;
 }
 
+.navbar {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
 /*
 @media (orientation: portrait) {
     .carousel-item.active,
