@@ -8,7 +8,7 @@
 
 		<img class="card-img-top" src="/images/2_orig.jpg" alt="Card image cap">
 		<div class="card-body">
-			<h5 class="card-title">Custom Excivation Work before!</h5>
+			<p class="card-title lead">Custom Excivation Work before!</p>
 		</div>
 	</div>
 
@@ -36,7 +36,7 @@
 						<img class="card-img-top" alt="A scenic home image" src="/images/4_orig.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 						<div class="card-body">
 							<div class="card-title">
-								<p>...and After!</p>
+								<p class="lead">...and After!</p>
 							</div>
 						</div>
 					</div>
@@ -50,7 +50,7 @@
 							<img class="card-img-top" alt="A scenic home image" src="/images/excavation/excavation3.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 							<div class="card-body">
 								<div class="card-title">
-									<p>We can handle most of your excavation needs...</p>
+									<p class="lead">We can handle most of your excavation needs...</p>
 								</div>
 							</div>
 						</div>
@@ -70,7 +70,7 @@
 				<img class="card-img-top" alt="A scenic home image" src="/images/excavation/excavation1.png" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 				<div class="card-body">
 					<div class="card-title">
-						<p> ...to clearing old structures or for water diversion!</p>
+						<p class="lead"> ...to clearing old structures or for water diversion!</p>
 					</div>
 				</div>
 			</div>
@@ -80,7 +80,7 @@
 				<img class="card-img-top" alt="A scenic home image" src="/images/excavation/excavation2.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 				<div class="card-body">
 					<div class="card-title">
-						<p>...from Leveling and Foundations...</p>
+						<p class="lead">...from Leveling and Foundations...</p>
 					</div>
 				</div>
 			</div>

@@ -47,7 +47,7 @@
 				<div class="card border border-dark rounded image_display_r">
 					<img class="card-img-top" alt="A scenic home image" src="/images/mdg_images/IMG_BEDROOM1.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 					<div class="image_display_text_container">
-						<p>Custom Sink and Counter Space!</p>
+						<p class="lead">Custom Sink and Counter Space!</p>
 					</div>
 				</div>
 			</div>
@@ -55,7 +55,7 @@
 				<div class="card border border-dark rounded image_display_r">
 					<img class="card-img-top" alt="A scenic home image" src="/images/mdg_images/IMG_BEDROOM1A.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 					<div class="image_display_text_container">
-						<p>Custom Ceiling and Molding!</p>
+						<p class="lead">Custom Ceiling and Molding!</p>
 					</div>
 				</div>
 			</div>
@@ -68,7 +68,7 @@
 					<img class="card-img-top" alt="A scenic home image" src="/images/steel/steel_barn4.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 					<div class="card-body">
 						<div class="card-title">
-							<p>Custom Steel Barn Interior! </p>
+							<p class="lead">Custom Steel Barn Interior! </p>
 						</div>
 					</div>
 				</div>
@@ -79,7 +79,7 @@
 					<img class="card-img-top" alt="A scenic home image" src="/images/steel/steel_barn2.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 					<div class="card-body">
 						<div class="card-title">
-							<p>Customized Steel Structures! </p>
+							<p class="lead">Customized Steel Structures! </p>
 						</div>
 					</div>
 				</div>
@@ -91,7 +91,7 @@
 			<img class="card-img-top" alt="A scenic home image" src="/images/homes/home3.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 			<div class="card-body">
 				<div class="card-title">
-					<p>Custom Homes done Right!</p>
+					<p class="lead">Custom Homes done Right!</p>
 				</div>
 			</div>
 		</div>

@@ -8,7 +8,7 @@
 		<img class="card-img-top" src="/images/mdg_images/hall.jpg" alt="Card image cap">
 		<div class="card-body">
 			<div class="card-title">
-				<p>Professional Interior Finish-Out, Done right.</p>
+				<p class="lead">Professional Interior Finish-Out, Done right.</p>
 			</div>
 		</div>
 	</div>
@@ -38,7 +38,7 @@
 						<img class="card-img-top" alt="A scenic home image" src="/images/interior/CABS1.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 						<div class="card-body">
 							<div class="card-title">
-								<p>Custom Cupboards! </p>
+								<p class="lead">Custom Cupboards! </p>
 							</div>
 						</div>
 					</div>
@@ -51,7 +51,7 @@
 						<img class="card-img-top" alt="A scenic home image" src="/images/finishout/tile.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 						<div class="card-body">
 							<div class="card-title">
-								<p>Professional Tile Work!</p>
+								<p class="lead">Professional Tile Work!</p>
 							</div>
 						</div>
 					</div>
@@ -71,7 +71,7 @@
 				<img class="card-img-top" alt="A scenic home image" src="/images/interior/window1.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 				<div class="card-body">
 					<div class="card-title">
-						<p> Window Frames and Installation! </p>
+						<p class="lead"> Window Frames and Installation! </p>
 					</div>
 				</div>
 			</div>
@@ -81,7 +81,7 @@
 				<img class="card-img-top" alt="A scenic home image" src="/images/mdg_images/Cub1.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 				<div class="card-body">
 					<div class="card-title">
-						<p>Custom Cupbord Remodeling! </p>
+						<p class="lead">Custom Cupbord Remodeling! </p>
 					</div>
 				</div>
 			</div>
@@ -92,7 +92,7 @@
 		<img class="card-img-top" alt="A scenic home image" src="/images/interior/window2.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 		<div class="card-body">
 			<div class="card-title">
-				<p>Custom Bath Counter! </p>
+				<p class="lead">Custom Bath Counter! </p>
 			</div>
 		</div>
 	</div>
