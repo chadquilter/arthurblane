@@ -11,6 +11,9 @@
 		</div>
 	</div>
 	<br>
+
+	<div class="card bg-secondary border border-dark rounded image_display_r">
+		<div class="card-body">
 	<div class="row">
 		<div class="col">
 			<div class="jumbotron">
@@ -36,6 +39,8 @@
 			<br>
 		</div>
 	</div>
+</div>
+</div>
 
 	<div class="row">
 		<div class="col">

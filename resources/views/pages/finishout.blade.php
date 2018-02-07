@@ -13,6 +13,10 @@
 		</div>
 	</div>
 	<br>
+
+	<div class="card bg-secondary border border-dark rounded image_display_r">
+		<div class="card-body">
+
 	<div class="row">
 		<div class="col">
 			<div class="jumbotron">
@@ -54,11 +58,12 @@
 				</div>
 			</div>
 
-
-
 			<br>
 		</div>
 	</div>
+
+</div>
+</div>
 	<br>
 	<div class="row">
 		<div class="col">

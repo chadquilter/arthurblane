@@ -15,7 +15,9 @@
 
 		<br>
 
-		<div class="row">
+	<div class="card bg-secondary border border-dark rounded image_display_r">
+		<div class="card-body">
+			<div class="row">
 			<div class="col">
 				<div class="jumbotron">
 						<h4 class="display-4">{{$title}}</h4>
@@ -51,9 +53,11 @@
 						</div>
 					</div>
 				</div>
-
-
 			</div>
+
+		</div>
+	</div>
+	</div>
 
 		<br>
 		<div class="row">
@@ -155,6 +159,5 @@
 			</div>
 		</div>
 		<br>
-	</div>
 </div>
 @endsection
