@@ -48,7 +48,6 @@
     </div>
   </body>
   <script>
-
   var canvas;
   var stage;
   var width = 720;
@@ -125,7 +124,7 @@
     }
     stage.clearRect(0, 0, width, height);
     for (i = 0; i < particles.length; i++) {
-      //set particle transparancy using the life cycle of each partile in array
+      //set particle transparancy using the life cycle of each partile in array, the older the more opacity
       stage.fillStyle = "rgba(" + (260 - (particles[i].life * 2)) + "," + ((particles[i].life * 2) + 50) + "," + (particles[i].life * 2) + "," + (((max - particles[i].life) / max) * 0.4) + ")";
       //set particle trajectory
       stage.beginPath();

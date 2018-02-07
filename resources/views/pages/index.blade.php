@@ -15,7 +15,7 @@
     <div class="card-body">
     <div class="row">
       <div class="col">
-        <div class="card image_display_r">
+        <div class="card border border-dark rounded image_display_r">
           <img class="card-img-top" src="/images/mdg_images/IMG_STAIR_WELL2.JPG" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
           <div class="card-body">
             <p class="card-title lead">Custom Metal Work!</p>
@@ -44,7 +44,7 @@
             We build "eco-friendly" green custom homes of all sizes for all budgets.
           </p>
         </div>
-        <div class="card image_display_r">
+        <div class="card border border-dark rounded image_display_r">
           <img class="card-img-top" src="/images/excavation/excavation2.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
           <div class="card-body">
             <p class="card-title lead">Build the Custom home you want!</p>
