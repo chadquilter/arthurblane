@@ -4,14 +4,12 @@
 <br>
 <div class="container">
 	@include('inc.pagelabel')
-	<div class="image_display_r">
-		<div class="card">
+	<div class="card border border-dark rounded image_display_r">
 			<img class="card-img-top" src="/images/2_orig.jpg" alt="Card image cap">
 			<div class="card-body">
 				<h5 class="card-title">Custom Built Outdoor walkways and Paths!</h5>
 			</div>
 		</div>
-	</div>
 	<br>
 	<div class="row">
 		<div class="col">
