@@ -4,7 +4,7 @@
 <br>
 <div class="container">
 	@include('inc.pagelabel')
-	<div class="card image_display_r">
+	<div class="card border border-dark rounded image_display_r">
 
 		<img class="card-img-top" src="/images/2_orig.jpg" alt="Card image cap">
 		<div class="card-body">
@@ -30,7 +30,7 @@
 		<div class="col">
 			<div class="row">
 				<div class="col">
-					<div class="card image_display_r">
+					<div class="card border border-dark rounded image_display_r">
 						<img class="card-img-top" alt="A scenic home image" src="/images/4_orig.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 						<div class="card-body">
 							<div class="card-title">
@@ -44,7 +44,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="col">
-						<div class="card image_display_r">
+						<div class="card border border-dark rounded image_display_r">
 							<img class="card-img-top" alt="A scenic home image" src="/images/excavation/excavation3.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 							<div class="card-body">
 								<div class="card-title">
@@ -63,7 +63,7 @@
 
 	<div class="row">
 		<div class="col">
-			<div class="card image_display_r">
+			<div class="card border border-dark rounded image_display_r">
 				<img class="card-img-top" alt="A scenic home image" src="/images/excavation/excavation1.png" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 				<div class="card-body">
 					<div class="card-title">
@@ -73,7 +73,7 @@
 			</div>
 		</div>
 		<div class="col">
-			<div class="card image_display_r">
+			<div class="card border border-dark rounded image_display_r">
 				<img class="card-img-top" alt="A scenic home image" src="/images/excavation/excavation2.jpg" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
 				<div class="card-body">
 					<div class="card-title">
