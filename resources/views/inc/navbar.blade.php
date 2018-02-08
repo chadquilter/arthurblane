@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-transparant">
   <div>
     <a class="navbar-brand" href="/"><img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +11,7 @@
         <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item {{ ( Request::route()->getName() == 'quotes.index') ? 'active' : '' }}">
-        <a class="nav-link" href="/quotes">Contact/Request Quote</a>
+        <a class="nav-link" href="/quotes">Contact</a>
       </li>
 
       <li class="nav-item dropdown">
@@ -33,7 +33,13 @@
       </li>
 
       <li class="nav-item {{ ( Request::route()->getName() == 'jobs.index') ? 'active' : '' }}">
-        <a class="nav-link" href="/jobs">Jobs</a>
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item align-top">
+        <a class="nav-link" href="/quotes">
+          <img src="/images/icons/phoneicon.png" width="30" height="30" alt="phone-icon"> (830)220-2876•<br>
+          <img src="/images/icons/phoneicon.png" width="30" height="30" alt="phone-icon"> (830)265-0941•
+        </a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
@@ -57,4 +63,5 @@
     @endguest
   </ul>
 </div>
+<br>
 </nav>

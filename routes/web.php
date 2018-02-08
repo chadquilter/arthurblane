@@ -28,6 +28,7 @@ Route::get('/steel', 'PagesController@steel');
 Route::get('/homes', 'PagesController@homes');
 
 Route::resource('jobs', 'JobsController');
+Route::resource('portfolio', 'JobsController');
 Route::resource('address', 'AddressController');
 Route::resource('items', 'ItemsController');
 Route::resource('forms', 'FormsController');

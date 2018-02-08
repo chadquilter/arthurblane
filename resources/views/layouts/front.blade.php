@@ -12,10 +12,9 @@
     <title>{{ config('app.name', 'MDG') }}</title>
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    <link href="/css/app.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
     <link href="/css/image_styles.css" rel="stylesheet">
-
+    <link href="/css/app.css" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
 <body style="background-attachment:fixed;background-color:#fff;background-position:center top;background-repeat:repeat-x;background-image: url(/images/art-bg.jpg); width=100%; z-index: 1;">

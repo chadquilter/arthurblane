@@ -1,7 +1,7 @@
 
 @if (count($files) > 0)
 <br>
-<div class="card image_display_r">
+<div class="card bg-secondary border border-dark rounded image_display_r">
   <div class="card-img-top">
     <div id="carouselExampleIndicators" class="carousel carousel-fade" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -14,9 +14,7 @@
         @foreach($files as $file)
           @php $active = $loop->index === 0 ? 'active' : ''; @endphp
         <div class="carousel-item embed-responsive-item {{$active}}">
-          <a href="#">
             <img class="img-fluid" src="/images/{{$file}}" alt="Custom Houses, Custom Construction, custom tile, carpet, drywall, Custom Metal Work, Paving, Asphalt, Show House, kitchen, bath House Remodeling, House Renovations, House Repair, Custom Deck, tile, shower,Custom Bridges, Custom Roads, Excivation, Interior Design, Custom Patio, rock floor">
-          </a>
         </div>
         @endforeach
       </div>
