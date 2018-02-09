@@ -17,7 +17,7 @@
               <br>
               {{$jobs->links()}}
               <br>
-              <div class="card image_display_r">
+              <div class="card bg-secondary image_display_r">
                 <div class="card-body">
                   <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                   {!! Form::open() !!}
