@@ -14,14 +14,8 @@
           @include('inc.pagelabel')
           <div class="card bg-secondary border border-dark rounded">
             <div class="card-body">
-
-              <div class="row">
-                <div class="col image_display_r">
-                  <center>
-                    {{$jobs->links()}}
-                  </center>
-                </div>
-              </div>
+              {{$jobs->links()}}
+              <br>
               <div class="card image_display_r">
                 <div class="card-body">
                   <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
@@ -63,11 +57,7 @@
                 </div>
               </div>
               <br>
-              <div class="row">
-                <div class="col">
-                  {{$jobs->links()}}
-                </div>
-              </div>
+              {{$jobs->links()}}
             </div>
         </div>
       @endforeach
