@@ -14,10 +14,9 @@
           @include('inc.pagelabel')
           <div class="card bg-secondary border border-dark rounded image_display_r">
             <div class="card-block">
+              <br>
               {{$jobs->links()}}
               <br>
-            </div>
-            <div class="card-block">
               <div class="card image_display_r">
                 <div class="card-body">
                   <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
