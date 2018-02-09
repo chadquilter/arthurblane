@@ -14,22 +14,9 @@
           @include('inc.pagelabel')
           <div class="card" class="bg-dark text-white border border-primary rounded">
             <div class="card-body">
-<<<<<<< HEAD
               {{$jobs->links()}}
               <br>
               <div class="card image_display_r">
-=======
-
-              <div class="row">
-                <div class="col image_display_r">
-                  <center>
-                    {{$jobs->links()}}
-                  </center>
-                </div>
-              </div>
-
-              <div class="card ">
->>>>>>> 59535d36975b154f5123b008c3c5998055b771bd
                 <div class="card-body">
                   <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                   {!! Form::open() !!}
