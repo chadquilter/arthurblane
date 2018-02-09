@@ -16,13 +16,11 @@
             <div class="card-block">
               <br>
               {{$jobs->links()}}
-              <br>
-              <div class="card bg-warning image_display_r">
-                <div class="card-body">
-                  <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
+              <br>  
                   {!! Form::open() !!}
                   <div id="job_service_group" class="form=group">
                     <div class="alert alert-info" role="info">
+                      <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                       <div class="card image_display_r border border-secondary rounded shadow_only">
                         <div class="card-body">
                           <div class="list-group">
@@ -43,8 +41,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
               <br>
               <div class="card image_display_r">
                 <div class="card-body">
