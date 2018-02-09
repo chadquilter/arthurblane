@@ -12,7 +12,7 @@
             $files = Storage::disk('images')->files($jdir);
           @endphp
           @include('inc.pagelabel')
-          <div class="card" class="bg-dark text-white border border-primary rounded">
+          <div class="card" class="bg-secondary text-white border border-primary rounded">
             <div class="card-body">
               {{$jobs->links()}}
               <br>
