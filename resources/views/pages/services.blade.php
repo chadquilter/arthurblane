@@ -19,7 +19,7 @@
 				<div class="jumbotron">
 					<h2 class="display-4">{{$title}}</h2>
 					<br>
-					<p class="lead">include but are not limited to:</p>
+					<p class="lead">Clicke on one of our services to find out more!</p>
 					<hr class="my-4">
 					<p class="lead">
 						@if(count($mdg_services) > 0)
