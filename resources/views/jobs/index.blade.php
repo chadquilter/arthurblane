@@ -56,7 +56,7 @@
                 </div>
               </div>
               <br>
-              <div class="bg-light">
+              <div class="jumbotron border border-dark rounded">
                 <br>
                 {{$jobs->links()}}
                 <br>
