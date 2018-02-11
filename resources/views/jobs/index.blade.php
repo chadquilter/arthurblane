@@ -17,20 +17,20 @@
               <br>
                   {!! Form::open() !!}
                   <div id="job_service_group" class="form=group">
-                    <div class="alert alert-info" role="info">
+                    <div class="bg-light">
                       <center>{{$jobs->links()}}</center>
                       <br>
                       <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                       <div class="card image_display_r border border-secondary rounded shadow_only">
                         <div class="card-body">
-                          <div class="list-group">
+                          <div class="list-group alert-info">
                             @if(count($mdg_services) > 0)
                               @foreach($mdg_services as $mdg_record)
                                 @php
                                   $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_record->id)->first();
                                 @endphp
                                 @if ($has_service != '')
-                                  <a href="/{{$mdg_record->service_url}}" class="button-primary list-group-item list-group-item-action">{{ $mdg_record->service_name }}</a>
+                                  <a href="/{{$mdg_record->service_url}}" class="btn btn-primary list-group-item list-group-item-action">{{ $mdg_record->service_name }}</a>
                                 @endif
                               @endforeach
                             @else
