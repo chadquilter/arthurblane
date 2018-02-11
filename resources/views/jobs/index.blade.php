@@ -18,7 +18,8 @@
                   {!! Form::open() !!}
                   <div id="job_service_group" class="form=group">
                     <div class="bg-light">
-                      <center>{{$jobs->links()}}</center>
+                      <br>
+                      {{$jobs->links()}}
                       <br>
                       <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                       <div class="card image_display_r border border-secondary rounded shadow_only">
