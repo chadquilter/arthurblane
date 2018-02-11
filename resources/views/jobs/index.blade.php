@@ -32,6 +32,7 @@
                                 @endphp
                                 @if ($has_service != '')
                                   <a href="/{{$mdg_record->service_url}}" class="list-group-item list-group-item-action list-group-item-primary">{{ $mdg_record->service_name }}</a>
+                                  <br>
                                 @endif
                               @endforeach
                             @else
@@ -55,7 +56,11 @@
                 </div>
               </div>
               <br>
-              {{$jobs->links()}}
+              <div class="bg-light">
+                <br>
+                {{$jobs->links()}}
+                <br>
+              </div>
             </div>
         </div>
       @endforeach
