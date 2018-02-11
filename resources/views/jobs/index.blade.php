@@ -23,15 +23,15 @@
                       <br>
                       <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                       <div class="card image_display_r border border-secondary rounded shadow_only">
-                        <div class="card-body">
-                          <div class="list-group alert alert-info">
+                        <div class="card-body alert alert-info">
+                          <div class="list-group">
                             @if(count($mdg_services) > 0)
                               @foreach($mdg_services as $mdg_record)
                                 @php
                                   $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_record->id)->first();
                                 @endphp
                                 @if ($has_service != '')
-                                  <a href="/{{$mdg_record->service_url}}" class="list-group-item list-group-item-action">{{ $mdg_record->service_name }}</a>
+                                  <a href="/{{$mdg_record->service_url}}" class="list-group-item list-group-item-action btn btn-primary">{{ $mdg_record->service_name }}</a>
                                 @endif
                               @endforeach
                             @else
