@@ -75,6 +75,7 @@ class QuotesController extends Controller
           $items = ($request->input('items') ? $request->input('items') : 0);
           $jobs = ($request->input('jobs') ? $request->input('jobs') : 0);
           $active = ($request->input('active') ? $request->input('active') : 1);
+          $notes =  ($request->input('notes') ? $request->input('notes') : 'None');
           $display_web = 1;
           $identifier = 'Filler TEXT';
           $guestimate_amount = '1';
@@ -98,11 +99,10 @@ class QuotesController extends Controller
           $quote->modified_by = $current_user;
           $quote->phone = $request->input('phone');
           $quote->email = $request->input('email');
-          $quote->notes = $request->input('notes');
+          $quote->notes = $notes;
           $quote->save();
 
-          $to = explode(',', env('ADMIN_EMAILS'));
-          Mail::to($to)->cc('chadquilter@gmail.com')->send(new QuoteMail($quote));
+          Mail::send(new QuoteMail($quote));
 
           return redirect('/quotes')->with('success', 'Quote Sent! A representitive will contact you with further details.');
       }
