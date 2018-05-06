@@ -25,8 +25,8 @@ class QuoteMail extends Mailable
         $this->quote = $quote;
         $to = explode(',', env('ADMIN_EMAILS'));
         $this->to($to);
-        $this->from('mikegrounds@bamconstruction.net', 'Mike Grounds');
-        $this->replyto('mikegrounds@bamconstruction.net', 'Mike Grounds');
+        //$this->from('mikegrounds@bamconstruction.net', 'Mike Grounds');
+        //$this->replyto('mikegrounds@bamconstruction.net', 'Mike Grounds');
         $this->subject('Hello '.$this->quote->title.' has contacted Bam Construction!');
 
     }
