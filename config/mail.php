@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'sendmail'),
+    'driver' => env('MAIL_DRIVER', 'mailgun'),
 
     /*
     |--------------------------------------------------------------------------
@@ -53,10 +53,10 @@ return [
     | the same address. Here, you may specify a name and address that is
     | used globally for all e-mails that are sent by your application.
     |
-    */
+
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', '-fadmin@bamconstruction.net'),
+        'address' => env('MAIL_FROM_ADDRESS', 'SUPER_ADMIN'),
         'name' => env('MAIL_FROM_NAME', 'Bam! Construction'),
     ],
 
