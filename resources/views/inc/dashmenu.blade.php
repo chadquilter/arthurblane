@@ -5,6 +5,7 @@
         <p class="lead"><strong>Dashboard Services:</strong></p>
         <hr class="my-4">
         @if ( Request::url() != url('dashboard') )
+          <span data-feather="home"></span>
            <a href="/dashboard" class="alert alert-primary btn btn-secondary" role="button">Return to Dashboard</a>
         @endif
 

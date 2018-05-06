@@ -12,25 +12,18 @@
             $files = Storage::disk('images')->files($jdir);
           @endphp
           @include('inc.pagelabel')
-          <div class="card" class="bg-dark text-white border border-primary rounded">
-            <div class="card-body">
-
-              <div class="row">
-                <div class="col image_display_r">
-                  <center>
-                    {{$jobs->links()}}
-                  </center>
-                </div>
-              </div>
-
-              <div class="card ">
-                <div class="card-body">
-                  <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
+          <div class="card bg-secondary border border-dark rounded image_display_r">
+            <div class="card-block">
+              <br>
                   {!! Form::open() !!}
                   <div id="job_service_group" class="form=group">
-                    <div class="alert alert-info" role="info">
+                    <div class="bg-light">
+                      <br>
+                      {{$jobs->links()}}
+                      <br>
+                      <p class="lead"> <strong class="display-4">Services Provided:</strong></p>
                       <div class="card image_display_r border border-secondary rounded shadow_only">
-                        <div class="card-body">
+                        <div class="card-body alert alert-info">
                           <div class="list-group">
                             @if(count($mdg_services) > 0)
                               @foreach($mdg_services as $mdg_record)
@@ -38,7 +31,8 @@
                                   $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_record->id)->first();
                                 @endphp
                                 @if ($has_service != '')
-                                  <a href="/{{$mdg_record->service_url}}" class="list-group-item list-group-item-action">{{ $mdg_record->service_name }}</a>
+                                  <a href="/{{$mdg_record->service_url}}" class="list-group-item list-group-item-action list-group-item-primary">{{ $mdg_record->service_name }}</a>
+                                  <br>
                                 @endif
                               @endforeach
                             @else
@@ -49,8 +43,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
               <br>
               <div class="card image_display_r">
                 <div class="card-body">
@@ -64,10 +56,10 @@
                 </div>
               </div>
               <br>
-              <div class="row">
-                <div class="col">
-                  {{$jobs->links()}}
-                </div>
+              <div class="bg-light border border-dark rounded">
+                <br>
+                {{$jobs->links()}}
+                <br>
               </div>
             </div>
         </div>

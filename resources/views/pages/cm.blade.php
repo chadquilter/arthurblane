@@ -16,9 +16,9 @@
 	<div class="row">
 		<div class="col">
 			<div class="jumbotron">
-				<h4 class="display-4">{{$title}}</h4>
+				<h1 class="display-5">{{$title}}</h1>
 				<br>
-				<p class="lead">include but are not limited to:</p>
+				<p class="lead">services include but are not limited to:</p>
 				<hr class="my-4">
 				<p class="lead">
 						@include('inc.subservice')
