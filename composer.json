@@ -15,7 +15,7 @@
         "laravelcollective/html": "^5.4.0",
         "mews/captcha": "^2.2",
         "nesbot/carbon": "^1.22",
-        "twbs/bootstrap": "4.1.1",
+        "twbs/bootstrap": "^4.1.1",
         "unisharp/laravel-ckeditor": "^4.6"
     },
     "require-dev": {
