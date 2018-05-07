@@ -23,8 +23,4 @@ class FormItem extends Model
     'discount'
   ];
 
-  public function forms(){
-      return $this->belongsToMany('App\Form', 'form_items', 'form_id', 'forms_items_form_id');
-  }
-
 }
