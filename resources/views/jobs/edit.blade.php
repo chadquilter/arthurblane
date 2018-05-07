@@ -94,10 +94,13 @@
                         $has_service = App\Job::find($job->job_id)->services()->where('service_id', $mdg_id)->first();
                         $job_service_checked = count($has_service) > 0 ? 'true' : '';
                       @endphp
-                      <div class="col-md">
+                      <div class="col">
                         <div class="card image_display_r border border-secondary rounded shadow_only">
+                          <div class="card-header">
+                            <h5>{{ $mdg_name }}<h5>
+                          </div>
                           <div class="card-body">
-                            {{Form::label('serviceID[]', $mdg_name)}} {{Form::checkbox('serviceID[]', $mdg_id, $job_service_checked, ['class' => 'form-control', 'id' => 'serviceID'.$mdg_id ])}}
+                            {{Form::checkbox('serviceID[]', $mdg_id, $job_service_checked, ['class' => 'form-control', 'id' => 'serviceID'.$mdg_id ])}}
                           </div>
                         </div>
                       </div>
