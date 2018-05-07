@@ -43,7 +43,8 @@ class FormsController extends Controller
        */
       public function create()
       {
-          return view('forms.create');
+          $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
+          return view('forms.create')->with(compact('items'));
       }
 
       /**
@@ -139,7 +140,7 @@ class FormsController extends Controller
           }
 
           //edit view
-          return view('forms.edit')->with(compact('form', 'users', 'item_grand_total', 'form_items'));
+          return view('forms.edit')->with(compact('form', 'users', 'item_grand_total', 'form_items', 'items'));
       }
 
       /**
