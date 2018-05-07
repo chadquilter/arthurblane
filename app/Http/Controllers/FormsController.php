@@ -81,7 +81,7 @@ class FormsController extends Controller
 
           if ($request->get('itemID')) {
              foreach($request->get('itemID') as $key => $itemID) {
-               $form->items()->attach($form->id, [
+               $form->items()->attach($form->form_id, [
                  'items_id' =>  $request->input('itemSelect'.$itemID),
                  'user_id' => $form_created_by,
                  'amount' =>  $request->input('item_amount_'.$itemID),
@@ -185,7 +185,7 @@ class FormsController extends Controller
           if ($request->get('itemID')) {
              $deleteItems = FormItem::where('form_items_form_id', $form->id)->delete();
              foreach($request->get('itemID') as $key => $itemID) {
-               $form->items()->attach($form->id, [
+               $form->items()->attach($form->form_id, [
                  'items_id' =>  $request->input('itemSelect'.$itemID),
                  'user_id' => auth()->user()->id,
                  'amount' =>  $request->input('item_amount_'.$itemID),
