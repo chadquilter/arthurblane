@@ -188,7 +188,6 @@ class FormsController extends Controller
                $form->items()->attach($form->id, [
                  'items_id' =>  $request->input('itemSelect'.$itemID),
                  'user_id' => auth()->user()->id,
-                 'amount' =>  $request->input('item_amount_'.$itemID),
                  'qty' =>  $request->input('item_qty_'.$itemID)
                ]);
              }
