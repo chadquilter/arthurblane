@@ -11,7 +11,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'MDG') }}</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link href="/css/footer.css" rel="stylesheet">
     <link href="/css/image_styles.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
