@@ -23,6 +23,8 @@ class FormItem extends Migration
           $table->boolean('removed')->nullable();
           $table->boolean('primary_total')->nullable();
           $table->boolean('discount')->nullable();
+          $table->decimal('amount', 8, 2)->nullable();
+          $table->Integer('qty')->nullable();
           $table->timestamps();
       });
     }
