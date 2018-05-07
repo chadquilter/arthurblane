@@ -28,5 +28,4 @@
   </main>
 </body>
 <!-- Scripts -->
-<script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 </html>
