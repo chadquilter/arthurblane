@@ -29,7 +29,7 @@
             {{Form::textarea('form_body', '', ['id' => 'body-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Body goes here'])}}
           </div>
           <div class="FormItemsDiv">
-            <h3>Job Items:</h3>
+            <h3>Proposal Items (Items Can be added <a href="dashboard/item">Here</a>):</h3>
             <div class="form=group alert alert-info" role="alert">
               <table class="table table-stripe table-responsive" id="dynamic_field">
                 <tbody>
