@@ -102,7 +102,7 @@ class QuotesController extends Controller
           $quote->notes = $notes;
           $quote->save();
 
-          Mail::send(new QuoteMail($quote));
+          Mail::queue(new QuoteMail($quote));
 
           return redirect('/quotes')->with('success', 'Quote Sent! A representitive will contact you with further details.');
       }
