@@ -51,12 +51,12 @@
               <table class="table table-sm table-responsive collapse" id="dynamic_field">
                 <tbody>
                   @if(count($form_items_records) > 0)
-                    @foreach($form_items_records as $jobItem)
+                    @foreach($form_items_records as $formItem)
                       <tr id="row{{ $loop->iteration }}" class="dynamic-added">
                         <td id="item_div_{{$loop->iteration}}">
                           <strong>Item:</strong>
                           @if(count($items) > 0)
-                            {{ Form::select('itemSelect'.$loop->iteration, $items, $formItem->items_id , ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
+                            {{ Form::select('itemSelect'.$loop->iteration, $items, $formItem->items_id, ['name' => 'itemSelect'.$loop->iteration, 'class' => 'form-control m-bot15']) }}
                           @else
                             <h1>No Items Listed!</h1>
                           @endif
