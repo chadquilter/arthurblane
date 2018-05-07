@@ -140,7 +140,7 @@ class FormsController extends Controller
           }
 
           //edit view
-          return view('forms.edit')->with(compact('form', 'users', 'item_grand_total', 'form_items', 'items'));
+          return view('forms.edit')->with(compact('form', 'users', 'item_grand_total', 'form_items_records', 'items'));
       }
 
       /**
