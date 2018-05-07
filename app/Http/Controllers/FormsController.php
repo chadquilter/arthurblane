@@ -188,7 +188,6 @@ class FormsController extends Controller
              foreach($request->get('itemID') as $key => $itemID) {
                $form->items()->attach($form->id, [
                  'items_id' =>  $request->input('itemSelect'.$itemID),
-                 'form_id' =>  $form->id,
                  'user_id' => auth()->user()->id,
                  'qty' =>  $request->input('item_qty_'.$itemID)
                ]);
