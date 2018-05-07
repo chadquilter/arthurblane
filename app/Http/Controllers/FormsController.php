@@ -89,6 +89,7 @@ class FormsController extends Controller
                ]);
              }
           }
+          $form->save();
 
           return redirect('/forms')->with('success', 'Form Created!');
       }
@@ -192,6 +193,7 @@ class FormsController extends Controller
                ]);
              }
           }
+          $form->save();
 
           return redirect('/forms')->with('success', 'Form has been Updated!');
       }
