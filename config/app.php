@@ -183,6 +183,8 @@ return [
         Unisharp\Ckeditor\ServiceProvider::class,
         //captcha
         Mews\Captcha\CaptchaServiceProvider::class,
+        //pdf generator
+        Barryvdh\DomPDF\ServiceProvider::class,
 
     ],
 
@@ -235,6 +237,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Captcha' => Mews\Captcha\Facades\Captcha::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
 
     ],
 
