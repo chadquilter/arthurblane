@@ -13,7 +13,18 @@ class FormItem extends Migration
      */
     public function up()
     {
-        //
+      Schema::create('form_items', function (Blueprint $table) {
+          $table->increments('form_items_form_id');
+          $table->Integer('form_id');
+          $table->Integer('items_id');
+          $table->Integer('user_id');
+          $table->LongText('primary_group')->nullable();
+          $table->LongText('secondary_group')->nullable();
+          $table->boolean('removed')->nullable();
+          $table->boolean('primary_total')->nullable();
+          $table->boolean('discount')->nullable();
+          $table->timestamps();
+      });
     }
 
     /**
@@ -23,6 +34,6 @@ class FormItem extends Migration
      */
     public function down()
     {
-        //
+      Schema::dropIfExists('form_items');
     }
 }

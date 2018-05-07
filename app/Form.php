@@ -24,4 +24,12 @@ class Form extends Model
         'form_created_by'
     ];
 
+    public function items(){
+        return $this->belongsToMany('App\Item', 'form_items', 'form_items_form_id', 'items_id');
+    }
+
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
+
 }

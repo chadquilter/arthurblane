@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Form;
 use App\User;
+use App\Item;
+use App\FormItem;
 
 class FormsController extends Controller
 {
@@ -76,6 +78,17 @@ class FormsController extends Controller
           $form->form_active = $active;
           $form->save();
 
+          if ($request->get('itemID')) {
+             foreach($request->get('itemID') as $key => $itemID) {
+               $form->items()->attach($form->form_id, [
+                 'items_id' =>  $request->input('itemSelect'.$itemID),
+                 'user_id' => $job->user_id,
+                 'amount' =>  $request->input('item_amount_'.$itemID),
+                 'qty' =>  $request->input('item_qty_'.$itemID)
+               ]);
+             }
+          }
+
           return redirect('/forms')->with('success', 'Form Created!');
       }
 
@@ -109,8 +122,24 @@ class FormsController extends Controller
             return redirect('/login')->with('error', 'Unauthorized Page!');
           }
 
+          $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
+
+          $form_items = Formitem::where('form_items_form_id', '=', $id)
+                  ->orderBy('id', 'asc')
+                  ->paginate(1000, array('form_items.*'), 'form_items');
+
+          //check for auth
+          //if(auth()->user()->id !==$job->user_id) {
+          //  return redirect('/dashboard')->with('error', 'Unauthorized Page!');
+          //}
+          $item_grand_total = 0;
+          foreach($form_items as $formItem) {
+            $qty = $formItem->qty == 0 ? 1 : $formItem->qty;
+            $item_grand_total += $formItem->amount * $qty;
+          }
+
           //edit view
-          return view('forms.edit')->with(compact('form', 'users'));
+          return view('forms.edit')->with(compact('form', 'users', 'item_grand_total', 'form_items'));
       }
 
       /**
