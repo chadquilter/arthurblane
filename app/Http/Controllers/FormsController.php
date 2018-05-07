@@ -140,11 +140,12 @@ class FormsController extends Controller
           }
 
           //edit view
-          return view('forms.edit')->with('form',)
-          with->('users', $users )
-          with->('item_grand_total', $item_grand_total)
-          with->('form_items_records', $form_itmes)
-          with->('items', $items);
+          return view('forms.edit')
+          ->with('form', $form)
+          ->with('users', $users )
+          ->with('item_grand_total', $item_grand_total)
+          ->with('form_items_records', $form_itmes)
+          ->with('items', $items);
       }
 
       /**
