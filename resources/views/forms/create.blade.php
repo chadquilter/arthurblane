@@ -20,6 +20,18 @@
             {{Form::label('form_title', 'Title:')}}
             {{Form::text('form_title', '', ['class' => 'form-control', 'placeholder' => 'Form Title'])}}
           </div>
+          <hr>
+          @if (count($users) > 0)
+            <div class="form=group">
+              {{Form::label('address_name', 'Proposal Address:')}}
+              @if(count($users) > 0)
+                {{ Form::select('address_name', $addresses, 1, ['class' => 'form-control m-bot15']) }}
+              @else
+                <h1>No Users Listed!</h1>
+              @endif
+            </div>
+          @endif
+          <br>
           <div class="form=group">
             {{Form::label('form_salutation', 'Form Salutation:')}}
             {{Form::textarea('form_salutation', '', ['id' => 'salutation-ckeditor', 'class' => 'form-control', 'placeholder' => 'Form Salutation, leave empty if not needed'])}}
