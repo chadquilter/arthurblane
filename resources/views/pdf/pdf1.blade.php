@@ -13,7 +13,7 @@
 
     <table cellpadding="0" cellspacing="0" width="100%" style="border: 1px;" rules="none">
       <tr>
-        <th style="width: 70%">
+        <th>
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
         </th>
         <th style="text-align: right;">
@@ -25,11 +25,11 @@
           </h6>
         </th>
       </tr>
-      <tr>
-        <td colspan=2 bgcolor="grey"></td>
+      <tr bgcolor="#808080">
+        <td colspan=2 bgcolor="#808080"></td>
       </tr>
       <tr>
-        <td width="70%">
+        <td>
           <h5>To:</h5><hr>
           <h6>
             {!! $form->form_contact !!}
