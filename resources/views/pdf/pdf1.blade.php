@@ -64,7 +64,7 @@
                   <tr id="row{{ $loop->iteration }}">
                     <td id="item_div_{{$loop->iteration}}">
                       <strong>Item:</strong>
-                      {{ $items[$formItem->item_id]->name }}
+                      {{ $items->$formItem->item_id->name }}
                     </td>
                     <td>
                       <strong>Amount: </strong>
