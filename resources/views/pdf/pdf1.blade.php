@@ -18,7 +18,7 @@
     <table>
       <tr>
         <td>
-          <h5>From:</h5><hr>
+          <h5><strong>From:</strong></h5><hr>
           <h6>
           {!! config('app.name', 'MDG') !!}<br>
           {{ env('COMPANY_STREET') }}<br>
@@ -27,8 +27,8 @@
           </h6>
         </td>
         <td rowspan="2" align="right" style="vertical-align: top;">
-          <h3>Date: {{ $form->form_date }}</h3>
-          <h3>Invoice Number: #123456</h3>
+          <h5><strong>Date:</strong> {{ $form->form_date }}</h5>
+          <h5><strong>Invoice Number:</strong> #123456</h5>
         </td>
       </tr>
       <tr>
