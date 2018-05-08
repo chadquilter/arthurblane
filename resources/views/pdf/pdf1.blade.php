@@ -12,7 +12,7 @@
   <body>
 
     <div>
-          <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand-wt.png">
+          <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
     </div>
     <br>
     <hr>
