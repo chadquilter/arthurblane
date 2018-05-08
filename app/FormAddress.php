@@ -27,5 +27,5 @@ class FormAdress extends Model
   public function Uom(){
       return $this->belongsTo('App\Uom');
   }
-  
+
 }
