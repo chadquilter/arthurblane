@@ -39,7 +39,6 @@
           {{ env('COMPANY_PHONE') }}<br>
         </td>
         <td>
-
         </td>
       </tr>
       <tr>
@@ -51,10 +50,7 @@
       </tr>
       <tr>
         <td>
-          <h3>
-            {!! $form->form_salutation !!},
-          </h3>
-          <hr>
+          {!! $form->form_salutation !!}
         </td>
         <td>
         </td>
@@ -88,17 +84,12 @@
               @endif
             </tbody>
           </table>
-
-
+          
         </td>
       </tr>
-
       <tr>
         <td>
-          {{ $form->form_salutation }}
-        </td>
-        <td>
-          {{ $form->form_closing }}
+          {!! $form->form_closing !!}
         </td>
       </tr>
     </table>
