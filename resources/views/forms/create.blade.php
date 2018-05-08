@@ -21,13 +21,13 @@
             {{Form::text('form_title', '', ['class' => 'form-control', 'placeholder' => 'Form Title'])}}
           </div>
           <hr>
-          @if (count($users) > 0)
+          @if (count($addresses) > 0)
             <div class="form=group">
               {{Form::label('address_name', 'Proposal Address:')}}
-              @if(count($users) > 0)
+              @if(count($addresses) > 0)
                 {{ Form::select('address_name', $addresses, 1, ['class' => 'form-control m-bot15']) }}
               @else
-                <h1>No Users Listed!</h1>
+                <h1>No Addresses Listed!</h1>
               @endif
             </div>
           @endif
