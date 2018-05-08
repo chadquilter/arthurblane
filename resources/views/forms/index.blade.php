@@ -39,7 +39,7 @@
                       </td>
                       <td>
                         {!!Form::open(['action' => ['FormsController@downloadPDF', $form->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
-                        {{Form::hidden('_method', 'POST')}}
+                        {{Form::hidden('_method', 'GET')}}
                         {{Form::submit('Print PDF', ['class' => 'btn btn-success'])}}
                         {!!Form::close()!!}
                       </td>
