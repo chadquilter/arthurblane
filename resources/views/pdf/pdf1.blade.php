@@ -11,19 +11,22 @@
   </head>
   <body>
 
-    <div>
-      <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
-      <div>
-        <h6>
-        {!! config('app.name', 'MDG') !!}<br>
-        {{ env('COMPANY_STREET') }}<br>
-        {{ env('COMPANY_STATE') }}<br>
-        {{ env('COMPANY_PHONE') }}<br>
-        </h6>
-      </div>
-    </div>
+
     <br>
     <table>
+      <tr>
+        <th>
+          <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
+        </th>
+        <th>
+          <h6>
+            {!! config('app.name', 'MDG') !!}<br>
+            {{ env('COMPANY_STREET') }}<br>
+            {{ env('COMPANY_STATE') }}<br>
+            {{ env('COMPANY_PHONE') }}<br>
+          </h6>
+        </th>
+      </tr>
       <tr>
         <td>
           <h5>To:</h5><hr>
