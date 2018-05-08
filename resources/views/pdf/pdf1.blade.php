@@ -36,8 +36,8 @@
           </h6>
         </td>
         <td style="text-align: right;">
-          <h5><strong>Date:</strong></h5> {{ $form->form_date }}
-          <h5><strong>Invoice Number:</strong></h5> #123456
+          <h6><strong>Date:</strong>{{ $form->form_date }}</h6>
+          <h6><strong>Invoice Number:</strong> #123456</h6>
         </td>
       </tr>
 

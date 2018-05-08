@@ -9,6 +9,7 @@ class Form extends Model
     protected $table = 'forms';
     public $primaryKey = 'id';
     public $timestamps = true;
+    protected $dates = ['created_at', 'updated_at', 'form_date'];
 
     public $fillable = [
         'form_type',
