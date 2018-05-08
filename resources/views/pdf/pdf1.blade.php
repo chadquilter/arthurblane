@@ -10,13 +10,12 @@
     <link href="https://bamconstruction.net/css/image_styles.css" rel="stylesheet">
   </head>
   <body>
-    <table>
-      <tr>
-        <td>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-transparant">
+      <div>
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand.png">
-        </td>
-      </tr>
-    </table>
+        </div>
+    </nav>
+    
     <table>
       <tr>
         <td>
