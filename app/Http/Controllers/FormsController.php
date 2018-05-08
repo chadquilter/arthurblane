@@ -47,7 +47,7 @@ class FormsController extends Controller
       public function create()
       {
           $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
-          $addresses = Address::pluck('address_name', 'id');
+          $addresses = Address::pluck('name', 'id');
           return view('forms.create')->with(compact('items', 'addresses'));
       }
 
