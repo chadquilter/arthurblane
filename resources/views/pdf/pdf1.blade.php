@@ -26,7 +26,7 @@
         </th>
       </tr>
       <tr bgcolor="#808080">
-        <td colspan=2 bgcolor="#808080"> &nbsb; </td>
+        <td colspan=2 bgcolor="#808080"> &nbsp; </td>
       </tr>
       <tr>
         <td>
