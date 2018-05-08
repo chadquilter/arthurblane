@@ -13,8 +13,12 @@
           <br>
           {!! Form::open(['action' => 'AddressController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
           <div class="form=group">
+            {{Form::label('name', 'Address Name:')}}
+            {{Form::text('name', '', ['class' => 'form-control required', 'placeholder' => 'Name'])}}
+          </div>
+          <div class="form=group">
             {{Form::label('address1', 'Address 1:')}}
-            {{Form::text('address1', '', ['class' => 'form-control', 'placeholder' => 'Address 1'])}}
+            {{Form::text('address1', '', ['class' => 'form-control required', 'placeholder' => 'Address 1'])}}
           </div>
           <div class="form=group">
             {{Form::label('address2', 'Address 2:')}}
@@ -22,15 +26,15 @@
           </div>
           <div class="form=group">
             {{Form::label('city', 'City: ')}}
-            {{Form::text('city', '', ['class' => 'form-control', 'placeholder' => 'City/Town'])}}
+            {{Form::text('city', '', ['class' => 'form-control required', 'placeholder' => 'City/Town'])}}
           </div>
           <div class="form=group">
             {{Form::label('state', 'State: ')}}
-            {{Form::text('state', '', ['class' => 'form-control', 'placeholder' => 'State'])}}
+            {{Form::text('state', '', ['class' => 'form-control required', 'placeholder' => 'State'])}}
           </div>
           <div class="form=group">
             {{Form::label('zipcode', 'Zip Code: ')}}
-            {{Form::text('zipcode', '', ['class' => 'form-control', 'placeholder' => 'Zip Code'])}}
+            {{Form::text('zipcode', '', ['class' => 'form-control required', 'placeholder' => 'Zip Code'])}}
           </div>
           <div class="form=group">
             {{Form::label('Active', 'Address Active? ')}}

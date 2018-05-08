@@ -13,8 +13,12 @@
           <br>
           {!! Form::open(['action' => ['AddressController@update', $address->id], 'method' => 'POST']) !!}
           <div class="form=group">
+            {{Form::label('name', 'Name:')}}
+            {{Form::text('name', $address->name, ['class' => 'form-control required', 'placeholder' => 'Address 1'])}}
+          </div>
+          <div class="form=group">
             {{Form::label('address1', 'Address 1:')}}
-            {{Form::text('address1', $address->address1, ['class' => 'form-control', 'placeholder' => 'Address 1'])}}
+            {{Form::text('address1', $address->address1, ['class' => 'form-control required', 'placeholder' => 'Address 1'])}}
           </div>
           <div class="form=group">
             {{Form::label('address2', 'Address 2:')}}
@@ -22,15 +26,15 @@
           </div>
           <div class="form=group">
             {{Form::label('city', 'City: ')}}
-            {{Form::text('city',  $address->city, ['class' => 'form-control', 'placeholder' => 'City/Town'])}}
+            {{Form::text('city',  $address->city, ['class' => 'form-control reuiqred', 'placeholder' => 'City/Town'])}}
           </div>
           <div class="form=group">
             {{Form::label('state', 'State: ')}}
-            {{Form::text('state',  $address->state, ['class' => 'form-control', 'placeholder' => 'State'])}}
+            {{Form::text('state',  $address->state, ['class' => 'form-control required', 'placeholder' => 'State'])}}
           </div>
           <div class="form=group">
             {{Form::label('zipcode', 'Zip Code: ')}}
-            {{Form::text('zipcode',  $address->zipcode, ['class' => 'form-control', 'placeholder' => 'Zip Code'])}}
+            {{Form::text('zipcode',  $address->zipcode, ['class' => 'form-control required', 'placeholder' => 'Zip Code'])}}
           </div>
           <div class="form=group">
             {{Form::label('Active', 'Address Active? ')}}

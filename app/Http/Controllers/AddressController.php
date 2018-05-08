@@ -53,6 +53,7 @@ class AddressController extends Controller
       public function store(Request $request)
       {
           $this->validate($request, [
+              'name' => 'required',
               'address1' => 'required',
               'address2' => 'required',
               'zipcode' => 'required',
@@ -67,6 +68,7 @@ class AddressController extends Controller
 
           // create address
           $address = new address;
+          $address->name = $request->input('name');
           $address->address1 = $request->input('address1');
           $address->address2 = $request->input('address2');
           $address->zipcode = $request->input('zipcode');
@@ -125,6 +127,7 @@ class AddressController extends Controller
       {
           //
           $this->validate($request, [
+              'name' => 'required',
               'address1' => 'required',
               'address2' => 'required',
               'zipcode' => 'required',
@@ -139,6 +142,7 @@ class AddressController extends Controller
 
           // create address
           $address = new address;
+          $address->name = $request->input('name');
           $address->address1 = $request->input('address1');
           $address->address2 = $request->input('address2');
           $address->zipcode = $request->input('zipcode');

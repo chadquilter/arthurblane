@@ -7,6 +7,8 @@ use App\Form;
 use App\User;
 use App\Item;
 use App\FormItem;
+use App\Address;
+use App\FormAddress;
 use PDF;
 
 class FormsController extends Controller
@@ -45,7 +47,8 @@ class FormsController extends Controller
       public function create()
       {
           $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
-          return view('forms.create')->with(compact('items'));
+          $addresses = Address::pluck('address_name', 'id');
+          return view('forms.create')->with(compact('items', 'addresses'));
       }
 
       /**

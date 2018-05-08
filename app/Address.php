@@ -11,6 +11,7 @@ class Address extends Model
     public $timestamps = true;
 
     public $fillable = [
+        'name',
         'address1',
         'address2',
         'zipcode',
@@ -19,5 +20,9 @@ class Address extends Model
         'country',
         'code'
     ];
+
+    public function forms(){
+        return $this->belongsToMany('App\Form', 'form_adresses', 'address_id', 'id');
+    }
 
 }

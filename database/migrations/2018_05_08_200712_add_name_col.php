@@ -14,7 +14,7 @@ class AddNameCol extends Migration
     public function up()
     {
         Schema::table('address', function (Blueprint $table) {
-            //
+            $table->LongText('name');
         });
     }
 
