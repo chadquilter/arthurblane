@@ -145,12 +145,15 @@ class FormsController extends Controller
             $item_grand_total += $formItem->amount * $qty;
           }
 
+          $addresses = Address::pluck('name', 'id');
+
           //edit view
           return view('forms.edit')
           ->with('form', $form)
           ->with('users', $users )
           ->with('item_grand_total', $item_grand_total)
           ->with('form_items_records', $form_items)
+          ->with('addresses', $addresses)
           ->with('items', $items);
       }
 
