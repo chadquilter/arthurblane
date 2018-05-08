@@ -16,29 +16,24 @@
     </div>
     <table>
       <tr>
-        <td>
-          <h3></h3>
-        </td>
-        <td>
+        <td colspan="2" style="text-align: left;">
           <h3>Date: {{ $form->form_date }}</h3>
         </td>
       </tr>
       <tr>
-        <td>
-          <h3></h3>
-        </td>
-        <td>
+        <td colspan="2" style="text-align: left;">
           <h3>Invoice Number: #123456</h3>
         </td>
       </tr>
       <tr>
         <td>
+          <h5>From:</h5>
+          <h5>
           {!! config('app.name', 'MDG') !!}<br>
           {{ env('COMPANY_STREET') }}<br>
           {{ env('COMPANY_STATE') }}<br>
           {{ env('COMPANY_PHONE') }}<br>
-        </td>
-        <td>
+          </h5>
         </td>
       </tr>
       <tr>
@@ -84,7 +79,7 @@
               @endif
             </tbody>
           </table>
-          
+
         </td>
       </tr>
       <tr>
