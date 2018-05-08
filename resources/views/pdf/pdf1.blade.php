@@ -10,7 +10,7 @@
     <table>
       <tr>
         <td>
-          <img alt="{{ config('app.name', 'MDG') }}" src=" {{ asset('/images/logo-brand.png') }}">
+          <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand.png">
         </td>
       </tr>
     </table>
