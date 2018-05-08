@@ -25,7 +25,7 @@
             <div class="form=group">
               {{Form::label('address_name', 'Proposal Address:')}}
               @if(count($addresses) > 0)
-                {{ Form::select('address_name', $addresses, 1, ['class' => 'form-control m-bot15']) }}
+                {{ Form::select('address_name', $addresses, '', ['class' => 'form-control m-bot15']) }}
               @else
                 <h1>No Addresses Listed!</h1>
               @endif
