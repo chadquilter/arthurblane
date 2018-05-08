@@ -55,7 +55,6 @@ class AddressController extends Controller
           $this->validate($request, [
               'name' => 'required',
               'address1' => 'required',
-              'address2' => 'required',
               'zipcode' => 'required',
               'state' => 'required',
               'city' => 'required'
@@ -129,7 +128,6 @@ class AddressController extends Controller
           $this->validate($request, [
               'name' => 'required',
               'address1' => 'required',
-              'address2' => 'required',
               'zipcode' => 'required',
               'state' => 'required',
               'city' => 'required'
