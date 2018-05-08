@@ -14,18 +14,20 @@
     <div>
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
     </div>
-    <br>
-    <hr>
     <table>
       <tr>
         <td>
-          <h2>From:</h2><hr>
-          {!! config('app.name', 'MDG') !!}
-          {{ env('COMPANY_STREET') }}
-          {{ env('COMPANY_STATE') }}
-          {{ env('COMPANY_PHONE') }}
+          <h2>From:</h2>
+          <br>
+          <hr>
+          {!! config('app.name', 'MDG') !!}<br>
+          {{ env('COMPANY_STREET') }}<br>
+          {{ env('COMPANY_STATE') }}<br>
+          {{ env('COMPANY_PHONE') }}<br>
         </td>
-        <td>{!! $form->form_date !!}</td>
+        <td>
+          <h2>{!! $form->form_date !!}</h2>
+        </td>
       </tr>
       <tr>
         <td>
