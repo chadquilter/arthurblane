@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class FormAdress extends Model
+class FormAddress extends Model
 {
   protected $table = 'form_adresses';
   public $primaryKey = 'id';
