@@ -14,20 +14,11 @@
     <div>
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
     </div>
+    <br>
     <table>
       <tr>
-        <td colspan="2" style="text-align: left;">
-          <h3>Date: {{ $form->form_date }}</h3>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2" style="text-align: left;">
-          <h3>Invoice Number: #123456</h3>
-        </td>
-      </tr>
-      <tr>
         <td>
-          <h5>From:</h5>
+          <h5>From:</h5><hr>
           <h5>
           {!! config('app.name', 'MDG') !!}<br>
           {{ env('COMPANY_STREET') }}<br>
@@ -35,10 +26,15 @@
           {{ env('COMPANY_PHONE') }}<br>
           </h5>
         </td>
+        <td rowspan="2" style="text-align: top right;">
+          <h3>Date: {{ $form->form_date }}</h3>
+          <h3>Invoice Number: #123456</h3>
+        </td>
       </tr>
       <tr>
         <td>
-          <h3>To:</h3><hr>
+          <br>
+          <h5>To:</h5><hr>
           {!! $form->form_contact !!}
         </td>
         <td></td>
