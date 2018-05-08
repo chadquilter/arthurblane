@@ -10,12 +10,26 @@
     <table class="table table-bordered">
       <tr>
         <td>
+          {{ $form->form_from }}
+        </td>
+        <td>
+          {{ $form->form_contact}}
+        </td>
+      </tr>
+      <tr>
+        <td>
           {{ $form->form_salutation }}
         </td>
+        <td>
+          {{ $form->form_date }}
+        </td>
+      </tr>
+      <tr>
         <td>
           {{ $form->form_body }}
         </td>
       </tr>
+      <hr>
       <tr>
         <td>
 
@@ -42,8 +56,14 @@
 
 
         </td>
+      </tr>
+
+      <tr>
         <td>
-          zip code
+          {{ $form->form_salutation }}
+        </td>
+        <td>
+          {{ $form->form_closing }}
         </td>
       </tr>
     </table>

@@ -30,15 +30,15 @@
               <tbody>
                 @foreach($forms as $form)
                   <tr>
-                    <td width=80%><strong>Form: </strong>
+                    <td width=80%>
                       <div class=row>
                         <div class="col-md-4">
-                          <br> {{$form->form_title}}
+                          <strong>{{$form->form_title}}</strong>
                           <br> {{$form->form_date}}
                         </div>
                       </td>
                       <td>
-                        <a href="{{action('FormsController@downloadPDF', $form->id)}}" class="btn btn-primary">PDF</a>
+                        <a href="{{action('FormsController@downloadPDF', $form->id)}}" class="btn btn-success">PDF</a>
                       </td>
                       <td><a href="/forms/{{$form->id}}/edit" class="btn btn-primary">Edit</a></td>
                       <td>
