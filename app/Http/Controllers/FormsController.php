@@ -154,8 +154,7 @@ class FormsController extends Controller
           ->with('item_grand_total', $item_grand_total)
           ->with('form_items_records', $form_items)
           ->with('items', $items)
-          ->with('addresses', $addresses)
-          ->with('form_address', $form_address);
+          ->with('addresses', $addresses);
       }
 
       /**
