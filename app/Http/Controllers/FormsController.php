@@ -146,7 +146,6 @@ class FormsController extends Controller
           }
 
           $addresses = Address::pluck('name', 'id');
-          $form_address = Formaddress::where('form_address_address_id', '=', $id)->pluck('address_id');
 
           //edit view
           return view('forms.edit')
