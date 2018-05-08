@@ -223,7 +223,7 @@ class FormsController extends Controller
       public function downloadPDF($id){
         $form = form::find($id);
         $Items = FormItem::where('form_items_form_id', $form->id)
-        $pdf = PDF::loadView('pdf', with('form', $form)->with('items', $items) ));
+        $pdf = PDF::loadView('pdf', compact('form') );
         return $pdf->download('invoice.pdf');
       }
 }
