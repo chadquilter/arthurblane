@@ -7,6 +7,7 @@ use App\Form;
 use App\User;
 use App\Item;
 use App\FormItem;
+use PDF;
 
 class FormsController extends Controller
 {
