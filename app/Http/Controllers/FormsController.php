@@ -219,4 +219,11 @@ class FormsController extends Controller
           $form->delete();
           return redirect('/forms')->with('success', 'Form Deleted');
       }
+
+      public function downloadPDF($id){
+        $form = form::find($id);
+        $Items = FormItem::where('form_items_form_id', $form->id)
+        $pdf = PDF::loadView('pdf', compact('form', 'items'));
+        return $pdf->download('invoice.pdf');
+      }
 }
