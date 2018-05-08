@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class FormAddress extends Model
 {
-  protected $table = 'form_adresses';
+  protected $table = 'form_addresses';
   public $primaryKey = 'id';
   public $timestamps = true;
 
