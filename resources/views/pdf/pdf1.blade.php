@@ -26,7 +26,7 @@
           {{ env('COMPANY_PHONE') }}<br>
           </h6>
         </td>
-        <td rowspan="2" align="right" style="vertical-align: top;">
+        <td rowspan="2" style="vertical-align: top; text-align: right">
           <h5><strong>Date:</strong> {{ $form->form_date }}</h5>
           <h5><strong>Invoice Number:</strong> #123456</h5>
         </td>
