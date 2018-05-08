@@ -23,6 +23,7 @@
           <h3>Date: {{ $form->form_date }}</h3>
         </td>
       </tr>
+      <tr>
         <td>
           {!! config('app.name', 'MDG') !!}<br>
           {{ env('COMPANY_STREET') }}<br>
