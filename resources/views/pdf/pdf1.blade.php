@@ -7,7 +7,14 @@
     <title>{{ $form->form_title }}</title>
   </head>
   <body>
-    <table class="table table-bordered">
+    <table>
+      <tr>
+        <td>
+          <a class="navbar-brand" href="/"><img alt="{{ config('app.name', 'MDG') }}" src="/images/logo-brand.png">
+        </td>
+      </tr>
+    </table>
+    <table>
       <tr>
         <td>
           {{ $form->form_from }}
