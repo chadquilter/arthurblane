@@ -16,7 +16,7 @@
         <th style="width: 70%">
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
         </th>
-        <th style="width: 30%">
+        <th style="text-align: right;">
           <h6>
             {!! config('app.name', 'MDG') !!}<br>
             {{ env('COMPANY_STREET') }}<br>
@@ -26,7 +26,7 @@
         </th>
       </tr>
       <tr>
-        <td colspan=2 style="background-color: grey;"></td>
+        <td colspan=2 bgcolor="grey"></td>
       </tr>
       <tr>
         <td width="70%">
@@ -35,9 +35,9 @@
             {!! $form->form_contact !!}
           </h6>
         </td>
-        <td style="text-align: right;" width="30%">
-          <h5><strong>Date:</strong> {{ $form->form_date }}</h5>
-          <h5><strong>Invoice Number:</strong> #123456</h5>
+        <td style="text-align: right;">
+          <h5><strong>Date:</strong></h5> {{ $form->form_date }}
+          <h5><strong>Invoice Number:</strong></h5> #123456
         </td>
       </tr>
 
