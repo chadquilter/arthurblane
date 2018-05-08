@@ -138,8 +138,8 @@ class AddressController extends Controller
           $long_lat = 1;
           $country = 'US';
 
-          // create address
-          $address = new address;
+          // update address
+          $address = address::find($id);
           $address->name = $request->input('name');
           $address->address1 = $request->input('address1');
           $address->address2 = $request->input('address2');
