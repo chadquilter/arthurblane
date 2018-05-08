@@ -234,6 +234,7 @@ class FormsController extends Controller
         }
 
         $pdf = PDF::loadView('pdf.pdf1', compact('form', 'form_items_records', 'items'));
-        return $pdf->download('{$form->form_title}.pdf')->redirect('/forms')->with('success', 'Form Printed');
+        $pdf->download('{$form->form_title}.pdf');
+        return redirect('/forms')->with('success', 'Form Printed');
       }
 }
