@@ -5,6 +5,9 @@
   <head>
     <meta charset="utf-8">
     <title>{{ $form->form_title }}</title>
+    <link href="https://bamconstruction.net/css/app.css" rel="stylesheet">
+    <link href="https://bamconstruction.net/css/footer.css" rel="stylesheet">
+    <link href="https://bamconstruction.net/css/image_styles.css" rel="stylesheet">
   </head>
   <body>
     <table>
