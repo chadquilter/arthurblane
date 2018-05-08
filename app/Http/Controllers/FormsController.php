@@ -223,8 +223,17 @@ class FormsController extends Controller
 
       public function downloadPDF($id){
         $form = form::find($id);
-        $Items = FormItem::where('form_items_form_id', $form->id);
-        $pdf = PDF::loadView('pdf.pdf1', compact('form', 'items'));
+        $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
+        $form_items_records = Formitem::where('form_items_form_id', '=', $id)
+                ->orderBy('id', 'asc')
+                ->paginate(1000, array('form_items.*'), 'form_items');
+        $item_grand_total = 0;
+        foreach($form_items_records as $formItem) {
+          $qty = $formItem->qty == 0 ? 1 : $formItem->qty;
+          $item_grand_total += $formItem->amount * $qty;
+        }
+
+        $pdf = PDF::loadView('pdf.pdf1', compact('form', 'form_items_records', 'items'));
         return $pdf->download('{$form->form_title}.pdf');
       }
 }
