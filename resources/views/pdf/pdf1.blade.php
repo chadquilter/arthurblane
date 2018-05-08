@@ -12,35 +12,31 @@
   <body>
 
     <div>
-          <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
+      <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
+      <div>
+        <h6>
+        {!! config('app.name', 'MDG') !!}<br>
+        {{ env('COMPANY_STREET') }}<br>
+        {{ env('COMPANY_STATE') }}<br>
+        {{ env('COMPANY_PHONE') }}<br>
+        </h6>
+      </div>
     </div>
     <br>
     <table>
       <tr>
         <td>
-          <h5><strong>From:</strong></h5><hr>
-          <h6>
-          {!! config('app.name', 'MDG') !!}<br>
-          {{ env('COMPANY_STREET') }}<br>
-          {{ env('COMPANY_STATE') }}<br>
-          {{ env('COMPANY_PHONE') }}<br>
-          </h6>
-        </td>
-        <td rowspan="2" style="vertical-align: top; horizontal-align: right;" width:100%>
-          <h5><strong>Date:</strong> {{ $form->form_date }}</h5>
-          <h5><strong>Invoice Number:</strong> #123456</h5>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <br>
           <h5>To:</h5><hr>
           <h6>
             {!! $form->form_contact !!}
           </h6>
         </td>
-        <td></td>
+        <td rowspan="2" style="text-align: right;" width="100%">
+          <h5><strong>Date:</strong> {{ $form->form_date }}</h5>
+          <h5><strong>Invoice Number:</strong> #123456</h5>
+        </td>
       </tr>
+
       <tr>
         <td>
           {!! $form->form_salutation !!}
