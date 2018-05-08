@@ -19,18 +19,29 @@
     <table>
       <tr>
         <td>
-          {!! $form->form_from !!}
+          <h2>From:</h2><hr>
+          {!! config('app.name', 'MDG') !!}
+          {{ env('COMPANY_STREET') }}
+          {{ env('COMPANY_STATE') }}
+          {{ env('COMPANY_PHONE') }}
         </td>
-        <td>
-          {!! $form->form_contact !!}
-        </td>
+        <td>{!! $form->form_date !!}</td>
       </tr>
       <tr>
         <td>
-          {!! $form->form_salutation !!}
+          <h2>To:</h2><hr>
+          {!! $form->form_contact !!}
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <h3>
+            {!! $form->form_salutation !!},
+          </h3>
+          <hr>
         </td>
         <td>
-          {!! $form->form_date !!}
         </td>
       </tr>
       <tr>
