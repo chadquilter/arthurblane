@@ -13,10 +13,10 @@
 
     <table>
       <tr>
-        <th width="80%">
+        <th width="80%" border=1>
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
         </th>
-        <th widht="20%">
+        <th widht="20%" border=1>
           <h6>
             {!! config('app.name', 'MDG') !!}<br>
             {{ env('COMPANY_STREET') }}<br>
