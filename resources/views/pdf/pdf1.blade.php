@@ -11,8 +11,6 @@
   </head>
   <body>
 
-
-    <br>
     <table>
       <tr>
         <th>
@@ -34,27 +32,27 @@
             {!! $form->form_contact !!}
           </h6>
         </td>
-        <td rowspan="2" style="text-align: right;" width="100%">
+        <td style="text-align: right;" width="100%">
           <h5><strong>Date:</strong> {{ $form->form_date }}</h5>
           <h5><strong>Invoice Number:</strong> #123456</h5>
         </td>
       </tr>
 
       <tr>
-        <td>
+        <td colspan=2>
           {!! $form->form_salutation !!}
         </td>
         <td>
         </td>
       </tr>
       <tr>
-        <td>
+        <td colspan=2>
           {!! $form->form_body !!}
         </td>
       </tr>
       <hr>
       <tr>
-        <td>
+        <td colspan=2>
 
           <table class="table" id="dynamic_field">
             <tbody>
@@ -84,6 +82,7 @@
           {!! $form->form_closing !!}
         </td>
       </tr>
+
     </table>
   </body>
 </html>
