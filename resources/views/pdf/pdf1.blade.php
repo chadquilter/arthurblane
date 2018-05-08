@@ -19,14 +19,14 @@
       <tr>
         <td>
           <h5>From:</h5><hr>
-          <h5>
+          <h6>
           {!! config('app.name', 'MDG') !!}<br>
           {{ env('COMPANY_STREET') }}<br>
           {{ env('COMPANY_STATE') }}<br>
           {{ env('COMPANY_PHONE') }}<br>
-          </h5>
+          </h6>
         </td>
-        <td rowspan="2" style="text-align: top right;">
+        <td rowspan="2" align="right" style="vertical-align: top;">
           <h3>Date: {{ $form->form_date }}</h3>
           <h3>Invoice Number: #123456</h3>
         </td>
@@ -35,7 +35,9 @@
         <td>
           <br>
           <h5>To:</h5><hr>
-          {!! $form->form_contact !!}
+          <h6>
+            {!! $form->form_contact !!}
+          </h6>
         </td>
         <td></td>
       </tr>
