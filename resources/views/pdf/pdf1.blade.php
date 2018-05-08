@@ -13,10 +13,10 @@
 
     <table cellpadding="0" cellspacing="0" width="100%" style="border: 1px;" rules="none">
       <tr>
-        <th style="width: 80%">
+        <th style="width: 70%">
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
         </th>
-        <th style="width: 20%">
+        <th style="width: 30%">
           <h6>
             {!! config('app.name', 'MDG') !!}<br>
             {{ env('COMPANY_STREET') }}<br>
@@ -26,13 +26,16 @@
         </th>
       </tr>
       <tr>
-        <td widht="80%">
+        <td colspan=2 style="background-color: grey;"></td>
+      </tr>
+      <tr>
+        <td width="70%">
           <h5>To:</h5><hr>
           <h6>
             {!! $form->form_contact !!}
           </h6>
         </td>
-        <td style="text-align: right;" width="20%">
+        <td style="text-align: right;" width="30%">
           <h5><strong>Date:</strong> {{ $form->form_date }}</h5>
           <h5><strong>Invoice Number:</strong> #123456</h5>
         </td>
