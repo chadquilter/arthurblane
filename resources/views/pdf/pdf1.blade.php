@@ -17,10 +17,18 @@
     <table>
       <tr>
         <td>
-          <h3>From:</h3>
+          <h3></h3>
         </td>
         <td>
           <h3>Date: {{ $form->form_date }}</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3></h3>
+        </td>
+        <td>
+          <h3>Invoice Number: #123456</h3>
         </td>
       </tr>
       <tr>
@@ -31,7 +39,7 @@
           {{ env('COMPANY_PHONE') }}<br>
         </td>
         <td>
-          <p>Invoice Number: #123456</p>
+
         </td>
       </tr>
       <tr>
