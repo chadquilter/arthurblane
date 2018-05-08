@@ -82,8 +82,8 @@ class FormsController extends Controller
           $form->form_created_by = $form_created_by;
           $form->form_active = $active;
           $form->save();
-          
-          $form->addresses()->attach($form->id, [
+
+          $form->adresses()->attach($form->id, [
             'form_address_address_id' =>  $request->input('address_id'),
             'user_id' => auth()->user()->id,
             'uom_id' =>  1
