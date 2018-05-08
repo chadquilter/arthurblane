@@ -12,6 +12,7 @@ class FormAddress extends Model
 
   public $fillable = [
     'form_address_address_id',
+    'address_id',
     'user_id',
     'uom_id',
     'units_traveled',
