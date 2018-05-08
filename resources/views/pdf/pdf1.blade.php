@@ -11,31 +11,31 @@
   </head>
   <body>
 
-    <div style="background-color: grey;">
-          <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand.png">
+    <div>
+          <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand-wt.png">
     </div>
     <br>
     <hr>
     <table>
       <tr>
         <td>
-          {{ $form->form_from }}
+          {{!! $form->form_from !!}}
         </td>
         <td>
-          {{ $form->form_contact}}
-        </td>
-      </tr>
-      <tr>
-        <td>
-          {{ $form->form_salutation }}
-        </td>
-        <td>
-          {{ $form->form_date }}
+          {{!! $form->form_contact !!}}
         </td>
       </tr>
       <tr>
         <td>
-          {{ $form->form_body }}
+          {{!! $form->form_salutation !!}}
+        </td>
+        <td>
+          {{!! $form->form_date !!}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          {{!! $form->form_body !!}}
         </td>
       </tr>
       <hr>
