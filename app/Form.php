@@ -31,7 +31,7 @@ class Form extends Model
     }
 
     public function addresses(){
-        return $this->belongsToMany('App\FormAddress', 'form_adresses', 'form_address_address_id', 'address_id');
+        return $this->belongsToMany('App\FormAddress', 'form_addresses', 'form_address_address_id', 'address_id');
     }
 
     public function user(){
