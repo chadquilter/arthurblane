@@ -60,11 +60,11 @@
           <table class="table" id="dynamic_field">
             <tbody>
               @if(count($form->items()) > 0)
-                @foreach($form_items_records as $formItem)
+                @foreach($form->items() as $formItem)
                   <tr id="row{{ $loop->iteration }}">
                     <td id="item_div_{{$loop->iteration}}">
                       <strong>Item:</strong>
-                      {{ $formItem->items_id }}
+                      {{ $formItem->item_name }}
                     </td>
                     <td>
                       <strong>Amount: </strong>
