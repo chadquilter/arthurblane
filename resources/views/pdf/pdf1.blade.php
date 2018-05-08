@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <table>
+    <table cellpadding="0" cellspacing="0" width="100%" style="border: 1px;" rules="none">
       <tr>
         <th style="width: 80%">
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
