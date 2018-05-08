@@ -11,7 +11,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-transparant">
-      <div style="bg-color: grey;">
+      <div style="background-color: grey;">
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand.png">
       </div>
     </nav>
