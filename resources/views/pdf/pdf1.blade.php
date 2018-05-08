@@ -17,21 +17,25 @@
     <table>
       <tr>
         <td>
-          <h2>From:</h2>
-          <br>
-          <hr>
+          <h3>From:</h3>
+        </td>
+        <td>
+          <h3>Date: {{ $form->form_date }}</h3>
+        </td>
+      </tr>
+        <td>
           {!! config('app.name', 'MDG') !!}<br>
           {{ env('COMPANY_STREET') }}<br>
           {{ env('COMPANY_STATE') }}<br>
           {{ env('COMPANY_PHONE') }}<br>
         </td>
         <td>
-          <h2>{!! $form->form_date !!}</h2>
+          <p>Invoice Number: #123456</p>
         </td>
       </tr>
       <tr>
         <td>
-          <h2>To:</h2><hr>
+          <h3>To:</h3><hr>
           {!! $form->form_contact !!}
         </td>
         <td></td>
