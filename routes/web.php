@@ -34,3 +34,5 @@ Route::resource('items', 'ItemsController');
 Route::resource('forms', 'FormsController');
 Auth::routes();
 Route::get('/dashboard', 'DashboardController@index');
+
+Route::get('/downloadPDF/{id}','FormsController@downloadPDF');
