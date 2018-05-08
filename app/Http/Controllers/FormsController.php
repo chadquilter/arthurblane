@@ -146,6 +146,7 @@ class FormsController extends Controller
           }
 
           $addresses = Address::pluck('name', 'id');
+          $saved_address = $form->addresses()->address_id;
 
           //edit view
           return view('forms.edit')
@@ -154,6 +155,7 @@ class FormsController extends Controller
           ->with('item_grand_total', $item_grand_total)
           ->with('form_items_records', $form_items)
           ->with('addresses', $addresses)
+          ->with('saved_address', $saved_address)
           ->with('items', $items);
       }
 
