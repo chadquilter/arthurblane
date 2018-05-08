@@ -146,7 +146,8 @@ class FormsController extends Controller
           }
 
           $addresses = Address::pluck('name', 'id');
-          $saved_address = $form->addresses()->address_id;
+          $form_address = FormAddress::where('form_address_address_id', '=', $id)
+                  ->pluck('address_id');
 
           //edit view
           return view('forms.edit')
@@ -154,9 +155,9 @@ class FormsController extends Controller
           ->with('users', $users )
           ->with('item_grand_total', $item_grand_total)
           ->with('form_items_records', $form_items)
+          ->with('items', $items)
           ->with('addresses', $addresses)
-          ->with('saved_address', $saved_address)
-          ->with('items', $items);
+          ->with('form_address', $form_address);
       }
 
       /**
