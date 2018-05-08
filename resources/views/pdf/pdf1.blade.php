@@ -19,23 +19,23 @@
     <table>
       <tr>
         <td>
-          {{!! $form->form_from !!}}
+          {!! $form->form_from !!}
         </td>
         <td>
-          {{!! $form->form_contact !!}}
-        </td>
-      </tr>
-      <tr>
-        <td>
-          {{!! $form->form_salutation !!}}
-        </td>
-        <td>
-          {{!! $form->form_date !!}}
+          {!! $form->form_contact !!}
         </td>
       </tr>
       <tr>
         <td>
-          {{!! $form->form_body !!}}
+          {!! $form->form_salutation !!}
+        </td>
+        <td>
+          {!! $form->form_date !!}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          {!! $form->form_body !!}
         </td>
       </tr>
       <hr>
