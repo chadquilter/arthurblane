@@ -14,7 +14,7 @@ class ModifyCol extends Migration
     public function up()
     {
         Schema::table('address', function (Blueprint $table) {
-            //
+            $table->mediumText('address2')->nullable()->change();
         });
     }
 
