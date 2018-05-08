@@ -34,7 +34,7 @@
                       <div class=row>
                         <div class="col-md-4">
                           <strong>{{$form->form_title}}</strong>
-                          <br> {{ $form->created_at->format('Y.m.d') }}
+                          <br> {{ $form->created_at->format('m/d/Y') }}
                         </div>
                       </td>
                       <td>
