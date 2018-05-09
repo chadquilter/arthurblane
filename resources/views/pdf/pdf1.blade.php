@@ -85,10 +85,22 @@
             </tbody>
             <tfoot>
               <tr>
+                <td>Subtotal:</td>
+                <td></td>
+                <td></td>
+                <td style="text-align: right;" nowrap>${{ $item_grand_total }}</td>
+              </tr>
+              <tr>
+                <td>Profit and Overhead:</td>
+                <td></td>
+                <td></td>
+                <td style="text-align: right;" nowrap>$2,256</td>
+              </tr>
+              <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td style="text-align: right;">$ {{ $item_grand_total }}</td>
+                <td style="text-align: right;" nowrap>${{ $item_grand_total + 2256.00 }}</td>
               </tr>
             </tfoot>
           </table>
