@@ -21,8 +21,4 @@ class Address extends Model
         'code'
     ];
 
-    public function forms(){
-        return $this->belongsToMany('App\Form', 'form_items');
-    }
-
 }
