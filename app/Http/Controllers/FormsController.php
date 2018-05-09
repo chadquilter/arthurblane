@@ -247,7 +247,7 @@ class FormsController extends Controller
       {
         $form = form::find($id);
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
-        $saved_items = $form->items();
+        $saved_items = form::find($id)->items();
 
         $form_items_records = Formitem::where('form_items_form_id', '=', $id)
                 ->orderBy('id', 'asc')
@@ -260,7 +260,7 @@ class FormsController extends Controller
           $item_grand_total += $formItem->amount * $qty;
         }
 
-        $pdf = PDF::loadView('pdf.pdf1', compact('form'));
+        $pdf = PDF::loadView('pdf.pdf1', compact('form', 'saved_items'));
         return $pdf->download($form->form_title.'.pdf');
       }
 }

@@ -59,8 +59,8 @@
 
           <table class="table" id="dynamic_field">
             <tbody>
-              
-                @foreach($form->Items() as $formItem)
+
+                @foreach($saved_items as $formItem)
                   <tr id="row{{ $loop->iteration }}">
                     <td id="item_div_{{$loop->iteration}}">
                       <strong>Item:</strong>
@@ -74,7 +74,7 @@
                     </td>
                   </tr>
                 @endforeach
-
+            
             </tbody>
           </table>
 
