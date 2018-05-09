@@ -27,11 +27,11 @@ class Form extends Model
     ];
 
     public function items(){
-        return $this->belongsToMany('App\FormItem', 'form_items', 'form_items_form_id', 'id');
+        return $this->belongsToMany('App\FormItem', 'form_items', 'form_items_form_id', 'form_id');
     }
 
     public function addresses(){
-        return $this->belongsToMany('App\FormAddress', 'form_addresses', 'form_address_address_id', 'id');
+        return $this->belongsToMany('App\FormAddress', 'form_addresses', 'form_address_address_id', 'form_id');
     }
 
     public function user(){
