@@ -13,10 +13,10 @@
 
     <table cellpadding="0" cellspacing="0" width="100%" style="border: 1px;" rules="none">
       <tr>
-        <th style="border-bottom: 6px solid red;  background-color: #5BC0DE;">
+        <th style="border-bottom: 6px solid black;">
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
         </th>
-        <th style="text-align: right; border-bottom: 6px solid red;  background-color: #5BC0DE;">
+        <th style="text-align: right; border-bottom: 6px solid black;">
           <h6>
             {!! config('app.name', 'MDG') !!}<br>
             {{ env('COMPANY_STREET') }}<br>
