@@ -26,7 +26,7 @@
         </th>
       </tr>
       <tr bgcolor="#5BC0DE" border=1>
-        <td colspan=1 bgcolor="#5BC0DE"> &nbsp; </td>
+        <td colspan=2 bgcolor="#5BC0DE"> &nbsp; </td>
       </tr>
       <tr>
         <td>
@@ -42,21 +42,21 @@
       </tr>
 
       <tr>
-        <td colspan=1>
+        <td colspan=2>
           {!! $form->form_salutation !!}
         </td>
         <td>
         </td>
       </tr>
       <tr>
-        <td colspan=1>
+        <td colspan=2>
           {!! $form->form_body !!}
         </td>
       </tr>
       <hr>
       <tr>
         <td width=100%>
-          <table style="border: .05rem solid black; width=100%">
+          <table style="border: .05rem solid black; width=100">
             <thead>
             <tr>
               <th bgcolor="#5BC0DE" nowrap><strong>Description: </strong></th>
@@ -96,7 +96,7 @@
         </td>
       </tr>
       <tr>
-        <td colspan=1>
+        <td colspan=2>
           {!! $form->form_closing !!}
         </td>
       </tr>
@@ -104,7 +104,7 @@
 
     <tfoot>
       <tr bgcolor="#5BC0DE" border=1>
-        <td colspan=1 bgcolor="#5BC0DE"> &nbsp; </td>
+        <td colspan=2 bgcolor="#5BC0DE"> &nbsp; </td>
       </tr>
     </tfoot>
   </table>
