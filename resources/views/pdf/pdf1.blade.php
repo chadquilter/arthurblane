@@ -56,7 +56,7 @@
       <hr>
       <tr>
         <td>
-          <table style="border: .05rem solid black;" width=100%>
+          <table style="border: .05rem solid black; width=100%;">
             <thead>
             <tr>
               <th bgcolor="#5BC0DE" nowrap><strong>Description: </strong></th>
