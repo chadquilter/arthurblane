@@ -7,11 +7,11 @@
     <title>{{ $form->form_title }}</title>
     <link href="https://bamconstruction.net/css/app.css" rel="stylesheet">
     <link href="https://bamconstruction.net/css/footer.css" rel="stylesheet">
-    <link href="https://bamconstruction.net/css/image_styles.css" rel="stylesheet">
   </head>
   <body>
 
     <table cellpadding="0" cellspacing="0" width="100%" style="border: 1px;" rules="none">
+      <tbody>
       <tr>
         <th style="border-bottom: 6px solid black;">
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
@@ -56,21 +56,27 @@
       <hr>
       <tr>
         <td colspan=2>
-
-          <table class="table" id="dynamic_field">
+          <table style="border: 6px solid black;">
+            <thead>
+              <th bgcolor="#5BC0DE"><strong>Description: </strong></th>
+              <th bgcolor="#5BC0DE"><strong>Quantity: </strong></th>
+              <th bgcolor="#5BC0DE"><strong>Unit Cost: </strong></th>
+              <th bgcolor="#5BC0DE"><strong>Cost: </strong></th>
+            </thead>
             <tbody>
-
                 @foreach($saved_items as $formItem)
-                  <tr id="row{{ $loop->iteration }}">
-                    <td id="item_div_{{$loop->iteration}}">
-                      <strong>Item:</strong>
+                  <tr>
+                    <td style="border: 6px solid black;">
                       {{ $formItem->item->item_name }}
                     </td>
-                    <td>
-                      <strong>Amount: </strong>
+                    <td style="border: 6px solid black;">
                       {{ $formItem->amount }}
-                      <strong>QTY: </strong>
+                    </td>
+                    <td style="border: 6px solid black;">
                       {{ $formItem->qty }}
+                    </td>
+                    <td style="border: 6px solid black;">
+                      ${{ $formItem->qty * $formItem->amount }}
                     </td>
                   </tr>
                 @endforeach
@@ -85,7 +91,13 @@
           {!! $form->form_closing !!}
         </td>
       </tr>
+      </tbody>
 
+      <tfoot>
+        <tr bgcolor="#5BC0DE" border=1>
+          <td colspan=2 bgcolor="#5BC0DE"> &nbsp; </td>
+        </tr>
+      </tfoot>
     </table>
   </body>
 </html>
