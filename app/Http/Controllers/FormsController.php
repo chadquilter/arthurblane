@@ -249,6 +249,7 @@ class FormsController extends Controller
         foreach($form_items_records as $formItem) {
           $qty = $formItem->qty == 0 ? 1 : $formItem->qty;
           $item_grand_total += $formItem->amount * $qty;
+
         }
 
         $pdf = PDF::loadView('pdf.pdf1', compact('form', 'form_items_records', 'items'));
