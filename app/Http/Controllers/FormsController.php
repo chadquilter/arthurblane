@@ -206,7 +206,8 @@ class FormsController extends Controller
           if ($request->get('itemID')) {
              $deleteItems = FormItem::where('form_items_form_id', $form->id)->delete();
              foreach($request->get('itemID') as $key => $itemID) {
-               $form->items()->attach($form->id, [
+               $form->items()->attach( [
+                 'form_items_form_id' => $form->id,
                  'items_id' =>  $request->input('itemSelect'.$itemID),
                  'user_id' => auth()->user()->id,
                  'qty' =>  $request->input('item_qty_'.$itemID),
