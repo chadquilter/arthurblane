@@ -26,13 +26,18 @@ class Form extends Model
         'form_created_by'
     ];
 
-    public function items(){
-        return $this->belongsToMany('App\FormItem', 'form_items', 'form_items_form_id', 'id');
+    //public function items(){
+    //    return $this->belongsToMany('App\FormItem', 'form_items', 'form_items_form_id', 'id');
+    //}
+    public function items()
+    {
+      return $this->belongsToMany('App\FormItem', 'form_items', 'form_items_form_id', 'id');
     }
 
-    public function addresses(){
-        return $this->belongsToMany('App\FormAddress', 'form_addresses', 'form_address_address_id', 'id');
-    }
+
+    //public function addresses(){
+    //    return $this->belongsToMany('App\FormAddress', 'form_addresses', 'form_address_address_id', 'id');
+    //}
 
     public function user(){
         return $this->belongsTo('App\User');

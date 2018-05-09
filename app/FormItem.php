@@ -24,8 +24,4 @@ class FormItem extends Model
     'discount'
   ];
 
-  public function Item(){
-      return $this->belongsTo('App\Item');
-  }
-
 }
