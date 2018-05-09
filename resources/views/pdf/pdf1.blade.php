@@ -55,8 +55,8 @@
       </tr>
       <hr>
       <tr>
-        <td colspan=2>
-          <table style="border: 6px solid black;">
+        <td>
+          <table style="border: .2rem solid black;">
             <thead>
               <th bgcolor="#5BC0DE"><strong>Description: </strong></th>
               <th bgcolor="#5BC0DE"><strong>Quantity: </strong></th>
@@ -80,7 +80,6 @@
                   </td>
                 </tr>
               @endforeach
-
             </tbody>
           </table>
 
