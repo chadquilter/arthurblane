@@ -25,8 +25,8 @@
           </h6>
         </th>
       </tr>
-      <tr bgcolor="#808080">
-        <td colspan=2 bgcolor="#808080"> &nbsp; </td>
+      <tr bgcolor="#5BC0DE" border=1>
+        <td colspan=2 bgcolor="#5BC0DE"> &nbsp; </td>
       </tr>
       <tr>
         <td>

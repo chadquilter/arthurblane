@@ -252,15 +252,15 @@ class FormsController extends Controller
         $saved_items = Formitem::where('form_items_form_id', '=', $id)
                 ->orderBy('id', 'asc')
                 ->paginate(1000, array('form_items.*'), 'form_items');
-        //$item_grand_total = 0;
+        $item_grand_total = 0;
 
 
-        //foreach($form_items_records as $formItem) {
-        //  $qty = $formItem->qty == 0 ? 1 : $formItem->qty;
-        //  $item_grand_total += $formItem->amount * $qty;
-        //}
+        foreach($saved_items as $formItem) {
+          $qty = $formItem->qty == 0 ? 1 : $formItem->qty;
+          $item_grand_total += $formItem->amount * $qty;
+        }
 
-        $pdf = PDF::loadView('pdf.pdf1', compact('form', 'saved_items'));
+        $pdf = PDF::loadView('pdf.pdf1', compact('form', 'saved_items', 'item_grand_total'));
         return $pdf->download($form->form_title.'.pdf');
       }
 }
