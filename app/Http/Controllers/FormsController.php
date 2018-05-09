@@ -247,18 +247,18 @@ class FormsController extends Controller
       {
         $form = form::find($id);
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
-        $saved_items = form::find($id)->items();
+        $saved_items = formitem::where('form_items_form_id', $id);
 
-        $form_items_records = Formitem::where('form_items_form_id', '=', $id)
-                ->orderBy('id', 'asc')
-                ->paginate(1000, array('form_items.*'), 'form_items');
-        $item_grand_total = 0;
+        //$form_items_records = Formitem::where('form_items_form_id', '=', $id)
+        //        ->orderBy('id', 'asc')
+        //        ->paginate(1000, array('form_items.*'), 'form_items');
+        //$item_grand_total = 0;
 
 
-        foreach($form_items_records as $formItem) {
-          $qty = $formItem->qty == 0 ? 1 : $formItem->qty;
-          $item_grand_total += $formItem->amount * $qty;
-        }
+        //foreach($form_items_records as $formItem) {
+        //  $qty = $formItem->qty == 0 ? 1 : $formItem->qty;
+        //  $item_grand_total += $formItem->amount * $qty;
+        //}
 
         $pdf = PDF::loadView('pdf.pdf1', compact('form', 'saved_items'));
         return $pdf->download($form->form_title.'.pdf');
