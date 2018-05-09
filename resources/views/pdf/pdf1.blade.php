@@ -55,7 +55,7 @@
       </tr>
       <hr>
       <tr>
-        <td>
+        <td colspan=2>
           <table style="border: .05rem solid black;" width=100%>
             <thead>
             <tr>
@@ -72,20 +72,23 @@
                     {{ $formItem->item->item_name }}
                   </td>
                   <td style="border: .05rem dotted black;">
-                    {{ $formItem->amount }}
+                    ${{ $formItem->amount }}
                   </td>
                   <td style="border: .05rem dotted black;">
                     {{ $formItem->qty }}
                   </td>
                   <td style="border: .05rem dotted black;">
-                    {{ $formItem->qty * $formItem->amount }}
+                    ${{ $formItem->qty * $formItem->amount }}
                   </td>
                 </tr>
               @endforeach
             </tbody>
             <tfoot>
               <tr>
-                <td colspan=4 style="text-align: right;"> {{ $item_grand_total }}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="text-align: right;">$ {{ $item_grand_total }}</td>
               </tr>
             </tfoot>
           </table>
