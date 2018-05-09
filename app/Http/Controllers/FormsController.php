@@ -227,7 +227,6 @@ class FormsController extends Controller
        */
       public function destroy($id)
       {
-
           $form = form::find($id);
           //authorized?
           if(!auth()->user()->id) {
@@ -239,21 +238,28 @@ class FormsController extends Controller
           return redirect('/forms')->with('success', 'Form Deleted');
       }
 
-      public function downloadPDF($id){
+      /**
+       * show pdf report.
+       *
+       * @param  int  $id
+       */
+      public function downloadPDF($id)
+      {
         $form = form::find($id);
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
+
         $form_items_records = Formitem::where('form_items_form_id', '=', $id)
+          ->items()->all()
                 ->orderBy('id', 'asc')
                 ->paginate(1000, array('form_items.*'), 'form_items');
         $item_grand_total = 0;
+
         foreach($form_items_records as $formItem) {
           $qty = $formItem->qty == 0 ? 1 : $formItem->qty;
           $item_grand_total += $formItem->amount * $qty;
-
         }
 
         $pdf = PDF::loadView('pdf.pdf1', compact('form', 'form_items_records', 'items'));
         return $pdf->download($form->form_title.'.pdf');
-        //return redirect('/forms')->with('success', 'Form Printed');
       }
 }
