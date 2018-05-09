@@ -249,7 +249,7 @@ class FormsController extends Controller
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
         //$saved_items = FormItem::where('form_items_form_id', $id);
 
-        $form_items_records = Formitem::where('form_items_form_id', '=', $id)
+        $saved_items = Formitem::where('form_items_form_id', '=', $id)
                 ->orderBy('id', 'asc')
                 ->paginate(1000, array('form_items.*'), 'form_items');
         //$item_grand_total = 0;
