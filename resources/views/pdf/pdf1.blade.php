@@ -55,7 +55,7 @@
       </tr>
       <hr>
       <tr>
-        <td colspan=1 style="align: right;">
+        <td>
           <table style="border: .05rem solid black;" width=100%>
             <thead>
             <tr>
@@ -72,12 +72,12 @@
                     {{ $formItem->item->item_name }}
                   </td>
                   <td style="border: .05rem dotted black;" nowrap>
-                    ${{ $formItem->amount }}
-                  </td>
-                  <td style="border: .05rem dotted black;" nowrap>
                     {{ $formItem->qty }}
                   </td>
-                  <td style="border: .05rem dotted black;" nowrap>
+                  <td style="border: .05rem dotted black; text-align: right;" nowrap>
+                    ${{ $formItem->amount }}
+                  </td>
+                  <td style="border: .05rem dotted black; text-align: right;" nowrap>
                     ${{ $formItem->qty * $formItem->amount }}
                   </td>
                 </tr>
