@@ -2,16 +2,16 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ $form->form_title }}</title>
-    <link href="https://bamconstruction.net/css/app.css" rel="stylesheet">
-    <link href="https://bamconstruction.net/css/footer.css" rel="stylesheet">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>{{ $form->form_title }}</title>
+  <link href="https://bamconstruction.net/css/app.css" rel="stylesheet">
+  <link href="https://bamconstruction.net/css/footer.css" rel="stylesheet">
+</head>
+<body>
 
-    <table cellpadding="0" cellspacing="0" width="100%" style="border: 1px;" rules="none">
-      <tbody>
+  <table cellpadding="0" cellspacing="0" width="100%" style="border: 1px;" rules="none">
+    <tbody>
       <tr>
         <th style="border-bottom: 6px solid black;">
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
@@ -64,22 +64,22 @@
               <th bgcolor="#5BC0DE"><strong>Cost: </strong></th>
             </thead>
             <tbody>
-                @foreach($saved_items as $formItem)
-                  <tr>
-                    <td style="border: 6px solid black;">
-                      {{ $formItem->item->item_name }}
-                    </td>
-                    <td style="border: 6px solid black;">
-                      {{ $formItem->amount }}
-                    </td>
-                    <td style="border: 6px solid black;">
-                      {{ $formItem->qty }}
-                    </td>
-                    <td style="border: 6px solid black;">
-                      ${{ $formItem->qty * $formItem->amount }}
-                    </td>
-                  </tr>
-                @endforeach
+              @foreach($saved_items as $formItem)
+                <tr>
+                  <td>
+                    {{ $formItem->item->item_name }}
+                  </td>
+                  <td>
+                    {{ $formItem->amount }}
+                  </td>
+                  <td>
+                    {{ $formItem->qty }}
+                  </td>
+                  <td>
+                    {{ $formItem->qty * $formItem->amount }}
+                  </td>
+                </tr>
+              @endforeach
 
             </tbody>
           </table>
@@ -91,13 +91,13 @@
           {!! $form->form_closing !!}
         </td>
       </tr>
-      </tbody>
+    </tbody>
 
-      <tfoot>
-        <tr bgcolor="#5BC0DE" border=1>
-          <td colspan=2 bgcolor="#5BC0DE"> &nbsp; </td>
-        </tr>
-      </tfoot>
-    </table>
-  </body>
+    <tfoot>
+      <tr bgcolor="#5BC0DE" border=1>
+        <td colspan=2 bgcolor="#5BC0DE"> &nbsp; </td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
 </html>
