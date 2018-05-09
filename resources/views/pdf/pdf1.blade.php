@@ -56,31 +56,38 @@
       <hr>
       <tr>
         <td>
-          <table style="border: .2rem solid black;">
+          <table style="border: .05rem solid black;">
             <thead>
+            <tr>
               <th bgcolor="#5BC0DE"><strong>Description: </strong></th>
               <th bgcolor="#5BC0DE"><strong>Quantity: </strong></th>
               <th bgcolor="#5BC0DE"><strong>Unit Cost: </strong></th>
               <th bgcolor="#5BC0DE"><strong>Cost: </strong></th>
+            </tr>
             </thead>
             <tbody>
               @foreach($saved_items as $formItem)
                 <tr>
-                  <td>
+                  <td style="border: .05rem dotted black;">
                     {{ $formItem->item->item_name }}
                   </td>
-                  <td>
+                  <td style="border: .05rem dotted black;">
                     {{ $formItem->amount }}
                   </td>
-                  <td>
+                  <td style="border: .05rem dotted black;">
                     {{ $formItem->qty }}
                   </td>
-                  <td>
+                  <td style="border: .05rem dotted black;">
                     {{ $formItem->qty * $formItem->amount }}
                   </td>
                 </tr>
               @endforeach
             </tbody>
+            <tfoot>
+              <tr>
+                <td colspan=3> {{ $item_grand_total }}</td>
+              </tr>
+            </tfoot>
           </table>
 
         </td>

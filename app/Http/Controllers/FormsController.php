@@ -254,7 +254,6 @@ class FormsController extends Controller
                 ->paginate(1000, array('form_items.*'), 'form_items');
         $item_grand_total = 0;
 
-
         foreach($saved_items as $formItem) {
           $qty = $formItem->qty == 0 ? 1 : $formItem->qty;
           $item_grand_total += $formItem->amount * $qty;
