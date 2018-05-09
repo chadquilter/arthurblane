@@ -260,7 +260,7 @@ class FormsController extends Controller
           $item_grand_total += $formItem->amount * $qty;
         }
 
-        $pdf = PDF::loadView('pdf.pdf1', compact('form', 'saved_items', 'items'));
+        $pdf = PDF::loadView('pdf.pdf1', compact('form', 'saved_items'));
         return $pdf->download($form->form_title.'.pdf');
       }
 }
