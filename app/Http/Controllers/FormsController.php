@@ -35,7 +35,7 @@ class FormsController extends Controller
           if ( count($forms) >= 1) {
             return view('forms.index')->with('forms', $forms);
           }else{
-            create();
+            $this->create();
           }
       }
 
