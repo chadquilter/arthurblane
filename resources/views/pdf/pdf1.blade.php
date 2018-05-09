@@ -56,7 +56,7 @@
       <hr>
       <tr>
         <td>
-          <table style="border: .05rem solid black;">
+          <table style="border: .05rem solid black;" width=100%>
             <thead>
             <tr>
               <th bgcolor="#5BC0DE"><strong>Description: </strong></th>
@@ -85,7 +85,7 @@
             </tbody>
             <tfoot>
               <tr>
-                <td colspan=3> {{ $item_grand_total }}</td>
+                <td colspan=4 style="text-align: right;"> {{ $item_grand_total }}</td>
               </tr>
             </tfoot>
           </table>
