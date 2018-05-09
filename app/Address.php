@@ -21,11 +21,7 @@ class Address extends Model
         'code'
     ];
 
-    public function jobs(){
-        return $this->belongsToMany('App\Job', 'job_items');
-    }
-
     public function forms(){
-        return $this->belongsToMany('App\Form', 'form_items');
+        return $this->belongsToMany('App\FormAddress', 'form_addresses', 'form_address_address_id', 'address_id');
     }
 }

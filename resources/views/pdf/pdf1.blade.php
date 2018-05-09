@@ -59,8 +59,8 @@
 
           <table class="table" id="dynamic_field">
             <tbody>
-              @if(count($saved_items) > 0)
-                @foreach($saved_items as $formItem)
+              @if(count($form->Items()) > 0)
+                @foreach($form->Items() as $formItem)
                   <tr id="row{{ $loop->iteration }}">
                     <td id="item_div_{{$loop->iteration}}">
                       <strong>Item:</strong>
