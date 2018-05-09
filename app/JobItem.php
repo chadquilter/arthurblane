@@ -18,5 +18,8 @@ class JobItem extends Model
       'qty'
     ];
 
+    public function Item(){
+        return $this->belongsTo('App\Item');
+    }
 
 }

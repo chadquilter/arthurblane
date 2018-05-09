@@ -21,11 +21,11 @@ class Item extends Model
     ];
 
     public function jobs(){
-        return $this->belongsToMany('App\Job', 'job_items', 'items_id', 'id');
+        return $this->belongsToMany('App\Job', 'job_items');
     }
 
-    public function SavedForms(){
-        return $this->belongsToMany('App\Form', 'form_items', 'items_id', 'id');
+    public function forms(){
+        return $this->belongsToMany('App\Form', 'form_items');
     }
 
     public function ItemType(){
