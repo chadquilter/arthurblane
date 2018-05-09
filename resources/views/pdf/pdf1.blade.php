@@ -55,7 +55,7 @@
       </tr>
       <hr>
       <tr>
-        <td colspan=1>
+        <td colspan=1 style="text-align: right;">
           <table style="border: .05rem solid black;" width=100%>
             <thead>
             <tr>
