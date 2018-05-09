@@ -27,7 +27,7 @@ class Form extends Model
     ];
 
     public function items(){
-        return $this->belongsToMany('App\FormItem', 'form_items', 'form_items_form_id', 'form_id');
+        return $this->belongsToMany('App\FormItem', 'form_items', 'form_id', 'form_items_form_id' );
     }
 
     public function addresses(){
