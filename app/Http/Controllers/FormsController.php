@@ -247,7 +247,7 @@ class FormsController extends Controller
       {
         $form = form::find($id);
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
-        $saved_items = formitem::where('form_items_form_id', $id);
+        $saved_items = FormItem::where('form_items_form_id', $id);
 
         //$form_items_records = Formitem::where('form_items_form_id', '=', $id)
         //        ->orderBy('id', 'asc')
