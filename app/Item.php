@@ -24,7 +24,7 @@ class Item extends Model
         return $this->belongsToMany('App\Job', 'job_items', 'items_id', 'id');
     }
 
-    public function forms(){
+    public function SavedForms(){
         return $this->belongsToMany('App\Form', 'form_items', 'items_id', 'id');
     }
 

@@ -247,12 +247,13 @@ class FormsController extends Controller
       {
         $form = form::find($id);
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
+        $saved_items = $form->items()->all();
 
         $form_items_records = Formitem::where('form_items_form_id', '=', $id)
-          ->items()->all()
                 ->orderBy('id', 'asc')
                 ->paginate(1000, array('form_items.*'), 'form_items');
         $item_grand_total = 0;
+
 
         foreach($form_items_records as $formItem) {
           $qty = $formItem->qty == 0 ? 1 : $formItem->qty;
