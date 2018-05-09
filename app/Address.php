@@ -22,7 +22,7 @@ class Address extends Model
     ];
 
     public function forms(){
-        return $this->belongsToMany('App\Form', 'form_items', 'address_id', 'id');
+        return $this->belongsToMany('App\Form', 'form_items');
     }
 
 }
