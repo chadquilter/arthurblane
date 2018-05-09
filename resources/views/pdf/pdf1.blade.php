@@ -42,20 +42,20 @@
       </tr>
 
       <tr>
-        <td colspan=2>
+        <td colspan=1>
           {!! $form->form_salutation !!}
         </td>
         <td>
         </td>
       </tr>
       <tr>
-        <td colspan=2>
+        <td colspan=1>
           {!! $form->form_body !!}
         </td>
       </tr>
       <hr>
       <tr>
-        <td colspan=2>
+        <td colspan=1>
           <table style="border: .05rem solid black;" width=100%>
             <thead>
             <tr>
