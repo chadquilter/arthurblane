@@ -96,7 +96,7 @@
         </td>
       </tr>
       <tr>
-        <td>
+        <td colspan=2>
           {!! $form->form_closing !!}
         </td>
       </tr>
@@ -108,5 +108,10 @@
       </tr>
     </tfoot>
   </table>
+  <footer>
+    <tr bgcolor="#5BC0DE" border=1>
+      <td colspan=2 bgcolor="#5BC0DE"> &nbsp; </td>
+    </tr>
+  </footer>
 </body>
 </html>
