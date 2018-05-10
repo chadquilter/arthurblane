@@ -28,4 +28,8 @@ class FormAddress extends Model
       return $this->belongsTo('App\Uom');
   }
 
+  public function address(){
+      return $this->belongsTo('App\Address', 'address_id', 'id');
+  }
+
 }

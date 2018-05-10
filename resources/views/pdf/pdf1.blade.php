@@ -94,13 +94,13 @@
                 <td>Profit and Overhead:</td>
                 <td></td>
                 <td></td>
-                <td style="text-align: right;" nowrap>$2,256.00</td>
+                <td style="text-align: right;" nowrap>${{ $item_grand_total }}</td>
               </tr>
               <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td style="text-align: right;" nowrap>${{ $item_grand_total + 2256.00 }}</td>
+                <td style="text-align: right;" nowrap>${{ $item_grand_total }}</td>
               </tr>
             </tfoot>
           </table>
