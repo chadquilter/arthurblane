@@ -199,7 +199,7 @@ class FormsController extends Controller
 
           $deleteItems = FormAddress::where('form_address_address_id', $form->id)->delete();
           $form->addresses()->attach($form->id, [
-            'form_address_address_id' =>  $request->input('address_id'),
+            'address_id' =>  $request->input('address_id'),
             'user_id' => auth()->user()->id,
             'uom_id' =>  1
           ]);
