@@ -10,15 +10,23 @@
 </head>
 <body>
 
-  <div class="container">
-    <table cellpadding="0" cellspacing="0">
+<main role="main">
+  <div class="body-container">
+    <table cellpadding="0" cellspacing="0" width="100%" style="border: 3rem solid black;" rules="none">
+      <tfoot>
+        <tr bgcolor="#5BC0DE" border=1>
+          <td colspan=2 bgcolor="#5BC0DE" style="border-bottom: 3rem solid black;">
+            &nbsp;
+            <small> 2018 {{ config('app.name', 'MDG')}} </small>
+          </td>
+        </tr>
+      </tfoot>
       <tbody>
-
         <tr>
           <th style="border-bottom: 3rem solid black;">
             <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
           </th>
-          <th style="text-align: right; border-bottom: 3rem solid black;" nowrap>
+          <th style="text-align: right; border-bottom: 3rem solid black;">
             <h6>
               {{ config('app.name', 'MDG') }}<br>
               {{ env('COMPANY_STREET') }}<br>
@@ -32,7 +40,7 @@
         </tr>
         <tr>
           <td nowrap>
-            <h5>To:</h5>
+            <h5>To:</h5><hr>
 
             @foreach($form->addresses as $formAddress)
               {{ $formAddress->name }}
@@ -47,7 +55,7 @@
               <br>
             @endforeach
           </td>
-          <td style="text-align: right;" nowrap>
+          <td style="text-align: right;">
             <h6><strong>Date:</strong>{{ $form->form_date->format('m/d/Y') }}</h6>
             <h6><strong>Invoice Number:</strong> #123456</h6>
           </td>
@@ -123,16 +131,11 @@
         </tr>
       </tbody>
 
-      <tfoot>
-        <tr bgcolor="#5BC0DE" border=1>
-          <td colspan=2 bgcolor="#5BC0DE" style="border-bottom: 3rem solid black;">
-            &nbsp;
-            <small> 2018 {{ config('app.name', 'MDG')}} </small>
-          </td>
-        </tr>
-      </tfoot>
+
 
     </table>
   </div>
+
+</main>
 </body>
 </html>
