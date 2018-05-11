@@ -36,7 +36,7 @@
                   {{ $formAddress->name }}
                   <br>
                   {{ $formAddress->address1 }}
-                  @if( $formAddress->address2 ne '')
+                  @if( $formAddress->address2 =! '')
                     <br>
                     {{ $formAddress->address2 }}
                   @endif
