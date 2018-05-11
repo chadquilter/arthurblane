@@ -11,7 +11,7 @@
 <body>
 
   <div class="container">
-    <table cellpadding="0" cellspacing="0" width="100%" style="border: 1px;" rules="none">
+    <table cellpadding="0" cellspacing="0">
       <tbody>
 
         <tr>
