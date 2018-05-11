@@ -28,7 +28,7 @@
           </th>
         </tr>
         <tr bgcolor="#5BC0DE" border=1>
-          <td colspan=1 bgcolor="#5BC0DE"> &nbsp; </td>
+          <td colspan=2 bgcolor="#5BC0DE"> &nbsp; </td>
         </tr>
         <tr>
           <td nowrap>
@@ -54,18 +54,18 @@
         </tr>
         <tr><td> &nbsp; </td></tr>
         <tr>
-          <td colspan=1>
+          <td colspan=2>
             {!! $form->form_salutation !!}
           </td>
         </tr>
         <tr>
-          <td colspan=1>
+          <td colspan=2>
             {!! $form->form_body !!}
           </td>
         </tr>
         <hr>
         <tr>
-          <td width=100%>
+          <td width=100% colspan=2>
             <table style="border: .05rem solid black; width=100">
               <thead>
                 <tr>
@@ -118,7 +118,7 @@
           </td>
         </tr>
         <tr>
-          <td colspan=1>
+          <td colspan=2>
             {!! $form->form_closing !!}
           </td>
         </tr>
@@ -126,7 +126,7 @@
 
       <tfoot>
         <tr bgcolor="#5BC0DE" border=1>
-          <td colspan=1 bgcolor="#5BC0DE" style="border-bottom: 3rem solid black;">
+          <td colspan=2 bgcolor="#5BC0DE" style="border-bottom: 3rem solid black;">
             &nbsp;
             <small> 2018 {{ config('app.name', 'MDG')}} </small>
           </td>
