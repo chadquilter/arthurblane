@@ -8,7 +8,7 @@ use App\User;
 use App\Item;
 use App\FormItem;
 use App\Address;
-use App\FormAddress;
+use App\AddressForm;
 use PDF;
 
 class FormsController extends Controller
@@ -197,7 +197,7 @@ class FormsController extends Controller
           $form->form_active = $active;
           $form->save();
 
-          $deleteItems = FormAddress::where('form_address_address_id', $form->id)->delete();
+          $deleteItems = AddressForm::where('form_address_address_id', $form->id)->delete();
           $form->addresses()->attach($form->id, [
             'address_id' =>  $request->input('address_id'),
             'user_id' => auth()->user()->id,
