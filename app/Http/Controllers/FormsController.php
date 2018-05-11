@@ -138,10 +138,10 @@ class FormsController extends Controller
 
           $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
 
-          $form_items = Formitem::where('form_items_form_id', '=', $id)
+          $form_items = Formitem::where('form_id', '=', $id)
                   ->orderBy('id', 'asc')
                   ->paginate(1000, array('form_items.*'), 'form_items');
-
+          $form_items = $form->items()->all();
           //check for auth
           //if(auth()->user()->id !==$job->user_id) {
           //  return redirect('/dashboard')->with('error', 'Unauthorized Page!');
@@ -208,7 +208,7 @@ class FormsController extends Controller
           ]);
 
           if ($request->get('itemID')) {
-             $deleteItems = FormItem::where('form_items_form_id', $form->id)->delete();
+             $deleteItems = FormItem::where('form_id', $form->id)->delete();
              foreach($request->get('itemID') as $key => $itemID) {
                $form->items()->attach($form->id, [
                  'items_id' =>  $request->input('itemSelect'.$itemID),
@@ -237,7 +237,7 @@ class FormsController extends Controller
             return redirect('/login')->with('error', 'Unauthorized Page!');
           }
 
-          $deleteItems = FormItem::where('form_items_form_id', $form->id)->delete();
+          $deleteItems = FormItem::where('form_id', $form->id)->delete();
           $form->delete();
           return redirect('/forms')->with('success', 'Form Deleted');
       }
@@ -253,7 +253,7 @@ class FormsController extends Controller
         $items = Item::where('item_active', 'like', '1')->pluck('item_name', 'id');
         //$saved_items = FormItem::where('form_items_form_id', $id);
 
-        $saved_items = Formitem::where('form_items_form_id', '=', $id)
+        $saved_items = Formitem::where('form_id', '=', $id)
                 ->orderBy('id', 'asc')
                 ->paginate(1000, array('form_items.*'), 'form_items');
         $item_grand_total = 0;
