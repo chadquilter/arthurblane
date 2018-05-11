@@ -13,10 +13,10 @@
   <table cellpadding="0" cellspacing="0" width="100%" style="border: 1px;" rules="none">
     <tbody>
       <tr>
-        <th style="border-bottom: 6px solid black;">
+        <th style="border-bottom: 3rem solid black;">
           <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
         </th>
-        <th style="text-align: right; border-bottom: 6px solid black;">
+        <th style="text-align: right; border-bottom: 3rem solid black;">
           <h6>
             {!! config('app.name', 'MDG') !!}<br>
             {{ env('COMPANY_STREET') }}<br>
@@ -131,7 +131,7 @@
     </tfoot>
   </table>
   <footer>
-    <div bgcolor="#5BC0DE" border=1>
+    <div bgcolor="#5BC0DE" border=1 style="border-bottom: 3rem solid black;">
       &nbsp;
     </div>
   </footer>
