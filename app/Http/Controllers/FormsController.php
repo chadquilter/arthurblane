@@ -141,7 +141,7 @@ class FormsController extends Controller
           $form_items = Formitem::where('form_id', '=', $id)
                   ->orderBy('id', 'asc')
                   ->paginate(1000, array('form_items.*'), 'form_items');
-          $form_items = $form->items;
+
           //check for auth
           //if(auth()->user()->id !==$job->user_id) {
           //  return redirect('/dashboard')->with('error', 'Unauthorized Page!');
