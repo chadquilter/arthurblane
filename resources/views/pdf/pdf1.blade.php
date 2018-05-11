@@ -65,8 +65,8 @@
         </tr>
         <hr>
         <tr>
-          <td width=100% colspan=2>
-            <table style="border: .05rem solid black; width=100">
+          <td>
+            <table style="border: .05rem solid black; width=100%;">
               <thead>
                 <tr>
                   <th bgcolor="#5BC0DE" nowrap><strong>Description: </strong></th>
