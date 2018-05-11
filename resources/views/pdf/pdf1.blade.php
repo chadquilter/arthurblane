@@ -32,7 +32,7 @@
         <td>
           <h5>To:</h5><hr>
           <h6>
-            {!! $form->form_contact !!}
+            {!! $form->addresses->address1 !!}
           </h6>
         </td>
         <td style="text-align: right;">
