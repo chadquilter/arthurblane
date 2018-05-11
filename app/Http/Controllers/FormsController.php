@@ -83,11 +83,12 @@ class FormsController extends Controller
           $form->form_active = $active;
           $form->save();
 
-          //$form->addresses()->attach($form->id, [
-          //  'form_address_address_id' =>  $request->input('address_id'),
-          //  'user_id' => auth()->user()->id,
-          //  'uom_id' =>  1
-          //]);
+          $deleteItems = FormAddress::where('form_id', $form->id)->delete();
+          $form->addresses()->attach($form->id, [
+            'address_id' =>  $request->input('address_id'),
+            'user_id' => auth()->user()->id,
+            'uom_id' =>  1
+          ]);
 
           if ($request->get('itemID')) {
              foreach($request->get('itemID') as $key => $itemID) {
@@ -152,6 +153,7 @@ class FormsController extends Controller
           }
 
           $addresses = Address::pluck('name', 'id');
+          $saved_address = $form->addresses->id;
 
           //edit view
           return view('forms.edit')
@@ -160,7 +162,8 @@ class FormsController extends Controller
           ->with('item_grand_total', $item_grand_total)
           ->with('form_items_records', $form_items)
           ->with('items', $items)
-          ->with('addresses', $addresses);
+          ->with('addresses', $addresses)
+          ->with('saved_address', $saved_address);
       }
 
       /**
