@@ -32,7 +32,7 @@
         </tr>
         <tr>
           <td nowrap>
-            <h5>To:</h5><hr>
+            <h5>To:</h5>
 
             @foreach($form->addresses as $formAddress)
               {{ $formAddress->name }}
