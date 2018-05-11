@@ -29,7 +29,7 @@
         <td colspan=2 bgcolor="#5BC0DE"> &nbsp; </td>
       </tr>
       <tr>
-        <td colspan=2>
+        <td nowrap>
           <h5>To:</h5><hr>
 
           @foreach($form->addresses as $formAddress)
