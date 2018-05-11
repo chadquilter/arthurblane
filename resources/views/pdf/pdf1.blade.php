@@ -31,11 +31,8 @@
       <tr>
         <td>
           <h5>To:</h5><hr>
-          <table>
-          <tbody>
-            @foreach($form->addresses as $formAddress)
-              <tr>
-                <td style="border: .05rem dotted black;" nowrap>
+
+          @foreach($form->addresses as $formAddress)
                   {{ $formAddress->name }}
                   <br>
                   {{ $formAddress->address1 }}
@@ -44,11 +41,8 @@
                   <br>
                   {{ $formAddress->city }},{{ $formAddress->address2 }}
                   <br>{{ $formAddress->zip }}
-                </td>
-              </tr>
             @endforeach
-          </tbody>
-          <table>
+            
         </td>
         <td style="text-align: right;">
           <h6><strong>Date:</strong>{{ $form->form_date->format('m/d/Y') }}</h6>
