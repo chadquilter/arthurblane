@@ -14,7 +14,7 @@ class ModifyAddressCol extends Migration
     public function up()
     {
         Schema::table('form_addresses', function (Blueprint $table) {
-            //
+            $table->renameColumn('form_items_form_id', 'form_id');
         });
     }
 
