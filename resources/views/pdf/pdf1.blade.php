@@ -36,13 +36,14 @@
                   {{ $formAddress->name }}
                   <br>
                   {{ $formAddress->address1 }}
+                  @if( {{ $formAddress->address2 ne ''}})
+                    <br>
+                    {{ $formAddress->address2 }}
+                  @endif
                   <br>
-                  {{ $formAddress->address2 }}
-                  <br>
-                  {{ $formAddress->city }},{{ $formAddress->address2 }}
-                  <br>{{ $formAddress->zip }}
+                  {{ $formAddress->city }},{{ $formAddress->state }} &nbsp; &nbsp; {{ $formAddress->zip }}
             @endforeach
-            
+
         </td>
         <td style="text-align: right;">
           <h6><strong>Date:</strong>{{ $form->form_date->format('m/d/Y') }}</h6>
