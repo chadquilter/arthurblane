@@ -28,12 +28,12 @@ class Form extends Model
 
     public function items()
     {
-      return $this->belongsToMany('App\Item', 'form_items', 'form_id', 'id');
+      return $this->belongsToMany('App\Item', 'form_items', 'id', 'form_id');
     }
 
     public function addresses()
     {
-      return $this->belongsToMany('App\Address', 'form_addresses', 'form_id', 'id');
+      return $this->belongsToMany('App\Address', 'form_addresses', 'id', 'form_id');
     }
 
     public function user()
