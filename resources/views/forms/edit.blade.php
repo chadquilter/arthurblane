@@ -24,7 +24,6 @@
           <hr>
           @if (count($addresses) > 0)
             <div class="form=group">
-              {{$saved_address}}
               {{Form::label('address_id', 'Proposal Address:')}}
               @if(count($addresses) > 0)
                 {{ Form::select('address_id', $addresses, $saved_address, ['class' => 'form-control m-bot15']) }}
