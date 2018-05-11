@@ -153,7 +153,7 @@ class FormsController extends Controller
           }
 
           $addresses = Address::pluck('name', 'id');
-          $saved_address = $form->addresses()->address_id;
+          $saved_address = $form->addresses;
 
           //edit view
           return view('forms.edit')
