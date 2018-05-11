@@ -63,8 +63,59 @@
             {!! $form->form_body !!}
           </td>
         </tr>
-        <hr>
+        <tr>
+          <td>
+            <table style="border: .05rem solid black;">
+              <thead>
+                <tr>
+                  <th bgcolor="#5BC0DE" nowrap><strong>Description: </strong></th>
+                  <th bgcolor="#5BC0DE" nowrap><strong>Quantity: </strong></th>
+                  <th bgcolor="#5BC0DE" nowrap><strong>Unit Cost: </strong></th>
+                  <th bgcolor="#5BC0DE" nowrap><strong>Cost: </strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                @foreach($saved_items as $formItem)
+                  <tr>
+                    <td style="border: .05rem dotted black;" nowrap>
+                      {{ $formItem->item->item_name }}
+                    </td>
+                    <td style="border: .05rem dotted black; text-align: right;" nowrap>
+                      {{ $formItem->qty }}
+                    </td>
+                    <td style="border: .05rem dotted black; text-align: right;" nowrap>
+                      ${{ $formItem->amount }}
+                    </td>
+                    <td style="border: .05rem dotted black; text-align: right;" nowrap>
+                      ${{ number_format($formItem->qty * $formItem->amount, 2) }}
+                    </td>
+                  </tr>
+                @endforeach
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Subtotal:</td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: right;" nowrap>${{ number_format($item_grand_total, 2) }}</td>
+                </tr>
+                <tr>
+                  <td>Profit and Overhead:</td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: right;" nowrap>${{ $item_grand_total }}</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: right;" nowrap>${{ $item_grand_total }}</td>
+                </tr>
+              </tfoot>
+            </table>
 
+          </td>
+        </tr>
         <tr>
           <td colspan=2>
             {!! $form->form_closing !!}
