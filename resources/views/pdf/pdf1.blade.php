@@ -18,7 +18,7 @@
           <th style="border-bottom: 3rem solid black;">
             <img alt="{{ config('app.name', 'MDG') }}" src="https://bamconstruction.net/images/logo-brand_wt.png">
           </th>
-          <th style="text-align: right; border-bottom: 3rem solid black;">
+          <th style="text-align: right; border-bottom: 3rem solid black;" nowrap>
             <h6>
               {{ config('app.name', 'MDG') }}<br>
               {{ env('COMPANY_STREET') }}<br>
@@ -47,7 +47,7 @@
               <br>
             @endforeach
           </td>
-          <td style="text-align: right;">
+          <td style="text-align: right;" nowrap>
             <h6><strong>Date:</strong>{{ $form->form_date->format('m/d/Y') }}</h6>
             <h6><strong>Invoice Number:</strong> #123456</h6>
           </td>
