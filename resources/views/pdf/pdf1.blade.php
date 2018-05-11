@@ -18,7 +18,7 @@
         </th>
         <th style="text-align: right; border-bottom: 3rem solid black;">
           <h6>
-            {!! config('app.name', 'MDG') !!}<br>
+            {{ config('app.name', 'MDG') }}<br>
             {{ env('COMPANY_STREET') }}<br>
             {{ env('COMPANY_STATE') }}<br>
             {{ env('COMPANY_PHONE') }}<br>
@@ -126,14 +126,12 @@
 
     <tfoot>
       <tr bgcolor="#5BC0DE" border=1>
-        <td colspan=2 bgcolor="#5BC0DE" style="border-bottom: 3rem solid black;"> &nbsp; </td>
+        <td colspan=2 bgcolor="#5BC0DE" style="border-bottom: 3rem solid black;">
+          &nbsp;
+          <small> 2018 {{ config('app.name', 'MDG')}} </small> 
+        </td>
       </tr>
     </tfoot>
   </table>
-  <footer>
-    <div bgcolor="#5BC0DE" border=1 style="border-bottom: 3rem solid black;">
-      &nbsp;
-    </div>
-  </footer>
 </body>
 </html>
