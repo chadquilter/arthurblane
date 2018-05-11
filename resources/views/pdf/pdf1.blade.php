@@ -104,7 +104,7 @@
                 <td>Profit and Overhead:</td>
                 <td></td>
                 <td></td>
-                <td style="text-align: right;" nowrap>${{ number_format(2500, 2) }}</td>
+                <td style="text-align: right;" nowrap>$2500.00</td>
               </tr>
               <tr>
                 <td></td>
