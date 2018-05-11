@@ -98,19 +98,19 @@
                 <td>Subtotal:</td>
                 <td></td>
                 <td></td>
-                <td style="text-align: right;" nowrap>${{ $item_grand_total }}</td>
+                <td style="text-align: right;" nowrap>${{ number_format($item_grand_total, 2) }}</td>
               </tr>
               <tr>
                 <td>Profit and Overhead:</td>
                 <td></td>
                 <td></td>
-                <td style="text-align: right;" nowrap>${{ $item_grand_total }}</td>
+                <td style="text-align: right;" nowrap>${{ number_format(2500, 2) }}</td>
               </tr>
               <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td style="text-align: right;" nowrap>${{ $item_grand_total }}</td>
+                <td style="text-align: right;" nowrap>${{ number_format($item_grand_total + 2500.00, 2) }}</td>
               </tr>
             </tfoot>
           </table>
