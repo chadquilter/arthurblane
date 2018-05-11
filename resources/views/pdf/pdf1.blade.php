@@ -41,16 +41,16 @@
                     {{ $formAddress->address2 }}
                   @endif
                   <br>
-                  {{ $formAddress->city }},{{ $formAddress->state }} &nbsp; &nbsp; {{ $formAddress->zip }}
+                  {{ $formAddress->city }},{{ $formAddress->state }} &nbsp; &nbsp; {{ $formAddress->zipcode }}
+                  <br>
             @endforeach
-
         </td>
         <td style="text-align: right;">
           <h6><strong>Date:</strong>{{ $form->form_date->format('m/d/Y') }}</h6>
           <h6><strong>Invoice Number:</strong> #123456</h6>
         </td>
       </tr>
-
+      <tr><td> &nbsp; </td></tr>
       <tr>
         <td colspan=2>
           {!! $form->form_salutation !!}
