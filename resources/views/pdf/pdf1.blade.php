@@ -29,7 +29,7 @@
         <td colspan=2 bgcolor="#5BC0DE"> &nbsp; </td>
       </tr>
       <tr>
-        <td>
+        <td nowrap>
           <h5>To:</h5><hr>
 
           @foreach($form->addresses as $formAddress)
@@ -81,14 +81,14 @@
                   <td style="border: .05rem dotted black;" nowrap>
                     {{ $formItem->item->item_name }}
                   </td>
-                  <td style="border: .05rem dotted black;" nowrap>
+                  <td style="border: .05rem dotted black; text-align: right;" nowrap>
                     {{ $formItem->qty }}
                   </td>
                   <td style="border: .05rem dotted black; text-align: right;" nowrap>
                     ${{ $formItem->amount }}
                   </td>
                   <td style="border: .05rem dotted black; text-align: right;" nowrap>
-                    ${{ $formItem->qty * $formItem->amount }}
+                    ${{ number_format($formItem->qty * $formItem->amount, 2) }}
                   </td>
                 </tr>
               @endforeach
@@ -128,7 +128,7 @@
       <tr bgcolor="#5BC0DE" border=1>
         <td colspan=2 bgcolor="#5BC0DE" style="border-bottom: 3rem solid black;">
           &nbsp;
-          <small> 2018 {{ config('app.name', 'MDG')}} </small> 
+          <small> 2018 {{ config('app.name', 'MDG')}} </small>
         </td>
       </tr>
     </tfoot>
