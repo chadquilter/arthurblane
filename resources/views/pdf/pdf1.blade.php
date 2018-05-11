@@ -126,7 +126,7 @@
 
     <tfoot>
       <tr bgcolor="#5BC0DE" border=1>
-        <td colspan=2 bgcolor="#5BC0DE"> &nbsp; </td>
+        <td colspan=2 bgcolor="#5BC0DE" style="border-bottom: 3rem solid black;"> &nbsp; </td>
       </tr>
     </tfoot>
   </table>
