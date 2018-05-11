@@ -13,7 +13,7 @@ class ModifyCol extends Migration
      */
     public function up()
     {
-	Schema::rename('form_adresses', 'form_addresses');
+	     Schema::rename('form_adresses', 'form_addresses');
     }
 
     /**
