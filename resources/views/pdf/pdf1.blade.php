@@ -12,7 +12,7 @@
 
 <main role="main">
   <div class="body-container">
-    <table cellpadding="0" cellspacing="0" width="100%" style="border: 3rem solid black;" rules="none">
+    <table cellpadding="0" cellspacing="0" width="100%" rules="none">
       <tbody>
         <tr bgcolor="#5BC0DE" border=1>
           <th colspan=2 bgcolor="#5BC0DE" style="border-bottom: 3rem solid black;">
