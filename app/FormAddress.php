@@ -11,7 +11,7 @@ class FormAddress extends Model
   public $timestamps = true;
 
   public $fillable = [
-    'form_address_address_id',
+    'form_id',
     'address_id',
     'user_id',
     'uom_id',

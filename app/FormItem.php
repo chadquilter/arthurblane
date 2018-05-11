@@ -12,7 +12,7 @@ class FormItem extends Model
   protected $dates = ['created_at', 'updated_at', 'form_date'];
 
   public $fillable = [
-    'form_items_form_id',
+    'form_id',
     'items_id',
     'user_id',
     'amount',
