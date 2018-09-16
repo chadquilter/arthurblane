@@ -65,41 +65,14 @@
                     </div>
                     <div class="row">
                       <div class="col">
-                        <strong class="lead"> <a href="mailto:mikegrounds@bamconstruction.net?subject=Contact/Recieve%20Free%20Quote&body=Hello,%20I%20would%20like%20to%20request%20a%20free%20quote!%0D">mikegrounds@bamconstruction.net</a></strong>
+                        <strong class="lead"> <a href="mailto:mikegrounds@bamconstruction.net?subject=Contact/Recieve%20Free%20Quote&body=Hello,%20I%20would%20like%20to%20request%20a%20free%20quote!%0D">mikegrounds@cutaboveconstruction55.net</a></strong>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="col">
-              <div class="card border border-secondary">
-                <div class="card-body">
-                  <div class="card-title">
-                    <div class="row">
-                      <div class="col">
-                        <strong class="lead">Robert Burtner</strong>
-                        <hr class="my-4">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <strong class="lead">(830)265-0941</strong>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <strong class="lead"> <a href="mailto:robertburtner@bamconstruction.net?subject=Contact/Recieve%20Free%20Quote&body=Hello,%20I%20would%20like%20to%20request%20a%20free%20quote!%0D">robertburtner@bamconstruction.net</a></strong>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
+</div>
           <br>
           <div class="row">
             <div class="col">
